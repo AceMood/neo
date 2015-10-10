@@ -1,0 +1,17 @@
+{
+    "abXv5": {
+        "type": "js",
+        "url": "/static/demo/uh4G6f_0kmd.js",
+        "deps": ["jn_M2", "hnjU9"]
+    },
+    "jn_M2": {
+        "type": "js",
+        "url": "/static/demo/yb4G6f4vcEE.js",
+        "deps": []
+    },
+    "hnjU9": {
+        "type": "js",
+        "url": "/static/demo/kaSDhu9ryt7.js",
+        "deps": []
+    }
+}
