@@ -1,3 +1,4 @@
+//
 
 /*jslint proto:true*/
 
@@ -10,11 +11,11 @@ var Resource = require('./Resource');
 /**
  * Resource for package.json files
  * @extends {Resource}
- * @class
- * @param {String} path path of the resource
- * @param {Object} data source code of the resource
+ * @constructor
+ * @param {String} path 资源的路径
+ * @param {Object} data 资源源代码
  */
-function ProjectConfiguration(path, data) {
+function ProjectConfiguration (path, data) {
   this.path = node_path.normalize(path);
   this.id = path;
   this.data = data;
@@ -41,7 +42,7 @@ ProjectConfiguration.prototype.getHastePrefix = function() {
 ProjectConfiguration.prototype.getHasteRoots = function() {
   var dirname = path.dirname(this.path);
   if (this.data.haste && this.data.haste.roots) {
-    return this.data.haste.roots.map(function(root) {
+    return this.data.haste.roots.map(function (root) {
       return path.join(dirname, root);
     });
   }

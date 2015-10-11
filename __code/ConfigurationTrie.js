@@ -1,9 +1,9 @@
-// Yet
+//
 
 var node_path = require('path');
 
 /**
- * 一个能高效寻找资源的数据结构。
+ * 一个能高效寻找资源相关配置的数据结构。
  * A data structure to efficiently find configuration for a given resource
  * @constructor
  * @param {Array.<ProjectConfiguration>} configurations 配置对象数组
@@ -30,7 +30,7 @@ ConfigurationTrie.fromObject = function (object) {
  *
  * @returns {Array}
  */
-ConfigurationTrie.prototype.toObject = function() {
+ConfigurationTrie.prototype.toObject = function () {
   return this.configurations.map(function(r) {
     return r.toObject();
   });
@@ -57,7 +57,7 @@ ConfigurationTrie.prototype.indexConfiguration = function (configuration) {
  * @param resourcePath
  * @returns {*}
  */
-ConfigurationTrie.prototype.findConfiguration = function(resourcePath) {
+ConfigurationTrie.prototype.findConfiguration = function (resourcePath) {
   var parts = resourcePath.split(node_path.sep);
   var node = this.root;
   var configuration;

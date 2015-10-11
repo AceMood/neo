@@ -1,4 +1,4 @@
-// Yet
+//
 
 /**
  * 一个资源表，靠id识别
@@ -7,18 +7,17 @@
  * @param {*} typeToMap
  */
 function ResourceMap (resources, typeToMap) {
+  // 资源表缓存，数组
   this.resourceCache = null;
   //
   this.inferredProjectPaths = null;
   this.configurationTrie = null;
-  // 资源表
+  // 资源表，按类型分类，id为key
   this.resourceMap = {};
-  //
+  // path为key，资源为value的对象结构
   this.resourcePathMap = {};
   //
   this.typeToMap = typeToMap || {};
-  //
-  this.inferredProjectPaths = null;
   resources && resources.forEach(this.addResource, this);
 }
 
@@ -75,11 +74,20 @@ ResourceMap.prototype.getConfigurationByPath = function (path) {
   return this.configurationTrie.findConfiguration(path);
 };
 
+/**
+ * 根据路径或取资源
+ * @param {String} path
+ * @returns {?Resource}
+ */
 ResourceMap.prototype.getResourceByPath = function (path) {
   return this.resourcePathMap[path];
 };
 
-ResourceMap.prototype.getAllResources = function() {
+/**
+ * 获取所有资源表中的资源，若有缓存的话则读取缓存。
+ * @returns {null|*}
+ */
+ResourceMap.prototype.getAllResources = function () {
   if (!this.resourceCache) {
     var cache = [];
     var map = this.resourcePathMap;
@@ -103,11 +111,8 @@ ResourceMap.prototype.getAllResourcesByType = function (type) {
   }
 
   return Object.keys(this.resourceMap[type])
-    .map(function (key) {
-      return this.resourceMap[type][key];
-    }, this).filter(function (r) {
-      return r;
-    });
+    .map(function (key) { return this.resourceMap[type][key]; }, this)
+    .filter(function (r) { return r; });
 };
 
 /**
@@ -127,11 +132,11 @@ ResourceMap.prototype.addResource = function (resource) {
 };
 
 /**
- *
- * @param oldResource
- * @param newResource
+ * 更新某个资源
+ * @param {Resource} oldResource
+ * @param {Resource} newResource
  */
-ResourceMap.prototype.updateResource = function(oldResource, newResource) {
+ResourceMap.prototype.updateResource = function (oldResource, newResource) {
   this.configurationTrie = this.resourceCache = null;
   this.inferredProjectPaths = null;
   this.removeResource(oldResource);
