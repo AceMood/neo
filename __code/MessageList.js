@@ -22,7 +22,7 @@ var cli = require('./cli');
  * @param {String} type project related type, like sprites or haste map
  * @param {String} text message itself
  */
-function Message(file, type, text) {
+function Message (file, type, text) {
   this.file = file;
   this.type = type;
   this.text = text;
