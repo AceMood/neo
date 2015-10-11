@@ -96,30 +96,30 @@ function Haste(loaders, scanDirs, options) {
 inherits(Haste, EventEmitter);
 
 /**
- * All in one function:
- *  1) load cache if exists
+ * 此方法:
+ *  1) 有缓存则加载缓存
  *  2) compare to the existing files
- *  3) analyze changes,
- *  4) update map,
+ *  3) 分析文件变化,
+ *  4) 更新资源表,
  *  5) write cache back to disk
- *  6) return map
+ *  6) 返回资源表
  *
  * @param  {String}   path
  * @param  {Function} callback
  */
-Haste.prototype.update = function(path, callback, options) {
+Haste.prototype.update = function (path, callback, options) {
   var map, files;
   var me = this;
 
-  var run = function() {
+  var run = function () {
     if (!map || !files) {
       return;
     }
-    var task = me.createUpdateTask(files, map).on('complete', function(map) {
+    var task = me.createUpdateTask(files, map).on('complete', function (map) {
       // only store map if it's changed
       var mapChanged = task.changed.length > task.skipped.length;
       if (mapChanged) {
-        me.storeMap(path, map, function() {
+        me.storeMap(path, map, function () {
           me.emit('mapStored');
           callback(map, task.messages);
         });
@@ -129,7 +129,7 @@ Haste.prototype.update = function(path, callback, options) {
     }).run();
   };
 
-  this.getFinder().find(function(f) {
+  this.getFinder().find(function (f) {
     files = f;
     me.emit('found', files);
     run();
@@ -138,7 +138,7 @@ Haste.prototype.update = function(path, callback, options) {
   if (options && options.forceRescan) {
     map = new ResourceMap();
   } else {
-    this.loadOrCreateMap(path, function(m) {
+    this.loadOrCreateMap(path, function (m) {
       map = m;
       me.emit('mapLoaded');
       run();
@@ -157,14 +157,14 @@ Haste.prototype.update = function(path, callback, options) {
  * @param  {Number}   options.timeout How often to rerun finder
  * @param  {Boolean}  options.forceRescan
  */
-Haste.prototype.watch = function(path, callback, options) {
+Haste.prototype.watch = function (path, callback, options) {
   var timeout = options && options.timeout || 1000;
   var finder = this.getFinder();
   var map, files, task;
   var me = this;
   var firstRun = true;
 
-  function find() {
+  function find () {
     finder.find(function(f) {
       files = f;
       if (map) {
@@ -173,7 +173,7 @@ Haste.prototype.watch = function(path, callback, options) {
     });
   }
 
-  function updated(m) {
+  function updated (m) {
     map = m;
     var mapChanged = task.changed.length > task.skipped.length;
     // if changed, store the map and only then callback and schedule next run
@@ -193,14 +193,14 @@ Haste.prototype.watch = function(path, callback, options) {
     setTimeout(find, timeout);
   }
 
-  function update() {
+  function update () {
     task = me.createUpdateTask(files, map).on('complete', updated).run();
   }
 
   if (options && options.forceRescan) {
     map = new ResourceMap();
   } else {
-    this.loadOrCreateMap(path, function(m) {
+    this.loadOrCreateMap(path, function (m) {
       map = m;
       if (files) {
         update();
@@ -216,8 +216,8 @@ Haste.prototype.watch = function(path, callback, options) {
  * @param  {ResourceMap}   map
  * @param  {Function} callback
  */
-Haste.prototype.updateMap = function(map, callback) {
-  this.getFinder().find(function(files) {
+Haste.prototype.updateMap = function (map, callback) {
+  this.getFinder().find(function (files) {
      this.createUpdateTask(files, map).on('complete', callback).run();
   }.bind(this));
 };
@@ -227,7 +227,7 @@ Haste.prototype.updateMap = function(map, callback) {
  * @param  {String}   path
  * @param  {Function} callback
  */
-Haste.prototype.loadMap = function(path, callback) {
+Haste.prototype.loadMap = function (path, callback) {
   this.getSerializer().loadFromPath(path, callback);
 };
 
@@ -235,7 +235,7 @@ Haste.prototype.loadMap = function(path, callback) {
  * @param  {String}   path
  * @return  {ResourceMap|null}
  */
-Haste.prototype.loadMapSync = function(path) {
+Haste.prototype.loadMapSync = function (path) {
   return this.getSerializer().loadFromPathSync(path);
 };
 
@@ -244,7 +244,7 @@ Haste.prototype.loadMapSync = function(path) {
  * @param  {String}   path
  * @param  {Function} callback
  */
-Haste.prototype.loadOrCreateMap = function(path, callback) {
+Haste.prototype.loadOrCreateMap = function (path, callback) {
   this.getSerializer().loadFromPath(path, function(err, map) {
     callback(map || new ResourceMap());
   });
@@ -254,7 +254,7 @@ Haste.prototype.loadOrCreateMap = function(path, callback) {
  * @param  {String}   path
  * @return  {ResourceMap}
  */
-Haste.prototype.loadOrCreateMapSync = function(path) {
+Haste.prototype.loadOrCreateMapSync = function (path) {
   return this.loadMapSync(path) || new ResourceMap();
 };
 
@@ -264,10 +264,9 @@ Haste.prototype.loadOrCreateMapSync = function(path) {
  * @param  {ResourceMap}   map
  * @param  {Function} callback
  */
-Haste.prototype.storeMap = function(path, map, callback) {
+Haste.prototype.storeMap = function (path, map, callback) {
   this.getSerializer().storeToPath(path, map, callback);
 };
-
 
 
 /**
@@ -275,7 +274,7 @@ Haste.prototype.storeMap = function(path, map, callback) {
  * @param {ResourceMap} map
  * @return {MapUpdateTask}
  */
-Haste.prototype.createUpdateTask = function(files, map) {
+Haste.prototype.createUpdateTask = function (files, map) {
   var task = new MapUpdateTask(
     files,
     this.loaders,
@@ -297,14 +296,15 @@ Haste.prototype.createUpdateTask = function(files, map) {
 };
 
 /**
+ * 返回Haste使用的FileFinder
  * @protected
  * @return {FileFinder}
  */
-Haste.prototype.getFinder = function() {
+Haste.prototype.getFinder = function () {
   if (!this.finder) {
     var ext = {};
-    this.loaders.forEach(function(loader) {
-      loader.getExtensions().forEach(function(e) {
+    this.loaders.forEach(function (loader) {
+      loader.getExtensions().forEach(function (e) {
         ext[e] = true;
       });
     });
@@ -322,7 +322,7 @@ Haste.prototype.getFinder = function() {
  * @protected
  * @return {ResourceMapSerializer}
  */
-Haste.prototype.getSerializer = function() {
+Haste.prototype.getSerializer = function () {
   return this.serializer || new ResourceMapSerializer(
     this.loaders,
     { version: this.options.version });

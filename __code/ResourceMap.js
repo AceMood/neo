@@ -1,40 +1,38 @@
-/**
- * Copyright 2013 Facebook, Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+// Yet
 
 /**
- * A map holding resource by id
+ * 一个资源表，靠id识别
+ * @constrictor
  * @param {Array.<Resource>} resources
+ * @param {*} typeToMap
  */
-function ResourceMap(resources, typeToMap) {
+function ResourceMap (resources, typeToMap) {
   this.resourceCache = null;
+  //
   this.inferredProjectPaths = null;
   this.configurationTrie = null;
+  // 资源表
   this.resourceMap = {};
+  //
   this.resourcePathMap = {};
+  //
   this.typeToMap = typeToMap || {};
+  //
   this.inferredProjectPaths = null;
   resources && resources.forEach(this.addResource, this);
 }
 
-ResourceMap.prototype.getResource = function(type, id) {
+/**
+ * 取资源
+ * @param {String} type 资源类型
+ * @param {String} id   资源id
+ * @returns {Resource}
+ */
+ResourceMap.prototype.getResource = function (type, id) {
   type = this.typeToMap[type] || type;
   var typeMap = this.resourceMap[type];
   return typeMap && typeMap[id];
 };
-
 
 /**
  * Node-haste allows defining arbitrary search paths, and will recurse
@@ -50,7 +48,7 @@ ResourceMap.prototype.getResource = function(type, id) {
  * @return {Array<string>} List of absolute paths to project roots that are
  * inferred from loaded resources that assume the role of a "project".
  */
-ResourceMap.prototype.getAllInferredProjectPaths = function() {
+ResourceMap.prototype.getAllInferredProjectPaths = function () {
   if (!this.inferredProjectPaths) {
     var found = {};
     this.getAllResources().forEach(function(resource) {
@@ -64,11 +62,11 @@ ResourceMap.prototype.getAllInferredProjectPaths = function() {
 };
 
 
-ResourceMap.prototype.getConfigurationForResource = function(resource) {
+ResourceMap.prototype.getConfigurationForResource = function (resource) {
   return this.getConfigurationByPath(resource.path);
 };
 
-ResourceMap.prototype.getConfigurationByPath = function(path) {
+ResourceMap.prototype.getConfigurationByPath = function (path) {
   if (!this.configurationTrie) {
     var ConfigurationTrie = require('./ConfigurationTrie');
     this.configurationTrie = new ConfigurationTrie(
@@ -77,7 +75,7 @@ ResourceMap.prototype.getConfigurationByPath = function(path) {
   return this.configurationTrie.findConfiguration(path);
 };
 
-ResourceMap.prototype.getResourceByPath = function(path) {
+ResourceMap.prototype.getResourceByPath = function (path) {
   return this.resourcePathMap[path];
 };
 
@@ -85,7 +83,7 @@ ResourceMap.prototype.getAllResources = function() {
   if (!this.resourceCache) {
     var cache = [];
     var map = this.resourcePathMap;
-    Object.keys(map).forEach(function(k) {
+    Object.keys(map).forEach(function (k) {
       map[k] && cache.push(map[k]);
     }, this);
     this.resourceCache = cache;
@@ -93,29 +91,46 @@ ResourceMap.prototype.getAllResources = function() {
   return this.resourceCache;
 };
 
-ResourceMap.prototype.getAllResourcesByType = function(type) {
+/**
+ * 根据类型返回全部资源
+ * @param {String} type 资源类型
+ * @returns {Array}
+ */
+ResourceMap.prototype.getAllResourcesByType = function (type) {
   type = this.typeToMap[type] || type;
   if (!this.resourceMap[type]) {
     return [];
   }
-  return Object.keys(this.resourceMap[type]).map(function(key) {
-    return this.resourceMap[type][key];
-  }, this).filter(function(r) {
-    return r;
-  });
+
+  return Object.keys(this.resourceMap[type])
+    .map(function (key) {
+      return this.resourceMap[type][key];
+    }, this).filter(function (r) {
+      return r;
+    });
 };
 
-ResourceMap.prototype.addResource = function(resource) {
+/**
+ * 添加资源
+ * @param {Resource} resource
+ */
+ResourceMap.prototype.addResource = function (resource) {
   this.configurationTrie = this.resourceCache = null;
   this.inferredProjectPaths = null;
   var type = this.typeToMap[resource.type] || resource.type;
   if (!this.resourceMap[type]) {
     this.resourceMap[type] = {};
   }
+  // 更新
   this.resourcePathMap[resource.path] = resource;
   this.resourceMap[type][resource.id] = resource;
 };
 
+/**
+ *
+ * @param oldResource
+ * @param newResource
+ */
 ResourceMap.prototype.updateResource = function(oldResource, newResource) {
   this.configurationTrie = this.resourceCache = null;
   this.inferredProjectPaths = null;
@@ -123,7 +138,11 @@ ResourceMap.prototype.updateResource = function(oldResource, newResource) {
   this.addResource(newResource);
 };
 
-ResourceMap.prototype.removeResource = function(resource) {
+/**
+ * 从资源表删除资源
+ * @param {Resource} resource
+ */
+ResourceMap.prototype.removeResource = function (resource) {
   var type = this.typeToMap[resource.type] || resource.type;
   this.configurationTrie = this.resourceCache = null;
   this.inferredProjectPaths = null;

@@ -1,24 +1,35 @@
-/**
- * A data structure to efficiently find configuration for a given resource
- * @class
- * @param {Array.<ProjectConfiguration>} configurations
- */
+// Yet
 
 var node_path = require('path');
 
-function ConfigurationTrie(configurations) {
+/**
+ * 一个能高效寻找资源的数据结构。
+ * A data structure to efficiently find configuration for a given resource
+ * @constructor
+ * @param {Array.<ProjectConfiguration>} configurations 配置对象数组
+ */
+function ConfigurationTrie (configurations) {
   this.root = { paths: {} };
   this.configurations = configurations;
   configurations.forEach(this.indexConfiguration, this);
 }
 
-ConfigurationTrie.fromObject = function(object) {
+/**
+ *
+ * @param object
+ * @returns {ConfigurationTrie}
+ */
+ConfigurationTrie.fromObject = function (object) {
   var ProjectConfiguration = require('./resource/ProjectConfiguration');
-  return new ConfigurationTrie(object.map(function(r) {
+  return new ConfigurationTrie(object.map(function (r) {
     return ProjectConfiguration.fromObject(r);
   }));
 };
 
+/**
+ *
+ * @returns {Array}
+ */
 ConfigurationTrie.prototype.toObject = function() {
   return this.configurations.map(function(r) {
     return r.toObject();
@@ -28,8 +39,8 @@ ConfigurationTrie.prototype.toObject = function() {
 /**
  * @protected
  */
-ConfigurationTrie.prototype.indexConfiguration = function(configuration) {
-  configuration.getHasteRoots().forEach(function(path) {
+ConfigurationTrie.prototype.indexConfiguration = function (configuration) {
+  configuration.getHasteRoots().forEach(function (path) {
     var parts = path.split(node_path.sep);
     var node = this.root;
     for (var i = 0; i < parts.length; i++) {
@@ -41,6 +52,11 @@ ConfigurationTrie.prototype.indexConfiguration = function(configuration) {
   }, this);
 };
 
+/**
+ *
+ * @param resourcePath
+ * @returns {*}
+ */
 ConfigurationTrie.prototype.findConfiguration = function(resourcePath) {
   var parts = resourcePath.split(node_path.sep);
   var node = this.root;
@@ -56,5 +72,6 @@ ConfigurationTrie.prototype.findConfiguration = function(resourcePath) {
   }
   return configuration;
 };
+
 
 module.exports = ConfigurationTrie;
