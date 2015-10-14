@@ -29,7 +29,7 @@ ProjectConfiguration.prototype.type = 'ProjectConfiguration';
  * Returns haste specific prefix
  * @return {String}
  */
-ProjectConfiguration.prototype.getHastePrefix = function() {
+ProjectConfiguration.prototype.getHastePrefix = function () {
   return this.data.haste && this.data.haste.prefix !== undefined ?
     this.data.haste.prefix :
     path.basename(path.dirname(this.path));
