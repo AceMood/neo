@@ -1,6 +1,6 @@
 {
-    "abXv5": {
-        "type": "js",
+    "static/js/app.js": {
+        "type": "JS",
         "url": "/static/demo/uh4G6f_0kmd.js",
         "deps": ["jn_M2", "hnjU9"]
     },
