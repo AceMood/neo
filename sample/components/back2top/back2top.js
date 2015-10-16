@@ -1,13 +1,9 @@
-define(function (require, exports, module) {
 
-    'use strict';
+'use strict';
 
-    require('./back2top.css');
+exports.init = function () {
 
-    exports.init = function () {
+};
+exports.destroy = function () {
 
-    };
-    exports.destroy = function () {
-
-    };
-});
+};
