@@ -1,7 +1,17 @@
-/**
- * Created by AceMood on 15/10/9.
- */
 
-var neo = new (require('../lib/Neo'))();
+var Neo = require('../lib/Neo');
 
-neo.run();
+var neo = new Neo(
+  [
+    new JSLoader(),
+    new CSSLoader()
+  ],
+  [
+    "static",
+    "components"
+  ]
+);
+
+neo.update('map.json', function(map) {
+
+});

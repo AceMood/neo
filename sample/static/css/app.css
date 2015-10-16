@@ -1,0 +1,6 @@
+@import "../../components/header/header.css";
+@import "../../components/footer/footer.css";
+
+body .app {
+    width: 1200px;
+}

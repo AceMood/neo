@@ -1,7 +1,7 @@
 require([
     '../../components/header/header',
     '../../components/footer/footer'
-], function (header, footer) {
+], function(header, footer) {
 
     'use strict';
 

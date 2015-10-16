@@ -1,0 +1,17 @@
+.footer {
+    position: relative;
+    width: calc(100% - 200px);
+    height: 30px;
+    margin: 20px 0 20px 200px;
+    clear: both;
+    color: #8B8B8B;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+}
+.footer a {
+    color: #8B8B8B;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+}
