@@ -12,11 +12,10 @@ var neo = new Neo(
     new Loaders.ImageLoader()
   ],
   [
-    "static",
-    "components"
+    "module_0",
+    "module_1"
   ],
   {
-    ns: 'sample',
     ver: '0.1'
   }
 );
