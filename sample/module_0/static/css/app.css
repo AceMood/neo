@@ -1,5 +1,8 @@
-@import "../../components/header/header.css";
-@import "../../components/footer/footer.css";
+
+/**
+ * @require "../../components/header/header.css"
+ * @require "../../components/footer/footer.css"
+ */
 
 body .app {
     width: 1200px;

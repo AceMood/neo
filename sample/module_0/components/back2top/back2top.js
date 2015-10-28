@@ -1,9 +1,10 @@
 
 'use strict';
 
-exports.init = function () {
+require('./back2top.css');
 
+
+exports.init = function () {
 };
 exports.destroy = function () {
-
 };
