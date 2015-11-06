@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/AceMood/neo/issues"
   },
-  "homepage": "https://github.com/AceMood/neo"
+  "homepage": "https://github.com/AceMood/neo",
+  "dependencies": {
+    "css": "^2.2.1"
+  }
 }
