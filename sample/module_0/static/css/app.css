@@ -1,7 +1,7 @@
 
 /**
- * @require "../../components/header/header.css"
- * @require "../../components/footer/footer.css"
+ * @css "../../components/header/header.css"
+ * @css "../../components/footer/footer.css"
  */
 
 body .app {

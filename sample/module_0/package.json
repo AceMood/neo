@@ -1,5 +1,5 @@
 {
-    "ns": "app",
-    "roots": ["html", "static", "page"],
+    "ns": "module-0",
+    "roots": ["components", "static", "page"],
     "map": ".cache"
 }
