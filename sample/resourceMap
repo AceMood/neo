@@ -1,0 +1,249 @@
+{
+    "resourceCache": [
+        {
+            "path": "module_0/components/back2top/back2top.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/back2top/back2top.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/footer/footer.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/footer/footer.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/pageletOne/a.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/pageletOne/a.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/pageletTwo/a.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/pageletTwo/a.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/header/header.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/static/css/app.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/static/js/app.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        {
+            "path": "module_0/components/header/header.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        }
+    ],
+    "inferredProjectPaths": null,
+    "configurationTrie": null,
+    "resourceMap": {
+        "CSS": {
+            "null": {
+                "path": "module_0/static/css/app.css",
+                "id": null,
+                "sprites": [],
+                "options": {},
+                "_requiredCSSMap": {},
+                "mtime": 1446953696000
+            }
+        },
+        "JS": {
+            "null": {
+                "path": "module_0/components/header/header.js",
+                "id": null,
+                "options": {},
+                "_requiredCSSMap": {},
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {},
+                "mtime": 1446953696000
+            }
+        }
+    },
+    "resourcePathMap": {
+        "module_0/components/back2top/back2top.css": {
+            "path": "module_0/components/back2top/back2top.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/back2top/back2top.js": {
+            "path": "module_0/components/back2top/back2top.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/footer/footer.css": {
+            "path": "module_0/components/footer/footer.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/footer/footer.js": {
+            "path": "module_0/components/footer/footer.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/pageletOne/a.css": {
+            "path": "module_0/components/pageletOne/a.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/pageletOne/a.js": {
+            "path": "module_0/components/pageletOne/a.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/pageletTwo/a.css": {
+            "path": "module_0/components/pageletTwo/a.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/pageletTwo/a.js": {
+            "path": "module_0/components/pageletTwo/a.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/header/header.css": {
+            "path": "module_0/components/header/header.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        "module_0/static/css/app.css": {
+            "path": "module_0/static/css/app.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "_requiredCSSMap": {},
+            "mtime": 1446953696000
+        },
+        "module_0/static/js/app.js": {
+            "path": "module_0/static/js/app.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        },
+        "module_0/components/header/header.js": {
+            "path": "module_0/components/header/header.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "mtime": 1446953696000
+        }
+    },
+    "typeToMap": {}
+}

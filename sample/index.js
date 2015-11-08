@@ -4,6 +4,8 @@
 
 'use strict';
 
+var fs = require('fs');
+
 var Neo = require('../lib/Neo');
 var Loaders = Neo.Loaders;
 
@@ -28,6 +30,6 @@ var neo = new Neo(
 neo.update('map.json', function(map) {
   // 根据返回的map对象进行业务框架定制
 
-
+  fs.writeFileSync('resourceMap', JSON.stringify(map, null, 4), 'utf8');
 
 });
