@@ -1,24 +1,21 @@
 {
     "resourceCache": [
         {
-            "path": "module_0/components/footer/footer.js",
-            "id": null,
-            "options": {},
-            "_requiredCSSMap": {
-                "./footer.css": true
+            "path": "module_0/package.json",
+            "id": "module_0/package.json",
+            "data": {
+                "ns": "test",
+                "roots": [
+                    "components",
+                    "static",
+                    "page"
+                ]
             },
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "isModule": true,
-            "requiredCSS": [
-                "./footer.css"
-            ],
-            "mtime": 1447057947000
+            "mtime": 1447068749000
         },
         {
             "path": "module_0/components/back2top/back2top.js",
-            "id": null,
+            "id": "module_0/components/back2top/back2top.js",
             "options": {},
             "_requiredCSSMap": {
                 "./back2top.css": true
@@ -31,6 +28,22 @@
                 "./back2top.css"
             ],
             "mtime": 1447057937000
+        },
+        {
+            "path": "module_0/components/footer/footer.js",
+            "id": "module_0/components/footer/footer.js",
+            "options": {},
+            "_requiredCSSMap": {
+                "./footer.css": true
+            },
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "isModule": true,
+            "requiredCSS": [
+                "./footer.css"
+            ],
+            "mtime": 1447057947000
         },
         {
             "path": "module_0/components/header/header.js",
@@ -50,27 +63,29 @@
         },
         {
             "path": "module_0/components/pageletOne/a.js",
-            "id": null,
+            "id": "module_0/components/pageletOne/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
+            "isModule": true,
             "mtime": 1447053685000
         },
         {
             "path": "module_0/components/pageletTwo/a.js",
-            "id": null,
+            "id": "module_0/components/pageletTwo/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
+            "isModule": true,
             "mtime": 1447053689000
         },
         {
             "path": "module_0/static/js/app.js",
-            "id": null,
+            "id": "module_0/static/js/app.js",
             "options": {},
             "_requiredCSSMap": {
                 "../css/app.css": true
@@ -92,13 +107,100 @@
             "mtime": 1447061686000
         }
     ],
-    "inferredProjectPaths": [],
+    "inferredProjectPaths": [
+        "/Users/baidu/Git/neo/sample"
+    ],
     "configurationTrie": null,
     "resourceMap": {
+        "ProjectConfiguration": {
+            "module_0/package.json": {
+                "path": "module_0/package.json",
+                "id": "module_0/package.json",
+                "data": {
+                    "ns": "test",
+                    "roots": [
+                        "components",
+                        "static",
+                        "page"
+                    ]
+                },
+                "mtime": 1447068749000
+            }
+        },
         "JS": {
-            "null": {
+            "module_0/components/back2top/back2top.js": {
+                "path": "module_0/components/back2top/back2top.js",
+                "id": "module_0/components/back2top/back2top.js",
+                "options": {},
+                "_requiredCSSMap": {
+                    "./back2top.css": true
+                },
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {},
+                "isModule": true,
+                "requiredCSS": [
+                    "./back2top.css"
+                ],
+                "mtime": 1447057937000
+            },
+            "module_0/components/footer/footer.js": {
+                "path": "module_0/components/footer/footer.js",
+                "id": "module_0/components/footer/footer.js",
+                "options": {},
+                "_requiredCSSMap": {
+                    "./footer.css": true
+                },
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {},
+                "isModule": true,
+                "requiredCSS": [
+                    "./footer.css"
+                ],
+                "mtime": 1447057947000
+            },
+            "header": {
+                "path": "module_0/components/header/header.js",
+                "id": "header",
+                "options": {},
+                "_requiredCSSMap": {
+                    "./header.css": true
+                },
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {},
+                "isModule": true,
+                "requiredCSS": [
+                    "./header.css"
+                ],
+                "mtime": 1447057925000
+            },
+            "module_0/components/pageletOne/a.js": {
+                "path": "module_0/components/pageletOne/a.js",
+                "id": "module_0/components/pageletOne/a.js",
+                "options": {},
+                "_requiredCSSMap": {},
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {},
+                "isModule": true,
+                "mtime": 1447053685000
+            },
+            "module_0/components/pageletTwo/a.js": {
+                "path": "module_0/components/pageletTwo/a.js",
+                "id": "module_0/components/pageletTwo/a.js",
+                "options": {},
+                "_requiredCSSMap": {},
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {},
+                "isModule": true,
+                "mtime": 1447053689000
+            },
+            "module_0/static/js/app.js": {
                 "path": "module_0/static/js/app.js",
-                "id": null,
+                "id": "module_0/static/js/app.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "../css/app.css": true
@@ -118,45 +220,26 @@
                     "../css/app.css"
                 ],
                 "mtime": 1447061686000
-            },
-            "header": {
-                "path": "module_0/components/header/header.js",
-                "id": "header",
-                "options": {},
-                "_requiredCSSMap": {
-                    "./header.css": true
-                },
-                "_requiredModuleMap": {},
-                "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {},
-                "isModule": true,
-                "requiredCSS": [
-                    "./header.css"
-                ],
-                "mtime": 1447057925000
             }
         }
     },
     "resourcePathMap": {
-        "module_0/components/footer/footer.js": {
-            "path": "module_0/components/footer/footer.js",
-            "id": null,
-            "options": {},
-            "_requiredCSSMap": {
-                "./footer.css": true
+        "module_0/package.json": {
+            "path": "module_0/package.json",
+            "id": "module_0/package.json",
+            "data": {
+                "ns": "test",
+                "roots": [
+                    "components",
+                    "static",
+                    "page"
+                ]
             },
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "isModule": true,
-            "requiredCSS": [
-                "./footer.css"
-            ],
-            "mtime": 1447057947000
+            "mtime": 1447068749000
         },
         "module_0/components/back2top/back2top.js": {
             "path": "module_0/components/back2top/back2top.js",
-            "id": null,
+            "id": "module_0/components/back2top/back2top.js",
             "options": {},
             "_requiredCSSMap": {
                 "./back2top.css": true
@@ -169,6 +252,22 @@
                 "./back2top.css"
             ],
             "mtime": 1447057937000
+        },
+        "module_0/components/footer/footer.js": {
+            "path": "module_0/components/footer/footer.js",
+            "id": "module_0/components/footer/footer.js",
+            "options": {},
+            "_requiredCSSMap": {
+                "./footer.css": true
+            },
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "isModule": true,
+            "requiredCSS": [
+                "./footer.css"
+            ],
+            "mtime": 1447057947000
         },
         "module_0/components/header/header.js": {
             "path": "module_0/components/header/header.js",
@@ -188,27 +287,29 @@
         },
         "module_0/components/pageletOne/a.js": {
             "path": "module_0/components/pageletOne/a.js",
-            "id": null,
+            "id": "module_0/components/pageletOne/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
+            "isModule": true,
             "mtime": 1447053685000
         },
         "module_0/components/pageletTwo/a.js": {
             "path": "module_0/components/pageletTwo/a.js",
-            "id": null,
+            "id": "module_0/components/pageletTwo/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
+            "isModule": true,
             "mtime": 1447053689000
         },
         "module_0/static/js/app.js": {
             "path": "module_0/static/js/app.js",
-            "id": null,
+            "id": "module_0/static/js/app.js",
             "options": {},
             "_requiredCSSMap": {
                 "../css/app.css": true

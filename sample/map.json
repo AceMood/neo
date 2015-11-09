@@ -2,26 +2,40 @@
     "version": "0.1",
     "objects": [
         {
-            "type": "JS",
-            "path": "module_0/components/footer/footer.js",
-            "id": null,
-            "options": {},
-            "isModule": true,
-            "requiredCSS": [
-                "./footer.css"
-            ],
-            "mtime": 1447057947000
+            "type": "ProjectConfiguration",
+            "path": "module_0/package.json",
+            "id": "module_0/package.json",
+            "data": {
+                "ns": "test",
+                "roots": [
+                    "components",
+                    "static",
+                    "page"
+                ]
+            },
+            "mtime": 1447068749000
         },
         {
             "type": "JS",
             "path": "module_0/components/back2top/back2top.js",
-            "id": null,
+            "id": "module_0/components/back2top/back2top.js",
             "options": {},
             "isModule": true,
             "requiredCSS": [
                 "./back2top.css"
             ],
             "mtime": 1447057937000
+        },
+        {
+            "type": "JS",
+            "path": "module_0/components/footer/footer.js",
+            "id": "module_0/components/footer/footer.js",
+            "options": {},
+            "isModule": true,
+            "requiredCSS": [
+                "./footer.css"
+            ],
+            "mtime": 1447057947000
         },
         {
             "type": "JS",
@@ -37,21 +51,23 @@
         {
             "type": "JS",
             "path": "module_0/components/pageletOne/a.js",
-            "id": null,
+            "id": "module_0/components/pageletOne/a.js",
             "options": {},
+            "isModule": true,
             "mtime": 1447053685000
         },
         {
             "type": "JS",
             "path": "module_0/components/pageletTwo/a.js",
-            "id": null,
+            "id": "module_0/components/pageletTwo/a.js",
             "options": {},
+            "isModule": true,
             "mtime": 1447053689000
         },
         {
             "type": "JS",
             "path": "module_0/static/js/app.js",
-            "id": null,
+            "id": "module_0/static/js/app.js",
             "options": {},
             "isModule": true,
             "requiredModules": [

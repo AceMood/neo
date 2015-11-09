@@ -1,5 +1,4 @@
 {
-    "ns": "module-0",
-    "roots": ["components", "static", "page"],
-    "map": ".cache"
+    "ns": "test",
+    "roots": ["components", "static", "page"]
 }
