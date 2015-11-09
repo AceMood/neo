@@ -1,22 +1,6 @@
 {
     "resourceCache": [
         {
-            "path": "module_0/components/back2top/back2top.js",
-            "id": null,
-            "options": {},
-            "_requiredCSSMap": {
-                "./back2top.css": true
-            },
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "isModule": true,
-            "requiredCSS": [
-                "./back2top.css"
-            ],
-            "mtime": 1447057937000
-        },
-        {
             "path": "module_0/components/footer/footer.js",
             "id": null,
             "options": {},
@@ -31,6 +15,22 @@
                 "./footer.css"
             ],
             "mtime": 1447057947000
+        },
+        {
+            "path": "module_0/components/back2top/back2top.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {
+                "./back2top.css": true
+            },
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "isModule": true,
+            "requiredCSS": [
+                "./back2top.css"
+            ],
+            "mtime": 1447057937000
         },
         {
             "path": "module_0/components/header/header.js",
@@ -89,7 +89,7 @@
             "requiredCSS": [
                 "../css/app.css"
             ],
-            "mtime": 1447060428000
+            "mtime": 1447061686000
         }
     ],
     "inferredProjectPaths": [],
@@ -117,7 +117,7 @@
                 "requiredCSS": [
                     "../css/app.css"
                 ],
-                "mtime": 1447060428000
+                "mtime": 1447061686000
             },
             "header": {
                 "path": "module_0/components/header/header.js",
@@ -138,22 +138,6 @@
         }
     },
     "resourcePathMap": {
-        "module_0/components/back2top/back2top.js": {
-            "path": "module_0/components/back2top/back2top.js",
-            "id": null,
-            "options": {},
-            "_requiredCSSMap": {
-                "./back2top.css": true
-            },
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "isModule": true,
-            "requiredCSS": [
-                "./back2top.css"
-            ],
-            "mtime": 1447057937000
-        },
         "module_0/components/footer/footer.js": {
             "path": "module_0/components/footer/footer.js",
             "id": null,
@@ -169,6 +153,22 @@
                 "./footer.css"
             ],
             "mtime": 1447057947000
+        },
+        "module_0/components/back2top/back2top.js": {
+            "path": "module_0/components/back2top/back2top.js",
+            "id": null,
+            "options": {},
+            "_requiredCSSMap": {
+                "./back2top.css": true
+            },
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "isModule": true,
+            "requiredCSS": [
+                "./back2top.css"
+            ],
+            "mtime": 1447057937000
         },
         "module_0/components/header/header.js": {
             "path": "module_0/components/header/header.js",
@@ -227,7 +227,7 @@
             "requiredCSS": [
                 "../css/app.css"
             ],
-            "mtime": 1447060428000
+            "mtime": 1447061686000
         }
     },
     "typeToMap": {}

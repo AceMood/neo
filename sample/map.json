@@ -3,17 +3,6 @@
     "objects": [
         {
             "type": "JS",
-            "path": "module_0/components/back2top/back2top.js",
-            "id": null,
-            "options": {},
-            "isModule": true,
-            "requiredCSS": [
-                "./back2top.css"
-            ],
-            "mtime": 1447057937000
-        },
-        {
-            "type": "JS",
             "path": "module_0/components/footer/footer.js",
             "id": null,
             "options": {},
@@ -22,6 +11,17 @@
                 "./footer.css"
             ],
             "mtime": 1447057947000
+        },
+        {
+            "type": "JS",
+            "path": "module_0/components/back2top/back2top.js",
+            "id": null,
+            "options": {},
+            "isModule": true,
+            "requiredCSS": [
+                "./back2top.css"
+            ],
+            "mtime": 1447057937000
         },
         {
             "type": "JS",
@@ -61,7 +61,7 @@
             "requiredCSS": [
                 "../css/app.css"
             ],
-            "mtime": 1447060428000
+            "mtime": 1447061686000
         }
     ]
 }
