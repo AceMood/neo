@@ -1,4 +1,4 @@
 {
-    "ns": "test",
-    "roots": ["components", "static", "page"]
+    "ns": "common",
+    "roots": ["components", "static"]
 }

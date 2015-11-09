@@ -4,18 +4,17 @@
             "path": "module_0/package.json",
             "id": "module_0/package.json",
             "data": {
-                "ns": "test",
+                "ns": "common",
                 "roots": [
                     "components",
-                    "static",
-                    "page"
+                    "static"
                 ]
             },
-            "mtime": 1447068749000
+            "mtime": 1447069480000
         },
         {
             "path": "module_0/components/back2top/back2top.js",
-            "id": "module_0/components/back2top/back2top.js",
+            "id": "common:components/back2top/back2top.js",
             "options": {},
             "_requiredCSSMap": {
                 "./back2top.css": true
@@ -31,7 +30,7 @@
         },
         {
             "path": "module_0/components/footer/footer.js",
-            "id": "module_0/components/footer/footer.js",
+            "id": "common:components/footer/footer.js",
             "options": {},
             "_requiredCSSMap": {
                 "./footer.css": true
@@ -63,7 +62,7 @@
         },
         {
             "path": "module_0/components/pageletOne/a.js",
-            "id": "module_0/components/pageletOne/a.js",
+            "id": "common:components/pageletOne/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -74,7 +73,7 @@
         },
         {
             "path": "module_0/components/pageletTwo/a.js",
-            "id": "module_0/components/pageletTwo/a.js",
+            "id": "common:components/pageletTwo/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -85,7 +84,7 @@
         },
         {
             "path": "module_0/static/js/app.js",
-            "id": "module_0/static/js/app.js",
+            "id": "common:static/js/app.js",
             "options": {},
             "_requiredCSSMap": {
                 "../css/app.css": true
@@ -117,20 +116,19 @@
                 "path": "module_0/package.json",
                 "id": "module_0/package.json",
                 "data": {
-                    "ns": "test",
+                    "ns": "common",
                     "roots": [
                         "components",
-                        "static",
-                        "page"
+                        "static"
                     ]
                 },
-                "mtime": 1447068749000
+                "mtime": 1447069480000
             }
         },
         "JS": {
-            "module_0/components/back2top/back2top.js": {
+            "common:components/back2top/back2top.js": {
                 "path": "module_0/components/back2top/back2top.js",
-                "id": "module_0/components/back2top/back2top.js",
+                "id": "common:components/back2top/back2top.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "./back2top.css": true
@@ -144,9 +142,9 @@
                 ],
                 "mtime": 1447057937000
             },
-            "module_0/components/footer/footer.js": {
+            "common:components/footer/footer.js": {
                 "path": "module_0/components/footer/footer.js",
-                "id": "module_0/components/footer/footer.js",
+                "id": "common:components/footer/footer.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "./footer.css": true
@@ -176,9 +174,9 @@
                 ],
                 "mtime": 1447057925000
             },
-            "module_0/components/pageletOne/a.js": {
+            "common:components/pageletOne/a.js": {
                 "path": "module_0/components/pageletOne/a.js",
-                "id": "module_0/components/pageletOne/a.js",
+                "id": "common:components/pageletOne/a.js",
                 "options": {},
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
@@ -187,9 +185,9 @@
                 "isModule": true,
                 "mtime": 1447053685000
             },
-            "module_0/components/pageletTwo/a.js": {
+            "common:components/pageletTwo/a.js": {
                 "path": "module_0/components/pageletTwo/a.js",
-                "id": "module_0/components/pageletTwo/a.js",
+                "id": "common:components/pageletTwo/a.js",
                 "options": {},
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
@@ -198,9 +196,9 @@
                 "isModule": true,
                 "mtime": 1447053689000
             },
-            "module_0/static/js/app.js": {
+            "common:static/js/app.js": {
                 "path": "module_0/static/js/app.js",
-                "id": "module_0/static/js/app.js",
+                "id": "common:static/js/app.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "../css/app.css": true
@@ -228,18 +226,17 @@
             "path": "module_0/package.json",
             "id": "module_0/package.json",
             "data": {
-                "ns": "test",
+                "ns": "common",
                 "roots": [
                     "components",
-                    "static",
-                    "page"
+                    "static"
                 ]
             },
-            "mtime": 1447068749000
+            "mtime": 1447069480000
         },
         "module_0/components/back2top/back2top.js": {
             "path": "module_0/components/back2top/back2top.js",
-            "id": "module_0/components/back2top/back2top.js",
+            "id": "common:components/back2top/back2top.js",
             "options": {},
             "_requiredCSSMap": {
                 "./back2top.css": true
@@ -255,7 +252,7 @@
         },
         "module_0/components/footer/footer.js": {
             "path": "module_0/components/footer/footer.js",
-            "id": "module_0/components/footer/footer.js",
+            "id": "common:components/footer/footer.js",
             "options": {},
             "_requiredCSSMap": {
                 "./footer.css": true
@@ -287,7 +284,7 @@
         },
         "module_0/components/pageletOne/a.js": {
             "path": "module_0/components/pageletOne/a.js",
-            "id": "module_0/components/pageletOne/a.js",
+            "id": "common:components/pageletOne/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -298,7 +295,7 @@
         },
         "module_0/components/pageletTwo/a.js": {
             "path": "module_0/components/pageletTwo/a.js",
-            "id": "module_0/components/pageletTwo/a.js",
+            "id": "common:components/pageletTwo/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -309,7 +306,7 @@
         },
         "module_0/static/js/app.js": {
             "path": "module_0/static/js/app.js",
-            "id": "module_0/static/js/app.js",
+            "id": "common:static/js/app.js",
             "options": {},
             "_requiredCSSMap": {
                 "../css/app.css": true
