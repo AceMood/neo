@@ -19,8 +19,7 @@ var neo = new Neo(
       new Loaders.ImageLoader()
     ],
     [
-      "module_0",
-      "module_1"
+      "module_0"
     ],
     {
       ver: '0.1'
