@@ -3,17 +3,6 @@
   "objects": [
     {
       "type": "JS",
-      "path": "module_0/components/back2top/back2top.js",
-      "id": "common:components/back2top/back2top.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./back2top.css"
-      ],
-      "mtime": 1447057937000
-    },
-    {
-      "type": "JS",
       "path": "module_0/components/footer/footer.js",
       "id": "common:components/footer/footer.js",
       "options": {},
@@ -22,14 +11,6 @@
         "./footer.css"
       ],
       "mtime": 1447057947000
-    },
-    {
-      "type": "JS",
-      "path": "module_0/components/pageletOne/a.js",
-      "id": "common:components/pageletOne/a.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447053685000
     },
     {
       "type": "JS",
@@ -44,11 +25,14 @@
     },
     {
       "type": "JS",
-      "path": "module_0/components/pageletTwo/a.js",
-      "id": "common:components/pageletTwo/a.js",
+      "path": "module_0/components/back2top/back2top.js",
+      "id": "common:components/back2top/back2top.js",
       "options": {},
       "isModule": true,
-      "mtime": 1447053689000
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447057937000
     },
     {
       "type": "JS",
@@ -64,6 +48,22 @@
         "../css/app.css"
       ],
       "mtime": 1447061686000
+    },
+    {
+      "type": "JS",
+      "path": "module_0/components/pageletOne/a.js",
+      "id": "common:components/pageletOne/a.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    {
+      "type": "JS",
+      "path": "module_0/components/pageletTwo/a.js",
+      "id": "common:components/pageletTwo/a.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447053689000
     }
   ]
 }

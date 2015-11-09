@@ -33,6 +33,4 @@ neo.update('map.json', function(map) {
 
   });
   fs.writeFileSync('rs', JSON.stringify(map, null, 2), 'utf8');
-}, {
-  forceRescan: true
 });
