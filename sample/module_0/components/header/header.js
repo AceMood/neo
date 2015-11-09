@@ -1,4 +1,9 @@
+/**
+ * @providesModule
+ */
+
+require('./header.css');
 
 exports.print = function() {
-    console.log('header initialize done!');
+  console.log('header initialize done!');
 };

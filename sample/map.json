@@ -12,9 +12,13 @@
         {
             "type": "JS",
             "path": "module_0/components/back2top/back2top.js",
-            "id": null,
+            "id": "",
             "options": {},
-            "mtime": 1446027901000
+            "isModule": true,
+            "requiredCSS": [
+                "./back2top.css"
+            ],
+            "mtime": 1447053660000
         },
         {
             "type": "CSS",
@@ -27,9 +31,13 @@
         {
             "type": "JS",
             "path": "module_0/components/footer/footer.js",
-            "id": null,
+            "id": "",
             "options": {},
-            "mtime": 1444983446000
+            "isModule": true,
+            "requiredCSS": [
+                "./footer.css"
+            ],
+            "mtime": 1447053874000
         },
         {
             "type": "CSS",
@@ -37,14 +45,42 @@
             "id": null,
             "sprites": [],
             "options": {},
-            "mtime": 1444983706000
+            "mtime": 1447053849000
         },
         {
             "type": "JS",
             "path": "module_0/components/header/header.js",
-            "id": null,
+            "id": "",
             "options": {},
-            "mtime": 1446808837000
+            "isModule": true,
+            "mtime": 1447053677000
+        },
+        {
+            "type": "CSS",
+            "path": "module_0/static/css/app.css",
+            "id": null,
+            "sprites": [],
+            "options": {},
+            "requiredCSS": [
+                "../../components/header/header.css",
+                "../../components/footer/footer.css"
+            ],
+            "mtime": 1447053928000
+        },
+        {
+            "type": "JS",
+            "path": "module_0/static/js/app.js",
+            "id": "",
+            "options": {},
+            "isModule": true,
+            "requiredModules": [
+                "../../components/header/header",
+                "../../components/footer/footer"
+            ],
+            "requiredCSS": [
+                "../css/app.css"
+            ],
+            "mtime": 1447053957000
         },
         {
             "type": "CSS",
@@ -59,7 +95,7 @@
             "path": "module_0/components/pageletOne/a.js",
             "id": null,
             "options": {},
-            "mtime": 1446901262000
+            "mtime": 1447053685000
         },
         {
             "type": "CSS",
@@ -74,22 +110,7 @@
             "path": "module_0/components/pageletTwo/a.js",
             "id": null,
             "options": {},
-            "mtime": 1446901271000
-        },
-        {
-            "type": "CSS",
-            "path": "module_0/static/css/app.css",
-            "id": null,
-            "sprites": [],
-            "options": {},
-            "mtime": 1446808835000
-        },
-        {
-            "type": "JS",
-            "path": "module_0/static/js/app.js",
-            "id": null,
-            "options": {},
-            "mtime": 1446028020000
+            "mtime": 1447053689000
         }
     ]
 }
