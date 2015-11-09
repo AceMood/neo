@@ -14,7 +14,7 @@
         },
         {
             "path": "module_0/components/back2top/back2top.js",
-            "id": "common:components/back2top/back2top.js",
+            "id": "common:back2top/back2top.js",
             "options": {},
             "_requiredCSSMap": {
                 "./back2top.css": true
@@ -30,7 +30,7 @@
         },
         {
             "path": "module_0/components/footer/footer.js",
-            "id": "common:components/footer/footer.js",
+            "id": "common:footer/footer.js",
             "options": {},
             "_requiredCSSMap": {
                 "./footer.css": true
@@ -62,7 +62,7 @@
         },
         {
             "path": "module_0/components/pageletOne/a.js",
-            "id": "common:components/pageletOne/a.js",
+            "id": "common:pageletOne/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -73,7 +73,7 @@
         },
         {
             "path": "module_0/components/pageletTwo/a.js",
-            "id": "common:components/pageletTwo/a.js",
+            "id": "common:pageletTwo/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -84,7 +84,7 @@
         },
         {
             "path": "module_0/static/js/app.js",
-            "id": "common:static/js/app.js",
+            "id": "common:js/app.js",
             "options": {},
             "_requiredCSSMap": {
                 "../css/app.css": true
@@ -126,9 +126,9 @@
             }
         },
         "JS": {
-            "common:components/back2top/back2top.js": {
+            "common:back2top/back2top.js": {
                 "path": "module_0/components/back2top/back2top.js",
-                "id": "common:components/back2top/back2top.js",
+                "id": "common:back2top/back2top.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "./back2top.css": true
@@ -142,9 +142,9 @@
                 ],
                 "mtime": 1447057937000
             },
-            "common:components/footer/footer.js": {
+            "common:footer/footer.js": {
                 "path": "module_0/components/footer/footer.js",
-                "id": "common:components/footer/footer.js",
+                "id": "common:footer/footer.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "./footer.css": true
@@ -174,9 +174,9 @@
                 ],
                 "mtime": 1447057925000
             },
-            "common:components/pageletOne/a.js": {
+            "common:pageletOne/a.js": {
                 "path": "module_0/components/pageletOne/a.js",
-                "id": "common:components/pageletOne/a.js",
+                "id": "common:pageletOne/a.js",
                 "options": {},
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
@@ -185,9 +185,9 @@
                 "isModule": true,
                 "mtime": 1447053685000
             },
-            "common:components/pageletTwo/a.js": {
+            "common:pageletTwo/a.js": {
                 "path": "module_0/components/pageletTwo/a.js",
-                "id": "common:components/pageletTwo/a.js",
+                "id": "common:pageletTwo/a.js",
                 "options": {},
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
@@ -196,9 +196,9 @@
                 "isModule": true,
                 "mtime": 1447053689000
             },
-            "common:static/js/app.js": {
+            "common:js/app.js": {
                 "path": "module_0/static/js/app.js",
-                "id": "common:static/js/app.js",
+                "id": "common:js/app.js",
                 "options": {},
                 "_requiredCSSMap": {
                     "../css/app.css": true
@@ -236,7 +236,7 @@
         },
         "module_0/components/back2top/back2top.js": {
             "path": "module_0/components/back2top/back2top.js",
-            "id": "common:components/back2top/back2top.js",
+            "id": "common:back2top/back2top.js",
             "options": {},
             "_requiredCSSMap": {
                 "./back2top.css": true
@@ -252,7 +252,7 @@
         },
         "module_0/components/footer/footer.js": {
             "path": "module_0/components/footer/footer.js",
-            "id": "common:components/footer/footer.js",
+            "id": "common:footer/footer.js",
             "options": {},
             "_requiredCSSMap": {
                 "./footer.css": true
@@ -284,7 +284,7 @@
         },
         "module_0/components/pageletOne/a.js": {
             "path": "module_0/components/pageletOne/a.js",
-            "id": "common:components/pageletOne/a.js",
+            "id": "common:pageletOne/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -295,7 +295,7 @@
         },
         "module_0/components/pageletTwo/a.js": {
             "path": "module_0/components/pageletTwo/a.js",
-            "id": "common:components/pageletTwo/a.js",
+            "id": "common:pageletTwo/a.js",
             "options": {},
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
@@ -306,7 +306,7 @@
         },
         "module_0/static/js/app.js": {
             "path": "module_0/static/js/app.js",
-            "id": "common:static/js/app.js",
+            "id": "common:js/app.js",
             "options": {},
             "_requiredCSSMap": {
                 "../css/app.css": true
