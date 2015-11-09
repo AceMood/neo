@@ -3,17 +3,6 @@
   "objects": [
     {
       "type": "JS",
-      "path": "module_0/components/footer/footer.js",
-      "id": "common:components/footer/footer.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./footer.css"
-      ],
-      "mtime": 1447057947000
-    },
-    {
-      "type": "JS",
       "path": "module_0/components/back2top/back2top.js",
       "id": "common:components/back2top/back2top.js",
       "options": {},
@@ -25,14 +14,14 @@
     },
     {
       "type": "JS",
-      "path": "module_0/components/header/header.js",
-      "id": "header",
+      "path": "module_0/components/footer/footer.js",
+      "id": "common:components/footer/footer.js",
       "options": {},
       "isModule": true,
       "requiredCSS": [
-        "./header.css"
+        "./footer.css"
       ],
-      "mtime": 1447057925000
+      "mtime": 1447057947000
     },
     {
       "type": "JS",
@@ -41,6 +30,17 @@
       "options": {},
       "isModule": true,
       "mtime": 1447053685000
+    },
+    {
+      "type": "JS",
+      "path": "module_0/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447057925000
     },
     {
       "type": "JS",

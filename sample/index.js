@@ -29,9 +29,10 @@ var neo = new Neo(
 
 neo.update('map.json', function(map) {
   // 根据返回的map对象进行业务框架定制
+  neo.storeMap('resourceMap', map, function() {
 
-  fs.writeFileSync('resourceMap', JSON.stringify(map, null, 4), 'utf8');
-
+  });
+  fs.writeFileSync('rs', JSON.stringify(map, null, 2), 'utf8');
 }, {
   forceRescan: true
 });
