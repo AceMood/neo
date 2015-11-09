@@ -1,5 +1,6 @@
 /**
- * @providesModule
+ * @provides header
+ * @module
  */
 
 require('./header.css');

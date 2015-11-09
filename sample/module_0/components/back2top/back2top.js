@@ -1,5 +1,5 @@
 /**
- * @providesModule
+ * @module
  */
 
 'use strict';
