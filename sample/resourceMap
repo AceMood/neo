@@ -2,42 +2,17 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "JS",
-      "path": "module_0/components/footer/footer.js",
-      "id": "module_0:components/footer/footer.js",
+      "type": "CSS",
+      "path": "xcom/static/css/app.css",
+      "id": "xcom:static/css/app.css",
+      "sprites": [],
       "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./footer.css"
-      ],
-      "mtime": 1447057947000
+      "mtime": 1447135616000
     },
     {
       "type": "JS",
-      "path": "module_0/components/header/header.js",
-      "id": "header",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./header.css"
-      ],
-      "mtime": 1447057925000
-    },
-    {
-      "type": "JS",
-      "path": "module_0/components/back2top/back2top.js",
-      "id": "module_0:components/back2top/back2top.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./back2top.css"
-      ],
-      "mtime": 1447057937000
-    },
-    {
-      "type": "JS",
-      "path": "module_0/static/js/app.js",
-      "id": "module_0:static/js/app.js",
+      "path": "xcom/static/js/app.js",
+      "id": "xcom:static/js/app.js",
       "options": {},
       "isModule": true,
       "requiredModules": [
@@ -47,181 +22,198 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447061686000
-    },
-    {
-      "type": "JS",
-      "path": "module_0/components/pageletOne/a.js",
-      "id": "module_0:components/pageletOne/a.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    {
-      "type": "JS",
-      "path": "module_0/components/pageletTwo/a.js",
-      "id": "module_0:components/pageletTwo/a.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447053689000
+      "mtime": 1447141352000
     },
     {
       "type": "CSS",
-      "path": "module_0/components/back2top/back2top.css",
-      "id": "module_0:components/back2top/back2top.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446028155000
-    },
-    {
-      "type": "CSS",
-      "path": "module_0/components/pageletTwo/a.css",
-      "id": "module_0:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446901454000
-    },
-    {
-      "type": "CSS",
-      "path": "module_0/components/footer/footer.css",
-      "id": "module_0:components/footer/footer.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1444983413000
-    },
-    {
-      "type": "CSS",
-      "path": "module_0/components/pageletOne/a.css",
-      "id": "module_0:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446901441000
-    },
-    {
-      "type": "CSS",
-      "path": "module_0/components/header/header.css",
-      "id": "module_0:components/header/header.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447053849000
-    },
-    {
-      "type": "CSS",
-      "path": "module_0/static/css/app.css",
-      "id": "module_0:static/css/app.css",
-      "sprites": [],
-      "options": {},
-      "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
-      ],
-      "mtime": 1447135616000
-    },
-    {
-      "type": "CSS",
-      "path": "dir/module_3/components/back2top/back2top.css",
-      "id": "module_3:components/back2top/back2top.css",
+      "path": "merchant/components/back2top/back2top.css",
+      "id": "merchant:components/back2top/back2top.css",
       "sprites": [],
       "options": {},
       "mtime": 1446028155000
     },
     {
       "type": "JS",
-      "path": "dir/module_3/components/back2top/back2top.js",
-      "id": "module_3:components/back2top/back2top.js",
+      "path": "merchant/components/back2top/back2top.js",
+      "id": "merchant:components/back2top/back2top.js",
       "options": {},
       "isModule": true,
       "requiredCSS": [
         "./back2top.css"
       ],
-      "mtime": 1447057937000
+      "mtime": 1447141330000
     },
     {
       "type": "CSS",
-      "path": "dir/module_3/components/header/header.css",
-      "id": "module_3:components/header/header.css",
+      "path": "merchant/components/footer/footer.css",
+      "id": "merchant:components/footer/footer.css",
       "sprites": [],
       "options": {},
-      "mtime": 1447053849000
+      "mtime": 1444983413000
     },
     {
       "type": "JS",
-      "path": "dir/module_3/components/header/header.js",
+      "path": "merchant/components/footer/footer.js",
+      "id": "merchant:components/footer/footer.js",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447141296000
+    },
+    {
+      "type": "JS",
+      "path": "merchant/components/header/header.js",
       "id": "header",
       "options": {},
       "isModule": true,
       "requiredCSS": [
         "./header.css"
       ],
-      "mtime": 1447057925000
+      "mtime": 1447141313000
     },
     {
       "type": "CSS",
-      "path": "dir/module_3/components/footer/footer.css",
-      "id": "module_3:components/footer/footer.css",
+      "path": "merchant/components/header/header.css",
+      "id": "merchant:components/header/header.css",
       "sprites": [],
       "options": {},
-      "mtime": 1444983413000
+      "mtime": 1447053849000
     },
     {
       "type": "JS",
-      "path": "dir/module_3/components/footer/footer.js",
-      "id": "module_3:components/footer/footer.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./footer.css"
-      ],
-      "mtime": 1447057947000
-    },
-    {
-      "type": "JS",
-      "path": "dir/module_3/components/pageletOne/a.js",
-      "id": "module_3:components/pageletOne/a.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    {
-      "type": "CSS",
-      "path": "dir/module_3/components/pageletOne/a.css",
-      "id": "module_3:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446901441000
-    },
-    {
-      "type": "CSS",
-      "path": "dir/module_3/components/pageletTwo/a.css",
-      "id": "module_3:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446901454000
-    },
-    {
-      "type": "JS",
-      "path": "dir/module_3/components/pageletTwo/a.js",
-      "id": "module_3:components/pageletTwo/a.js",
+      "path": "merchant/components/pageletTwo/a.js",
+      "id": "merchant:components/pageletTwo/a.js",
       "options": {},
       "isModule": true,
       "mtime": 1447053689000
     },
     {
       "type": "CSS",
-      "path": "dir/module_3/static/css/app.css",
-      "id": "module_3:static/css/app.css",
+      "path": "merchant/components/pageletTwo/a.css",
+      "id": "merchant:components/pageletTwo/a.css",
       "sprites": [],
       "options": {},
+      "mtime": 1446901454000
+    },
+    {
+      "type": "CSS",
+      "path": "xcom/components/back2top/back2top.css",
+      "id": "xcom:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1446028155000
+    },
+    {
+      "type": "JS",
+      "path": "xcom/components/back2top/back2top.js",
+      "id": "xcom:components/back2top/back2top.js",
+      "options": {},
+      "isModule": true,
       "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
+        "./back2top.css"
       ],
+      "mtime": 1447141330000
+    },
+    {
+      "type": "CSS",
+      "path": "merchant/components/pageletOne/a.css",
+      "id": "merchant:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1446901441000
+    },
+    {
+      "type": "JS",
+      "path": "merchant/components/pageletOne/a.js",
+      "id": "merchant:components/pageletOne/a.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    {
+      "type": "CSS",
+      "path": "xcom/components/footer/footer.css",
+      "id": "xcom:components/footer/footer.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1444983413000
+    },
+    {
+      "type": "JS",
+      "path": "xcom/components/footer/footer.js",
+      "id": "xcom:components/footer/footer.js",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447141296000
+    },
+    {
+      "type": "CSS",
+      "path": "xcom/components/header/header.css",
+      "id": "xcom:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1447053849000
+    },
+    {
+      "type": "JS",
+      "path": "xcom/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447141313000
+    },
+    {
+      "type": "CSS",
+      "path": "xcom/components/pageletOne/a.css",
+      "id": "xcom:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1446901441000
+    },
+    {
+      "type": "JS",
+      "path": "xcom/components/pageletOne/a.js",
+      "id": "xcom:components/pageletOne/a.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    {
+      "type": "JS",
+      "path": "xcom/components/pageletTwo/a.js",
+      "id": "xcom:components/pageletTwo/a.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    {
+      "type": "CSS",
+      "path": "xcom/components/pageletTwo/a.css",
+      "id": "xcom:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1446901454000
+    },
+    {
+      "type": "CSS",
+      "path": "merchant/static/css/app.css",
+      "id": "merchant:static/css/app.css",
+      "sprites": [],
+      "options": {},
       "mtime": 1447135616000
     },
     {
       "type": "JS",
-      "path": "dir/module_3/static/js/app.js",
-      "id": "module_3:static/js/app.js",
+      "path": "merchant/static/js/app.js",
+      "id": "merchant:static/js/app.js",
       "options": {},
       "isModule": true,
       "requiredModules": [
@@ -231,7 +223,23 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447061686000
+      "mtime": 1447141352000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/jQuery.js",
+      "id": "base:js/jQuery.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447143054000
+    },
+    {
+      "type": "CSS",
+      "path": "base/css/base.css",
+      "id": "base:css/base.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1447143060000
     }
   ]
 }

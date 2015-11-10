@@ -20,11 +20,8 @@ var neo = new Neo(
       new Loaders.ProjectConfigurationLoader()
     ],
     [
-      "module_0", 'dir/module_3'
-    ],
-    {
-      ver: '0.1'
-    }
+      'merchant'
+    ]
 );
 
 neo.update('map.json', function(map) {

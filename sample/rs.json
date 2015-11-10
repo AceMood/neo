@@ -1,56 +1,16 @@
 {
   "resourceCache": [
     {
-      "path": "module_0/components/footer/footer.js",
-      "id": "module_0:components/footer/footer.js",
+      "path": "xcom/static/css/app.css",
+      "id": "xcom:static/css/app.css",
+      "sprites": [],
       "options": {},
-      "_requiredCSSMap": {
-        "./footer.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./footer.css"
-      ],
-      "mtime": 1447057947000
+      "_requiredCSSMap": {},
+      "mtime": 1447135616000
     },
     {
-      "path": "module_0/components/header/header.js",
-      "id": "header",
-      "options": {},
-      "_requiredCSSMap": {
-        "./header.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./header.css"
-      ],
-      "mtime": 1447057925000
-    },
-    {
-      "path": "module_0/components/back2top/back2top.js",
-      "id": "module_0:components/back2top/back2top.js",
-      "options": {},
-      "_requiredCSSMap": {
-        "./back2top.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./back2top.css"
-      ],
-      "mtime": 1447057937000
-    },
-    {
-      "path": "module_0/static/js/app.js",
-      "id": "module_0:static/js/app.js",
+      "path": "xcom/static/js/app.js",
+      "id": "xcom:static/js/app.js",
       "options": {},
       "_requiredCSSMap": {
         "../css/app.css": true
@@ -69,96 +29,19 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447061686000
+      "mtime": 1447141352000
     },
     {
-      "path": "module_0/components/pageletOne/a.js",
-      "id": "module_0:components/pageletOne/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    {
-      "path": "module_0/components/pageletTwo/a.js",
-      "id": "module_0:components/pageletTwo/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447053689000
-    },
-    {
-      "path": "module_0/components/back2top/back2top.css",
-      "id": "module_0:components/back2top/back2top.css",
+      "path": "merchant/components/back2top/back2top.css",
+      "id": "merchant:components/back2top/back2top.css",
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
       "mtime": 1446028155000
     },
     {
-      "path": "module_0/components/pageletTwo/a.css",
-      "id": "module_0:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901454000
-    },
-    {
-      "path": "module_0/components/footer/footer.css",
-      "id": "module_0:components/footer/footer.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1444983413000
-    },
-    {
-      "path": "module_0/components/pageletOne/a.css",
-      "id": "module_0:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901441000
-    },
-    {
-      "path": "module_0/components/header/header.css",
-      "id": "module_0:components/header/header.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1447053849000
-    },
-    {
-      "path": "module_0/static/css/app.css",
-      "id": "module_0:static/css/app.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {
-        "../../components/header/header.css": true,
-        "../../components/footer/footer.css": true
-      },
-      "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
-      ],
-      "mtime": 1447135616000
-    },
-    {
-      "path": "dir/module_3/components/back2top/back2top.css",
-      "id": "module_3:components/back2top/back2top.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446028155000
-    },
-    {
-      "path": "dir/module_3/components/back2top/back2top.js",
-      "id": "module_3:components/back2top/back2top.js",
+      "path": "merchant/components/back2top/back2top.js",
+      "id": "merchant:components/back2top/back2top.js",
       "options": {},
       "_requiredCSSMap": {
         "./back2top.css": true
@@ -170,18 +53,34 @@
       "requiredCSS": [
         "./back2top.css"
       ],
-      "mtime": 1447057937000
+      "mtime": 1447141330000
     },
     {
-      "path": "dir/module_3/components/header/header.css",
-      "id": "module_3:components/header/header.css",
+      "path": "merchant/components/footer/footer.css",
+      "id": "merchant:components/footer/footer.css",
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "mtime": 1447053849000
+      "mtime": 1444983413000
     },
     {
-      "path": "dir/module_3/components/header/header.js",
+      "path": "merchant/components/footer/footer.js",
+      "id": "merchant:components/footer/footer.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447141296000
+    },
+    {
+      "path": "merchant/components/header/header.js",
       "id": "header",
       "options": {},
       "_requiredCSSMap": {
@@ -194,19 +93,89 @@
       "requiredCSS": [
         "./header.css"
       ],
-      "mtime": 1447057925000
+      "mtime": 1447141313000
     },
     {
-      "path": "dir/module_3/components/footer/footer.css",
-      "id": "module_3:components/footer/footer.css",
+      "path": "merchant/components/header/header.css",
+      "id": "merchant:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    {
+      "path": "merchant/components/pageletTwo/a.js",
+      "id": "merchant:components/pageletTwo/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    {
+      "path": "merchant/components/pageletTwo/a.css",
+      "id": "merchant:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    {
+      "path": "xcom/components/back2top/back2top.css",
+      "id": "xcom:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446028155000
+    },
+    {
+      "path": "xcom/components/back2top/back2top.js",
+      "id": "xcom:components/back2top/back2top.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./back2top.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447141330000
+    },
+    {
+      "path": "merchant/components/pageletOne/a.css",
+      "id": "merchant:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    {
+      "path": "merchant/components/pageletOne/a.js",
+      "id": "merchant:components/pageletOne/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    {
+      "path": "xcom/components/footer/footer.css",
+      "id": "xcom:components/footer/footer.css",
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
       "mtime": 1444983413000
     },
     {
-      "path": "dir/module_3/components/footer/footer.js",
-      "id": "module_3:components/footer/footer.js",
+      "path": "xcom/components/footer/footer.js",
+      "id": "xcom:components/footer/footer.js",
       "options": {},
       "_requiredCSSMap": {
         "./footer.css": true
@@ -218,11 +187,43 @@
       "requiredCSS": [
         "./footer.css"
       ],
-      "mtime": 1447057947000
+      "mtime": 1447141296000
     },
     {
-      "path": "dir/module_3/components/pageletOne/a.js",
-      "id": "module_3:components/pageletOne/a.js",
+      "path": "xcom/components/header/header.css",
+      "id": "xcom:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    {
+      "path": "xcom/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "_requiredCSSMap": {
+        "./header.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447141313000
+    },
+    {
+      "path": "xcom/components/pageletOne/a.css",
+      "id": "xcom:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    {
+      "path": "xcom/components/pageletOne/a.js",
+      "id": "xcom:components/pageletOne/a.js",
       "options": {},
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
@@ -232,24 +233,8 @@
       "mtime": 1447053685000
     },
     {
-      "path": "dir/module_3/components/pageletOne/a.css",
-      "id": "module_3:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901441000
-    },
-    {
-      "path": "dir/module_3/components/pageletTwo/a.css",
-      "id": "module_3:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901454000
-    },
-    {
-      "path": "dir/module_3/components/pageletTwo/a.js",
-      "id": "module_3:components/pageletTwo/a.js",
+      "path": "xcom/components/pageletTwo/a.js",
+      "id": "xcom:components/pageletTwo/a.js",
       "options": {},
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
@@ -259,23 +244,24 @@
       "mtime": 1447053689000
     },
     {
-      "path": "dir/module_3/static/css/app.css",
-      "id": "module_3:static/css/app.css",
+      "path": "xcom/components/pageletTwo/a.css",
+      "id": "xcom:components/pageletTwo/a.css",
       "sprites": [],
       "options": {},
-      "_requiredCSSMap": {
-        "../../components/header/header.css": true,
-        "../../components/footer/footer.css": true
-      },
-      "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
-      ],
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    {
+      "path": "merchant/static/css/app.css",
+      "id": "merchant:static/css/app.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
       "mtime": 1447135616000
     },
     {
-      "path": "dir/module_3/static/js/app.js",
-      "id": "module_3:static/js/app.js",
+      "path": "merchant/static/js/app.js",
+      "id": "merchant:static/js/app.js",
       "options": {},
       "_requiredCSSMap": {
         "../css/app.css": true
@@ -294,31 +280,200 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447061686000
+      "mtime": 1447141352000
     },
     {
-      "path": "module_0/package.json",
-      "id": "module_0/package.json",
+      "path": "base/js/jQuery.js",
+      "id": "base:js/jQuery.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447143054000
+    },
+    {
+      "path": "base/css/base.css",
+      "id": "base:css/base.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447143060000
+    },
+    {
+      "path": "xcom/package.json",
+      "id": "xcom/package.json",
       "data": {},
       "mtime": 1447129972000
     },
     {
-      "path": "dir/module_3/package.json",
-      "id": "dir/module_3/package.json",
+      "path": "merchant/package.json",
+      "id": "merchant/package.json",
       "data": {},
       "mtime": 1447129972000
+    },
+    {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
     }
   ],
   "inferredProjectPaths": [
-    "/Users/baidu/Git/neo/sample",
-    "/Users/baidu/Git/neo/sample/dir"
+    "/Users/baidu/Git/neo/sample"
   ],
   "configurationTrie": null,
   "resourceMap": {
+    "CSS": {
+      "xcom:static/css/app.css": {
+        "path": "xcom/static/css/app.css",
+        "id": "xcom:static/css/app.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447135616000
+      },
+      "merchant:components/back2top/back2top.css": {
+        "path": "merchant/components/back2top/back2top.css",
+        "id": "merchant:components/back2top/back2top.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446028155000
+      },
+      "merchant:components/footer/footer.css": {
+        "path": "merchant/components/footer/footer.css",
+        "id": "merchant:components/footer/footer.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1444983413000
+      },
+      "merchant:components/header/header.css": {
+        "path": "merchant/components/header/header.css",
+        "id": "merchant:components/header/header.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447053849000
+      },
+      "merchant:components/pageletTwo/a.css": {
+        "path": "merchant/components/pageletTwo/a.css",
+        "id": "merchant:components/pageletTwo/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901454000
+      },
+      "xcom:components/back2top/back2top.css": {
+        "path": "xcom/components/back2top/back2top.css",
+        "id": "xcom:components/back2top/back2top.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446028155000
+      },
+      "merchant:components/pageletOne/a.css": {
+        "path": "merchant/components/pageletOne/a.css",
+        "id": "merchant:components/pageletOne/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901441000
+      },
+      "xcom:components/footer/footer.css": {
+        "path": "xcom/components/footer/footer.css",
+        "id": "xcom:components/footer/footer.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1444983413000
+      },
+      "xcom:components/header/header.css": {
+        "path": "xcom/components/header/header.css",
+        "id": "xcom:components/header/header.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447053849000
+      },
+      "xcom:components/pageletOne/a.css": {
+        "path": "xcom/components/pageletOne/a.css",
+        "id": "xcom:components/pageletOne/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901441000
+      },
+      "xcom:components/pageletTwo/a.css": {
+        "path": "xcom/components/pageletTwo/a.css",
+        "id": "xcom:components/pageletTwo/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901454000
+      },
+      "merchant:static/css/app.css": {
+        "path": "merchant/static/css/app.css",
+        "id": "merchant:static/css/app.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447135616000
+      },
+      "base:css/base.css": {
+        "path": "base/css/base.css",
+        "id": "base:css/base.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447143060000
+      }
+    },
     "JS": {
-      "module_0:components/footer/footer.js": {
-        "path": "module_0/components/footer/footer.js",
-        "id": "module_0:components/footer/footer.js",
+      "xcom:static/js/app.js": {
+        "path": "xcom/static/js/app.js",
+        "id": "xcom:static/js/app.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "../css/app.css": true
+        },
+        "_requiredModuleMap": {
+          "../../components/header/header": true,
+          "../../components/footer/footer": true
+        },
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredModules": [
+          "../../components/header/header",
+          "../../components/footer/footer"
+        ],
+        "requiredCSS": [
+          "../css/app.css"
+        ],
+        "mtime": 1447141352000
+      },
+      "merchant:components/back2top/back2top.js": {
+        "path": "merchant/components/back2top/back2top.js",
+        "id": "merchant:components/back2top/back2top.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "./back2top.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredCSS": [
+          "./back2top.css"
+        ],
+        "mtime": 1447141330000
+      },
+      "merchant:components/footer/footer.js": {
+        "path": "merchant/components/footer/footer.js",
+        "id": "merchant:components/footer/footer.js",
         "options": {},
         "_requiredCSSMap": {
           "./footer.css": true
@@ -330,10 +485,10 @@
         "requiredCSS": [
           "./footer.css"
         ],
-        "mtime": 1447057947000
+        "mtime": 1447141296000
       },
       "header": {
-        "path": "module_0/components/header/header.js",
+        "path": "merchant/components/header/header.js",
         "id": "header",
         "options": {},
         "_requiredCSSMap": {
@@ -346,61 +501,11 @@
         "requiredCSS": [
           "./header.css"
         ],
-        "mtime": 1447057925000
+        "mtime": 1447141313000
       },
-      "module_0:components/back2top/back2top.js": {
-        "path": "module_0/components/back2top/back2top.js",
-        "id": "module_0:components/back2top/back2top.js",
-        "options": {},
-        "_requiredCSSMap": {
-          "./back2top.css": true
-        },
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "isModule": true,
-        "requiredCSS": [
-          "./back2top.css"
-        ],
-        "mtime": 1447057937000
-      },
-      "module_0:static/js/app.js": {
-        "path": "module_0/static/js/app.js",
-        "id": "module_0:static/js/app.js",
-        "options": {},
-        "_requiredCSSMap": {
-          "../css/app.css": true
-        },
-        "_requiredModuleMap": {
-          "../../components/header/header": true,
-          "../../components/footer/footer": true
-        },
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "isModule": true,
-        "requiredModules": [
-          "../../components/header/header",
-          "../../components/footer/footer"
-        ],
-        "requiredCSS": [
-          "../css/app.css"
-        ],
-        "mtime": 1447061686000
-      },
-      "module_0:components/pageletOne/a.js": {
-        "path": "module_0/components/pageletOne/a.js",
-        "id": "module_0:components/pageletOne/a.js",
-        "options": {},
-        "_requiredCSSMap": {},
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "isModule": true,
-        "mtime": 1447053685000
-      },
-      "module_0:components/pageletTwo/a.js": {
-        "path": "module_0/components/pageletTwo/a.js",
-        "id": "module_0:components/pageletTwo/a.js",
+      "merchant:components/pageletTwo/a.js": {
+        "path": "merchant/components/pageletTwo/a.js",
+        "id": "merchant:components/pageletTwo/a.js",
         "options": {},
         "_requiredCSSMap": {},
         "_requiredModuleMap": {},
@@ -409,9 +514,9 @@
         "isModule": true,
         "mtime": 1447053689000
       },
-      "module_3:components/back2top/back2top.js": {
-        "path": "dir/module_3/components/back2top/back2top.js",
-        "id": "module_3:components/back2top/back2top.js",
+      "xcom:components/back2top/back2top.js": {
+        "path": "xcom/components/back2top/back2top.js",
+        "id": "xcom:components/back2top/back2top.js",
         "options": {},
         "_requiredCSSMap": {
           "./back2top.css": true
@@ -423,11 +528,22 @@
         "requiredCSS": [
           "./back2top.css"
         ],
-        "mtime": 1447057937000
+        "mtime": 1447141330000
       },
-      "module_3:components/footer/footer.js": {
-        "path": "dir/module_3/components/footer/footer.js",
-        "id": "module_3:components/footer/footer.js",
+      "merchant:components/pageletOne/a.js": {
+        "path": "merchant/components/pageletOne/a.js",
+        "id": "merchant:components/pageletOne/a.js",
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447053685000
+      },
+      "xcom:components/footer/footer.js": {
+        "path": "xcom/components/footer/footer.js",
+        "id": "xcom:components/footer/footer.js",
         "options": {},
         "_requiredCSSMap": {
           "./footer.css": true
@@ -439,11 +555,11 @@
         "requiredCSS": [
           "./footer.css"
         ],
-        "mtime": 1447057947000
+        "mtime": 1447141296000
       },
-      "module_3:components/pageletOne/a.js": {
-        "path": "dir/module_3/components/pageletOne/a.js",
-        "id": "module_3:components/pageletOne/a.js",
+      "xcom:components/pageletOne/a.js": {
+        "path": "xcom/components/pageletOne/a.js",
+        "id": "xcom:components/pageletOne/a.js",
         "options": {},
         "_requiredCSSMap": {},
         "_requiredModuleMap": {},
@@ -452,9 +568,9 @@
         "isModule": true,
         "mtime": 1447053685000
       },
-      "module_3:components/pageletTwo/a.js": {
-        "path": "dir/module_3/components/pageletTwo/a.js",
-        "id": "module_3:components/pageletTwo/a.js",
+      "xcom:components/pageletTwo/a.js": {
+        "path": "xcom/components/pageletTwo/a.js",
+        "id": "xcom:components/pageletTwo/a.js",
         "options": {},
         "_requiredCSSMap": {},
         "_requiredModuleMap": {},
@@ -463,9 +579,9 @@
         "isModule": true,
         "mtime": 1447053689000
       },
-      "module_3:static/js/app.js": {
-        "path": "dir/module_3/static/js/app.js",
-        "id": "module_3:static/js/app.js",
+      "merchant:static/js/app.js": {
+        "path": "merchant/static/js/app.js",
+        "id": "merchant:static/js/app.js",
         "options": {},
         "_requiredCSSMap": {
           "../css/app.css": true
@@ -484,188 +600,53 @@
         "requiredCSS": [
           "../css/app.css"
         ],
-        "mtime": 1447061686000
-      }
-    },
-    "CSS": {
-      "module_0:components/back2top/back2top.css": {
-        "path": "module_0/components/back2top/back2top.css",
-        "id": "module_0:components/back2top/back2top.css",
-        "sprites": [],
+        "mtime": 1447141352000
+      },
+      "base:js/jQuery.js": {
+        "path": "base/js/jQuery.js",
+        "id": "base:js/jQuery.js",
         "options": {},
         "_requiredCSSMap": {},
-        "mtime": 1446028155000
-      },
-      "module_0:components/pageletTwo/a.css": {
-        "path": "module_0/components/pageletTwo/a.css",
-        "id": "module_0:components/pageletTwo/a.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1446901454000
-      },
-      "module_0:components/footer/footer.css": {
-        "path": "module_0/components/footer/footer.css",
-        "id": "module_0:components/footer/footer.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1444983413000
-      },
-      "module_0:components/pageletOne/a.css": {
-        "path": "module_0/components/pageletOne/a.css",
-        "id": "module_0:components/pageletOne/a.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1446901441000
-      },
-      "module_0:components/header/header.css": {
-        "path": "module_0/components/header/header.css",
-        "id": "module_0:components/header/header.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1447053849000
-      },
-      "module_0:static/css/app.css": {
-        "path": "module_0/static/css/app.css",
-        "id": "module_0:static/css/app.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {
-          "../../components/header/header.css": true,
-          "../../components/footer/footer.css": true
-        },
-        "requiredCSS": [
-          "../../components/header/header.css",
-          "../../components/footer/footer.css"
-        ],
-        "mtime": 1447135616000
-      },
-      "module_3:components/back2top/back2top.css": {
-        "path": "dir/module_3/components/back2top/back2top.css",
-        "id": "module_3:components/back2top/back2top.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1446028155000
-      },
-      "module_3:components/header/header.css": {
-        "path": "dir/module_3/components/header/header.css",
-        "id": "module_3:components/header/header.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1447053849000
-      },
-      "module_3:components/footer/footer.css": {
-        "path": "dir/module_3/components/footer/footer.css",
-        "id": "module_3:components/footer/footer.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1444983413000
-      },
-      "module_3:components/pageletOne/a.css": {
-        "path": "dir/module_3/components/pageletOne/a.css",
-        "id": "module_3:components/pageletOne/a.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1446901441000
-      },
-      "module_3:components/pageletTwo/a.css": {
-        "path": "dir/module_3/components/pageletTwo/a.css",
-        "id": "module_3:components/pageletTwo/a.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "mtime": 1446901454000
-      },
-      "module_3:static/css/app.css": {
-        "path": "dir/module_3/static/css/app.css",
-        "id": "module_3:static/css/app.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {
-          "../../components/header/header.css": true,
-          "../../components/footer/footer.css": true
-        },
-        "requiredCSS": [
-          "../../components/header/header.css",
-          "../../components/footer/footer.css"
-        ],
-        "mtime": 1447135616000
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447143054000
       }
     },
     "ProjectConfiguration": {
-      "module_0/package.json": {
-        "path": "module_0/package.json",
-        "id": "module_0/package.json",
+      "xcom/package.json": {
+        "path": "xcom/package.json",
+        "id": "xcom/package.json",
         "data": {},
         "mtime": 1447129972000
       },
-      "dir/module_3/package.json": {
-        "path": "dir/module_3/package.json",
-        "id": "dir/module_3/package.json",
+      "merchant/package.json": {
+        "path": "merchant/package.json",
+        "id": "merchant/package.json",
         "data": {},
         "mtime": 1447129972000
+      },
+      "base/package.json": {
+        "path": "base/package.json",
+        "id": "base/package.json",
+        "data": {},
+        "mtime": 1447143150000
       }
     }
   },
   "resourcePathMap": {
-    "module_0/components/footer/footer.js": {
-      "path": "module_0/components/footer/footer.js",
-      "id": "module_0:components/footer/footer.js",
+    "xcom/static/css/app.css": {
+      "path": "xcom/static/css/app.css",
+      "id": "xcom:static/css/app.css",
+      "sprites": [],
       "options": {},
-      "_requiredCSSMap": {
-        "./footer.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./footer.css"
-      ],
-      "mtime": 1447057947000
+      "_requiredCSSMap": {},
+      "mtime": 1447135616000
     },
-    "module_0/components/header/header.js": {
-      "path": "module_0/components/header/header.js",
-      "id": "header",
-      "options": {},
-      "_requiredCSSMap": {
-        "./header.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./header.css"
-      ],
-      "mtime": 1447057925000
-    },
-    "module_0/components/back2top/back2top.js": {
-      "path": "module_0/components/back2top/back2top.js",
-      "id": "module_0:components/back2top/back2top.js",
-      "options": {},
-      "_requiredCSSMap": {
-        "./back2top.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "requiredCSS": [
-        "./back2top.css"
-      ],
-      "mtime": 1447057937000
-    },
-    "module_0/static/js/app.js": {
-      "path": "module_0/static/js/app.js",
-      "id": "module_0:static/js/app.js",
+    "xcom/static/js/app.js": {
+      "path": "xcom/static/js/app.js",
+      "id": "xcom:static/js/app.js",
       "options": {},
       "_requiredCSSMap": {
         "../css/app.css": true
@@ -684,96 +665,19 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447061686000
+      "mtime": 1447141352000
     },
-    "module_0/components/pageletOne/a.js": {
-      "path": "module_0/components/pageletOne/a.js",
-      "id": "module_0:components/pageletOne/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    "module_0/components/pageletTwo/a.js": {
-      "path": "module_0/components/pageletTwo/a.js",
-      "id": "module_0:components/pageletTwo/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447053689000
-    },
-    "module_0/components/back2top/back2top.css": {
-      "path": "module_0/components/back2top/back2top.css",
-      "id": "module_0:components/back2top/back2top.css",
+    "merchant/components/back2top/back2top.css": {
+      "path": "merchant/components/back2top/back2top.css",
+      "id": "merchant:components/back2top/back2top.css",
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
       "mtime": 1446028155000
     },
-    "module_0/components/pageletTwo/a.css": {
-      "path": "module_0/components/pageletTwo/a.css",
-      "id": "module_0:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901454000
-    },
-    "module_0/components/footer/footer.css": {
-      "path": "module_0/components/footer/footer.css",
-      "id": "module_0:components/footer/footer.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1444983413000
-    },
-    "module_0/components/pageletOne/a.css": {
-      "path": "module_0/components/pageletOne/a.css",
-      "id": "module_0:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901441000
-    },
-    "module_0/components/header/header.css": {
-      "path": "module_0/components/header/header.css",
-      "id": "module_0:components/header/header.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1447053849000
-    },
-    "module_0/static/css/app.css": {
-      "path": "module_0/static/css/app.css",
-      "id": "module_0:static/css/app.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {
-        "../../components/header/header.css": true,
-        "../../components/footer/footer.css": true
-      },
-      "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
-      ],
-      "mtime": 1447135616000
-    },
-    "dir/module_3/components/back2top/back2top.css": {
-      "path": "dir/module_3/components/back2top/back2top.css",
-      "id": "module_3:components/back2top/back2top.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446028155000
-    },
-    "dir/module_3/components/back2top/back2top.js": {
-      "path": "dir/module_3/components/back2top/back2top.js",
-      "id": "module_3:components/back2top/back2top.js",
+    "merchant/components/back2top/back2top.js": {
+      "path": "merchant/components/back2top/back2top.js",
+      "id": "merchant:components/back2top/back2top.js",
       "options": {},
       "_requiredCSSMap": {
         "./back2top.css": true
@@ -785,18 +689,34 @@
       "requiredCSS": [
         "./back2top.css"
       ],
-      "mtime": 1447057937000
+      "mtime": 1447141330000
     },
-    "dir/module_3/components/header/header.css": {
-      "path": "dir/module_3/components/header/header.css",
-      "id": "module_3:components/header/header.css",
+    "merchant/components/footer/footer.css": {
+      "path": "merchant/components/footer/footer.css",
+      "id": "merchant:components/footer/footer.css",
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "mtime": 1447053849000
+      "mtime": 1444983413000
     },
-    "dir/module_3/components/header/header.js": {
-      "path": "dir/module_3/components/header/header.js",
+    "merchant/components/footer/footer.js": {
+      "path": "merchant/components/footer/footer.js",
+      "id": "merchant:components/footer/footer.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447141296000
+    },
+    "merchant/components/header/header.js": {
+      "path": "merchant/components/header/header.js",
       "id": "header",
       "options": {},
       "_requiredCSSMap": {
@@ -809,19 +729,89 @@
       "requiredCSS": [
         "./header.css"
       ],
-      "mtime": 1447057925000
+      "mtime": 1447141313000
     },
-    "dir/module_3/components/footer/footer.css": {
-      "path": "dir/module_3/components/footer/footer.css",
-      "id": "module_3:components/footer/footer.css",
+    "merchant/components/header/header.css": {
+      "path": "merchant/components/header/header.css",
+      "id": "merchant:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    "merchant/components/pageletTwo/a.js": {
+      "path": "merchant/components/pageletTwo/a.js",
+      "id": "merchant:components/pageletTwo/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    "merchant/components/pageletTwo/a.css": {
+      "path": "merchant/components/pageletTwo/a.css",
+      "id": "merchant:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    "xcom/components/back2top/back2top.css": {
+      "path": "xcom/components/back2top/back2top.css",
+      "id": "xcom:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446028155000
+    },
+    "xcom/components/back2top/back2top.js": {
+      "path": "xcom/components/back2top/back2top.js",
+      "id": "xcom:components/back2top/back2top.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./back2top.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447141330000
+    },
+    "merchant/components/pageletOne/a.css": {
+      "path": "merchant/components/pageletOne/a.css",
+      "id": "merchant:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    "merchant/components/pageletOne/a.js": {
+      "path": "merchant/components/pageletOne/a.js",
+      "id": "merchant:components/pageletOne/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    "xcom/components/footer/footer.css": {
+      "path": "xcom/components/footer/footer.css",
+      "id": "xcom:components/footer/footer.css",
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
       "mtime": 1444983413000
     },
-    "dir/module_3/components/footer/footer.js": {
-      "path": "dir/module_3/components/footer/footer.js",
-      "id": "module_3:components/footer/footer.js",
+    "xcom/components/footer/footer.js": {
+      "path": "xcom/components/footer/footer.js",
+      "id": "xcom:components/footer/footer.js",
       "options": {},
       "_requiredCSSMap": {
         "./footer.css": true
@@ -833,11 +823,43 @@
       "requiredCSS": [
         "./footer.css"
       ],
-      "mtime": 1447057947000
+      "mtime": 1447141296000
     },
-    "dir/module_3/components/pageletOne/a.js": {
-      "path": "dir/module_3/components/pageletOne/a.js",
-      "id": "module_3:components/pageletOne/a.js",
+    "xcom/components/header/header.css": {
+      "path": "xcom/components/header/header.css",
+      "id": "xcom:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    "xcom/components/header/header.js": {
+      "path": "xcom/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "_requiredCSSMap": {
+        "./header.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447141313000
+    },
+    "xcom/components/pageletOne/a.css": {
+      "path": "xcom/components/pageletOne/a.css",
+      "id": "xcom:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    "xcom/components/pageletOne/a.js": {
+      "path": "xcom/components/pageletOne/a.js",
+      "id": "xcom:components/pageletOne/a.js",
       "options": {},
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
@@ -846,25 +868,9 @@
       "isModule": true,
       "mtime": 1447053685000
     },
-    "dir/module_3/components/pageletOne/a.css": {
-      "path": "dir/module_3/components/pageletOne/a.css",
-      "id": "module_3:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901441000
-    },
-    "dir/module_3/components/pageletTwo/a.css": {
-      "path": "dir/module_3/components/pageletTwo/a.css",
-      "id": "module_3:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "mtime": 1446901454000
-    },
-    "dir/module_3/components/pageletTwo/a.js": {
-      "path": "dir/module_3/components/pageletTwo/a.js",
-      "id": "module_3:components/pageletTwo/a.js",
+    "xcom/components/pageletTwo/a.js": {
+      "path": "xcom/components/pageletTwo/a.js",
+      "id": "xcom:components/pageletTwo/a.js",
       "options": {},
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
@@ -873,24 +879,25 @@
       "isModule": true,
       "mtime": 1447053689000
     },
-    "dir/module_3/static/css/app.css": {
-      "path": "dir/module_3/static/css/app.css",
-      "id": "module_3:static/css/app.css",
+    "xcom/components/pageletTwo/a.css": {
+      "path": "xcom/components/pageletTwo/a.css",
+      "id": "xcom:components/pageletTwo/a.css",
       "sprites": [],
       "options": {},
-      "_requiredCSSMap": {
-        "../../components/header/header.css": true,
-        "../../components/footer/footer.css": true
-      },
-      "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
-      ],
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    "merchant/static/css/app.css": {
+      "path": "merchant/static/css/app.css",
+      "id": "merchant:static/css/app.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
       "mtime": 1447135616000
     },
-    "dir/module_3/static/js/app.js": {
-      "path": "dir/module_3/static/js/app.js",
-      "id": "module_3:static/js/app.js",
+    "merchant/static/js/app.js": {
+      "path": "merchant/static/js/app.js",
+      "id": "merchant:static/js/app.js",
       "options": {},
       "_requiredCSSMap": {
         "../css/app.css": true
@@ -909,19 +916,44 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447061686000
+      "mtime": 1447141352000
     },
-    "module_0/package.json": {
-      "path": "module_0/package.json",
-      "id": "module_0/package.json",
+    "base/js/jQuery.js": {
+      "path": "base/js/jQuery.js",
+      "id": "base:js/jQuery.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447143054000
+    },
+    "base/css/base.css": {
+      "path": "base/css/base.css",
+      "id": "base:css/base.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447143060000
+    },
+    "xcom/package.json": {
+      "path": "xcom/package.json",
+      "id": "xcom/package.json",
       "data": {},
       "mtime": 1447129972000
     },
-    "dir/module_3/package.json": {
-      "path": "dir/module_3/package.json",
-      "id": "dir/module_3/package.json",
+    "merchant/package.json": {
+      "path": "merchant/package.json",
+      "id": "merchant/package.json",
       "data": {},
       "mtime": 1447129972000
+    },
+    "base/package.json": {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
     }
   },
   "typeToMap": {}
