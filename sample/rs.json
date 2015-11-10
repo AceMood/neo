@@ -1,0 +1,928 @@
+{
+  "resourceCache": [
+    {
+      "path": "module_0/components/footer/footer.js",
+      "id": "module_0:components/footer/footer.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447057947000
+    },
+    {
+      "path": "module_0/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "_requiredCSSMap": {
+        "./header.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447057925000
+    },
+    {
+      "path": "module_0/components/back2top/back2top.js",
+      "id": "module_0:components/back2top/back2top.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./back2top.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447057937000
+    },
+    {
+      "path": "module_0/static/js/app.js",
+      "id": "module_0:static/js/app.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "../css/app.css": true
+      },
+      "_requiredModuleMap": {
+        "../../components/header/header": true,
+        "../../components/footer/footer": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredModules": [
+        "../../components/header/header",
+        "../../components/footer/footer"
+      ],
+      "requiredCSS": [
+        "../css/app.css"
+      ],
+      "mtime": 1447061686000
+    },
+    {
+      "path": "module_0/components/pageletOne/a.js",
+      "id": "module_0:components/pageletOne/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    {
+      "path": "module_0/components/pageletTwo/a.js",
+      "id": "module_0:components/pageletTwo/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    {
+      "path": "module_0/components/back2top/back2top.css",
+      "id": "module_0:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446028155000
+    },
+    {
+      "path": "module_0/components/pageletTwo/a.css",
+      "id": "module_0:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    {
+      "path": "module_0/components/footer/footer.css",
+      "id": "module_0:components/footer/footer.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1444983413000
+    },
+    {
+      "path": "module_0/components/pageletOne/a.css",
+      "id": "module_0:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    {
+      "path": "module_0/components/header/header.css",
+      "id": "module_0:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    {
+      "path": "module_0/static/css/app.css",
+      "id": "module_0:static/css/app.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1447135616000
+    },
+    {
+      "path": "dir/module_3/components/back2top/back2top.css",
+      "id": "module_3:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446028155000
+    },
+    {
+      "path": "dir/module_3/components/back2top/back2top.js",
+      "id": "module_3:components/back2top/back2top.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./back2top.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447057937000
+    },
+    {
+      "path": "dir/module_3/components/header/header.css",
+      "id": "module_3:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    {
+      "path": "dir/module_3/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "_requiredCSSMap": {
+        "./header.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447057925000
+    },
+    {
+      "path": "dir/module_3/components/footer/footer.css",
+      "id": "module_3:components/footer/footer.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1444983413000
+    },
+    {
+      "path": "dir/module_3/components/footer/footer.js",
+      "id": "module_3:components/footer/footer.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447057947000
+    },
+    {
+      "path": "dir/module_3/components/pageletOne/a.js",
+      "id": "module_3:components/pageletOne/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    {
+      "path": "dir/module_3/components/pageletOne/a.css",
+      "id": "module_3:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    {
+      "path": "dir/module_3/components/pageletTwo/a.css",
+      "id": "module_3:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    {
+      "path": "dir/module_3/components/pageletTwo/a.js",
+      "id": "module_3:components/pageletTwo/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    {
+      "path": "dir/module_3/static/css/app.css",
+      "id": "module_3:static/css/app.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1447135616000
+    },
+    {
+      "path": "dir/module_3/static/js/app.js",
+      "id": "module_3:static/js/app.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "../css/app.css": true
+      },
+      "_requiredModuleMap": {
+        "../../components/header/header": true,
+        "../../components/footer/footer": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredModules": [
+        "../../components/header/header",
+        "../../components/footer/footer"
+      ],
+      "requiredCSS": [
+        "../css/app.css"
+      ],
+      "mtime": 1447061686000
+    },
+    {
+      "path": "module_0/package.json",
+      "id": "module_0/package.json",
+      "data": {},
+      "mtime": 1447129972000
+    },
+    {
+      "path": "dir/module_3/package.json",
+      "id": "dir/module_3/package.json",
+      "data": {},
+      "mtime": 1447129972000
+    }
+  ],
+  "inferredProjectPaths": [
+    "/Users/baidu/Git/neo/sample",
+    "/Users/baidu/Git/neo/sample/dir"
+  ],
+  "configurationTrie": null,
+  "resourceMap": {
+    "JS": {
+      "module_0:components/footer/footer.js": {
+        "path": "module_0/components/footer/footer.js",
+        "id": "module_0:components/footer/footer.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "./footer.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredCSS": [
+          "./footer.css"
+        ],
+        "mtime": 1447057947000
+      },
+      "header": {
+        "path": "module_0/components/header/header.js",
+        "id": "header",
+        "options": {},
+        "_requiredCSSMap": {
+          "./header.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredCSS": [
+          "./header.css"
+        ],
+        "mtime": 1447057925000
+      },
+      "module_0:components/back2top/back2top.js": {
+        "path": "module_0/components/back2top/back2top.js",
+        "id": "module_0:components/back2top/back2top.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "./back2top.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredCSS": [
+          "./back2top.css"
+        ],
+        "mtime": 1447057937000
+      },
+      "module_0:static/js/app.js": {
+        "path": "module_0/static/js/app.js",
+        "id": "module_0:static/js/app.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "../css/app.css": true
+        },
+        "_requiredModuleMap": {
+          "../../components/header/header": true,
+          "../../components/footer/footer": true
+        },
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredModules": [
+          "../../components/header/header",
+          "../../components/footer/footer"
+        ],
+        "requiredCSS": [
+          "../css/app.css"
+        ],
+        "mtime": 1447061686000
+      },
+      "module_0:components/pageletOne/a.js": {
+        "path": "module_0/components/pageletOne/a.js",
+        "id": "module_0:components/pageletOne/a.js",
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447053685000
+      },
+      "module_0:components/pageletTwo/a.js": {
+        "path": "module_0/components/pageletTwo/a.js",
+        "id": "module_0:components/pageletTwo/a.js",
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447053689000
+      },
+      "module_3:components/back2top/back2top.js": {
+        "path": "dir/module_3/components/back2top/back2top.js",
+        "id": "module_3:components/back2top/back2top.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "./back2top.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredCSS": [
+          "./back2top.css"
+        ],
+        "mtime": 1447057937000
+      },
+      "module_3:components/footer/footer.js": {
+        "path": "dir/module_3/components/footer/footer.js",
+        "id": "module_3:components/footer/footer.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "./footer.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredCSS": [
+          "./footer.css"
+        ],
+        "mtime": 1447057947000
+      },
+      "module_3:components/pageletOne/a.js": {
+        "path": "dir/module_3/components/pageletOne/a.js",
+        "id": "module_3:components/pageletOne/a.js",
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447053685000
+      },
+      "module_3:components/pageletTwo/a.js": {
+        "path": "dir/module_3/components/pageletTwo/a.js",
+        "id": "module_3:components/pageletTwo/a.js",
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447053689000
+      },
+      "module_3:static/js/app.js": {
+        "path": "dir/module_3/static/js/app.js",
+        "id": "module_3:static/js/app.js",
+        "options": {},
+        "_requiredCSSMap": {
+          "../css/app.css": true
+        },
+        "_requiredModuleMap": {
+          "../../components/header/header": true,
+          "../../components/footer/footer": true
+        },
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "requiredModules": [
+          "../../components/header/header",
+          "../../components/footer/footer"
+        ],
+        "requiredCSS": [
+          "../css/app.css"
+        ],
+        "mtime": 1447061686000
+      }
+    },
+    "CSS": {
+      "module_0:components/back2top/back2top.css": {
+        "path": "module_0/components/back2top/back2top.css",
+        "id": "module_0:components/back2top/back2top.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446028155000
+      },
+      "module_0:components/pageletTwo/a.css": {
+        "path": "module_0/components/pageletTwo/a.css",
+        "id": "module_0:components/pageletTwo/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901454000
+      },
+      "module_0:components/footer/footer.css": {
+        "path": "module_0/components/footer/footer.css",
+        "id": "module_0:components/footer/footer.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1444983413000
+      },
+      "module_0:components/pageletOne/a.css": {
+        "path": "module_0/components/pageletOne/a.css",
+        "id": "module_0:components/pageletOne/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901441000
+      },
+      "module_0:components/header/header.css": {
+        "path": "module_0/components/header/header.css",
+        "id": "module_0:components/header/header.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447053849000
+      },
+      "module_0:static/css/app.css": {
+        "path": "module_0/static/css/app.css",
+        "id": "module_0:static/css/app.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {
+          "../../components/header/header.css": true,
+          "../../components/footer/footer.css": true
+        },
+        "requiredCSS": [
+          "../../components/header/header.css",
+          "../../components/footer/footer.css"
+        ],
+        "mtime": 1447135616000
+      },
+      "module_3:components/back2top/back2top.css": {
+        "path": "dir/module_3/components/back2top/back2top.css",
+        "id": "module_3:components/back2top/back2top.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446028155000
+      },
+      "module_3:components/header/header.css": {
+        "path": "dir/module_3/components/header/header.css",
+        "id": "module_3:components/header/header.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447053849000
+      },
+      "module_3:components/footer/footer.css": {
+        "path": "dir/module_3/components/footer/footer.css",
+        "id": "module_3:components/footer/footer.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1444983413000
+      },
+      "module_3:components/pageletOne/a.css": {
+        "path": "dir/module_3/components/pageletOne/a.css",
+        "id": "module_3:components/pageletOne/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901441000
+      },
+      "module_3:components/pageletTwo/a.css": {
+        "path": "dir/module_3/components/pageletTwo/a.css",
+        "id": "module_3:components/pageletTwo/a.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1446901454000
+      },
+      "module_3:static/css/app.css": {
+        "path": "dir/module_3/static/css/app.css",
+        "id": "module_3:static/css/app.css",
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {
+          "../../components/header/header.css": true,
+          "../../components/footer/footer.css": true
+        },
+        "requiredCSS": [
+          "../../components/header/header.css",
+          "../../components/footer/footer.css"
+        ],
+        "mtime": 1447135616000
+      }
+    },
+    "ProjectConfiguration": {
+      "module_0/package.json": {
+        "path": "module_0/package.json",
+        "id": "module_0/package.json",
+        "data": {},
+        "mtime": 1447129972000
+      },
+      "dir/module_3/package.json": {
+        "path": "dir/module_3/package.json",
+        "id": "dir/module_3/package.json",
+        "data": {},
+        "mtime": 1447129972000
+      }
+    }
+  },
+  "resourcePathMap": {
+    "module_0/components/footer/footer.js": {
+      "path": "module_0/components/footer/footer.js",
+      "id": "module_0:components/footer/footer.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447057947000
+    },
+    "module_0/components/header/header.js": {
+      "path": "module_0/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "_requiredCSSMap": {
+        "./header.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447057925000
+    },
+    "module_0/components/back2top/back2top.js": {
+      "path": "module_0/components/back2top/back2top.js",
+      "id": "module_0:components/back2top/back2top.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./back2top.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447057937000
+    },
+    "module_0/static/js/app.js": {
+      "path": "module_0/static/js/app.js",
+      "id": "module_0:static/js/app.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "../css/app.css": true
+      },
+      "_requiredModuleMap": {
+        "../../components/header/header": true,
+        "../../components/footer/footer": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredModules": [
+        "../../components/header/header",
+        "../../components/footer/footer"
+      ],
+      "requiredCSS": [
+        "../css/app.css"
+      ],
+      "mtime": 1447061686000
+    },
+    "module_0/components/pageletOne/a.js": {
+      "path": "module_0/components/pageletOne/a.js",
+      "id": "module_0:components/pageletOne/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    "module_0/components/pageletTwo/a.js": {
+      "path": "module_0/components/pageletTwo/a.js",
+      "id": "module_0:components/pageletTwo/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    "module_0/components/back2top/back2top.css": {
+      "path": "module_0/components/back2top/back2top.css",
+      "id": "module_0:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446028155000
+    },
+    "module_0/components/pageletTwo/a.css": {
+      "path": "module_0/components/pageletTwo/a.css",
+      "id": "module_0:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    "module_0/components/footer/footer.css": {
+      "path": "module_0/components/footer/footer.css",
+      "id": "module_0:components/footer/footer.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1444983413000
+    },
+    "module_0/components/pageletOne/a.css": {
+      "path": "module_0/components/pageletOne/a.css",
+      "id": "module_0:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    "module_0/components/header/header.css": {
+      "path": "module_0/components/header/header.css",
+      "id": "module_0:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    "module_0/static/css/app.css": {
+      "path": "module_0/static/css/app.css",
+      "id": "module_0:static/css/app.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1447135616000
+    },
+    "dir/module_3/components/back2top/back2top.css": {
+      "path": "dir/module_3/components/back2top/back2top.css",
+      "id": "module_3:components/back2top/back2top.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446028155000
+    },
+    "dir/module_3/components/back2top/back2top.js": {
+      "path": "dir/module_3/components/back2top/back2top.js",
+      "id": "module_3:components/back2top/back2top.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./back2top.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447057937000
+    },
+    "dir/module_3/components/header/header.css": {
+      "path": "dir/module_3/components/header/header.css",
+      "id": "module_3:components/header/header.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447053849000
+    },
+    "dir/module_3/components/header/header.js": {
+      "path": "dir/module_3/components/header/header.js",
+      "id": "header",
+      "options": {},
+      "_requiredCSSMap": {
+        "./header.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./header.css"
+      ],
+      "mtime": 1447057925000
+    },
+    "dir/module_3/components/footer/footer.css": {
+      "path": "dir/module_3/components/footer/footer.css",
+      "id": "module_3:components/footer/footer.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1444983413000
+    },
+    "dir/module_3/components/footer/footer.js": {
+      "path": "dir/module_3/components/footer/footer.js",
+      "id": "module_3:components/footer/footer.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "mtime": 1447057947000
+    },
+    "dir/module_3/components/pageletOne/a.js": {
+      "path": "dir/module_3/components/pageletOne/a.js",
+      "id": "module_3:components/pageletOne/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053685000
+    },
+    "dir/module_3/components/pageletOne/a.css": {
+      "path": "dir/module_3/components/pageletOne/a.css",
+      "id": "module_3:components/pageletOne/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901441000
+    },
+    "dir/module_3/components/pageletTwo/a.css": {
+      "path": "dir/module_3/components/pageletTwo/a.css",
+      "id": "module_3:components/pageletTwo/a.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1446901454000
+    },
+    "dir/module_3/components/pageletTwo/a.js": {
+      "path": "dir/module_3/components/pageletTwo/a.js",
+      "id": "module_3:components/pageletTwo/a.js",
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447053689000
+    },
+    "dir/module_3/static/css/app.css": {
+      "path": "dir/module_3/static/css/app.css",
+      "id": "module_3:static/css/app.css",
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1447135616000
+    },
+    "dir/module_3/static/js/app.js": {
+      "path": "dir/module_3/static/js/app.js",
+      "id": "module_3:static/js/app.js",
+      "options": {},
+      "_requiredCSSMap": {
+        "../css/app.css": true
+      },
+      "_requiredModuleMap": {
+        "../../components/header/header": true,
+        "../../components/footer/footer": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "requiredModules": [
+        "../../components/header/header",
+        "../../components/footer/footer"
+      ],
+      "requiredCSS": [
+        "../css/app.css"
+      ],
+      "mtime": 1447061686000
+    },
+    "module_0/package.json": {
+      "path": "module_0/package.json",
+      "id": "module_0/package.json",
+      "data": {},
+      "mtime": 1447129972000
+    },
+    "dir/module_3/package.json": {
+      "path": "dir/module_3/package.json",
+      "id": "dir/module_3/package.json",
+      "data": {},
+      "mtime": 1447129972000
+    }
+  },
+  "typeToMap": {}
+}

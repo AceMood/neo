@@ -15,12 +15,12 @@ var Loaders = Neo.Loaders;
 var neo = new Neo(
     [
       new Loaders.JSLoader(),
-      //new Loaders.CSSLoader(),
+      new Loaders.CSSLoader(),
       new Loaders.ImageLoader(),
       new Loaders.ProjectConfigurationLoader()
     ],
     [
-      "module_0"
+      "module_0", 'dir/module_3'
     ],
     {
       ver: '0.1'
@@ -32,5 +32,5 @@ neo.update('map.json', function(map) {
   neo.storeMap('resourceMap', map, function() {
 
   });
-  fs.writeFileSync('rs', JSON.stringify(map, null, 2), 'utf8');
+  fs.writeFileSync('rs.json', JSON.stringify(map, null, 2), 'utf8');
 });
