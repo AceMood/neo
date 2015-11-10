@@ -18,7 +18,7 @@
 
 describe('docblock', function() {
   var os = require('os');
-  var docblock = require('../lib/parse/docblock');
+  var docblock = require('../lib/parser/docblock');
 
   it('should extract valid docblock', function() {
     var code = '/**'+os.EOL+' * @providesModule foo'+os.EOL+'*/'+os.EOL+'var x = foo;';
@@ -58,20 +58,6 @@ describe('docblock', function() {
       ['css', 'a b'],
       ['preserve-whitespace', '']
     ]);
-  });
-
-  it('should parse directives out of a docblock as an object', function() {
-    var code =
-      '/**'+os.EOL+'' +
-      ' * @providesModule foo'+os.EOL+'' +
-      ' * @css a b'+os.EOL+'' +
-      ' * @preserve-whitespace'+os.EOL+'' +
-      ' */';
-    expect(docblock.parseAsObject(code)).toEqual({
-      'providesModule': 'foo',
-      'css': 'a b',
-      'preserve-whitespace': ''
-    });
   });
 
   it('should parse directives out of a docblock with comments', function() {

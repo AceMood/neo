@@ -19,7 +19,7 @@ describe("getImageSize", function() {
   var path = require('path');
   var fs = require('fs');
   var root = path.join(__dirname, '..', '__test_data__', 'Image');
-  var getImageSize = require('../lib/parse/getImageSize');
+  var getImageSize = require('../lib/parser/getImageSize');
 
   it('should parse gif image size', function() {
     var buffer = fs.readFileSync(path.join(root, '200x100.gif'));
