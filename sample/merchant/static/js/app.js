@@ -5,8 +5,8 @@
 
 'use strict';
 
-var header = require('../../components/header/header');
-var footer = require('../../components/footer/footer');
+var header = require('../../components/header/header.js');
+var footer = require('../../components/footer/footer.js');
 
 header.init();
 footer.init();
