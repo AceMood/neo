@@ -3,19 +3,24 @@
     {
       "path": "merchant/components/footer/footer.css",
       "id": "merchant:components/footer/footer.css",
+      "_file": {
+        "path": "merchant/components/footer/footer.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.css",
+        "content": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/footer/footer.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.css",
-        "content": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}"
-      },
       "mtime": 1444983413000
     },
     {
       "path": "merchant/components/footer/footer.js",
       "id": "merchant:components/footer/footer.js",
+      "_file": {
+        "path": "merchant/components/footer/footer.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.js",
+        "content": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};"
+      },
       "options": {},
       "_requiredCSSMap": {
         "./footer.css": true
@@ -24,11 +29,6 @@
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {
         "./footer.css": "merchant:components/footer/footer.css"
-      },
-      "_file": {
-        "path": "merchant/components/footer/footer.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.js",
-        "content": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};"
       },
       "isModule": true,
       "requiredCSS": [
@@ -39,6 +39,11 @@
     {
       "path": "merchant/components/back2top/back2top.js",
       "id": "merchant:components/back2top/back2top.js",
+      "_file": {
+        "path": "merchant/components/back2top/back2top.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.js",
+        "content": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};"
+      },
       "options": {},
       "_requiredCSSMap": {
         "./back2top.css": true
@@ -47,11 +52,6 @@
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {
         "./back2top.css": "merchant:components/back2top/back2top.css"
-      },
-      "_file": {
-        "path": "merchant/components/back2top/back2top.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.js",
-        "content": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};"
       },
       "isModule": true,
       "requiredCSS": [
@@ -62,32 +62,37 @@
     {
       "path": "merchant/components/back2top/back2top.css",
       "id": "merchant:components/back2top/back2top.css",
+      "_file": {
+        "path": "merchant/components/back2top/back2top.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.css",
+        "content": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/back2top/back2top.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.css",
-        "content": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}"
-      },
       "mtime": 1446028155000
     },
     {
       "path": "merchant/components/header/header.css",
       "id": "merchant:components/header/header.css",
+      "_file": {
+        "path": "merchant/components/header/header.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/header.css",
+        "content": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/header/header.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/header.css",
-        "content": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}"
-      },
       "mtime": 1447153443000
     },
     {
       "path": "merchant/components/header/header.js",
       "id": "header",
+      "_file": {
+        "path": "merchant/components/header/header.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/header.js",
+        "content": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};"
+      },
       "options": {},
       "_requiredCSSMap": {
         "./header.css": true
@@ -97,11 +102,6 @@
       "_requiredTextToResolvedID": {
         "./header.css": "merchant:components/header/header.css"
       },
-      "_file": {
-        "path": "merchant/components/header/header.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/header.js",
-        "content": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};"
-      },
       "isModule": true,
       "requiredCSS": [
         "merchant:components/header/header.css"
@@ -109,66 +109,13 @@
       "mtime": 1447141313000
     },
     {
-      "path": "merchant/components/pageletTwo/a.css",
-      "id": "merchant:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/pageletTwo/a.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletTwo/a.css",
-        "content": ""
-      },
-      "mtime": 1446901454000
-    },
-    {
-      "path": "merchant/components/pageletOne/a.css",
-      "id": "merchant:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/pageletOne/a.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletOne/a.css",
-        "content": ""
-      },
-      "mtime": 1446901441000
-    },
-    {
-      "path": "merchant/components/pageletOne/a.js",
-      "id": "merchant:components/pageletOne/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "_file": {
-        "path": "merchant/components/pageletOne/a.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletOne/a.js",
-        "content": ""
-      },
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    {
-      "path": "merchant/components/pageletTwo/a.js",
-      "id": "merchant:components/pageletTwo/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "_file": {
-        "path": "merchant/components/pageletTwo/a.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletTwo/a.js",
-        "content": ""
-      },
-      "isModule": true,
-      "mtime": 1447053689000
-    },
-    {
       "path": "merchant/static/js/app.js",
       "id": "merchant:static/js/app.js",
+      "_file": {
+        "path": "merchant/static/js/app.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/static/js/app.js",
+        "content": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar header = require('../../components/header/header.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();"
+      },
       "options": {},
       "_requiredCSSMap": {
         "../css/app.css": true
@@ -183,11 +130,6 @@
         "../../components/footer/footer.js": "merchant:components/footer/footer.js",
         "../css/app.css": "merchant:static/css/app.css"
       },
-      "_file": {
-        "path": "merchant/static/js/app.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/static/js/app.js",
-        "content": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar header = require('../../components/header/header.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();"
-      },
       "isModule": true,
       "requiredModules": [
         "header",
@@ -201,15 +143,34 @@
     {
       "path": "merchant/static/css/app.css",
       "id": "merchant:static/css/app.css",
+      "_file": {
+        "path": "merchant/static/css/app.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/static/css/app.css",
+        "content": "/**\n * @requires ../../components/header/header.css\n * @requires ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/static/css/app.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/static/css/app.css",
-        "content": "/**\n * @requires ../../components/header/header.css\n * @requires ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}"
-      },
       "mtime": 1447135616000
+    },
+    {
+      "path": "merchant/components/header/logo.png",
+      "id": "merchant/components/header/logo.png",
+      "_file": {
+        "path": "merchant/components/header/logo.png",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/logo.png",
+        "content": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000��\u0019�\u0000\u0000\u0001�PLTE������yyy���!�߉��k�����)�����\u0019��\u0011�܅��������������������������e�����v����Ϫ�����ooo��������\u0002y����������kkk1��V��z��9�������񭭭���D�����.�ᣣ�������\u0004z����mmm������s�����������uuu���\u001c��c��[�瀀�\b|�}}}���\r�������������4��Q�杝�lll\u0016�݇��_�����\u0014��<�����a�貲����������h����񼼼��ٟ�����������S�����\u000f�����ggg���%��\u000b~������󾾾X�珏�H��������#��A��\u001f�ޘ�𚚚���o��N����򹹹\u0000x�fff���\f��y\u0000\u0000\u0004[IDATX����_\u001aG\u0010��P\u0003'\u0011����P\"�$Jͥ%�\bhjԚ�(&��\u0000>����4�������ݻ[D���~>��S��\u001bvn�73;��شRl���\u0000M��~Ltǚj!1���}4W��ɋ�=qc�b�Y��\u001c��nF��5/���\u001b��;lv,\u001d�T\u0006+�o�:/\u001f�Js���t��)W�eq�f����N#J���Z�~�f�f��e��-y�ݙ\u0005\u001aə��]?w������lqb`,���\u0004v��g�2K~��:\u0019�\u0010\\D���\r�S϶�\\q,?$c_A�5\u0004ie�3��>o���6\u0019]\u0005=*Fs�\u000e8%i^ ^6���\u0004\t��#�R[��^C�\u00165�2\u0006��\fԃ#J�ٰ��\u001e\u0011�\u0002��&uv\u000f&���1Jv�]P}Pv�\"�i��/`c�\u001a�\u0014XB��.\u0001Z\u0015\u0010$=>�m�3���D�\u0003�M��\u0011\u0002��\u0001SR�˦G\u0010j�\u0000-a�CҶ��������1\u0001\u001a\u0014E��\u0013��mc\u0019�~�\"\u0001\u001a\u0014V�t��3ELg3F\n������b�O�4\u000bշk�՞\u0000M5|Ӿ`񙙸m0�h�|��urk�p�;�\u0010~ޣ?�X=\u0014\\�<;��\u0001rH���ɱ����\u000b�'\u00024H�S�L*�����H�6@}��\\H�U�\u001e�.l��\u0013IM���&@#/V�^˶����gjH¯E�\u0013\t��$u\u0010Yi��9�Ḁ̄�z��E�d�\bUUWcn=\u001b~!��\u00119�볬�$�Coo���vӥL@\u0015\u0015\u0002b}��T�Սq��.l�4�N�.�0�5lou�İt����5}JV�`��tSJ�ׯ�\u0019�J{�(��X�9|���7��%b\u0017��b����8�Ro\u0019��.葖\u0015\u000b�7�\bK���1֗��:�\fw��2�ק�������/r�ڄ��]s�\u001d�/��v���HZ��ۓ����;`��l��ϐj��5���\u0015J��?��J�KG�^�t���uC%)�Go�\u0003�iO����u\f���\u0014<�78y\"@C�lj\u001e$=.�> �Q*=���ư\u0000�\b\"�0y�\u0003-hNǴ\u0001&?\n�~�`\t�!x�p\u000f�\u001e|��gP8\u001e�{���\u0019\u0017�m�!�J\u0018\u0015��Ri\u0000\u000fΡ��p\u0000�D:'D���_a�\u0016B\u001eM{\u0004�\u001fcc��)wz�h�\u0014�;���7�m\u000e\u0005/�&\u0016��Dŋi�9L[B�'h\u0006�:�٧\u0019\u0005Y��\u001b�����I��ak\t/���m�-\u0018F�W�\u0005;�=\u001aB?�u�\n���T�t�$=��#IK7�\u001b-�bуi�\u0007hk�-�\u0003��MCĪW2b����\u0016���^9�b��h\u001e^�\u0006>�O\u0006?1�\u001f�\u0015��^ޞ�����\r\u0017����#Q�\u0000\u0000\u0000\u0000IEND�B`�"
+      },
+      "networkSize": 1568,
+      "width": 77,
+      "height": 77,
+      "mtime": 1446450675000
+    },
+    {
+      "path": "xcom/package.json",
+      "id": "xcom/package.json",
+      "data": {},
+      "mtime": 1447129972000
     },
     {
       "path": "merchant/package.json",
@@ -218,17 +179,91 @@
       "mtime": 1447129972000
     },
     {
-      "path": "merchant/components/header/logo.png",
-      "id": "merchant/components/header/logo.png",
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
+    },
+    {
+      "path": "xcom/Ajax/ajax.js",
+      "id": "xcom:Ajax/ajax.js",
       "_file": {
-        "path": "merchant/components/header/logo.png",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/logo.png",
-        "content": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000��\u0019�\u0000\u0000\u0001�PLTE������yyy���!�߉��k�����)�����\u0019��\u0011�܅��������������������������e�����v����Ϫ�����ooo��������\u0002y����������kkk1��V��z��9�������񭭭���D�����.�ᣣ�������\u0004z����mmm������s�����������uuu���\u001c��c��[�瀀�\b|�}}}���\r�������������4��Q�杝�lll\u0016�݇��_�����\u0014��<�����a�貲����������h����񼼼��ٟ�����������S�����\u000f�����ggg���%��\u000b~������󾾾X�珏�H��������#��A��\u001f�ޘ�𚚚���o��N����򹹹\u0000x�fff���\f��y\u0000\u0000\u0004[IDATX����_\u001aG\u0010��P\u0003'\u0011����P\"�$Jͥ%�\bhjԚ�(&��\u0000>����4�������ݻ[D���~>��S��\u001bvn�73;��شRl���\u0000M��~Ltǚj!1���}4W��ɋ�=qc�b�Y��\u001c��nF��5/���\u001b��;lv,\u001d�T\u0006+�o�:/\u001f�Js���t��)W�eq�f����N#J���Z�~�f�f��e��-y�ݙ\u0005\u001aə��]?w������lqb`,���\u0004v��g�2K~��:\u0019�\u0010\\D���\r�S϶�\\q,?$c_A�5\u0004ie�3��>o���6\u0019]\u0005=*Fs�\u000e8%i^ ^6���\u0004\t��#�R[��^C�\u00165�2\u0006��\fԃ#J�ٰ��\u001e\u0011�\u0002��&uv\u000f&���1Jv�]P}Pv�\"�i��/`c�\u001a�\u0014XB��.\u0001Z\u0015\u0010$=>�m�3���D�\u0003�M��\u0011\u0002��\u0001SR�˦G\u0010j�\u0000-a�CҶ��������1\u0001\u001a\u0014E��\u0013��mc\u0019�~�\"\u0001\u001a\u0014V�t��3ELg3F\n������b�O�4\u000bշk�՞\u0000M5|Ӿ`񙙸m0�h�|��urk�p�;�\u0010~ޣ?�X=\u0014\\�<;��\u0001rH���ɱ����\u000b�'\u00024H�S�L*�����H�6@}��\\H�U�\u001e�.l��\u0013IM���&@#/V�^˶����gjH¯E�\u0013\t��$u\u0010Yi��9�Ḁ̄�z��E�d�\bUUWcn=\u001b~!��\u00119�볬�$�Coo���vӥL@\u0015\u0015\u0002b}��T�Սq��.l�4�N�.�0�5lou�İt����5}JV�`��tSJ�ׯ�\u0019�J{�(��X�9|���7��%b\u0017��b����8�Ro\u0019��.葖\u0015\u000b�7�\bK���1֗��:�\fw��2�ק�������/r�ڄ��]s�\u001d�/��v���HZ��ۓ����;`��l��ϐj��5���\u0015J��?��J�KG�^�t���uC%)�Go�\u0003�iO����u\f���\u0014<�78y\"@C�lj\u001e$=.�> �Q*=���ư\u0000�\b\"�0y�\u0003-hNǴ\u0001&?\n�~�`\t�!x�p\u000f�\u001e|��gP8\u001e�{���\u0019\u0017�m�!�J\u0018\u0015��Ri\u0000\u000fΡ��p\u0000�D:'D���_a�\u0016B\u001eM{\u0004�\u001fcc��)wz�h�\u0014�;���7�m\u000e\u0005/�&\u0016��Dŋi�9L[B�'h\u0006�:�٧\u0019\u0005Y��\u001b�����I��ak\t/���m�-\u0018F�W�\u0005;�=\u001aB?�u�\n���T�t�$=��#IK7�\u001b-�bуi�\u0007hk�-�\u0003��MCĪW2b����\u0016���^9�b��h\u001e^�\u0006>�O\u0006?1�\u001f�\u0015��^ޞ�����\r\u0017����#Q�\u0000\u0000\u0000\u0000IEND�B`�"
+        "path": "xcom/Ajax/ajax.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/xcom/Ajax/ajax.js",
+        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
       },
-      "networkSize": 1568,
-      "width": 77,
-      "height": 77,
-      "mtime": 1446450675000
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447158970000
+    },
+    {
+      "path": "xcom/Dialog/dialog.css",
+      "id": "xcom:Dialog/dialog.css",
+      "_file": {
+        "path": "xcom/Dialog/dialog.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/xcom/Dialog/dialog.css",
+        "content": "\n\n.dialog {\n    width: 100%;\n    height: 120px;\n    background: lightgoldenrodyellow;\n}"
+      },
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447159030000
+    },
+    {
+      "path": "xcom/Dialog/dialog.js",
+      "id": "xcom:Dialog/dialog.js",
+      "_file": {
+        "path": "xcom/Dialog/dialog.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/xcom/Dialog/dialog.js",
+        "content": "/**\n * @css ./dialog.css\n */\n\n\n(function() {\n\n  'use strict';\n\n\n  window.Dialog = {};\n\n})();"
+      },
+      "options": {},
+      "_requiredCSSMap": {
+        "./dialog.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./dialog.css": "xcom:Dialog/dialog.css"
+      },
+      "isModule": true,
+      "requiredCSS": [
+        "xcom:Dialog/dialog.css"
+      ],
+      "mtime": 1447159016000
+    },
+    {
+      "path": "base/css/base.css",
+      "id": "base:css/base.css",
+      "_file": {
+        "path": "base/css/base.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.css",
+        "content": ""
+      },
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447143060000
+    },
+    {
+      "path": "base/js/jQuery.js",
+      "id": "base:js/jQuery.js",
+      "_file": {
+        "path": "base/js/jQuery.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
+        "content": ""
+      },
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447143054000
     }
   ],
   "inferredProjectPaths": [
@@ -240,86 +275,91 @@
       "merchant:components/footer/footer.css": {
         "path": "merchant/components/footer/footer.css",
         "id": "merchant:components/footer/footer.css",
+        "_file": {
+          "path": "merchant/components/footer/footer.css",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.css",
+          "content": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}"
+        },
         "sprites": [],
         "options": {},
         "_requiredCSSMap": {},
-        "_file": {
-          "path": "merchant/components/footer/footer.css",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.css",
-          "content": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}"
-        },
         "mtime": 1444983413000
       },
       "merchant:components/back2top/back2top.css": {
         "path": "merchant/components/back2top/back2top.css",
         "id": "merchant:components/back2top/back2top.css",
+        "_file": {
+          "path": "merchant/components/back2top/back2top.css",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.css",
+          "content": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}"
+        },
         "sprites": [],
         "options": {},
         "_requiredCSSMap": {},
-        "_file": {
-          "path": "merchant/components/back2top/back2top.css",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.css",
-          "content": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}"
-        },
         "mtime": 1446028155000
       },
       "merchant:components/header/header.css": {
         "path": "merchant/components/header/header.css",
         "id": "merchant:components/header/header.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
         "_file": {
           "path": "merchant/components/header/header.css",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/header.css",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/header.css",
           "content": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}"
         },
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
         "mtime": 1447153443000
-      },
-      "merchant:components/pageletTwo/a.css": {
-        "path": "merchant/components/pageletTwo/a.css",
-        "id": "merchant:components/pageletTwo/a.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "_file": {
-          "path": "merchant/components/pageletTwo/a.css",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletTwo/a.css",
-          "content": ""
-        },
-        "mtime": 1446901454000
-      },
-      "merchant:components/pageletOne/a.css": {
-        "path": "merchant/components/pageletOne/a.css",
-        "id": "merchant:components/pageletOne/a.css",
-        "sprites": [],
-        "options": {},
-        "_requiredCSSMap": {},
-        "_file": {
-          "path": "merchant/components/pageletOne/a.css",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletOne/a.css",
-          "content": ""
-        },
-        "mtime": 1446901441000
       },
       "merchant:static/css/app.css": {
         "path": "merchant/static/css/app.css",
         "id": "merchant:static/css/app.css",
+        "_file": {
+          "path": "merchant/static/css/app.css",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/static/css/app.css",
+          "content": "/**\n * @requires ../../components/header/header.css\n * @requires ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}"
+        },
         "sprites": [],
         "options": {},
         "_requiredCSSMap": {},
-        "_file": {
-          "path": "merchant/static/css/app.css",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/static/css/app.css",
-          "content": "/**\n * @requires ../../components/header/header.css\n * @requires ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}"
-        },
         "mtime": 1447135616000
+      },
+      "xcom:Dialog/dialog.css": {
+        "path": "xcom/Dialog/dialog.css",
+        "id": "xcom:Dialog/dialog.css",
+        "_file": {
+          "path": "xcom/Dialog/dialog.css",
+          "_abspath": "/Users/baidu/Git/neo/sample/xcom/Dialog/dialog.css",
+          "content": "\n\n.dialog {\n    width: 100%;\n    height: 120px;\n    background: lightgoldenrodyellow;\n}"
+        },
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447159030000
+      },
+      "base:css/base.css": {
+        "path": "base/css/base.css",
+        "id": "base:css/base.css",
+        "_file": {
+          "path": "base/css/base.css",
+          "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.css",
+          "content": ""
+        },
+        "sprites": [],
+        "options": {},
+        "_requiredCSSMap": {},
+        "mtime": 1447143060000
       }
     },
     "JS": {
       "merchant:components/footer/footer.js": {
         "path": "merchant/components/footer/footer.js",
         "id": "merchant:components/footer/footer.js",
+        "_file": {
+          "path": "merchant/components/footer/footer.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.js",
+          "content": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};"
+        },
         "options": {},
         "_requiredCSSMap": {
           "./footer.css": true
@@ -328,11 +368,6 @@
         "_requiredAsyncModuleMap": {},
         "_requiredTextToResolvedID": {
           "./footer.css": "merchant:components/footer/footer.css"
-        },
-        "_file": {
-          "path": "merchant/components/footer/footer.js",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.js",
-          "content": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};"
         },
         "isModule": true,
         "requiredCSS": [
@@ -343,6 +378,11 @@
       "merchant:components/back2top/back2top.js": {
         "path": "merchant/components/back2top/back2top.js",
         "id": "merchant:components/back2top/back2top.js",
+        "_file": {
+          "path": "merchant/components/back2top/back2top.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.js",
+          "content": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};"
+        },
         "options": {},
         "_requiredCSSMap": {
           "./back2top.css": true
@@ -351,11 +391,6 @@
         "_requiredAsyncModuleMap": {},
         "_requiredTextToResolvedID": {
           "./back2top.css": "merchant:components/back2top/back2top.css"
-        },
-        "_file": {
-          "path": "merchant/components/back2top/back2top.js",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.js",
-          "content": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};"
         },
         "isModule": true,
         "requiredCSS": [
@@ -366,6 +401,11 @@
       "header": {
         "path": "merchant/components/header/header.js",
         "id": "header",
+        "_file": {
+          "path": "merchant/components/header/header.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/header.js",
+          "content": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};"
+        },
         "options": {},
         "_requiredCSSMap": {
           "./header.css": true
@@ -375,52 +415,20 @@
         "_requiredTextToResolvedID": {
           "./header.css": "merchant:components/header/header.css"
         },
-        "_file": {
-          "path": "merchant/components/header/header.js",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/header.js",
-          "content": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};"
-        },
         "isModule": true,
         "requiredCSS": [
           "merchant:components/header/header.css"
         ],
         "mtime": 1447141313000
       },
-      "merchant:components/pageletOne/a.js": {
-        "path": "merchant/components/pageletOne/a.js",
-        "id": "merchant:components/pageletOne/a.js",
-        "options": {},
-        "_requiredCSSMap": {},
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "_file": {
-          "path": "merchant/components/pageletOne/a.js",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletOne/a.js",
-          "content": ""
-        },
-        "isModule": true,
-        "mtime": 1447053685000
-      },
-      "merchant:components/pageletTwo/a.js": {
-        "path": "merchant/components/pageletTwo/a.js",
-        "id": "merchant:components/pageletTwo/a.js",
-        "options": {},
-        "_requiredCSSMap": {},
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "_file": {
-          "path": "merchant/components/pageletTwo/a.js",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletTwo/a.js",
-          "content": ""
-        },
-        "isModule": true,
-        "mtime": 1447053689000
-      },
       "merchant:static/js/app.js": {
         "path": "merchant/static/js/app.js",
         "id": "merchant:static/js/app.js",
+        "_file": {
+          "path": "merchant/static/js/app.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/static/js/app.js",
+          "content": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar header = require('../../components/header/header.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();"
+        },
         "options": {},
         "_requiredCSSMap": {
           "../css/app.css": true
@@ -435,11 +443,6 @@
           "../../components/footer/footer.js": "merchant:components/footer/footer.js",
           "../css/app.css": "merchant:static/css/app.css"
         },
-        "_file": {
-          "path": "merchant/static/js/app.js",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/static/js/app.js",
-          "content": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar header = require('../../components/header/header.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();"
-        },
         "isModule": true,
         "requiredModules": [
           "header",
@@ -449,14 +452,61 @@
           "merchant:static/css/app.css"
         ],
         "mtime": 1447146694000
-      }
-    },
-    "ProjectConfiguration": {
-      "merchant/package.json": {
-        "path": "merchant/package.json",
-        "id": "merchant/package.json",
-        "data": {},
-        "mtime": 1447129972000
+      },
+      "xcom:Ajax/ajax.js": {
+        "path": "xcom/Ajax/ajax.js",
+        "id": "xcom:Ajax/ajax.js",
+        "_file": {
+          "path": "xcom/Ajax/ajax.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/xcom/Ajax/ajax.js",
+          "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
+        },
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447158970000
+      },
+      "xcom:Dialog/dialog.js": {
+        "path": "xcom/Dialog/dialog.js",
+        "id": "xcom:Dialog/dialog.js",
+        "_file": {
+          "path": "xcom/Dialog/dialog.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/xcom/Dialog/dialog.js",
+          "content": "/**\n * @css ./dialog.css\n */\n\n\n(function() {\n\n  'use strict';\n\n\n  window.Dialog = {};\n\n})();"
+        },
+        "options": {},
+        "_requiredCSSMap": {
+          "./dialog.css": true
+        },
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {
+          "./dialog.css": "xcom:Dialog/dialog.css"
+        },
+        "isModule": true,
+        "requiredCSS": [
+          "xcom:Dialog/dialog.css"
+        ],
+        "mtime": 1447159016000
+      },
+      "base:js/jQuery.js": {
+        "path": "base/js/jQuery.js",
+        "id": "base:js/jQuery.js",
+        "_file": {
+          "path": "base/js/jQuery.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
+          "content": ""
+        },
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "isModule": true,
+        "mtime": 1447143054000
       }
     },
     "Image": {
@@ -465,7 +515,7 @@
         "id": "merchant/components/header/logo.png",
         "_file": {
           "path": "merchant/components/header/logo.png",
-          "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/logo.png",
+          "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/logo.png",
           "content": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000��\u0019�\u0000\u0000\u0001�PLTE������yyy���!�߉��k�����)�����\u0019��\u0011�܅��������������������������e�����v����Ϫ�����ooo��������\u0002y����������kkk1��V��z��9�������񭭭���D�����.�ᣣ�������\u0004z����mmm������s�����������uuu���\u001c��c��[�瀀�\b|�}}}���\r�������������4��Q�杝�lll\u0016�݇��_�����\u0014��<�����a�貲����������h����񼼼��ٟ�����������S�����\u000f�����ggg���%��\u000b~������󾾾X�珏�H��������#��A��\u001f�ޘ�𚚚���o��N����򹹹\u0000x�fff���\f��y\u0000\u0000\u0004[IDATX����_\u001aG\u0010��P\u0003'\u0011����P\"�$Jͥ%�\bhjԚ�(&��\u0000>����4�������ݻ[D���~>��S��\u001bvn�73;��شRl���\u0000M��~Ltǚj!1���}4W��ɋ�=qc�b�Y��\u001c��nF��5/���\u001b��;lv,\u001d�T\u0006+�o�:/\u001f�Js���t��)W�eq�f����N#J���Z�~�f�f��e��-y�ݙ\u0005\u001aə��]?w������lqb`,���\u0004v��g�2K~��:\u0019�\u0010\\D���\r�S϶�\\q,?$c_A�5\u0004ie�3��>o���6\u0019]\u0005=*Fs�\u000e8%i^ ^6���\u0004\t��#�R[��^C�\u00165�2\u0006��\fԃ#J�ٰ��\u001e\u0011�\u0002��&uv\u000f&���1Jv�]P}Pv�\"�i��/`c�\u001a�\u0014XB��.\u0001Z\u0015\u0010$=>�m�3���D�\u0003�M��\u0011\u0002��\u0001SR�˦G\u0010j�\u0000-a�CҶ��������1\u0001\u001a\u0014E��\u0013��mc\u0019�~�\"\u0001\u001a\u0014V�t��3ELg3F\n������b�O�4\u000bշk�՞\u0000M5|Ӿ`񙙸m0�h�|��urk�p�;�\u0010~ޣ?�X=\u0014\\�<;��\u0001rH���ɱ����\u000b�'\u00024H�S�L*�����H�6@}��\\H�U�\u001e�.l��\u0013IM���&@#/V�^˶����gjH¯E�\u0013\t��$u\u0010Yi��9�Ḁ̄�z��E�d�\bUUWcn=\u001b~!��\u00119�볬�$�Coo���vӥL@\u0015\u0015\u0002b}��T�Սq��.l�4�N�.�0�5lou�İt����5}JV�`��tSJ�ׯ�\u0019�J{�(��X�9|���7��%b\u0017��b����8�Ro\u0019��.葖\u0015\u000b�7�\bK���1֗��:�\fw��2�ק�������/r�ڄ��]s�\u001d�/��v���HZ��ۓ����;`��l��ϐj��5���\u0015J��?��J�KG�^�t���uC%)�Go�\u0003�iO����u\f���\u0014<�78y\"@C�lj\u001e$=.�> �Q*=���ư\u0000�\b\"�0y�\u0003-hNǴ\u0001&?\n�~�`\t�!x�p\u000f�\u001e|��gP8\u001e�{���\u0019\u0017�m�!�J\u0018\u0015��Ri\u0000\u000fΡ��p\u0000�D:'D���_a�\u0016B\u001eM{\u0004�\u001fcc��)wz�h�\u0014�;���7�m\u000e\u0005/�&\u0016��Dŋi�9L[B�'h\u0006�:�٧\u0019\u0005Y��\u001b�����I��ak\t/���m�-\u0018F�W�\u0005;�=\u001aB?�u�\n���T�t�$=��#IK7�\u001b-�bуi�\u0007hk�-�\u0003��MCĪW2b����\u0016���^9�b��h\u001e^�\u0006>�O\u0006?1�\u001f�\u0015��^ޞ�����\r\u0017����#Q�\u0000\u0000\u0000\u0000IEND�B`�"
         },
         "networkSize": 1568,
@@ -473,25 +523,50 @@
         "height": 77,
         "mtime": 1446450675000
       }
+    },
+    "ProjectConfiguration": {
+      "xcom/package.json": {
+        "path": "xcom/package.json",
+        "id": "xcom/package.json",
+        "data": {},
+        "mtime": 1447129972000
+      },
+      "merchant/package.json": {
+        "path": "merchant/package.json",
+        "id": "merchant/package.json",
+        "data": {},
+        "mtime": 1447129972000
+      },
+      "base/package.json": {
+        "path": "base/package.json",
+        "id": "base/package.json",
+        "data": {},
+        "mtime": 1447143150000
+      }
     }
   },
   "resourcePathMap": {
     "merchant/components/footer/footer.css": {
       "path": "merchant/components/footer/footer.css",
       "id": "merchant:components/footer/footer.css",
+      "_file": {
+        "path": "merchant/components/footer/footer.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.css",
+        "content": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/footer/footer.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.css",
-        "content": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}"
-      },
       "mtime": 1444983413000
     },
     "merchant/components/footer/footer.js": {
       "path": "merchant/components/footer/footer.js",
       "id": "merchant:components/footer/footer.js",
+      "_file": {
+        "path": "merchant/components/footer/footer.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.js",
+        "content": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};"
+      },
       "options": {},
       "_requiredCSSMap": {
         "./footer.css": true
@@ -500,11 +575,6 @@
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {
         "./footer.css": "merchant:components/footer/footer.css"
-      },
-      "_file": {
-        "path": "merchant/components/footer/footer.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/footer/footer.js",
-        "content": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};"
       },
       "isModule": true,
       "requiredCSS": [
@@ -515,6 +585,11 @@
     "merchant/components/back2top/back2top.js": {
       "path": "merchant/components/back2top/back2top.js",
       "id": "merchant:components/back2top/back2top.js",
+      "_file": {
+        "path": "merchant/components/back2top/back2top.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.js",
+        "content": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};"
+      },
       "options": {},
       "_requiredCSSMap": {
         "./back2top.css": true
@@ -523,11 +598,6 @@
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {
         "./back2top.css": "merchant:components/back2top/back2top.css"
-      },
-      "_file": {
-        "path": "merchant/components/back2top/back2top.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.js",
-        "content": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};"
       },
       "isModule": true,
       "requiredCSS": [
@@ -538,32 +608,37 @@
     "merchant/components/back2top/back2top.css": {
       "path": "merchant/components/back2top/back2top.css",
       "id": "merchant:components/back2top/back2top.css",
+      "_file": {
+        "path": "merchant/components/back2top/back2top.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.css",
+        "content": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/back2top/back2top.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/back2top/back2top.css",
-        "content": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}"
-      },
       "mtime": 1446028155000
     },
     "merchant/components/header/header.css": {
       "path": "merchant/components/header/header.css",
       "id": "merchant:components/header/header.css",
+      "_file": {
+        "path": "merchant/components/header/header.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/header.css",
+        "content": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/header/header.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/header.css",
-        "content": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}"
-      },
       "mtime": 1447153443000
     },
     "merchant/components/header/header.js": {
       "path": "merchant/components/header/header.js",
       "id": "header",
+      "_file": {
+        "path": "merchant/components/header/header.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/header.js",
+        "content": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};"
+      },
       "options": {},
       "_requiredCSSMap": {
         "./header.css": true
@@ -573,78 +648,20 @@
       "_requiredTextToResolvedID": {
         "./header.css": "merchant:components/header/header.css"
       },
-      "_file": {
-        "path": "merchant/components/header/header.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/header.js",
-        "content": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};"
-      },
       "isModule": true,
       "requiredCSS": [
         "merchant:components/header/header.css"
       ],
       "mtime": 1447141313000
     },
-    "merchant/components/pageletTwo/a.css": {
-      "path": "merchant/components/pageletTwo/a.css",
-      "id": "merchant:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/pageletTwo/a.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletTwo/a.css",
-        "content": ""
-      },
-      "mtime": 1446901454000
-    },
-    "merchant/components/pageletOne/a.css": {
-      "path": "merchant/components/pageletOne/a.css",
-      "id": "merchant:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/components/pageletOne/a.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletOne/a.css",
-        "content": ""
-      },
-      "mtime": 1446901441000
-    },
-    "merchant/components/pageletOne/a.js": {
-      "path": "merchant/components/pageletOne/a.js",
-      "id": "merchant:components/pageletOne/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "_file": {
-        "path": "merchant/components/pageletOne/a.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletOne/a.js",
-        "content": ""
-      },
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    "merchant/components/pageletTwo/a.js": {
-      "path": "merchant/components/pageletTwo/a.js",
-      "id": "merchant:components/pageletTwo/a.js",
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "_file": {
-        "path": "merchant/components/pageletTwo/a.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/pageletTwo/a.js",
-        "content": ""
-      },
-      "isModule": true,
-      "mtime": 1447053689000
-    },
     "merchant/static/js/app.js": {
       "path": "merchant/static/js/app.js",
       "id": "merchant:static/js/app.js",
+      "_file": {
+        "path": "merchant/static/js/app.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/static/js/app.js",
+        "content": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar header = require('../../components/header/header.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();"
+      },
       "options": {},
       "_requiredCSSMap": {
         "../css/app.css": true
@@ -659,11 +676,6 @@
         "../../components/footer/footer.js": "merchant:components/footer/footer.js",
         "../css/app.css": "merchant:static/css/app.css"
       },
-      "_file": {
-        "path": "merchant/static/js/app.js",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/static/js/app.js",
-        "content": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar header = require('../../components/header/header.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();"
-      },
       "isModule": true,
       "requiredModules": [
         "header",
@@ -677,15 +689,34 @@
     "merchant/static/css/app.css": {
       "path": "merchant/static/css/app.css",
       "id": "merchant:static/css/app.css",
+      "_file": {
+        "path": "merchant/static/css/app.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/static/css/app.css",
+        "content": "/**\n * @requires ../../components/header/header.css\n * @requires ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}"
+      },
       "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "_file": {
-        "path": "merchant/static/css/app.css",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/static/css/app.css",
-        "content": "/**\n * @requires ../../components/header/header.css\n * @requires ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}"
-      },
       "mtime": 1447135616000
+    },
+    "merchant/components/header/logo.png": {
+      "path": "merchant/components/header/logo.png",
+      "id": "merchant/components/header/logo.png",
+      "_file": {
+        "path": "merchant/components/header/logo.png",
+        "_abspath": "/Users/baidu/Git/neo/sample/merchant/components/header/logo.png",
+        "content": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000��\u0019�\u0000\u0000\u0001�PLTE������yyy���!�߉��k�����)�����\u0019��\u0011�܅��������������������������e�����v����Ϫ�����ooo��������\u0002y����������kkk1��V��z��9�������񭭭���D�����.�ᣣ�������\u0004z����mmm������s�����������uuu���\u001c��c��[�瀀�\b|�}}}���\r�������������4��Q�杝�lll\u0016�݇��_�����\u0014��<�����a�貲����������h����񼼼��ٟ�����������S�����\u000f�����ggg���%��\u000b~������󾾾X�珏�H��������#��A��\u001f�ޘ�𚚚���o��N����򹹹\u0000x�fff���\f��y\u0000\u0000\u0004[IDATX����_\u001aG\u0010��P\u0003'\u0011����P\"�$Jͥ%�\bhjԚ�(&��\u0000>����4�������ݻ[D���~>��S��\u001bvn�73;��شRl���\u0000M��~Ltǚj!1���}4W��ɋ�=qc�b�Y��\u001c��nF��5/���\u001b��;lv,\u001d�T\u0006+�o�:/\u001f�Js���t��)W�eq�f����N#J���Z�~�f�f��e��-y�ݙ\u0005\u001aə��]?w������lqb`,���\u0004v��g�2K~��:\u0019�\u0010\\D���\r�S϶�\\q,?$c_A�5\u0004ie�3��>o���6\u0019]\u0005=*Fs�\u000e8%i^ ^6���\u0004\t��#�R[��^C�\u00165�2\u0006��\fԃ#J�ٰ��\u001e\u0011�\u0002��&uv\u000f&���1Jv�]P}Pv�\"�i��/`c�\u001a�\u0014XB��.\u0001Z\u0015\u0010$=>�m�3���D�\u0003�M��\u0011\u0002��\u0001SR�˦G\u0010j�\u0000-a�CҶ��������1\u0001\u001a\u0014E��\u0013��mc\u0019�~�\"\u0001\u001a\u0014V�t��3ELg3F\n������b�O�4\u000bշk�՞\u0000M5|Ӿ`񙙸m0�h�|��urk�p�;�\u0010~ޣ?�X=\u0014\\�<;��\u0001rH���ɱ����\u000b�'\u00024H�S�L*�����H�6@}��\\H�U�\u001e�.l��\u0013IM���&@#/V�^˶����gjH¯E�\u0013\t��$u\u0010Yi��9�Ḁ̄�z��E�d�\bUUWcn=\u001b~!��\u00119�볬�$�Coo���vӥL@\u0015\u0015\u0002b}��T�Սq��.l�4�N�.�0�5lou�İt����5}JV�`��tSJ�ׯ�\u0019�J{�(��X�9|���7��%b\u0017��b����8�Ro\u0019��.葖\u0015\u000b�7�\bK���1֗��:�\fw��2�ק�������/r�ڄ��]s�\u001d�/��v���HZ��ۓ����;`��l��ϐj��5���\u0015J��?��J�KG�^�t���uC%)�Go�\u0003�iO����u\f���\u0014<�78y\"@C�lj\u001e$=.�> �Q*=���ư\u0000�\b\"�0y�\u0003-hNǴ\u0001&?\n�~�`\t�!x�p\u000f�\u001e|��gP8\u001e�{���\u0019\u0017�m�!�J\u0018\u0015��Ri\u0000\u000fΡ��p\u0000�D:'D���_a�\u0016B\u001eM{\u0004�\u001fcc��)wz�h�\u0014�;���7�m\u000e\u0005/�&\u0016��Dŋi�9L[B�'h\u0006�:�٧\u0019\u0005Y��\u001b�����I��ak\t/���m�-\u0018F�W�\u0005;�=\u001aB?�u�\n���T�t�$=��#IK7�\u001b-�bуi�\u0007hk�-�\u0003��MCĪW2b����\u0016���^9�b��h\u001e^�\u0006>�O\u0006?1�\u001f�\u0015��^ޞ�����\r\u0017����#Q�\u0000\u0000\u0000\u0000IEND�B`�"
+      },
+      "networkSize": 1568,
+      "width": 77,
+      "height": 77,
+      "mtime": 1446450675000
+    },
+    "xcom/package.json": {
+      "path": "xcom/package.json",
+      "id": "xcom/package.json",
+      "data": {},
+      "mtime": 1447129972000
     },
     "merchant/package.json": {
       "path": "merchant/package.json",
@@ -693,18 +724,92 @@
       "data": {},
       "mtime": 1447129972000
     },
-    "merchant/components/header/logo.png": {
-      "path": "merchant/components/header/logo.png",
-      "id": "merchant/components/header/logo.png",
+    "base/package.json": {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
+    },
+    "xcom/Ajax/ajax.js": {
+      "path": "xcom/Ajax/ajax.js",
+      "id": "xcom:Ajax/ajax.js",
       "_file": {
-        "path": "merchant/components/header/logo.png",
-        "_path": "/Users/baidu/Git/neo/sample/merchant/components/header/logo.png",
-        "content": "�PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000��\u0019�\u0000\u0000\u0001�PLTE������yyy���!�߉��k�����)�����\u0019��\u0011�܅��������������������������e�����v����Ϫ�����ooo��������\u0002y����������kkk1��V��z��9�������񭭭���D�����.�ᣣ�������\u0004z����mmm������s�����������uuu���\u001c��c��[�瀀�\b|�}}}���\r�������������4��Q�杝�lll\u0016�݇��_�����\u0014��<�����a�貲����������h����񼼼��ٟ�����������S�����\u000f�����ggg���%��\u000b~������󾾾X�珏�H��������#��A��\u001f�ޘ�𚚚���o��N����򹹹\u0000x�fff���\f��y\u0000\u0000\u0004[IDATX����_\u001aG\u0010��P\u0003'\u0011����P\"�$Jͥ%�\bhjԚ�(&��\u0000>����4�������ݻ[D���~>��S��\u001bvn�73;��شRl���\u0000M��~Ltǚj!1���}4W��ɋ�=qc�b�Y��\u001c��nF��5/���\u001b��;lv,\u001d�T\u0006+�o�:/\u001f�Js���t��)W�eq�f����N#J���Z�~�f�f��e��-y�ݙ\u0005\u001aə��]?w������lqb`,���\u0004v��g�2K~��:\u0019�\u0010\\D���\r�S϶�\\q,?$c_A�5\u0004ie�3��>o���6\u0019]\u0005=*Fs�\u000e8%i^ ^6���\u0004\t��#�R[��^C�\u00165�2\u0006��\fԃ#J�ٰ��\u001e\u0011�\u0002��&uv\u000f&���1Jv�]P}Pv�\"�i��/`c�\u001a�\u0014XB��.\u0001Z\u0015\u0010$=>�m�3���D�\u0003�M��\u0011\u0002��\u0001SR�˦G\u0010j�\u0000-a�CҶ��������1\u0001\u001a\u0014E��\u0013��mc\u0019�~�\"\u0001\u001a\u0014V�t��3ELg3F\n������b�O�4\u000bշk�՞\u0000M5|Ӿ`񙙸m0�h�|��urk�p�;�\u0010~ޣ?�X=\u0014\\�<;��\u0001rH���ɱ����\u000b�'\u00024H�S�L*�����H�6@}��\\H�U�\u001e�.l��\u0013IM���&@#/V�^˶����gjH¯E�\u0013\t��$u\u0010Yi��9�Ḁ̄�z��E�d�\bUUWcn=\u001b~!��\u00119�볬�$�Coo���vӥL@\u0015\u0015\u0002b}��T�Սq��.l�4�N�.�0�5lou�İt����5}JV�`��tSJ�ׯ�\u0019�J{�(��X�9|���7��%b\u0017��b����8�Ro\u0019��.葖\u0015\u000b�7�\bK���1֗��:�\fw��2�ק�������/r�ڄ��]s�\u001d�/��v���HZ��ۓ����;`��l��ϐj��5���\u0015J��?��J�KG�^�t���uC%)�Go�\u0003�iO����u\f���\u0014<�78y\"@C�lj\u001e$=.�> �Q*=���ư\u0000�\b\"�0y�\u0003-hNǴ\u0001&?\n�~�`\t�!x�p\u000f�\u001e|��gP8\u001e�{���\u0019\u0017�m�!�J\u0018\u0015��Ri\u0000\u000fΡ��p\u0000�D:'D���_a�\u0016B\u001eM{\u0004�\u001fcc��)wz�h�\u0014�;���7�m\u000e\u0005/�&\u0016��Dŋi�9L[B�'h\u0006�:�٧\u0019\u0005Y��\u001b�����I��ak\t/���m�-\u0018F�W�\u0005;�=\u001aB?�u�\n���T�t�$=��#IK7�\u001b-�bуi�\u0007hk�-�\u0003��MCĪW2b����\u0016���^9�b��h\u001e^�\u0006>�O\u0006?1�\u001f�\u0015��^ޞ�����\r\u0017����#Q�\u0000\u0000\u0000\u0000IEND�B`�"
+        "path": "xcom/Ajax/ajax.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/xcom/Ajax/ajax.js",
+        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
       },
-      "networkSize": 1568,
-      "width": 77,
-      "height": 77,
-      "mtime": 1446450675000
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447158970000
+    },
+    "xcom/Dialog/dialog.css": {
+      "path": "xcom/Dialog/dialog.css",
+      "id": "xcom:Dialog/dialog.css",
+      "_file": {
+        "path": "xcom/Dialog/dialog.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/xcom/Dialog/dialog.css",
+        "content": "\n\n.dialog {\n    width: 100%;\n    height: 120px;\n    background: lightgoldenrodyellow;\n}"
+      },
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447159030000
+    },
+    "xcom/Dialog/dialog.js": {
+      "path": "xcom/Dialog/dialog.js",
+      "id": "xcom:Dialog/dialog.js",
+      "_file": {
+        "path": "xcom/Dialog/dialog.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/xcom/Dialog/dialog.js",
+        "content": "/**\n * @css ./dialog.css\n */\n\n\n(function() {\n\n  'use strict';\n\n\n  window.Dialog = {};\n\n})();"
+      },
+      "options": {},
+      "_requiredCSSMap": {
+        "./dialog.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./dialog.css": "xcom:Dialog/dialog.css"
+      },
+      "isModule": true,
+      "requiredCSS": [
+        "xcom:Dialog/dialog.css"
+      ],
+      "mtime": 1447159016000
+    },
+    "base/css/base.css": {
+      "path": "base/css/base.css",
+      "id": "base:css/base.css",
+      "_file": {
+        "path": "base/css/base.css",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.css",
+        "content": ""
+      },
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447143060000
+    },
+    "base/js/jQuery.js": {
+      "path": "base/js/jQuery.js",
+      "id": "base:js/jQuery.js",
+      "_file": {
+        "path": "base/js/jQuery.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
+        "content": ""
+      },
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1447143054000
     }
   },
   "typeToMap": {}

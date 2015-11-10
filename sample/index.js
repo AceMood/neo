@@ -20,7 +20,7 @@ var neo = new Neo(
       new Loaders.ProjectConfigurationLoader()
     ],
     [
-      'merchant'
+      'xcom', 'merchant', 'base'
     ]
 );
 

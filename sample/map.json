@@ -59,38 +59,6 @@
       "mtime": 1447141313000
     },
     {
-      "type": "CSS",
-      "path": "merchant/components/pageletTwo/a.css",
-      "id": "merchant:components/pageletTwo/a.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446901454000
-    },
-    {
-      "type": "CSS",
-      "path": "merchant/components/pageletOne/a.css",
-      "id": "merchant:components/pageletOne/a.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446901441000
-    },
-    {
-      "type": "JS",
-      "path": "merchant/components/pageletOne/a.js",
-      "id": "merchant:components/pageletOne/a.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447053685000
-    },
-    {
-      "type": "JS",
-      "path": "merchant/components/pageletTwo/a.js",
-      "id": "merchant:components/pageletTwo/a.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447053689000
-    },
-    {
       "type": "JS",
       "path": "merchant/static/js/app.js",
       "id": "merchant:static/js/app.js",
@@ -120,6 +88,49 @@
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
+    },
+    {
+      "type": "JS",
+      "path": "xcom/Ajax/ajax.js",
+      "id": "xcom:Ajax/ajax.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447158970000
+    },
+    {
+      "type": "CSS",
+      "path": "xcom/Dialog/dialog.css",
+      "id": "xcom:Dialog/dialog.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1447159030000
+    },
+    {
+      "type": "JS",
+      "path": "xcom/Dialog/dialog.js",
+      "id": "xcom:Dialog/dialog.js",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "xcom:Dialog/dialog.css"
+      ],
+      "mtime": 1447159016000
+    },
+    {
+      "type": "CSS",
+      "path": "base/css/base.css",
+      "id": "base:css/base.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1447143060000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/jQuery.js",
+      "id": "base:js/jQuery.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447143054000
     }
   ]
 }

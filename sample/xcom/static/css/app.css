@@ -1,8 +1,0 @@
-/**
- * @requires ../../components/header/header.css
- * @requires ../../components/footer/footer.css
- */
-
-body .app {
-    width: 1200px;
-}
