@@ -19,7 +19,7 @@
 describe('CSSLoader', function() {
   var CSSLoader = require('../lib/loader/CSSLoader');
   var path = require('path');
-  var loadResouce = require('../lib/test_helpers/loadResource');
+  var loadResouce = require('../__test_helpers__/loadResource');
 
   it('should match package.json paths', function() {
     var loader = new CSSLoader();

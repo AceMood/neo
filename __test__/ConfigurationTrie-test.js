@@ -17,6 +17,7 @@
  */
 
 describe('ConfigurationTrie', function() {
+
   var ConfigurationTrie = require('../lib/ConfigurationTrie');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
   var path = require('path');
@@ -36,7 +37,7 @@ describe('ConfigurationTrie', function() {
     var config = new ProjectConfiguration(
       'a/b/package.json',
       {
-        haste: { roots: ['c', 'd'] }
+        roots: ['c', 'd']
       });
     var trie = new ConfigurationTrie([config]);
 
@@ -62,9 +63,12 @@ describe('ConfigurationTrie', function() {
       new ProjectConfiguration(path.join('a','b','c','package.json'), {});
     var trie = new ConfigurationTrie([config1, config2]);
 
-    expect(trie.findConfiguration(path.join('a','b','a.js'))).toBe(config1, path.join('a','b','a.js'));
-    expect(trie.findConfiguration(path.join('a','b','c.js'))).toBe(config1, path.join('a','b','c.js'));
-    expect(trie.findConfiguration(path.join('a','b','c','d.js'))).toBe(config2, path.join('a','b','c','d.js'));
+    expect(trie.findConfiguration(path.join('a','b','a.js')))
+        .toBe(config1, path.join('a','b','a.js'));
+    expect(trie.findConfiguration(path.join('a','b','c.js')))
+        .toBe(config1, path.join('a','b','c.js'));
+    expect(trie.findConfiguration(path.join('a','b','c','d.js')))
+        .toBe(config2, path.join('a','b','c','d.js'));
   });
 
 });
