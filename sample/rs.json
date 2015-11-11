@@ -167,24 +167,6 @@
       "mtime": 1446450675000
     },
     {
-      "path": "xcom/package.json",
-      "id": "xcom/package.json",
-      "data": {},
-      "mtime": 1447129972000
-    },
-    {
-      "path": "merchant/package.json",
-      "id": "merchant/package.json",
-      "data": {},
-      "mtime": 1447129972000
-    },
-    {
-      "path": "base/package.json",
-      "id": "base/package.json",
-      "data": {},
-      "mtime": 1447143150000
-    },
-    {
       "path": "xcom/Ajax/ajax.js",
       "id": "xcom:Ajax/ajax.js",
       "_file": {
@@ -264,6 +246,24 @@
       "_requiredTextToResolvedID": {},
       "isModule": true,
       "mtime": 1447143054000
+    },
+    {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
+    },
+    {
+      "path": "merchant/package.json",
+      "id": "merchant/package.json",
+      "data": {},
+      "mtime": 1447129972000
+    },
+    {
+      "path": "xcom/package.json",
+      "id": "xcom/package.json",
+      "data": {},
+      "mtime": 1447129972000
     }
   ],
   "inferredProjectPaths": [
@@ -525,11 +525,11 @@
       }
     },
     "ProjectConfiguration": {
-      "xcom/package.json": {
-        "path": "xcom/package.json",
-        "id": "xcom/package.json",
+      "base/package.json": {
+        "path": "base/package.json",
+        "id": "base/package.json",
         "data": {},
-        "mtime": 1447129972000
+        "mtime": 1447143150000
       },
       "merchant/package.json": {
         "path": "merchant/package.json",
@@ -537,11 +537,11 @@
         "data": {},
         "mtime": 1447129972000
       },
-      "base/package.json": {
-        "path": "base/package.json",
-        "id": "base/package.json",
+      "xcom/package.json": {
+        "path": "xcom/package.json",
+        "id": "xcom/package.json",
         "data": {},
-        "mtime": 1447143150000
+        "mtime": 1447129972000
       }
     }
   },
@@ -712,24 +712,6 @@
       "height": 77,
       "mtime": 1446450675000
     },
-    "xcom/package.json": {
-      "path": "xcom/package.json",
-      "id": "xcom/package.json",
-      "data": {},
-      "mtime": 1447129972000
-    },
-    "merchant/package.json": {
-      "path": "merchant/package.json",
-      "id": "merchant/package.json",
-      "data": {},
-      "mtime": 1447129972000
-    },
-    "base/package.json": {
-      "path": "base/package.json",
-      "id": "base/package.json",
-      "data": {},
-      "mtime": 1447143150000
-    },
     "xcom/Ajax/ajax.js": {
       "path": "xcom/Ajax/ajax.js",
       "id": "xcom:Ajax/ajax.js",
@@ -810,6 +792,24 @@
       "_requiredTextToResolvedID": {},
       "isModule": true,
       "mtime": 1447143054000
+    },
+    "base/package.json": {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
+    },
+    "merchant/package.json": {
+      "path": "merchant/package.json",
+      "id": "merchant/package.json",
+      "data": {},
+      "mtime": 1447129972000
+    },
+    "xcom/package.json": {
+      "path": "xcom/package.json",
+      "id": "xcom/package.json",
+      "data": {},
+      "mtime": 1447129972000
     }
   },
   "typeToMap": {}

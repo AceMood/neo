@@ -12,7 +12,7 @@ describe("MapUpdateTask", function() {
     require('../lib/loader/ProjectConfigurationLoader');
   var MessageList = require('../lib/MessageList');
 
-  var waitsForCallback = require('../lib/test_helpers/waitsForCallback');
+  var waitsForCallback = require('../__test_helpers__/waitsForCallback');
   var node_path = require('path');
 
   function expectChanges(changed, expected) {
@@ -122,9 +122,7 @@ describe("MapUpdateTask", function() {
     var map = new ResourceMap([
       addMtime(1300000000000, new Resource('p1/a/1.js')),
       addMtime(1300000000000, new Resource('p1/b/2.js')),
-      addMtime(1300000000000, new ProjectConfiguration('p1/package.json', {
-        haste: { roots: ['a'] }
-      }))
+      addMtime(1300000000000, new ProjectConfiguration('p1/package.json', { roots: ['a'] }))
     ]);
     var task = new MapUpdateTask(files, [], map);
     var changed;
@@ -198,9 +196,7 @@ describe("MapUpdateTask", function() {
     var map = new ResourceMap([
       addMtime(1300000000000, new Resource('p1/a/1.js')),
       addMtime(1300000000000, new Resource('p1/b/2.js')),
-      addMtime(1200000000000, new ProjectConfiguration('p1/package.json', {
-        haste: { roots: ['a'] }
-      }))
+      addMtime(1200000000000, new ProjectConfiguration('p1/package.json', { roots: ['a'] }))
     ]);
     var configurationLoader = new ProjectConfigurationLoader();
     spyOn(configurationLoader, 'loadFromPath')
@@ -243,18 +239,14 @@ describe("MapUpdateTask", function() {
     var map = new ResourceMap([
       addMtime(1300000000000, new Resource('p1/a/1.js')),
       addMtime(1300000000000, new Resource('p1/b/2.js')),
-      addMtime(1200000000000, new ProjectConfiguration('p1/package.json', {
-        haste: { roots: ['a'] }
-      }))
+      addMtime(1200000000000, new ProjectConfiguration('p1/package.json', { roots: ['a'] }))
     ]);
     var configurationLoader = new ProjectConfigurationLoader();
     spyOn(configurationLoader, 'loadFromPath')
       .andCallFake(function(path, configuration, callback) {
         callback(
           new MessageList(),
-          new ProjectConfiguration('p1/package.json', {
-            haste: { roots: ['a'] }
-          }));
+          new ProjectConfiguration('p1/package.json', { roots: ['a'] }));
       });
 
     var task = new MapUpdateTask(files, [configurationLoader], map);

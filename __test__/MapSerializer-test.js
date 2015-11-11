@@ -1,8 +1,10 @@
 /**
- * @file
+ * @file 资源表序列化的功能
+ * @Stability: 2 - Stable
  */
 
 describe('MapSerializer', function() {
+
   var MapSerializer = require('../lib/MapSerializer');
   var ResourceMap = require('../lib/resource/ResourceMap');
   var JS = require('../lib/resource/JS');
@@ -109,4 +111,5 @@ describe('MapSerializer', function() {
     var map2 = serializer2.fromObject(ser);
     expect(map2).toBe(null);
   });
+
 });

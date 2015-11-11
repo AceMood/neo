@@ -17,6 +17,7 @@
 function waitsForCallback(test, expectation) {
   var args = null;
   var context = null;
+
   function callback() {
     context = this;
     args = arguments;

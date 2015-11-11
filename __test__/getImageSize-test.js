@@ -1,12 +1,13 @@
 /**
  * @file 取得图像大小功能
+ * @Stability: 2 - Stable
  */
 
 describe("getImageSize", function() {
 
   var path = require('path');
   var fs = require('fs');
-  var root = path.join(__dirname, '../__test_data__/Image');
+  var root = path.join(__dirname, '..', '__test_data__', 'Image');
   var getImageSize = require('../lib/parser/getImageSize');
 
   it('should parse gif image size', function() {
@@ -36,4 +37,5 @@ describe("getImageSize", function() {
     expect(size.width).toBe(900);
     expect(size.height).toBe(596);
   });
+
 });

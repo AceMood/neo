@@ -1,5 +1,6 @@
 /**
  * @file FileFinder功能测试
+ * @Stability: 2 - Stable
  */
 
 describe("FileFinder", function() {
@@ -7,9 +8,9 @@ describe("FileFinder", function() {
   var path = require('path');
   var Finder = require('../lib/FileFinder');
 
-  var workingDir = path.join(__dirname, '../__test_data__/FileFinder');
+  var workingDir = path.join(__dirname, '..', '__test_data__', 'FileFinder');
 
-  it("should find files in a directory using FileFinder object", function() {
+  it("should find files in a directory using FileFinder instance method", function() {
     var result,
         find = new Finder({
           scanDirs: [workingDir],
@@ -38,7 +39,7 @@ describe("FileFinder", function() {
     });
   });
 
-  it("should find files in a directory", function() {
+  it("should find files in a directory using FileFinder static method", function() {
     var result;
     runs(function() {
       Finder.find([workingDir], ['.js'], null, function(files) {
@@ -81,4 +82,5 @@ describe("FileFinder", function() {
       expect(files.join('\n')).toContain('3.js');
     });
   });
+
 });

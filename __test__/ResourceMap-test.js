@@ -83,4 +83,5 @@ describe('ResourceMap', function() {
     map.addResource(pb);
     expect(map.getConfigurationForResource(b)).toBe(pb);
   });
+
 });

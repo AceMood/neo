@@ -1,5 +1,6 @@
 /**
  * @file 解析注释头部信息功能
+ * @Stability: 2 - Stable
  */
 
 describe('docblock', function() {
@@ -36,12 +37,12 @@ describe('docblock', function() {
   it('should parse directives out of a docblock', function() {
     var code =
       '/**'+os.EOL+'' +
-      ' * @providesModule foo'+os.EOL+'' +
+      ' * @requires foo'+os.EOL+'' +
       ' * @css a b'+os.EOL+'' +
       ' * @preserve-whitespace'+os.EOL+'' +
       ' */';
     expect(docblock.parse(code)).toEqual([
-      ['providesModule', 'foo'],
+      ['requires', 'foo'],
       ['css', 'a b'],
       ['preserve-whitespace', '']
     ]);
@@ -51,14 +52,14 @@ describe('docblock', function() {
     var code =
       '/**'+os.EOL+'' +
       ' * Copyright 2004-present Facebook. All Rights Reserved.'+os.EOL+'' +
-      ' * @providesModule foo'+os.EOL+'' +
+      ' * @provides foo'+os.EOL+'' +
       ' * @css a b'+os.EOL+'' +
       ' *'+os.EOL+'' +
       ' * And some license here'+os.EOL+'' +
       ' * @preserve-whitespace'+os.EOL+'' +
       ' */';
     expect(docblock.parse(code)).toEqual([
-      ['providesModule', 'foo'],
+      ['provides', 'foo'],
       ['css', 'a b'],
       ['preserve-whitespace', '']
     ]);
@@ -74,10 +75,13 @@ describe('docblock', function() {
       ' * And some license here'+os.EOL+'' +
       ' * @preserve-whitespace'+os.EOL+'' +
       ' */';
+
     expect(docblock.parse(code)).toEqual([
       ['class', 'A long declaration of a class goes here, ' +
         'so we can read it and enjoy'],
       ['preserve-whitespace', '']
     ]);
+
   });
+
 });

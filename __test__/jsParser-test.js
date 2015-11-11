@@ -1,5 +1,6 @@
 /**
  * @file jsParser对于代码匹配的功能
+ * @Stability: 2 - Stable
  */
 
 describe('extract', function() {
