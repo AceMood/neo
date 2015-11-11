@@ -1,36 +1,16 @@
 {
   "resourceCache": [
     {
-      "path": "base/js/jQuery.js",
-      "id": "base:js/jQuery.js",
-      "_file": {
-        "path": "base/js/jQuery.js",
-        "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
-        "content": ""
-      },
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447143054000
+      "path": "core/package.json",
+      "id": "core/package.json",
+      "data": {},
+      "mtime": 1447129972000
     },
     {
-      "path": "core/Ajax/ajax.js",
-      "id": "core:Ajax/ajax.js",
-      "_file": {
-        "path": "core/Ajax/ajax.js",
-        "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
-        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
-      },
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447158970000
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
     },
     {
       "path": "core/Dialog/dialog.css",
@@ -47,7 +27,7 @@
     },
     {
       "path": "core/Dialog/dialog.js",
-      "id": "core:Dialog/dialog.js",
+      "id": null,
       "_file": {
         "path": "core/Dialog/dialog.js",
         "_abspath": "/Users/baidu/Git/neo/sample/core/Dialog/dialog.js",
@@ -62,15 +42,42 @@
       "_requiredTextToResolvedID": {
         "./dialog.css": "core:Dialog/dialog.css"
       },
-      "isModule": true,
       "requiredCSS": [
         "core:Dialog/dialog.css"
       ],
       "mtime": 1447159016000
     },
     {
+      "path": "core/Ajax/ajax.js",
+      "id": null,
+      "_file": {
+        "path": "core/Ajax/ajax.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
+        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
+      },
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1447158970000
+    },
+    {
+      "path": "base/css/base.less",
+      "id": "base:css/base.less",
+      "_file": {
+        "path": "base/css/base.less",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.less",
+        "content": "div {\n\n}"
+      },
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447242641000
+    },
+    {
       "path": "base/js/base.js",
-      "id": "base:js/base.js",
+      "id": null,
       "_file": {
         "path": "base/js/base.js",
         "_abspath": "/Users/baidu/Git/neo/sample/base/js/base.js",
@@ -92,29 +99,19 @@
       "mtime": 1447242675000
     },
     {
-      "path": "core/package.json",
-      "id": "core/package.json",
-      "data": {},
-      "mtime": 1447129972000
-    },
-    {
-      "path": "base/package.json",
-      "id": "base/package.json",
-      "data": {},
-      "mtime": 1447143150000
-    },
-    {
-      "path": "base/css/base.less",
-      "id": "base:css/base.less",
+      "path": "base/js/jQuery.js",
+      "id": null,
       "_file": {
-        "path": "base/css/base.less",
-        "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.less",
-        "content": "div {\n\n}"
+        "path": "base/js/jQuery.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
+        "content": ""
       },
-      "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "mtime": 1447242641000
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1447143054000
     }
   ],
   "inferredProjectPaths": [
@@ -122,84 +119,18 @@
   ],
   "configurationTrie": null,
   "resourceMap": {
-    "JS": {
-      "base:js/jQuery.js": {
-        "path": "base/js/jQuery.js",
-        "id": "base:js/jQuery.js",
-        "_file": {
-          "path": "base/js/jQuery.js",
-          "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
-          "content": ""
-        },
-        "options": {},
-        "_requiredCSSMap": {},
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "isModule": true,
-        "mtime": 1447143054000
+    "ProjectConfiguration": {
+      "core/package.json": {
+        "path": "core/package.json",
+        "id": "core/package.json",
+        "data": {},
+        "mtime": 1447129972000
       },
-      "core:Ajax/ajax.js": {
-        "path": "core/Ajax/ajax.js",
-        "id": "core:Ajax/ajax.js",
-        "_file": {
-          "path": "core/Ajax/ajax.js",
-          "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
-          "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
-        },
-        "options": {},
-        "_requiredCSSMap": {},
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {},
-        "isModule": true,
-        "mtime": 1447158970000
-      },
-      "core:Dialog/dialog.js": {
-        "path": "core/Dialog/dialog.js",
-        "id": "core:Dialog/dialog.js",
-        "_file": {
-          "path": "core/Dialog/dialog.js",
-          "_abspath": "/Users/baidu/Git/neo/sample/core/Dialog/dialog.js",
-          "content": "/**\n * @css ./dialog.css\n */\n\n\n(function() {\n\n  'use strict';\n\n\n  window.Dialog = {};\n\n})();"
-        },
-        "options": {},
-        "_requiredCSSMap": {
-          "./dialog.css": true
-        },
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {
-          "./dialog.css": "core:Dialog/dialog.css"
-        },
-        "isModule": true,
-        "requiredCSS": [
-          "core:Dialog/dialog.css"
-        ],
-        "mtime": 1447159016000
-      },
-      "base:js/base.js": {
-        "path": "base/js/base.js",
-        "id": "base:js/base.js",
-        "_file": {
-          "path": "base/js/base.js",
-          "_abspath": "/Users/baidu/Git/neo/sample/base/js/base.js",
-          "content": "/**\n * @module\n * @css ../css/base.less\n */\n\nvar base = {\n  less: true\n};"
-        },
-        "options": {},
-        "_requiredCSSMap": {
-          "../css/base.less": true
-        },
-        "_requiredModuleMap": {},
-        "_requiredAsyncModuleMap": {},
-        "_requiredTextToResolvedID": {
-          "../css/base.less": "base:css/base.less"
-        },
-        "isModule": true,
-        "requiredCSS": [
-          "base:css/base.less"
-        ],
-        "mtime": 1447242675000
+      "base/package.json": {
+        "path": "base/package.json",
+        "id": "base/package.json",
+        "data": {},
+        "mtime": 1447143150000
       }
     },
     "CSS": {
@@ -230,53 +161,36 @@
         "mtime": 1447242641000
       }
     },
-    "ProjectConfiguration": {
-      "core/package.json": {
-        "path": "core/package.json",
-        "id": "core/package.json",
-        "data": {},
-        "mtime": 1447129972000
-      },
-      "base/package.json": {
-        "path": "base/package.json",
-        "id": "base/package.json",
-        "data": {},
-        "mtime": 1447143150000
+    "JS": {
+      "null": {
+        "path": "base/js/jQuery.js",
+        "id": null,
+        "_file": {
+          "path": "base/js/jQuery.js",
+          "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
+          "content": ""
+        },
+        "options": {},
+        "_requiredCSSMap": {},
+        "_requiredModuleMap": {},
+        "_requiredAsyncModuleMap": {},
+        "_requiredTextToResolvedID": {},
+        "mtime": 1447143054000
       }
     }
   },
   "resourcePathMap": {
-    "base/js/jQuery.js": {
-      "path": "base/js/jQuery.js",
-      "id": "base:js/jQuery.js",
-      "_file": {
-        "path": "base/js/jQuery.js",
-        "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
-        "content": ""
-      },
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447143054000
+    "core/package.json": {
+      "path": "core/package.json",
+      "id": "core/package.json",
+      "data": {},
+      "mtime": 1447129972000
     },
-    "core/Ajax/ajax.js": {
-      "path": "core/Ajax/ajax.js",
-      "id": "core:Ajax/ajax.js",
-      "_file": {
-        "path": "core/Ajax/ajax.js",
-        "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
-        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
-      },
-      "options": {},
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1447158970000
+    "base/package.json": {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {},
+      "mtime": 1447143150000
     },
     "core/Dialog/dialog.css": {
       "path": "core/Dialog/dialog.css",
@@ -293,7 +207,7 @@
     },
     "core/Dialog/dialog.js": {
       "path": "core/Dialog/dialog.js",
-      "id": "core:Dialog/dialog.js",
+      "id": null,
       "_file": {
         "path": "core/Dialog/dialog.js",
         "_abspath": "/Users/baidu/Git/neo/sample/core/Dialog/dialog.js",
@@ -308,15 +222,42 @@
       "_requiredTextToResolvedID": {
         "./dialog.css": "core:Dialog/dialog.css"
       },
-      "isModule": true,
       "requiredCSS": [
         "core:Dialog/dialog.css"
       ],
       "mtime": 1447159016000
     },
+    "core/Ajax/ajax.js": {
+      "path": "core/Ajax/ajax.js",
+      "id": null,
+      "_file": {
+        "path": "core/Ajax/ajax.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
+        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
+      },
+      "options": {},
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1447158970000
+    },
+    "base/css/base.less": {
+      "path": "base/css/base.less",
+      "id": "base:css/base.less",
+      "_file": {
+        "path": "base/css/base.less",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.less",
+        "content": "div {\n\n}"
+      },
+      "sprites": [],
+      "options": {},
+      "_requiredCSSMap": {},
+      "mtime": 1447242641000
+    },
     "base/js/base.js": {
       "path": "base/js/base.js",
-      "id": "base:js/base.js",
+      "id": null,
       "_file": {
         "path": "base/js/base.js",
         "_abspath": "/Users/baidu/Git/neo/sample/base/js/base.js",
@@ -337,30 +278,20 @@
       ],
       "mtime": 1447242675000
     },
-    "core/package.json": {
-      "path": "core/package.json",
-      "id": "core/package.json",
-      "data": {},
-      "mtime": 1447129972000
-    },
-    "base/package.json": {
-      "path": "base/package.json",
-      "id": "base/package.json",
-      "data": {},
-      "mtime": 1447143150000
-    },
-    "base/css/base.less": {
-      "path": "base/css/base.less",
-      "id": "base:css/base.less",
+    "base/js/jQuery.js": {
+      "path": "base/js/jQuery.js",
+      "id": null,
       "_file": {
-        "path": "base/css/base.less",
-        "_abspath": "/Users/baidu/Git/neo/sample/base/css/base.less",
-        "content": "div {\n\n}"
+        "path": "base/js/jQuery.js",
+        "_abspath": "/Users/baidu/Git/neo/sample/base/js/jQuery.js",
+        "content": ""
       },
-      "sprites": [],
       "options": {},
       "_requiredCSSMap": {},
-      "mtime": 1447242641000
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "mtime": 1447143054000
     }
   },
   "typeToMap": {}

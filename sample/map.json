@@ -2,22 +2,6 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "JS",
-      "path": "base/js/jQuery.js",
-      "id": "base:js/jQuery.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447143054000
-    },
-    {
-      "type": "JS",
-      "path": "core/Ajax/ajax.js",
-      "id": "core:Ajax/ajax.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447158970000
-    },
-    {
       "type": "CSS",
       "path": "core/Dialog/dialog.css",
       "id": "core:Dialog/dialog.css",
@@ -28,9 +12,8 @@
     {
       "type": "JS",
       "path": "core/Dialog/dialog.js",
-      "id": "core:Dialog/dialog.js",
+      "id": null,
       "options": {},
-      "isModule": true,
       "requiredCSS": [
         "core:Dialog/dialog.css"
       ],
@@ -38,14 +21,10 @@
     },
     {
       "type": "JS",
-      "path": "base/js/base.js",
-      "id": "base:js/base.js",
+      "path": "core/Ajax/ajax.js",
+      "id": null,
       "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "base:css/base.less"
-      ],
-      "mtime": 1447242675000
+      "mtime": 1447158970000
     },
     {
       "type": "CSS",
@@ -54,6 +33,24 @@
       "sprites": [],
       "options": {},
       "mtime": 1447242641000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/base.js",
+      "id": null,
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "base:css/base.less"
+      ],
+      "mtime": 1447242675000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/jQuery.js",
+      "id": null,
+      "options": {},
+      "mtime": 1447143054000
     }
   ]
 }
