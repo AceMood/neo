@@ -2,135 +2,58 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "CSS",
-      "path": "merchant/components/footer/footer.css",
-      "id": "merchant:components/footer/footer.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1444983413000
-    },
-    {
-      "type": "JS",
-      "path": "merchant/components/footer/footer.js",
-      "id": "merchant:components/footer/footer.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "merchant:components/footer/footer.css"
-      ],
-      "mtime": 1447141296000
-    },
-    {
-      "type": "JS",
-      "path": "merchant/components/back2top/back2top.js",
-      "id": "merchant:components/back2top/back2top.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "merchant:components/back2top/back2top.css"
-      ],
-      "mtime": 1447141330000
-    },
-    {
-      "type": "CSS",
-      "path": "merchant/components/back2top/back2top.css",
-      "id": "merchant:components/back2top/back2top.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1446028155000
-    },
-    {
-      "type": "CSS",
-      "path": "merchant/components/header/header.css",
-      "id": "merchant:components/header/header.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447153443000
-    },
-    {
-      "type": "JS",
-      "path": "merchant/components/header/header.js",
-      "id": "header",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "merchant:components/header/header.css"
-      ],
-      "mtime": 1447141313000
-    },
-    {
-      "type": "JS",
-      "path": "merchant/static/js/app.js",
-      "id": "merchant:static/js/app.js",
-      "options": {},
-      "isModule": true,
-      "requiredModules": [
-        "header",
-        "merchant:components/footer/footer.js"
-      ],
-      "requiredCSS": [
-        "merchant:static/css/app.css"
-      ],
-      "mtime": 1447146694000
-    },
-    {
-      "type": "CSS",
-      "path": "merchant/static/css/app.css",
-      "id": "merchant:static/css/app.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447135616000
-    },
-    {
-      "path": "merchant/components/header/logo.png",
-      "id": "merchant/components/header/logo.png",
-      "type": "Image",
-      "mtime": 1446450675000,
-      "width": 77,
-      "height": 77
-    },
-    {
-      "type": "JS",
-      "path": "xcom/Ajax/ajax.js",
-      "id": "xcom:Ajax/ajax.js",
-      "options": {},
-      "isModule": true,
-      "mtime": 1447158970000
-    },
-    {
-      "type": "CSS",
-      "path": "xcom/Dialog/dialog.css",
-      "id": "xcom:Dialog/dialog.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447159030000
-    },
-    {
-      "type": "JS",
-      "path": "xcom/Dialog/dialog.js",
-      "id": "xcom:Dialog/dialog.js",
-      "options": {},
-      "isModule": true,
-      "requiredCSS": [
-        "xcom:Dialog/dialog.css"
-      ],
-      "mtime": 1447159016000
-    },
-    {
-      "type": "CSS",
-      "path": "base/css/base.css",
-      "id": "base:css/base.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447143060000
-    },
-    {
       "type": "JS",
       "path": "base/js/jQuery.js",
       "id": "base:js/jQuery.js",
       "options": {},
       "isModule": true,
       "mtime": 1447143054000
+    },
+    {
+      "type": "JS",
+      "path": "core/Ajax/ajax.js",
+      "id": "core:Ajax/ajax.js",
+      "options": {},
+      "isModule": true,
+      "mtime": 1447158970000
+    },
+    {
+      "type": "CSS",
+      "path": "core/Dialog/dialog.css",
+      "id": "core:Dialog/dialog.css",
+      "sprites": [],
+      "options": {},
+      "mtime": 1447159030000
+    },
+    {
+      "type": "JS",
+      "path": "core/Dialog/dialog.js",
+      "id": "core:Dialog/dialog.js",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "core:Dialog/dialog.css"
+      ],
+      "mtime": 1447159016000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/base.js",
+      "id": "base:js/base.js",
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "base:css/base.less"
+      ],
+      "mtime": 1447242675000
+    },
+    {
+      "type": "CSS",
+      "path": "base/css/base.less",
+      "id": "base:css/base.less",
+      "sprites": [],
+      "options": {},
+      "mtime": 1447242641000
     }
   ]
 }
