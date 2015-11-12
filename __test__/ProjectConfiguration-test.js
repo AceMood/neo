@@ -29,8 +29,7 @@ describe('ProjectConfiguration', function() {
         namespace: "bar"
       });
     expect(resource.resolveID(path.join('a','b','lib','foo')))
-        .toEqual('bar:foo');
-        //.toEqual(path.join('bar','foo'));
+        .toEqual(path.join('bar','foo'));
   });
 
   it('should resolve id without a prefix', function() {
