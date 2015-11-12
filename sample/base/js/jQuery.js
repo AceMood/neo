@@ -1,0 +1,6 @@
+/**
+ * @provides jQuery
+ */
+
+
+var jQuery;

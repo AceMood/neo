@@ -1,0 +1,32 @@
+/**
+ *  @provides pop-dialog-css
+ *  @permanent
+ */
+
+/* @noflip */
+.pop_topleft {
+  background: url('/images/dialog/large_halo_top_left.png?__sprite');
+  left: -10px;
+  top: -10px;
+}
+
+/* @noflip */
+.pop_topright {
+  background: url('/images/dialog/large_halo_top_right.png');
+  right: -10px;
+  top: -10px;
+}
+
+/* @noflip */
+.pop_topleft2 {
+  background-image: url('/images/dialog/large_halo_top_left.png');
+  left: -10px;
+  top: -10px;
+}
+
+/* @noflip */
+.pop_topleft2 {
+  background-image: url('/images/dialog/large_halo_top_left.png');
+  left: -10px;
+  top: -10px;
+}
