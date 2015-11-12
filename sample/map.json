@@ -2,22 +2,18 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "CSS",
-      "path": "core/Dialog/dialog.css",
-      "id": "core:Dialog/dialog.css",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447159030000
+      "path": "core/a.jpg",
+      "id": "core/a.jpg",
+      "type": "Image",
+      "mtime": 1438310182000,
+      "width": 900,
+      "height": 596
     },
     {
-      "type": "JS",
-      "path": "core/Dialog/dialog.js",
-      "id": "core:Dialog/dialog.js",
-      "options": {},
-      "requiredCSS": [
-        "core:Dialog/dialog.css"
-      ],
-      "mtime": 1447159016000
+      "type": "Resource",
+      "path": "core/flash.swf",
+      "id": "core/flash.swf",
+      "mtime": 1447223088000
     },
     {
       "type": "JS",
@@ -25,14 +21,6 @@
       "id": "core:Ajax/ajax.js",
       "options": {},
       "mtime": 1447158970000
-    },
-    {
-      "type": "CSS",
-      "path": "base/css/base.less",
-      "id": "base:css/base.less",
-      "sprites": [],
-      "options": {},
-      "mtime": 1447242641000
     },
     {
       "type": "JS",
@@ -51,6 +39,30 @@
       "id": "jQuery",
       "options": {},
       "mtime": 1447306843000
+    },
+    {
+      "type": "CSS",
+      "path": "base/css/base.less",
+      "id": "base:css/base.less",
+      "options": {},
+      "mtime": 1447242641000
+    },
+    {
+      "type": "CSS",
+      "path": "core/Dialog/dialog.css",
+      "id": "core:Dialog/dialog.css",
+      "options": {},
+      "mtime": 1447159030000
+    },
+    {
+      "type": "JS",
+      "path": "core/Dialog/dialog.js",
+      "id": "core:Dialog/dialog.js",
+      "options": {},
+      "requiredCSS": [
+        "core:Dialog/dialog.css"
+      ],
+      "mtime": 1447159016000
     }
   ]
 }

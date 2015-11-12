@@ -5,28 +5,28 @@
 
 /* @noflip */
 .pop_topleft {
-  background: url('/images/dialog/large_halo_top_left.png?__sprite');
+  background: url('/images/dialog/halo_top_left.png?__sprite');
   left: -10px;
   top: -10px;
 }
 
 /* @noflip */
 .pop_topright {
-  background: url('/images/dialog/large_halo_top_right.png');
+  background: url('/images/dialog/halo_top_right.png');
   right: -10px;
   top: -10px;
 }
 
 /* @noflip */
 .pop_topleft2 {
-  background-image: url('/images/dialog/large_halo_top_left.png');
+  background-image: url('/images/dialog/large_halo_top_left.png?v=1.0&__sprite&t=_345');
   left: -10px;
   top: -10px;
 }
 
 /* @noflip */
-.pop_topleft2 {
-  background-image: url('/images/dialog/large_halo_top_left.png');
+.pop_topright2 {
+  background-image: url('/images/dialog/large_halo_top_right.png');
   left: -10px;
   top: -10px;
 }
