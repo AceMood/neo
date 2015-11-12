@@ -11,7 +11,7 @@
 }
 
 /* @noflip */
-.pop_topright {
+.pop_topright1 {
   background: url('/images/dialog/halo_top_right.png');
   right: -10px;
   top: -10px;
@@ -19,14 +19,21 @@
 
 /* @noflip */
 .pop_topleft2 {
-  background-image: url('/images/dialog/large_halo_top_left.png?v=1.0&__sprite&t=_345');
+  background-image: url('/images/dialog/large_halo_top_left.png?&__sprite&');
   left: -10px;
   top: -10px;
 }
 
 /* @noflip */
-.pop_topright2 {
+.pop_topright3 {
   background-image: url('/images/dialog/large_halo_top_right.png');
   left: -10px;
   top: -10px;
+}
+
+/* @noflip */
+.pop_topright4 {
+    border-image: url('/images/dialog/large_halo_top_right.png?__sprite') 0 0 0;
+    left: -10px;
+    top: -10px;
 }
