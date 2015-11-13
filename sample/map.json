@@ -1,0 +1,68 @@
+{
+  "version": "0.1",
+  "objects": [
+    {
+      "path": "core/a.jpg",
+      "id": "core/a.jpg",
+      "type": "Image",
+      "mtime": 1438310182000,
+      "width": 900,
+      "height": 596
+    },
+    {
+      "path": "core/flash.swf",
+      "id": "core/flash.swf",
+      "type": "SWF",
+      "mtime": 1447223088000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/base.js",
+      "id": null,
+      "options": {},
+      "isModule": true,
+      "requiredCSS": [
+        "../css/base.less"
+      ],
+      "mtime": 1447242675000
+    },
+    {
+      "type": "CSS",
+      "path": "base/css/base.less",
+      "id": null,
+      "options": {},
+      "mtime": 1447242641000
+    },
+    {
+      "type": "JS",
+      "path": "base/js/jQuery.js",
+      "id": "jQuery",
+      "options": {},
+      "mtime": 1447306843000
+    },
+    {
+      "type": "JS",
+      "path": "core/Ajax/ajax.js",
+      "id": null,
+      "options": {},
+      "mtime": 1447158970000
+    },
+    {
+      "type": "CSS",
+      "path": "core/Dialog/dialog.css",
+      "id": null,
+      "options": {},
+      "mtime": 1447159030000
+    },
+    {
+      "type": "JS",
+      "path": "core/Dialog/dialog.js",
+      "id": null,
+      "options": {},
+      "requiredCSS": [
+        "./dialog.css"
+      ],
+      "mtime": 1447159016000
+    }
+  ]
+}

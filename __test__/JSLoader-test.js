@@ -1,19 +1,6 @@
 ///**
-// * Copyright 2013 Facebook, Inc.
-// *
-// * Licensed under the Apache License, Version 2.0 (the "License");
-// * you may not use this file except in compliance with the License.
-// * You may obtain a copy of the License at
-// *
-// * http://www.apache.org/licenses/LICENSE-2.0
-// *
-// * Unless required by applicable law or agreed to in writing, software
-// * distributed under the License is distributed on an "AS IS" BASIS,
-// * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// * See the License for the specific language governing permissions and
-// * limitations under the License.
-// *
-// * @emails javascript@lists.facebook.com voloko@fb.com
+// * @file
+// * @
 // */
 //
 //describe('JSLoader', function() {
@@ -30,7 +17,7 @@
 //
 //
 //  it('should match package.json paths', function() {
-//    var loader =new JSLoader();
+//    var loader = new JSLoader();
 //    expect(loader.matchPath('x.js')).toBe(true);
 //    expect(loader.matchPath('a/x.js')).toBe(true);
 //    expect(loader.matchPath('a/1.css')).toBe(false);
@@ -44,11 +31,9 @@
 //      function(errors, js) {
 //        expect(js.isModule).toBe(false);
 //        expect(js.id).toBe('oldSchoolComponent-tag');
-//        expect(js.requiredLegacyComponents).toEqual(['foo', 'bar']);
 //        expect(js.requiredCSS).toEqual(['foo-css']);
 //      });
 //  });
-//
 //
 //  it('should parse modules with requires', function() {
 //    loadResouce(
@@ -63,55 +48,12 @@
 //      });
 //  });
 //
-//
-//  it('should parse javelin', function() {
-//    loadResouce(
-//      new JSLoader(),
-//      path.join(testData, 'javelin.js'),
-//      null,
-//      function(errors, js) {
-//        expect(js.isModule).toBe(true);
-//        expect(js.isJavelin).toBe(true);
-//        expect(js.isRunWhenReady).toBe(true);
-//        expect(js.id).toBe('JX.MSteps');
-//        expect(js.requiredLegacyComponents)
-//          .toEqual(['javelin-dom', 'javelin-install', 'javelin-stratcom']);
-//      });
-//  });
-//
 //  it('should extract network size', function() {
 //    loadResouce(
 //      new JSLoader({ networkSize: true }),
 //      path.join(testData, 'javelin.js'),
 //      null,
 //      function(errors, js) {
-//        expect(js.networkSize > 0).toBe(true);
-//      });
-//  });
-//
-//  it('should extract javelin symbols', function() {
-//    loadResouce(
-//      new JSLoader(),
-//      path.join(testData, 'javelin.js'),
-//      null,
-//      function(errors, js) {
-//        expect(js.definedJavelinSymbols).toEqual(['JX.MSteps']);
-//        expect(js.requiredJavelinSymbols.sort())
-//          .toEqual(['JX.URL', 'JX.install']);
-//      });
-//  });
-//
-//  it('should extract javelin symbols and networkSize', function() {
-//    loadResouce(
-//      new JSLoader({
-//        networkSize: true
-//      }),
-//      path.join(testData, 'javelin.js'),
-//      null,
-//      function(errors, js) {
-//        expect(js.definedJavelinSymbols).toEqual(['JX.MSteps']);
-//        expect(js.requiredJavelinSymbols.sort())
-//          .toEqual(['JX.URL', 'JX.install']);
 //        expect(js.networkSize > 0).toBe(true);
 //      });
 //  });
@@ -128,7 +70,6 @@
 //        expect(js.requiredCSS).toEqual(['foo-css']);
 //      });
 //  });
-//
 //
 //  it('should resolve commonJS "main" modules post process', function() {
 //    var map;
