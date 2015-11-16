@@ -84,7 +84,7 @@
         "path": "core/Ajax/ajax.js",
         "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
         "type": "JS",
-        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
+        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n  Ajax.send = function() {\n\n  };\n\n})();"
       },
       "options": {},
       "_requiredCSSMap": {},
@@ -92,7 +92,7 @@
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {},
       "type": "JS",
-      "mtime": 1447158970000
+      "mtime": 1447422042000
     },
     {
       "path": "core/Dialog/dialog.css",
@@ -303,7 +303,7 @@
         "path": "core/Ajax/ajax.js",
         "_abspath": "/Users/baidu/Git/neo/sample/core/Ajax/ajax.js",
         "type": "JS",
-        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n\n})();"
+        "content": "\n(function() {\n\n  'use strict';\n\n\n  window.Ajax = {};\n  Ajax.send = function() {\n\n  };\n\n})();"
       },
       "options": {},
       "_requiredCSSMap": {},
@@ -311,7 +311,7 @@
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {},
       "type": "JS",
-      "mtime": 1447158970000
+      "mtime": 1447422042000
     },
     "core/Dialog/dialog.css": {
       "path": "core/Dialog/dialog.css",

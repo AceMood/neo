@@ -3,7 +3,7 @@
   "objects": [
     {
       "path": "core/a.jpg",
-      "id": "core/a.jpg",
+      "id": null,
       "type": "Image",
       "mtime": 1438310182000,
       "width": 900,
@@ -11,7 +11,7 @@
     },
     {
       "path": "core/flash.swf",
-      "id": "core/flash.swf",
+      "id": null,
       "type": "SWF",
       "mtime": 1447223088000
     },
@@ -45,7 +45,7 @@
       "path": "core/Ajax/ajax.js",
       "id": null,
       "options": {},
-      "mtime": 1447158970000
+      "mtime": 1447422042000
     },
     {
       "type": "CSS",

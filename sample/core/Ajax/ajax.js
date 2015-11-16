@@ -5,5 +5,8 @@
 
 
   window.Ajax = {};
+  Ajax.send = function() {
+
+  };
 
 })();
