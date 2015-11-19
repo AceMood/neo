@@ -6,3 +6,5 @@
 var base = {
   less: true
 };
+
+require('./jQuery');
