@@ -25,7 +25,7 @@ describe('CSSLoader', function() {
       null,
       function(err, css) {
         expect(css.id).toBe('plain-css');
-        expect(css.options).toEqual({ 'no-browser-specific-css' : true });
+        expect(css.options).toEqual(undefined);
         expect(css.requiredCSS).toEqual(['bar']);
       });
   });
