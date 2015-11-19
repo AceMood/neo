@@ -21,7 +21,7 @@ var neo = new Neo(
       new Loaders.ProjectConfigurationLoader()
     ],
     [
-      'core', /*'project',*/ 'base'
+      'core', 'project', 'base'
     ]
 );
 
