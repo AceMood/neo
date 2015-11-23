@@ -18,7 +18,7 @@
       "requiredCSS": [
         "../css/base.less"
       ],
-      "mtime": 1447945294000
+      "mtime": 1448291690000
     },
     {
       "type": "JS",
@@ -59,7 +59,7 @@
       "requiredCSS": [
         "./dialog.css"
       ],
-      "mtime": 1447946662000
+      "mtime": 1448291671000
     },
     {
       "type": "JS",
@@ -69,7 +69,7 @@
       "requiredCSS": [
         "./back2top.css"
       ],
-      "mtime": 1447141330000
+      "mtime": 1448291614000
     },
     {
       "type": "CSS",
@@ -91,7 +91,7 @@
       "requiredCSS": [
         "./footer.css"
       ],
-      "mtime": 1447141296000
+      "mtime": 1448291624000
     },
     {
       "type": "CSS",
@@ -107,7 +107,7 @@
       "requiredCSS": [
         "./header.css"
       ],
-      "mtime": 1447141313000
+      "mtime": 1448291634000
     },
     {
       "path": "project/components/header/logo.png",
@@ -121,7 +121,11 @@
       "type": "CSS",
       "path": "project/static/css/app.css",
       "id": "project/static/css/app.css",
-      "mtime": 1447135616000
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1448291647000
     },
     {
       "type": "JS",
@@ -135,7 +139,7 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447146694000
+      "mtime": 1448291655000
     }
   ]
 }

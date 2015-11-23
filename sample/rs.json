@@ -25,7 +25,7 @@
       "requiredCSS": [
         "../css/base.less"
       ],
-      "mtime": 1447945294000
+      "mtime": 1448291690000
     },
     {
       "path": "base/js/jQuery.js",
@@ -78,34 +78,7 @@
       "requiredCSS": [
         "./dialog.css"
       ],
-      "mtime": 1447946662000
-    },
-    {
-      "path": "project/package.json",
-      "id": "project/package.json",
-      "data": {
-        "name": "application-name",
-        "version": "0.0.1"
-      },
-      "mtime": 1447927305000
-    },
-    {
-      "path": "core/package.json",
-      "id": "core/package.json",
-      "data": {
-        "name": "application-name",
-        "version": "0.0.1"
-      },
-      "mtime": 1447943843000
-    },
-    {
-      "path": "base/package.json",
-      "id": "base/package.json",
-      "data": {
-        "name": "application-name",
-        "version": "0.0.1"
-      },
-      "mtime": 1448017906000
+      "mtime": 1448291671000
     },
     {
       "path": "project/components/back2top/back2top.js",
@@ -120,7 +93,7 @@
       "requiredCSS": [
         "./back2top.css"
       ],
-      "mtime": 1447141330000
+      "mtime": 1448291614000
     },
     {
       "path": "project/components/back2top/back2top.css",
@@ -149,7 +122,7 @@
       "requiredCSS": [
         "./footer.css"
       ],
-      "mtime": 1447141296000
+      "mtime": 1448291624000
     },
     {
       "path": "project/components/header/header.css",
@@ -171,7 +144,7 @@
       "requiredCSS": [
         "./header.css"
       ],
-      "mtime": 1447141313000
+      "mtime": 1448291634000
     },
     {
       "path": "project/components/header/logo.png",
@@ -184,9 +157,16 @@
     {
       "path": "project/static/css/app.css",
       "id": "project/static/css/app.css",
-      "_requiredCSSMap": {},
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
       "_spriteMap": {},
-      "mtime": 1447135616000
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1448291647000
     },
     {
       "path": "project/static/js/app.js",
@@ -208,7 +188,34 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447146694000
+      "mtime": 1448291655000
+    },
+    {
+      "path": "project/package.json",
+      "id": "project/package.json",
+      "data": {
+        "name": "application-name",
+        "version": "0.0.1"
+      },
+      "mtime": 1447927305000
+    },
+    {
+      "path": "core/package.json",
+      "id": "core/package.json",
+      "data": {
+        "name": "application-name",
+        "version": "0.0.1"
+      },
+      "mtime": 1447943843000
+    },
+    {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {
+        "name": "application-name",
+        "version": "0.0.1"
+      },
+      "mtime": 1448017906000
     }
   ],
   "inferredProjectPaths": [
@@ -255,9 +262,16 @@
       "project/static/css/app.css": {
         "path": "project/static/css/app.css",
         "id": "project/static/css/app.css",
-        "_requiredCSSMap": {},
+        "_requiredCSSMap": {
+          "../../components/header/header.css": true,
+          "../../components/footer/footer.css": true
+        },
         "_spriteMap": {},
-        "mtime": 1447135616000
+        "requiredCSS": [
+          "../../components/header/header.css",
+          "../../components/footer/footer.css"
+        ],
+        "mtime": 1448291647000
       }
     },
     "JS": {
@@ -279,7 +293,7 @@
         "requiredCSS": [
           "../css/base.less"
         ],
-        "mtime": 1447945294000
+        "mtime": 1448291690000
       },
       "jQuery": {
         "path": "base/js/jQuery.js",
@@ -311,7 +325,7 @@
         "requiredCSS": [
           "./dialog.css"
         ],
-        "mtime": 1447946662000
+        "mtime": 1448291671000
       },
       "project/components/back2top/back2top.js": {
         "path": "project/components/back2top/back2top.js",
@@ -326,7 +340,7 @@
         "requiredCSS": [
           "./back2top.css"
         ],
-        "mtime": 1447141330000
+        "mtime": 1448291614000
       },
       "project/components/footer/footer.js": {
         "path": "project/components/footer/footer.js",
@@ -341,7 +355,7 @@
         "requiredCSS": [
           "./footer.css"
         ],
-        "mtime": 1447141296000
+        "mtime": 1448291624000
       },
       "header": {
         "path": "project/components/header/header.js",
@@ -356,7 +370,7 @@
         "requiredCSS": [
           "./header.css"
         ],
-        "mtime": 1447141313000
+        "mtime": 1448291634000
       },
       "project/static/js/app.js": {
         "path": "project/static/js/app.js",
@@ -378,18 +392,10 @@
         "requiredCSS": [
           "../css/app.css"
         ],
-        "mtime": 1447146694000
+        "mtime": 1448291655000
       }
     },
     "Image": {
-      "project/components/header/logo.png": {
-        "path": "project/components/header/logo.png",
-        "id": "project/components/header/logo.png",
-        "networkSize": 1568,
-        "width": 77,
-        "height": 77,
-        "mtime": 1446450675000
-      },
       "core/a.jpg": {
         "path": "core/a.jpg",
         "id": "core/a.jpg",
@@ -397,6 +403,14 @@
         "width": 900,
         "height": 596,
         "mtime": 1438310182000
+      },
+      "project/components/header/logo.png": {
+        "path": "project/components/header/logo.png",
+        "id": "project/components/header/logo.png",
+        "networkSize": 1568,
+        "width": 77,
+        "height": 77,
+        "mtime": 1446450675000
       }
     },
     "SWF": {
@@ -463,7 +477,7 @@
       "requiredCSS": [
         "../css/base.less"
       ],
-      "mtime": 1447945294000
+      "mtime": 1448291690000
     },
     "base/js/jQuery.js": {
       "path": "base/js/jQuery.js",
@@ -516,34 +530,7 @@
       "requiredCSS": [
         "./dialog.css"
       ],
-      "mtime": 1447946662000
-    },
-    "project/package.json": {
-      "path": "project/package.json",
-      "id": "project/package.json",
-      "data": {
-        "name": "application-name",
-        "version": "0.0.1"
-      },
-      "mtime": 1447927305000
-    },
-    "core/package.json": {
-      "path": "core/package.json",
-      "id": "core/package.json",
-      "data": {
-        "name": "application-name",
-        "version": "0.0.1"
-      },
-      "mtime": 1447943843000
-    },
-    "base/package.json": {
-      "path": "base/package.json",
-      "id": "base/package.json",
-      "data": {
-        "name": "application-name",
-        "version": "0.0.1"
-      },
-      "mtime": 1448017906000
+      "mtime": 1448291671000
     },
     "project/components/back2top/back2top.js": {
       "path": "project/components/back2top/back2top.js",
@@ -558,7 +545,7 @@
       "requiredCSS": [
         "./back2top.css"
       ],
-      "mtime": 1447141330000
+      "mtime": 1448291614000
     },
     "project/components/back2top/back2top.css": {
       "path": "project/components/back2top/back2top.css",
@@ -587,7 +574,7 @@
       "requiredCSS": [
         "./footer.css"
       ],
-      "mtime": 1447141296000
+      "mtime": 1448291624000
     },
     "project/components/header/header.css": {
       "path": "project/components/header/header.css",
@@ -609,7 +596,7 @@
       "requiredCSS": [
         "./header.css"
       ],
-      "mtime": 1447141313000
+      "mtime": 1448291634000
     },
     "project/components/header/logo.png": {
       "path": "project/components/header/logo.png",
@@ -622,9 +609,16 @@
     "project/static/css/app.css": {
       "path": "project/static/css/app.css",
       "id": "project/static/css/app.css",
-      "_requiredCSSMap": {},
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
       "_spriteMap": {},
-      "mtime": 1447135616000
+      "requiredCSS": [
+        "../../components/header/header.css",
+        "../../components/footer/footer.css"
+      ],
+      "mtime": 1448291647000
     },
     "project/static/js/app.js": {
       "path": "project/static/js/app.js",
@@ -646,7 +640,34 @@
       "requiredCSS": [
         "../css/app.css"
       ],
-      "mtime": 1447146694000
+      "mtime": 1448291655000
+    },
+    "project/package.json": {
+      "path": "project/package.json",
+      "id": "project/package.json",
+      "data": {
+        "name": "application-name",
+        "version": "0.0.1"
+      },
+      "mtime": 1447927305000
+    },
+    "core/package.json": {
+      "path": "core/package.json",
+      "id": "core/package.json",
+      "data": {
+        "name": "application-name",
+        "version": "0.0.1"
+      },
+      "mtime": 1447943843000
+    },
+    "base/package.json": {
+      "path": "base/package.json",
+      "id": "base/package.json",
+      "data": {
+        "name": "application-name",
+        "version": "0.0.1"
+      },
+      "mtime": 1448017906000
     }
   },
   "typeToMap": {}
