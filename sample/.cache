@@ -13,10 +13,10 @@
       "id": "base/js/base.js",
       "isModule": true,
       "requiredModules": [
-        "base/js/jQuery.js"
+        "./jQuery"
       ],
       "requiredCSS": [
-        "base/css/base.less"
+        "../css/base.less"
       ],
       "mtime": 1447945294000
     },
@@ -59,7 +59,23 @@
       "requiredCSS": [
         "./dialog.css"
       ],
-      "mtime": 1447159016000
+      "mtime": 1447946662000
+    },
+    {
+      "type": "JS",
+      "path": "project/components/back2top/back2top.js",
+      "id": "project/components/back2top/back2top.js",
+      "isModule": true,
+      "requiredCSS": [
+        "./back2top.css"
+      ],
+      "mtime": 1447141330000
+    },
+    {
+      "type": "CSS",
+      "path": "project/components/back2top/back2top.css",
+      "id": "project/components/back2top/back2top.css",
+      "mtime": 1446028155000
     },
     {
       "type": "CSS",
@@ -76,22 +92,6 @@
         "./footer.css"
       ],
       "mtime": 1447141296000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/back2top/back2top.css",
-      "id": "project/components/back2top/back2top.css",
-      "mtime": 1446028155000
-    },
-    {
-      "type": "JS",
-      "path": "project/components/back2top/back2top.js",
-      "id": "project/components/back2top/back2top.js",
-      "isModule": true,
-      "requiredCSS": [
-        "./back2top.css"
-      ],
-      "mtime": 1447141330000
     },
     {
       "type": "CSS",

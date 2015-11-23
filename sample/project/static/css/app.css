@@ -1,6 +1,6 @@
 /**
- * @requires ../../components/header/header.css
- * @requires ../../components/footer/footer.css
+ * @css ../../components/header/header.css
+ * @css ../../components/footer/footer.css
  */
 
 body .app {
