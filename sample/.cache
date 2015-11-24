@@ -3,111 +3,23 @@
   "objects": [
     {
       "type": "CSS",
-      "path": "base/css/base.less",
-      "id": "base/css/base.less",
-      "mtime": 1447242641000
-    },
-    {
-      "type": "JS",
-      "path": "base/js/base.js",
-      "id": "base/js/base.js",
-      "isModule": true,
-      "requiredModules": [
-        "./jQuery"
-      ],
-      "requiredCSS": [
-        "../css/base.less"
-      ],
-      "mtime": 1448291690000
-    },
-    {
-      "type": "JS",
-      "path": "base/js/jQuery.js",
-      "id": "jQuery",
-      "mtime": 1447945500000
-    },
-    {
-      "path": "core/a.jpg",
-      "id": "core/a.jpg",
-      "type": "Image",
-      "mtime": 1438310182000,
-      "width": 900,
-      "height": 596
-    },
-    {
-      "path": "core/flash.swf",
-      "id": "core/flash.swf",
-      "type": "SWF",
-      "mtime": 1447223088000
-    },
-    {
-      "type": "JS",
-      "path": "core/Ajax/ajax.js",
-      "id": "core/Ajax/ajax.js",
-      "mtime": 1447422042000
-    },
-    {
-      "type": "CSS",
-      "path": "core/Dialog/dialog.css",
-      "id": "core/Dialog/dialog.css",
-      "mtime": 1447159030000
-    },
-    {
-      "type": "JS",
-      "path": "core/Dialog/dialog.js",
-      "id": "core/Dialog/dialog.js",
-      "requiredCSS": [
-        "./dialog.css"
-      ],
-      "mtime": 1448291671000
-    },
-    {
-      "type": "JS",
-      "path": "project/components/back2top/back2top.js",
-      "id": "project/components/back2top/back2top.js",
-      "isModule": true,
-      "requiredCSS": [
-        "./back2top.css"
-      ],
-      "mtime": 1448291614000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/back2top/back2top.css",
-      "id": "project/components/back2top/back2top.css",
-      "mtime": 1446028155000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/footer/footer.css",
-      "id": "project/components/footer/footer.css",
-      "mtime": 1444983413000
-    },
-    {
-      "type": "JS",
-      "path": "project/components/footer/footer.js",
-      "id": "project/components/footer/footer.js",
-      "isModule": true,
-      "requiredCSS": [
-        "./footer.css"
-      ],
-      "mtime": 1448291624000
-    },
-    {
-      "type": "CSS",
       "path": "project/components/header/header.css",
       "id": "project/components/header/header.css",
+      "uri": "",
+      "deps": [],
       "mtime": 1447153443000
     },
     {
       "type": "JS",
       "path": "project/components/header/header.js",
       "id": "header",
+      "uri": "",
+      "deps": [],
       "isModule": true,
       "requiredCSS": [
-        "./header.css"
+        "project/components/header/header.css"
       ],
-      "mtime": 1448291634000
+      "mtime": 1448292673000
     },
     {
       "path": "project/components/header/logo.png",
@@ -121,25 +33,69 @@
       "type": "CSS",
       "path": "project/static/css/app.css",
       "id": "project/static/css/app.css",
+      "uri": "",
+      "deps": [],
       "requiredCSS": [
-        "../../components/header/header.css",
-        "../../components/footer/footer.css"
+        "project/components/header/header.css",
+        "project/components/footer/footer.css"
       ],
-      "mtime": 1448291647000
+      "mtime": 1448292684000
+    },
+    {
+      "type": "CSS",
+      "path": "project/components/back2top/back2top.css",
+      "id": "project/components/back2top/back2top.css",
+      "uri": "",
+      "deps": [],
+      "mtime": 1446028155000
+    },
+    {
+      "type": "JS",
+      "path": "project/components/back2top/back2top.js",
+      "id": "project/components/back2top/back2top.js",
+      "uri": "",
+      "deps": [],
+      "isModule": true,
+      "requiredCSS": [
+        "project/components/back2top/back2top.css"
+      ],
+      "mtime": 1448292665000
+    },
+    {
+      "type": "CSS",
+      "path": "project/components/footer/footer.css",
+      "id": "project/components/footer/footer.css",
+      "uri": "",
+      "deps": [],
+      "mtime": 1444983413000
+    },
+    {
+      "type": "JS",
+      "path": "project/components/footer/footer.js",
+      "id": "project/components/footer/footer.js",
+      "uri": "",
+      "deps": [],
+      "isModule": true,
+      "requiredCSS": [
+        "project/components/footer/footer.css"
+      ],
+      "mtime": 1448292656000
     },
     {
       "type": "JS",
       "path": "project/static/js/app.js",
       "id": "project/static/js/app.js",
+      "uri": "",
+      "deps": [],
       "isModule": true,
       "requiredModules": [
-        "../../components/header/header.js",
-        "../../components/footer/footer.js"
+        "header",
+        "project/components/footer/footer.js"
       ],
       "requiredCSS": [
-        "../css/app.css"
+        "project/static/css/app.css"
       ],
-      "mtime": 1448291655000
+      "mtime": 1448292690000
     }
   ]
 }

@@ -21,7 +21,7 @@ var neo = new Neo(
       new Loaders.ProjectConfigurationLoader()
     ],
     [
-      'core', 'project', 'base'
+      /*'core', 'base',*/ 'project'
     ]
 );
 
@@ -30,5 +30,5 @@ neo.update('.cache', function(map) {
   debugger;
 
   // 根据返回的map对象进行业务框架定制
-  fs.writeFileSync('rs.json', JSON.stringify(map, null, 2), 'utf8');
+  // fs.writeFileSync('rs.json', JSON.stringify(map, null, 2), 'utf8');
 });
