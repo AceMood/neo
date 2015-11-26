@@ -25,9 +25,12 @@ var neo = new Neo(
     ]
 );
 
-neo.update('.cache', function(map) {
+neo.update('.cache', function(map, messages) {
 
   debugger;
+
+  console.log('hhhhhhhhhh');
+  console.log(messages.render());
 
   // 根据返回的map对象进行业务框架定制
   // fs.writeFileSync('rs.json', JSON.stringify(map, null, 2), 'utf8');
