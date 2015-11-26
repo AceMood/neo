@@ -71,97 +71,97 @@ describe('JSLoader', function() {
       });
   });
 
-  //it('should resolve commonJS "main" modules post process', function() {
-  //  var map;
-  //
-  //  waitsForCallback(
-  //    // test
-  //    function(callback) {
-  //      var loader = new JSLoader();
-  //      map = new ResourceMap([
-  //        // hasCustomMain dependency project
-  //        JS.fromObject({
-  //          id: 'hasCustomMain/folderWithMain/customMainModule.js',
-  //          path: path.join(
-  //            testData,
-  //            'hasCustomMain',
-  //            'folderWithMain',
-  //            'customMainModule.js'
-  //          ),
-  //          requiredModules: []
-  //        }),
-  //        new ProjectConfiguration(
-  //          path.join(testData, 'hasCustomMain', 'package.json'), {
-  //            name: 'hasCustomMain',
-  //            main: 'folderWithMain/customMainModule.js'
-  //          }
-  //        ),
-  //
-  //        // hasStandardIndex dependency project
-  //        JS.fromObject({
-  //          id: 'hasStandardIndex/index.js',
-  //          path: path.join(testData, 'hasStandardIndex', 'index.js'),
-  //          requiredModules: []
-  //        }),
-  //        new ProjectConfiguration(
-  //          path.join(testData, 'hasStandardIndex', 'package.json'),
-  //          {name: 'hasStandardIndex'}  // Defaults main to index.js
-  //        ),
-  //
-  //
-  //        JS.fromObject({
-  //          id: 'commonJSProject/dependsOnCustomMain.js',
-  //          path: path.join(
-  //            testData,
-  //            'commonJSProject',
-  //            'dependsOnCustomMain.js'
-  //          ),
-  //          requiredModules: ['hasCustomMain']
-  //        }),
-  //        JS.fromObject({
-  //          id: 'commonJSProject/dependsOnStandardIndex.js',
-  //          path: path.join(
-  //            testData,
-  //            'commonJSProject',
-  //            'dependsOnStandardIndex.js'
-  //          ),
-  //          requiredModules: ['hasStandardIndex']
-  //        }),
-  //        new ProjectConfiguration(
-  //          path.join(testData, 'commonJSProject', 'package.json'),
-  //          {name: 'commonJSProject'}  // Must mirror what node will *actually* find
-  //        )
-  //      ]);
-  //
-  //      loader.postProcess(map, map.getAllResourcesByType('JS'), callback);
-  //    },
-  //
-  //    // expectation
-  //    function(messages) {
-  //      expect(messages).toEqual(jasmine.any(MessageList));
-  //      expect(
-  //        map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
-  //          .requiredModules
-  //      ).toEqual(['hasCustomMain/folderWithMain/customMainModule.js']);
-  //
-  //      expect(
-  //        map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
-  //          ._requiredTextToResolvedID
-  //      ).toEqual({
-  //        'hasCustomMain': 'hasCustomMain/folderWithMain/customMainModule.js'
-  //      });
-  //
-  //      expect(
-  //        map.getResource('JS', 'commonJSProject/dependsOnStandardIndex.js')
-  //          .requiredModules
-  //      ).toEqual(['hasStandardIndex/index.js']);
-  //      expect(
-  //        map.getResource('JS', 'commonJSProject/dependsOnStandardIndex.js')
-  //          ._requiredTextToResolvedID
-  //      ).toEqual({'hasStandardIndex': 'hasStandardIndex/index.js'});
-  //    }
-  //  );
-  //});
+  it('should resolve commonJS "main" modules post process', function() {
+    var map;
+
+    waitsForCallback(
+      // test
+      function(callback) {
+        var loader = new JSLoader();
+        map = new ResourceMap([
+          // hasCustomMain dependency project
+          JS.fromObject({
+            id: 'hasCustomMain/folderWithMain/customMainModule.js',
+            path: path.join(
+              testData,
+              'hasCustomMain',
+              'folderWithMain',
+              'customMainModule.js'
+            ),
+            requiredModules: []
+          }),
+          new ProjectConfiguration(
+            path.join(testData, 'hasCustomMain', 'package.json'), {
+              name: 'hasCustomMain',
+              main: 'folderWithMain/customMainModule.js'
+            }
+          ),
+
+          // hasStandardIndex dependency project
+          JS.fromObject({
+            id: 'hasStandardIndex/index.js',
+            path: path.join(testData, 'hasStandardIndex', 'index.js'),
+            requiredModules: []
+          }),
+          new ProjectConfiguration(
+            path.join(testData, 'hasStandardIndex', 'package.json'),
+            {name: 'hasStandardIndex'}  // Defaults main to index.js
+          ),
+
+
+          JS.fromObject({
+            id: 'commonJSProject/dependsOnCustomMain.js',
+            path: path.join(
+              testData,
+              'commonJSProject',
+              'dependsOnCustomMain.js'
+            ),
+            requiredModules: ['hasCustomMain']
+          }),
+          JS.fromObject({
+            id: 'commonJSProject/dependsOnStandardIndex.js',
+            path: path.join(
+              testData,
+              'commonJSProject',
+              'dependsOnStandardIndex.js'
+            ),
+            requiredModules: ['hasStandardIndex']
+          }),
+          new ProjectConfiguration(
+            path.join(testData, 'commonJSProject', 'package.json'),
+            {name: 'commonJSProject'}  // Must mirror what node will *actually* find
+          )
+        ]);
+
+        loader.postProcess(map, map.getAllResourcesByType('JS'), callback);
+      },
+
+      // expectation
+      function(messages) {
+        expect(messages).toEqual(jasmine.any(MessageList));
+        expect(
+          map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
+            .requiredModules
+        ).toEqual(['hasCustomMain/folderWithMain/customMainModule.js']);
+
+        expect(
+          map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
+            ._requiredTextToResolvedID
+        ).toEqual({
+          'hasCustomMain': 'hasCustomMain/folderWithMain/customMainModule.js'
+        });
+
+        expect(
+          map.getResource('JS', 'commonJSProject/dependsOnStandardIndex.js')
+            .requiredModules
+        ).toEqual(['hasStandardIndex/index.js']);
+        expect(
+          map.getResource('JS', 'commonJSProject/dependsOnStandardIndex.js')
+            ._requiredTextToResolvedID
+        ).toEqual({'hasStandardIndex': 'hasStandardIndex/index.js'});
+      }
+    );
+  });
 
   it('should resolve intern rel paths *with* package process', function() {
     var map;
