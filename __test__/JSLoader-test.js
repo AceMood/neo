@@ -162,46 +162,46 @@ describe('JSLoader', function() {
   //    }
   //  );
   //});
-  //
-  //it('should resolve intern rel paths *with* package process', function() {
-  //  var map;
-  //
-  //  waitsForCallback(
-  //    // test
-  //    function(callback) {
-  //      var loader = new JSLoader();
-  //      map = new ResourceMap([
-  //        JS.fromObject({
-  //          id: 'configured/a.js',
-  //          path: path.join(testData, 'configured', 'a.js'),
-  //          requiredModules: ['./b']   // TODO: add more interesting things here
-  //        }),
-  //        JS.fromObject({
-  //          id: 'configured/b.js',
-  //          path: path.join(testData, 'configured', 'b.js')
-  //        }),
-  //        new ProjectConfiguration(
-  //          path.join(testData, 'configured', 'package.json'),
-  //          {name: 'configured'}  // Must mirror what node will *actually* find
-  //        )
-  //      ]);
-  //
-  //      loader.postProcess(map, map.getAllResourcesByType('JS'), callback);
-  //    },
-  //
-  //    // expectation
-  //    function(messages) {
-  //      expect(messages).toEqual(jasmine.any(MessageList));
-  //      expect(
-  //        map.getResource('JS', 'configured/a.js').requiredModules)
-  //        .toEqual(['configured/b.js']
-  //      );
-  //      expect(
-  //        map.getResource('JS', 'configured/a.js')._requiredTextToResolvedID
-  //      ).toEqual({'./b': 'configured/b.js'});
-  //    }
-  //  );
-  //});
+
+  it('should resolve intern rel paths *with* package process', function() {
+    var map;
+
+    waitsForCallback(
+      // test
+      function(callback) {
+        var loader = new JSLoader();
+        map = new ResourceMap([
+          JS.fromObject({
+            id: 'configured/a.js',
+            path: path.join(testData, 'configured', 'a.js'),
+            requiredModules: ['./b']   // TODO: add more interesting things here
+          }),
+          JS.fromObject({
+            id: 'configured/b.js',
+            path: path.join(testData, 'configured', 'b.js')
+          }),
+          new ProjectConfiguration(
+            path.join(testData, 'configured', 'package.json'),
+            {name: 'configured'}  // Must mirror what node will *actually* find
+          )
+        ]);
+
+        loader.postProcess(map, map.getAllResourcesByType('JS'), callback);
+      },
+
+      // expectation
+      function(messages) {
+        expect(messages).toEqual(jasmine.any(MessageList));
+        expect(
+          map.getResource('JS', 'configured/a.js').requiredModules)
+          .toEqual(['configured/b.js']
+        );
+        expect(
+          map.getResource('JS', 'configured/a.js')._requiredTextToResolvedID
+        ).toEqual({'./b': 'configured/b.js'});
+      }
+    );
+  });
 
   it('should resolve local paths without package.json', function() {
     var map;

@@ -23,7 +23,7 @@
     },
     {
       "path": "project/components/header/logo.png",
-      "id": "project/components/header/logo.png",
+      "id": null,
       "type": "Image",
       "mtime": 1446450675000,
       "width": 77,
@@ -96,6 +96,15 @@
         "project/static/css/app.css"
       ],
       "mtime": 1448292690000
+    },
+    {
+      "type": "JS",
+      "path": "project/AnotherHeader.js",
+      "id": "header",
+      "uri": "",
+      "deps": [],
+      "isModule": true,
+      "mtime": 1448376039000
     }
   ]
 }
