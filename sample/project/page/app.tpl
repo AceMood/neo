@@ -3,9 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Sample Code</title>
-    <link href="../static/css/app.css" rel="stylesheet" type="text/css" />
+    <link href="project/static/css/app.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+
     <div>Hello World!</div>
     <div id="pagelet_one">
         <h3>pagelet one</h3>
@@ -20,6 +21,8 @@
     <footer>
 
     </footer>
-    <script src="../static/js/app.js"></script>
+
+    <script src="static/js/app.js"></script>
+
 </body>
 </html>

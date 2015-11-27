@@ -17,8 +17,7 @@ var neo = new Neo(
       new Loaders.JSLoader(),
       new Loaders.CSSLoader(),
       new Loaders.ImageLoader(),
-      new Loaders.SWFLoader(),
-      new Loaders.ProjectConfigurationLoader()
+      new Loaders.SWFLoader()
     ],
     [
       /*'core', 'base',*/ 'project'
@@ -28,10 +27,8 @@ var neo = new Neo(
 neo.update('.cache', function(map, messages) {
 
   debugger;
-
-  console.log('hhhhhhhhhh');
   console.log(messages.render());
 
   // 根据返回的map对象进行业务框架定制
-  // fs.writeFileSync('rs.json', JSON.stringify(map, null, 2), 'utf8');
+  fs.writeFileSync('map.json', JSON.stringify(map, null, 4), 'utf8');
 });

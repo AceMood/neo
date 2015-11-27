@@ -12,6 +12,26 @@
     },
     {
       "type": "CSS",
+      "path": "project/components/back2top/back2top.css",
+      "id": "project/components/back2top/back2top.css",
+      "uri": "",
+      "deps": [],
+      "mtime": 1446028155000
+    },
+    {
+      "type": "JS",
+      "path": "project/components/back2top/back2top.js",
+      "id": "project/components/back2top/back2top.js",
+      "uri": "",
+      "deps": [],
+      "isModule": true,
+      "requiredCSS": [
+        "project/components/back2top/back2top.css"
+      ],
+      "mtime": 1448620912000
+    },
+    {
+      "type": "CSS",
       "path": "project/components/footer/footer.css",
       "id": "project/components/footer/footer.css",
       "uri": "",
@@ -29,26 +49,6 @@
         "project/components/footer/footer.css"
       ],
       "mtime": 1448292656000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/back2top/back2top.css",
-      "id": "project/components/back2top/back2top.css",
-      "uri": "",
-      "deps": [],
-      "mtime": 1446028155000
-    },
-    {
-      "type": "JS",
-      "path": "project/components/back2top/back2top.js",
-      "id": "project/components/back2top/back2top.js",
-      "uri": "",
-      "deps": [],
-      "isModule": true,
-      "requiredCSS": [
-        "project/components/back2top/back2top.css"
-      ],
-      "mtime": 1448292665000
     },
     {
       "type": "CSS",
@@ -72,7 +72,7 @@
     },
     {
       "path": "project/components/header/logo.png",
-      "id": "project/components/header/logo.png",
+      "id": null,
       "type": "Image",
       "mtime": 1446450675000,
       "width": 77,
