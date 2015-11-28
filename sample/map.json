@@ -29,14 +29,11 @@
             "id": "project/components/back2top/back2top.js",
             "uri": "",
             "deps": [],
-            "_requiredCSSMap": {
-                "./back2top.css": true
-            },
+            "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "./back2top.css": "project/components/back2top/back2top.css"
-            },
+            "_requiredTextToResolvedID": {},
+            "type": "JS",
             "isModule": true,
             "requiredCSS": [
                 "project/components/back2top/back2top.css"
@@ -125,11 +122,19 @@
             "id": "project/static/js/app.js",
             "uri": "",
             "deps": [],
-            "_requiredCSSMap": {},
-            "_requiredModuleMap": {},
+            "_requiredCSSMap": {
+                "../css/app.css": true
+            },
+            "_requiredModuleMap": {
+                "../../components/header/header.js": true,
+                "../../components/footer/footer.js": true
+            },
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "JS",
+            "_requiredTextToResolvedID": {
+                "../../components/header/header.js": "header",
+                "../../components/footer/footer.js": "project/components/footer/footer.js",
+                "../css/app.css": "project/static/css/app.css"
+            },
             "isModule": true,
             "requiredModules": [
                 "header",
@@ -138,7 +143,7 @@
             "requiredCSS": [
                 "project/static/css/app.css"
             ],
-            "mtime": 1448292690000
+            "mtime": 1448623019000
         }
     ],
     "inferredProjectPaths": [],
@@ -166,14 +171,11 @@
                 "id": "project/components/back2top/back2top.js",
                 "uri": "",
                 "deps": [],
-                "_requiredCSSMap": {
-                    "./back2top.css": true
-                },
+                "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {
-                    "./back2top.css": "project/components/back2top/back2top.css"
-                },
+                "_requiredTextToResolvedID": {},
+                "type": "JS",
                 "isModule": true,
                 "requiredCSS": [
                     "project/components/back2top/back2top.css"
@@ -201,11 +203,19 @@
                 "id": "project/static/js/app.js",
                 "uri": "",
                 "deps": [],
-                "_requiredCSSMap": {},
-                "_requiredModuleMap": {},
+                "_requiredCSSMap": {
+                    "../css/app.css": true
+                },
+                "_requiredModuleMap": {
+                    "../../components/header/header.js": true,
+                    "../../components/footer/footer.js": true
+                },
                 "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {},
-                "type": "JS",
+                "_requiredTextToResolvedID": {
+                    "../../components/header/header.js": "header",
+                    "../../components/footer/footer.js": "project/components/footer/footer.js",
+                    "../css/app.css": "project/static/css/app.css"
+                },
                 "isModule": true,
                 "requiredModules": [
                     "header",
@@ -214,7 +224,7 @@
                 "requiredCSS": [
                     "project/static/css/app.css"
                 ],
-                "mtime": 1448292690000
+                "mtime": 1448623019000
             }
         },
         "CSS": {
@@ -308,14 +318,11 @@
             "id": "project/components/back2top/back2top.js",
             "uri": "",
             "deps": [],
-            "_requiredCSSMap": {
-                "./back2top.css": true
-            },
+            "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "./back2top.css": "project/components/back2top/back2top.css"
-            },
+            "_requiredTextToResolvedID": {},
+            "type": "JS",
             "isModule": true,
             "requiredCSS": [
                 "project/components/back2top/back2top.css"
@@ -404,11 +411,19 @@
             "id": "project/static/js/app.js",
             "uri": "",
             "deps": [],
-            "_requiredCSSMap": {},
-            "_requiredModuleMap": {},
+            "_requiredCSSMap": {
+                "../css/app.css": true
+            },
+            "_requiredModuleMap": {
+                "../../components/header/header.js": true,
+                "../../components/footer/footer.js": true
+            },
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "JS",
+            "_requiredTextToResolvedID": {
+                "../../components/header/header.js": "header",
+                "../../components/footer/footer.js": "project/components/footer/footer.js",
+                "../css/app.css": "project/static/css/app.css"
+            },
             "isModule": true,
             "requiredModules": [
                 "header",
@@ -417,7 +432,7 @@
             "requiredCSS": [
                 "project/static/css/app.css"
             ],
-            "mtime": 1448292690000
+            "mtime": 1448623019000
         }
     },
     "typeToMap": {}

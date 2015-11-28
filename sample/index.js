@@ -24,6 +24,12 @@ var neo = new Neo(
     ]
 );
 
+neo.on('postProcessed', function(map) {
+
+  debugger;
+
+});
+
 neo.update('.cache', function(map, messages) {
 
   debugger;

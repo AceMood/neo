@@ -12,7 +12,8 @@
   },
   "keywords": [
     "Static Resource Management",
-    "Front End"
+    "Front End",
+    "Resource Map"
   ],
   "author": "Facebook.Inc, AceMood",
   "license": "MIT",
