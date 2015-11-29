@@ -9,6 +9,7 @@ soi.release.task("dev")
       md5: false,
       drd: '../build',
       mapTo: '../build/map.json',
+      cacheTo: '../build/.cache',
       replace: {
           from: '__NAVBAR__',
           to: function($0, $1) {

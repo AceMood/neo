@@ -14,17 +14,6 @@
             "mtime": 1448376039000
         },
         {
-            "path": "project/components/back2top/back2top.css",
-            "id": "project/components/back2top/back2top.css",
-            "uri": "",
-            "deps": [],
-            "_requiredCSSMap": {},
-            "_spriteMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "CSS",
-            "mtime": 1446028155000
-        },
-        {
             "path": "project/components/back2top/back2top.js",
             "id": "project/components/back2top/back2top.js",
             "uri": "",
@@ -41,6 +30,54 @@
             "mtime": 1448620912000
         },
         {
+            "path": "project/components/back2top/back2top.css",
+            "id": "project/components/back2top/back2top.css",
+            "uri": "",
+            "deps": [],
+            "_requiredCSSMap": {},
+            "_spriteMap": {},
+            "_requiredTextToResolvedID": {},
+            "type": "CSS",
+            "fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
+            "mtime": 1446028155000
+        },
+        {
+            "path": "project/components/header/header.js",
+            "id": "header",
+            "uri": "",
+            "deps": [],
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "type": "JS",
+            "isModule": true,
+            "requiredCSS": [
+                "project/components/header/header.css"
+            ],
+            "mtime": 1448292673000
+        },
+        {
+            "path": "project/components/header/header.css",
+            "id": "project/components/header/header.css",
+            "uri": "",
+            "deps": [],
+            "_requiredCSSMap": {},
+            "_spriteMap": {},
+            "_requiredTextToResolvedID": {},
+            "type": "CSS",
+            "fileContent": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
+            "mtime": 1447153443000
+        },
+        {
+            "path": "project/components/header/logo.png",
+            "id": null,
+            "uri": "",
+            "width": 77,
+            "height": 77,
+            "mtime": 1446450675000
+        },
+        {
             "path": "project/components/footer/footer.css",
             "id": "project/components/footer/footer.css",
             "uri": "",
@@ -49,6 +86,7 @@
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
             "type": "CSS",
+            "fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
             "mtime": 1444983413000
         },
         {
@@ -68,19 +106,8 @@
             "mtime": 1448292656000
         },
         {
-            "path": "project/components/header/header.css",
-            "id": "project/components/header/header.css",
-            "uri": "",
-            "deps": [],
-            "_requiredCSSMap": {},
-            "_spriteMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "CSS",
-            "mtime": 1447153443000
-        },
-        {
-            "path": "project/components/header/header.js",
-            "id": "header",
+            "path": "project/static/js/app.js",
+            "id": "project/static/js/app.js",
             "uri": "",
             "deps": [],
             "_requiredCSSMap": {},
@@ -89,18 +116,14 @@
             "_requiredTextToResolvedID": {},
             "type": "JS",
             "isModule": true,
-            "requiredCSS": [
-                "project/components/header/header.css"
+            "requiredModules": [
+                "header",
+                "project/components/footer/footer.js"
             ],
-            "mtime": 1448292673000
-        },
-        {
-            "path": "project/components/header/logo.png",
-            "id": null,
-            "uri": "",
-            "width": 77,
-            "height": 77,
-            "mtime": 1446450675000
+            "requiredCSS": [
+                "project/static/css/app.css"
+            ],
+            "mtime": 1448623019000
         },
         {
             "path": "project/static/css/app.css",
@@ -115,38 +138,11 @@
                 "project/components/header/header.css",
                 "project/components/footer/footer.css"
             ],
+            "fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "mtime": 1448292684000
-        },
-        {
-            "path": "project/static/js/app.js",
-            "id": "project/static/js/app.js",
-            "uri": "",
-            "deps": [],
-            "_requiredCSSMap": {
-                "../css/app.css": true
-            },
-            "_requiredModuleMap": {
-                "../../components/header/header.js": true,
-                "../../components/footer/footer.js": true
-            },
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "../../components/header/header.js": "header",
-                "../../components/footer/footer.js": "project/components/footer/footer.js",
-                "../css/app.css": "project/static/css/app.css"
-            },
-            "isModule": true,
-            "requiredModules": [
-                "header",
-                "project/components/footer/footer.js"
-            ],
-            "requiredCSS": [
-                "project/static/css/app.css"
-            ],
-            "mtime": 1448623019000
         }
     ],
-    "inferredProjectPaths": [],
+    "inferredProjectPaths": null,
     "configurationTrie": null,
     "resourceMap": {
         "JS": {
@@ -203,19 +199,11 @@
                 "id": "project/static/js/app.js",
                 "uri": "",
                 "deps": [],
-                "_requiredCSSMap": {
-                    "../css/app.css": true
-                },
-                "_requiredModuleMap": {
-                    "../../components/header/header.js": true,
-                    "../../components/footer/footer.js": true
-                },
+                "_requiredCSSMap": {},
+                "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {
-                    "../../components/header/header.js": "header",
-                    "../../components/footer/footer.js": "project/components/footer/footer.js",
-                    "../css/app.css": "project/static/css/app.css"
-                },
+                "_requiredTextToResolvedID": {},
+                "type": "JS",
                 "isModule": true,
                 "requiredModules": [
                     "header",
@@ -237,18 +225,8 @@
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
                 "type": "CSS",
+                "fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
                 "mtime": 1446028155000
-            },
-            "project/components/footer/footer.css": {
-                "path": "project/components/footer/footer.css",
-                "id": "project/components/footer/footer.css",
-                "uri": "",
-                "deps": [],
-                "_requiredCSSMap": {},
-                "_spriteMap": {},
-                "_requiredTextToResolvedID": {},
-                "type": "CSS",
-                "mtime": 1444983413000
             },
             "project/components/header/header.css": {
                 "path": "project/components/header/header.css",
@@ -259,7 +237,20 @@
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
                 "type": "CSS",
+                "fileContent": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
                 "mtime": 1447153443000
+            },
+            "project/components/footer/footer.css": {
+                "path": "project/components/footer/footer.css",
+                "id": "project/components/footer/footer.css",
+                "uri": "",
+                "deps": [],
+                "_requiredCSSMap": {},
+                "_spriteMap": {},
+                "_requiredTextToResolvedID": {},
+                "type": "CSS",
+                "fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
+                "mtime": 1444983413000
             },
             "project/static/css/app.css": {
                 "path": "project/static/css/app.css",
@@ -274,6 +265,7 @@
                     "project/components/header/header.css",
                     "project/components/footer/footer.css"
                 ],
+                "fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
                 "mtime": 1448292684000
             }
         },
@@ -302,17 +294,6 @@
             "isModule": true,
             "mtime": 1448376039000
         },
-        "project/components/back2top/back2top.css": {
-            "path": "project/components/back2top/back2top.css",
-            "id": "project/components/back2top/back2top.css",
-            "uri": "",
-            "deps": [],
-            "_requiredCSSMap": {},
-            "_spriteMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "CSS",
-            "mtime": 1446028155000
-        },
         "project/components/back2top/back2top.js": {
             "path": "project/components/back2top/back2top.js",
             "id": "project/components/back2top/back2top.js",
@@ -329,6 +310,54 @@
             ],
             "mtime": 1448620912000
         },
+        "project/components/back2top/back2top.css": {
+            "path": "project/components/back2top/back2top.css",
+            "id": "project/components/back2top/back2top.css",
+            "uri": "",
+            "deps": [],
+            "_requiredCSSMap": {},
+            "_spriteMap": {},
+            "_requiredTextToResolvedID": {},
+            "type": "CSS",
+            "fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
+            "mtime": 1446028155000
+        },
+        "project/components/header/header.js": {
+            "path": "project/components/header/header.js",
+            "id": "header",
+            "uri": "",
+            "deps": [],
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {},
+            "type": "JS",
+            "isModule": true,
+            "requiredCSS": [
+                "project/components/header/header.css"
+            ],
+            "mtime": 1448292673000
+        },
+        "project/components/header/header.css": {
+            "path": "project/components/header/header.css",
+            "id": "project/components/header/header.css",
+            "uri": "",
+            "deps": [],
+            "_requiredCSSMap": {},
+            "_spriteMap": {},
+            "_requiredTextToResolvedID": {},
+            "type": "CSS",
+            "fileContent": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
+            "mtime": 1447153443000
+        },
+        "project/components/header/logo.png": {
+            "path": "project/components/header/logo.png",
+            "id": null,
+            "uri": "",
+            "width": 77,
+            "height": 77,
+            "mtime": 1446450675000
+        },
         "project/components/footer/footer.css": {
             "path": "project/components/footer/footer.css",
             "id": "project/components/footer/footer.css",
@@ -338,6 +367,7 @@
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
             "type": "CSS",
+            "fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
             "mtime": 1444983413000
         },
         "project/components/footer/footer.js": {
@@ -356,20 +386,9 @@
             ],
             "mtime": 1448292656000
         },
-        "project/components/header/header.css": {
-            "path": "project/components/header/header.css",
-            "id": "project/components/header/header.css",
-            "uri": "",
-            "deps": [],
-            "_requiredCSSMap": {},
-            "_spriteMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "CSS",
-            "mtime": 1447153443000
-        },
-        "project/components/header/header.js": {
-            "path": "project/components/header/header.js",
-            "id": "header",
+        "project/static/js/app.js": {
+            "path": "project/static/js/app.js",
+            "id": "project/static/js/app.js",
             "uri": "",
             "deps": [],
             "_requiredCSSMap": {},
@@ -378,18 +397,14 @@
             "_requiredTextToResolvedID": {},
             "type": "JS",
             "isModule": true,
-            "requiredCSS": [
-                "project/components/header/header.css"
+            "requiredModules": [
+                "header",
+                "project/components/footer/footer.js"
             ],
-            "mtime": 1448292673000
-        },
-        "project/components/header/logo.png": {
-            "path": "project/components/header/logo.png",
-            "id": null,
-            "uri": "",
-            "width": 77,
-            "height": 77,
-            "mtime": 1446450675000
+            "requiredCSS": [
+                "project/static/css/app.css"
+            ],
+            "mtime": 1448623019000
         },
         "project/static/css/app.css": {
             "path": "project/static/css/app.css",
@@ -404,35 +419,8 @@
                 "project/components/header/header.css",
                 "project/components/footer/footer.css"
             ],
+            "fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "mtime": 1448292684000
-        },
-        "project/static/js/app.js": {
-            "path": "project/static/js/app.js",
-            "id": "project/static/js/app.js",
-            "uri": "",
-            "deps": [],
-            "_requiredCSSMap": {
-                "../css/app.css": true
-            },
-            "_requiredModuleMap": {
-                "../../components/header/header.js": true,
-                "../../components/footer/footer.js": true
-            },
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "../../components/header/header.js": "header",
-                "../../components/footer/footer.js": "project/components/footer/footer.js",
-                "../css/app.css": "project/static/css/app.css"
-            },
-            "isModule": true,
-            "requiredModules": [
-                "header",
-                "project/components/footer/footer.js"
-            ],
-            "requiredCSS": [
-                "project/static/css/app.css"
-            ],
-            "mtime": 1448623019000
         }
     },
     "typeToMap": {}
