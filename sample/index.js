@@ -29,6 +29,7 @@ var neo = new Neo(
 neo.on('postProcessed', function(map) {
 
   debugger;
+  // 基础服务组件生效，根据配置进行代码优化打包
 
 });
 
