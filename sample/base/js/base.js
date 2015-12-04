@@ -1,10 +1,11 @@
 /**
  * @module
  * @css ../css/base.less
+ * @requires ./jQuery
  */
 
 var base = {
   less: true
 };
 
-require('./jQuery');
+var mod = require('./mod');

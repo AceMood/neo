@@ -22,7 +22,7 @@ var neo = new Neo(
       new Loaders.SWFLoader()
     ],
     [
-      /*'core', 'base',*/ 'project'
+      /*'core',*/ 'base', 'project'
     ]
 );
 
@@ -35,9 +35,9 @@ neo.on('postProcessed', function(map) {
 
 neo.update('.cache', function(map, messages) {
 
-  debugger;
-  console.log(messages.render());
+    debugger;
+    console.log(messages.render());
 
-  // 根据返回的map对象进行业务框架定制
-  fs.writeFileSync('map.json', JSON.stringify(map, null, 4), 'utf8');
+    // 根据返回的map对象进行业务框架定制
+    fs.writeFileSync('map.json', JSON.stringify(map, null, 4), 'utf8');
 });
