@@ -28,14 +28,14 @@ var neo = new Neo(
 
 neo.on('postProcessed', function(map) {
 
-  debugger;
+  // debugger;
   // 基础服务组件生效，根据配置进行代码优化打包
 
 });
 
 neo.update('.cache', function(map, messages) {
 
-    debugger;
+    // debugger;
     console.log(messages.render());
 
     // 根据返回的map对象进行业务框架定制
