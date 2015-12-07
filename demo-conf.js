@@ -44,7 +44,7 @@ soi.release.task('dev',
       mapTo: '../build/map.json',
       cacheTo: '../build/.cache',
       scandirs: ['.'],
-      cmdwrapper: {
+      wrapper: {
         define: '__d',
         usestrict: false,
         commentdoc: ''
@@ -59,11 +59,14 @@ soi.release.task('dev',
         }
       }
     })
+    .addRule(/merchant\/img\/.*\.png$/)
+      .use('md5')
+      .to('static/images/')
     .addRule(/(.*)\.less$/)
       .use('less')
       .use('css')
       .use('md5')
-    .addRule('lib/*.js')
+    .addRule('*.js')
       .use('uglify', {
         debug: false,
         curl: true,
