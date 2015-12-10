@@ -15,14 +15,13 @@
     "Front End",
     "Resource Map"
   ],
-  "author": "Facebook.Inc, AceMood",
+  "author": "Facebook.Inc, AceMood, Songjin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AceMood/neo/issues"
   },
   "homepage": "https://github.com/AceMood/neo",
   "dependencies": {
-    "jasmine-node": "^1.14.5",
-    "node-cache": "^3.0.0"
+    "jasmine-node": "^1.14.5"
   }
 }
