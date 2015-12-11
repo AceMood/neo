@@ -15,9 +15,7 @@ var Loaders = Neo.Loaders;
 var neo = new Neo(
     [
       new Loaders.JSLoader(),
-      new Loaders.CSSLoader({
-        extractFileContent: true
-      }),
+      new Loaders.CSSLoader(),
       new Loaders.ImageLoader(),
       new Loaders.SWFLoader()
     ],
