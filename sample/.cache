@@ -2,16 +2,19 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "JS",
-      "path": "project/AnotherHeader.js",
-      "id": "header",
-      "isModule": true,
-      "mtime": 1448376039000
+      "type": "CSS",
+      "path": "base/css/base.less",
+      "id": "base",
+      "requiredCSS": [
+        "lib",
+        "./lib.css"
+      ],
+      "mtime": 1449225172000
     },
     {
       "type": "JS",
       "path": "base/js/base.js",
-      "id": "base/js/base.js",
+      "id": "base",
       "isModule": true,
       "requiredModules": [
         "jQuery",
@@ -30,13 +33,29 @@
     },
     {
       "type": "CSS",
-      "path": "base/css/base.less",
-      "id": "base",
+      "path": "project/components/back2top/back2top.css",
+      "id": "project/components/back2top/back2top.css",
+      "mtime": 1446028155000
+    },
+    {
+      "type": "JS",
+      "path": "project/components/back2top/back2top.js",
+      "id": "project/components/back2top/back2top.js",
+      "isModule": true,
       "requiredCSS": [
-        "lib",
-        "./lib.css"
+        "project/components/back2top/back2top.css"
       ],
-      "mtime": 1449225172000
+      "mtime": 1448620912000
+    },
+    {
+      "type": "CSS",
+      "path": "project/static/css/app.css",
+      "id": "project/static/css/app.css",
+      "requiredCSS": [
+        "project/components/header/header.css",
+        "project/components/footer/footer.css"
+      ],
+      "mtime": 1448292684000
     },
     {
       "type": "CSS",
@@ -53,22 +72,6 @@
         "project/components/footer/footer.css"
       ],
       "mtime": 1448292656000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/back2top/back2top.css",
-      "id": "project/components/back2top/back2top.css",
-      "mtime": 1446028155000
-    },
-    {
-      "type": "JS",
-      "path": "project/components/back2top/back2top.js",
-      "id": "project/components/back2top/back2top.js",
-      "isModule": true,
-      "requiredCSS": [
-        "project/components/back2top/back2top.css"
-      ],
-      "mtime": 1448620912000
     },
     {
       "type": "CSS",
@@ -93,16 +96,6 @@
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
-    },
-    {
-      "type": "CSS",
-      "path": "project/static/css/app.css",
-      "id": "project/static/css/app.css",
-      "requiredCSS": [
-        "project/components/header/header.css",
-        "project/components/footer/footer.css"
-      ],
-      "mtime": 1448292684000
     },
     {
       "type": "JS",
