@@ -2,6 +2,12 @@
   "version": "0.1",
   "objects": [
     {
+      "type": "JS",
+      "path": "project/null.js",
+      "id": "project/null.js",
+      "mtime": 1450939420000
+    },
+    {
       "type": "CSS",
       "path": "base/css/base.less",
       "id": "base",
@@ -14,7 +20,7 @@
     {
       "type": "JS",
       "path": "base/js/base.js",
-      "id": "base",
+      "id": "base/js/base.js",
       "isModule": true,
       "requiredModules": [
         "jQuery",
@@ -46,16 +52,6 @@
         "project/components/back2top/back2top.css"
       ],
       "mtime": 1448620912000
-    },
-    {
-      "type": "CSS",
-      "path": "project/static/css/app.css",
-      "id": "project/static/css/app.css",
-      "requiredCSS": [
-        "project/components/header/header.css",
-        "project/components/footer/footer.css"
-      ],
-      "mtime": 1448292684000
     },
     {
       "type": "CSS",
@@ -96,6 +92,16 @@
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
+    },
+    {
+      "type": "CSS",
+      "path": "project/static/css/app.css",
+      "id": "project/static/css/app.css",
+      "requiredCSS": [
+        "project/components/header/header.css",
+        "project/components/footer/footer.css"
+      ],
+      "mtime": 1448292684000
     },
     {
       "type": "JS",
