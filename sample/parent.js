@@ -1,9 +1,15 @@
 var cp = require('child_process');
-var spwan = cp.spawn;
+var spawn = cp.spawn;
 
-var child = spwan('node', ['sub.js', '--set'], {
-    detached: false
+console.log(__dirname);
+
+var child = spawn('node', [__dirname + '/sub.js', '--set'], {
+    detached: true
 });
+
+// child.unref();
+
+//child.send({ hello: 'world' });
 
 //var n = cp.fork(__dirname + '/sub.js');
 
