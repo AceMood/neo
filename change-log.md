@@ -1,3 +1,6 @@
+# v0.4.2
+1. Image和Swf类型资源getContent默认返回binary编码的string, setContent设置也随之修改成接受string参数
+
 # v0.4.0
 1. 添加扫描规则，若文件名称以`_`开头则默认不做扫描记入资源表，且这个方法可以在初始化`Neo`时提供和覆盖
 2. 测试目录由`__test__`改成`test`，同node package.json的建议保持一致
