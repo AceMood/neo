@@ -1,3 +1,7 @@
+# v0.6.0~
+1. 去掉tpl资源类型和加载器
+2. 更改为资源注册方式,这样三方代码可以更灵活注册扫描的资源类型
+
 # v0.4.2
 1. Image和Swf类型资源getContent默认返回binary编码的string, setContent设置也随之修改成接受string参数
 2. resource对象提供flush方法写入指定位置
