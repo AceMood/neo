@@ -9,6 +9,9 @@ var fs = require('fs');
 var Neo = require('../lib/Neo');
 var Loaders = Neo.Loaders;
 
+//var JSLoader = require('../lib/loader/JSLoader');
+//Neo.registerResourceLoader('JSLoader', JSLoader);
+
 // 第一个数组表示需要针对何种类型的资源
 // 第二个数组表示需要遍历的目录，应该是相对于vrd的路径
 // 第三个是配置对象
