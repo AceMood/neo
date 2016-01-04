@@ -1,0 +1,31 @@
+{
+  "name": "engineering-util-colorfulconsole",
+  "version": "1.0.0",
+  "description": "utillities for print colorful information in terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saber-Team/Engineering-Util-ColorfulConsole.git"
+  },
+  "keywords": [
+    "console",
+    "fontcolor"
+  ],
+  "author": {
+    "name": "AceMood"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Saber-Team/Engineering-Util-ColorfulConsole/issues"
+  },
+  "homepage": "https://github.com/Saber-Team/Engineering-Util-ColorfulConsole#readme",
+  "readme": "# Engineering-Util-ColorfulConsole\n在控制台打印彩色信息。是[color模块](https://github.com/Marak/colors.js)的一个简版，\n提炼几个常用行为用于统一输出。另外，定制了工程化工具的logo。关于控制台颜色输出，更多\n[看这里](http://blog.soulserv.net/terminal-friendly-application-with-node-js/)。\n",
+  "readmeFilename": "README.md",
+  "gitHead": "0bc9ee5f70412fd721e718a98a94a04b966f4190",
+  "_id": "engineering-util-colorfulconsole@1.0.0",
+  "_shasum": "8b0d415f631befbeec571a0115ab99af988947ee",
+  "_from": "engineering-util-colorfulconsole@*"
+}

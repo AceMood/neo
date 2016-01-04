@@ -4,7 +4,7 @@
   "description": "Facade of FrontEnd Static Resource System.",
   "main": "index.js",
   "engines": {
-    "node" : ">=0.12.0"
+    "node": ">=0.12.0"
   },
   "scripts": {
     "test": "jasmine-node --matchall test"
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/AceMood/neo",
   "dependencies": {
+    "engineering-util-colorfulconsole": "^1.0.0",
     "jasmine-node": "^1.14.5"
   }
 }

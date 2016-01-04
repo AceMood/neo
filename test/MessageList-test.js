@@ -18,7 +18,7 @@
 
 describe("MessageList", function() {
   var MessageList = require('../lib/MessageList');
-  var cli = require('../lib/CLI');
+  var cli = require('engineering-util-colorfulconsole');
 
   it('should add different types of messages', function() {
     var list = new MessageList();
