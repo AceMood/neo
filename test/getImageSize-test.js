@@ -1,5 +1,6 @@
 /**
  * @file 取得图像大小功能
+ * @todo 计算后会改变图像buffer
  * @Stability: 2 - Stable
  */
 
