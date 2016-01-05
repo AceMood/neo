@@ -21,6 +21,7 @@
  * SOFTWARE.
  *
  * @file 解析注释头部信息功能
+ * @author AceMood
  * @email zmike86@gmail.com
  */
 
@@ -32,21 +33,21 @@ describe('docblock', function() {
 
   it('should extract valid docblock', function() {
     var code = '/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/'
-        + os.EOL + 'var x = foo;';
+      + os.EOL + 'var x = foo;';
     expect(docblock.extract(code)).to.be.a('string');
     expect(docblock.extract(code)).to.equal('/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/');
   });
 
   it('should extract valid docblock with more comments', function() {
     var code = '/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/'
-        + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
+      + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
     expect(docblock.extract(code)).to.be.a('string');
     expect(docblock.extract(code)).to.equal('/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/');
   });
 
   it('should return nothing for no docblock', function() {
     var code = '/*' + os.EOL + ' * @providesModule foo' + os.EOL + '*/'
-        + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
+      + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
     expect(docblock.extract(code)).to.be.a('string');
     expect(docblock.extract(code)).to.equal('');
   });
@@ -114,7 +115,7 @@ describe('docblock', function() {
     expect(docblock.parse(code)).to.have.length(2);
     expect(docblock.parse(code)).to.deep.equal([
       ['class', 'A long declaration of a class goes here, ' +
-        'so we can read it and enjoy'],
+      'so we can read it and enjoy'],
       ['preserve-whitespace', '']
     ]);
   });
