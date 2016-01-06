@@ -20,60 +20,60 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * @file CSS资源功能测试
+ * @file JS资源功能测试
  * @author AceMood
  * @email zmike86@gmail.com
  */
 
-describe('CSS Resource', function() {
+describe('JS Resource', function() {
 
   var expect = require('chai').expect;
   var node_path = require('path');
   var fs = require('fs');
-  var CSS = require('../lib/resource/CSS');
+  var JS = require('../lib/resource/JS');
 
-  var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
+  var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 
-  it('should have a CSS type', function() {
-    var css = new CSS('a');
-    expect(css.type).to.equal('CSS');
+  it('should have a JS type', function() {
+    var js = new JS('a');
+    expect(js.type).to.equal('JS');
   });
 
   it('should have a relative path', function() {
-    var css = new CSS('a');
-    expect(css.path).to.deep.equal('a');
+    var js = new JS('a');
+    expect(js.path).to.deep.equal('a');
   });
 
   it('should have a null id', function() {
-    var css = new CSS('a');
-    expect(css.id).to.be.null;
+    var js = new JS('a');
+    expect(js.id).to.be.null;
   });
 
   it('should can retrieve file content', function() {
-    var css = new CSS(node_path.join(testData, 'empty.css'));
-    expect(css.getContent()).to.deep.equal('');
-    css = new CSS(node_path.join(testData, 'onerule.css'));
-    expect(css.getContent()).to.deep.equal('div { font-size: 12em }');
+    var js = new JS(node_path.join(testData, 'empty.js'));
+    expect(js.getContent()).to.deep.equal('');
+    js = new JS(node_path.join(testData, 'plain.js'));
+    expect(js.getContent()).to.deep.equal('var str = \'Hello World\';');
   });
 
   it('should can set file content', function() {
     var cssContent = 'html, body { border: 0 }';
-    var css = new CSS(node_path.join(testData, 'empty.css'));
-    css.setContent(cssContent);
-    expect(css.getContent()).to.deep.equal(cssContent);
-    css.setContent('');
-    expect(css.getContent()).to.deep.equal('');
+    var js = new JS(node_path.join(testData, 'empty.js'));
+    js.setContent(cssContent);
+    expect(js.getContent()).to.deep.equal(cssContent);
+    js.setContent('');
+    expect(js.getContent()).to.deep.equal('');
   });
 
   it('should flush content to destination', function(done) {
-    var css = new CSS(node_path.join(testData, 'empty.css'));
-    var cssContent = 'html, body { border: 0 }';
-    css.setContent(cssContent);
+    var js = new JS(node_path.join(testData, 'empty.js'));
+    var cssContent = 'var str = \'Hello World\';';
+    js.setContent(cssContent);
 
-    var distp = node_path.join(testData, 'dist.css');
-    css.flush(distp, function() {
-      var css = new CSS(distp);
-      expect(css.getContent()).to.deep.equal(cssContent);
+    var distp = node_path.join(testData, 'dist.js');
+    js.flush(distp, function() {
+      var js = new JS(distp);
+      expect(js.getContent()).to.deep.equal(cssContent);
       fs.unlinkSync(distp);
       done();
     });
