@@ -17,10 +17,10 @@ var Loaders = Neo.Loaders;
 // 第三个是配置对象
 var neo = new Neo(
     [
-      new Loaders.JSLoader(),
-      new Loaders.CSSLoader(),
-      new Loaders.ImageLoader(),
-      new Loaders.SWFLoader()
+      new Loaders.JSLoader()
+      //new Loaders.CSSLoader(),
+      //new Loaders.ImageLoader(),
+      //new Loaders.SWFLoader()
     ],
     [
       /*'core',*/ 'base', 'project'

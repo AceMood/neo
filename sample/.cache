@@ -5,116 +5,107 @@
       "type": "JS",
       "path": "project/null.js",
       "id": "project/null.js",
-      "mtime": 1451054565000
-    },
-    {
-      "type": "CSS",
-      "path": "base/css/base.less",
-      "id": "base",
-      "requiredCSS": [
-        "lib",
-        "./lib.css"
-      ],
-      "mtime": 1449320158000
+      "networkSize": 0,
+      "isModule": false,
+      "isNopackage": false,
+      "isNonblocking": false,
+      "requiredCSS": [],
+      "requiredModules": [],
+      "requiredAsyncModules": [],
+      "mtime": 1450939420000
     },
     {
       "type": "JS",
       "path": "base/js/base.js",
       "id": "base/js/base.js",
+      "networkSize": 0,
       "isModule": true,
+      "isNopackage": false,
+      "isNonblocking": false,
+      "requiredCSS": [
+        "../css/base.less"
+      ],
       "requiredModules": [
         "jQuery",
         "./mod"
       ],
-      "requiredCSS": [
-        "base"
-      ],
-      "mtime": 1449320158000
+      "requiredAsyncModules": [],
+      "mtime": 1449225484000
     },
     {
       "type": "JS",
       "path": "base/js/jQuery.js",
       "id": "jQuery",
+      "networkSize": 0,
+      "isModule": false,
+      "isNopackage": false,
+      "isNonblocking": false,
+      "requiredCSS": [],
+      "requiredModules": [],
+      "requiredAsyncModules": [],
       "mtime": 1447945500000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/footer/footer.css",
-      "id": "project/components/footer/footer.css",
-      "mtime": 1447340954000
-    },
-    {
-      "type": "JS",
-      "path": "project/components/footer/footer.js",
-      "id": "project/components/footer/footer.js",
-      "isModule": true,
-      "requiredCSS": [
-        "project/components/footer/footer.css"
-      ],
-      "mtime": 1448292656000
-    },
-    {
-      "type": "CSS",
-      "path": "project/components/back2top/back2top.css",
-      "id": "project/components/back2top/back2top.css",
-      "mtime": 1447340954000
     },
     {
       "type": "JS",
       "path": "project/components/back2top/back2top.js",
       "id": "project/components/back2top/back2top.js",
+      "networkSize": 0,
       "isModule": true,
+      "isNopackage": false,
+      "isNonblocking": false,
       "requiredCSS": [
-        "project/components/back2top/back2top.css"
+        "./back2top.css"
       ],
-      "mtime": 1449320158000
+      "requiredModules": [],
+      "requiredAsyncModules": [],
+      "mtime": 1448620912000
     },
     {
-      "type": "CSS",
-      "path": "project/components/header/header.css",
-      "id": "project/components/header/header.css",
-      "mtime": 1447340954000
-    },
-    {
-      "path": "project/components/header/logo.png",
-      "id": "project/components/header/logo.png",
-      "type": "Image",
-      "mtime": 1447340954000,
-      "width": 77,
-      "height": 77
+      "type": "JS",
+      "path": "project/components/footer/footer.js",
+      "id": "project/components/footer/footer.js",
+      "networkSize": 0,
+      "isModule": true,
+      "isNopackage": false,
+      "isNonblocking": false,
+      "requiredCSS": [
+        "./footer.css"
+      ],
+      "requiredModules": [],
+      "requiredAsyncModules": [],
+      "mtime": 1448292656000
     },
     {
       "type": "JS",
       "path": "project/components/header/header.js",
       "id": "header",
+      "networkSize": 0,
       "isModule": true,
+      "isNopackage": false,
+      "isNonblocking": false,
       "requiredCSS": [
-        "project/components/header/header.css"
+        "./header.css"
       ],
+      "requiredModules": [],
+      "requiredAsyncModules": [],
       "mtime": 1448292673000
-    },
-    {
-      "type": "CSS",
-      "path": "project/static/css/app.css",
-      "id": "project/static/css/app.css",
-      "requiredCSS": [
-        "project/components/header/header.css",
-        "project/components/footer/footer.css"
-      ],
-      "mtime": 1448953821000
     },
     {
       "type": "JS",
       "path": "project/static/js/app.js",
       "id": "project/static/js/app.js",
+      "networkSize": 0,
       "isModule": true,
+      "isNopackage": false,
+      "isNonblocking": false,
+      "requiredCSS": [
+        "../css/app.css"
+      ],
       "requiredModules": [
         "header",
         "project/components/footer/footer.js"
       ],
-      "requiredCSS": [
-        "project/static/css/app.css"
-      ],
+      "requiredAsyncModules": [],
       "mtime": 1448623019000
     }
   ]

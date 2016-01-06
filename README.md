@@ -21,7 +21,6 @@
    SOFTWARE.
 </pre>
 
-## neo
+## neo功能
+neo是前端工程化工具soi的资源扫描实现，
 
-Learn code from:<br>
-https://github.com/facebook/node-haste/blob/master/lib/<br>
