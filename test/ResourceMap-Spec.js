@@ -39,15 +39,15 @@ describe('ResourceMap', function() {
       b = new Resource('b')
     ]);
 
-    expect(map.getResource('Resource', 'a')).toBe(a);
-    expect(map.getResource('Resource', 'b')).toBe(b);
-    expect(map.getResource('Resource', 'c')).toBe(undefined);
-    expect(map.getAllResources()).toEqual([a, b]);
+    expect(map.getResource('Resource', 'a')).to.deep.equal(a);
+    expect(map.getResource('Resource', 'b')).to.deep.equal(b);
+    expect(map.getResource('Resource', 'c')).to.be.undefined;
+    expect(map.getAllResources()).to.deep.equal([a, b]);
   });
 
   it('should return elements from empty map', function() {
     var map = new ResourceMap([]);
-    expect(map.getResource('JS', 'a')).toBe(undefined);
+    expect(map.getResource('JS', 'a')).to.be.undefined;
   });
 
   it('should add elements', function() {
@@ -57,8 +57,8 @@ describe('ResourceMap', function() {
     ]);
     map.addResource(b = new Resource('b'));
 
-    expect(map.getResource('Resource', 'b')).toBe(b);
-    expect(map.getAllResources()).toEqual([a, b]);
+    expect(map.getResource('Resource', 'b')).to.deep.equal(b);
+    expect(map.getAllResources()).to.deep.equal([a, b]);
   });
 
   it('should update elements', function() {
@@ -68,7 +68,7 @@ describe('ResourceMap', function() {
     ]);
     map.updateResource(a1, a2 = new Resource('a'));
 
-    expect(map.getResource('Resource', 'a')).toBe(a2);
+    expect(map.getResource('Resource', 'a')).to.deep.equal(a2);
   });
 
   it('should remove elements', function() {
@@ -78,9 +78,9 @@ describe('ResourceMap', function() {
       b = new Resource('b')
     ]);
     map.removeResource(b);
-    expect(map.getResource('Resource', 'b')).toBe(undefined);
-    expect(map.getAllResources()).toEqual([a]);
-    expect(map.getAllResourcesByType('Resource')).toEqual([a]);
+    expect(map.getResource('Resource', 'b')).to.be.undefined;
+    expect(map.getAllResources()).to.deep.equal([a]);
+    expect(map.getAllResourcesByType('Resource')).to.deep.equal([a]);
   });
 
   it('should get all resources by type', function() {
@@ -91,8 +91,8 @@ describe('ResourceMap', function() {
       pa = new ProjectConfiguration('pa.json'),
       pb = new ProjectConfiguration('pb.json')
     ]);
-    expect(map.getAllResourcesByType('ProjectConfiguration')).toEqual([pa, pb]);
-    expect(map.getAllResourcesByType('Resource')).toEqual([a, b]);
+    expect(map.getAllResourcesByType('ProjectConfiguration')).to.deep.equal([pa, pb]);
+    expect(map.getAllResourcesByType('Resource')).to.deep.equal([a, b]);
   });
 
   it('should get all resources by type', function() {
@@ -102,10 +102,9 @@ describe('ResourceMap', function() {
       b = new Resource('b/b.js'),
       pa = new ProjectConfiguration('a/package.json', {})
     ]);
-    expect(map.getConfigurationByPath(a.path)).toBe(pa);
+    expect(map.getConfigurationByPath(a.path)).to.deep.equal(pa);
     pb = new ProjectConfiguration('b/package.json', {});
     map.addResource(pb);
-    expect(map.getConfigurationForResource(b)).toBe(pb);
+    expect(map.getConfigurationForResource(b)).to.deep.equal(pb);
   });
-
 });

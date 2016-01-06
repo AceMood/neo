@@ -117,7 +117,7 @@ describe('jsParser', function() {
     it('should ignore invalid cases', function() {
       var code =
         'foo.require.async(["foo", \'bar\'], function() {\n' +
-        '  return 2 + 2;\n';
+        '  return 2 + 2;\n' +
         '});\n';
 
       var ret = extract.requireAsyncCalls(code);

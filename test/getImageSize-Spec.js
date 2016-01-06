@@ -32,7 +32,7 @@ describe("getImageSize", function() {
   var expect = require('chai').expect;
   var node_path = require('path');
   var fs = require('fs');
-  var root = path.join(__dirname, '..', '__test_data__', 'Image');
+  var root = node_path.join(__dirname, '..', '__test_data__', 'Image');
   var getImageSize = require('../lib/parser/getImageSize');
 
   it('should parse gif image size', function() {
