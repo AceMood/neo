@@ -20,64 +20,63 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  *
- * @file
+ * @file 图像加载器功能测试用例
  * @author AceMood
  * @email zmike86@gmail.com
  */
 
-describe('Image', function() {
+describe('ImageLoader', function() {
 
-  var path = require('path');
+  var expect = require('chai').expect;
+  var node_path = require('path');
   var ImageLoader = require('../lib/loader/ImageLoader');
   var ResourceMap = require('../lib/resource/ResourceMap');
-  var loadResouce = require('../__test_helpers__/loadResource');
-  var waitsForCallback = require('../__test_helpers__/waitsForCallback');
+  var MessageList = require('../lib/MessageList');
+
+  var testData = node_path.join(__dirname, '..', '__test_data__', 'Image');
 
   it('should match package.json paths', function() {
     var loader = new ImageLoader();
-    expect(loader.matchPath('x.png')).toBe(true);
-    expect(loader.matchPath('x.jpg')).toBe(true);
-    expect(loader.matchPath('a/x.gif')).toBe(true);
-    expect(loader.matchPath('a/1.js')).toBe(false);
+    expect(loader.matchPath('x.png')).to.be.true;
+    expect(loader.matchPath('x.jpg')).to.be.true;
+    expect(loader.matchPath('a/x.gif')).to.be.true;
+    expect(loader.matchPath('a/1.js')).to.be.false;
   });
 
-  var testData = path.join(__dirname, '..', '__test_data__', 'Image');
-
-  it('should find the size of the picture', function() {
+  it('should find the size of the picture', function(done) {
     var loader = new ImageLoader();
-    loadResouce(
-      loader,
-      path.join(testData, 'a.jpg'),
+    loader.loadFromPath(
+      node_path.join(testData, 'a.jpg'),
       null,
-      function(errors, resource) {
-        expect(resource.width).toBe(900);
-        expect(resource.height).toBe(596);
+      function(e, r) {
+        expect(r.width).to.equal(900);
+        expect(r.height).to.equal(596);
+        expect(e).instanceOf(MessageList);
+
+        done();
       });
   });
 
-  it('should calculate network size when asked', function() {
+  it('should calculate network size when asked', function(done) {
     var loader = new ImageLoader();
-    loadResouce(
-      loader,
-      path.join(testData, 'a.jpg'),
+    loader.loadFromPath(
+      node_path.join(testData, 'a.jpg'),
       null,
-      function(errors, r) {
-        expect(r.networkSize).toBe(127381);
+      function(e, r) {
+        expect(r.networkSize).to.equal(127381);
+        expect(e).instanceOf(MessageList);
+
+        done();
       });
   });
 
-  it('should return form postProcess with 0 resources', function() {
+  it('should return form postProcess with 0 resources', function(done) {
     var loader = new ImageLoader();
     var map = new ResourceMap();
-    waitsForCallback(
-      function(callback) {
-        loader.postProcess(map, [], function() {
-          callback();
-        });
-      },
-      function(messages) {
-        expect(messages).not.toBe(null);
-      }
-    );
+
+    loader.postProcess(map, [], function(messages) {
+      expect(messages).not.to.be.null;
+      done();
+    });
   });
 });

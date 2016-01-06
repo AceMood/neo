@@ -1,7 +1,7 @@
 # v0.5.0~
 1. 去掉tpl资源类型和加载器, 更改为资源注册方式, 这样三方代码可以更灵活注册扫描的资源类型
 2. 对于Image资源添加 `getDateUri` 方法获取行内数据
-3. 
+3. 复写测试用例，采用mocha + chai.js等新测试框架
 
 # v0.4.2
 1. Image和Swf类型资源 `getContent` 默认返回binary编码的string, setContent设置也随之修改成接受string参数
