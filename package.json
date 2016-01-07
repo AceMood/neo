@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/AceMood/neo",
   "dependencies": {
-    "engineering-util-colorfulconsole": "^1.0.0"
+    "et-util-logger": "^1.0.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",

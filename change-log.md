@@ -1,13 +1,14 @@
-# v0.5.0~
+# v0.6.0~
 1. 去掉tpl资源类型和加载器, 更改为资源注册方式, 这样三方代码可以更灵活注册扫描的资源类型
 2. 对于Image资源添加 `getDateUri` 方法获取行内数据
-3. 复写测试用例，采用mocha + chai.js等新测试框架
+3. 去掉message消息传递机制，改用et-util-logger模块
+4. 复写测试用例，采用mocha + chai.js等新测试框架
 
-# v0.4.2
+# v0.4.2~
 1. Image和Swf类型资源 `getContent` 默认返回binary编码的string, setContent设置也随之修改成接受string参数
 2. resource对象提供flush方法写入指定位置
 
-# v0.4.0
+# v0.4.0~
 1. 添加扫描规则，若文件名称以 `_` 开头则默认不做扫描记入资源表，且这个方法可以在初始化Neo时提供和覆盖
 2. 测试目录由 `__test__` 改成 `test`，同node package.json的建议保持一致
 3. 去掉tmplloader加载器

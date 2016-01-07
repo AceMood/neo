@@ -22,7 +22,6 @@
  *
  * @file CSSLoader功能测试
  * @author AceMood
- * @Stability: 2 - Stable
  */
 
 describe('CSSLoader', function() {
@@ -32,14 +31,14 @@ describe('CSSLoader', function() {
   var CSSLoader = require('../lib/loader/CSSLoader');
   var MessageList = require('../lib/MessageList');
 
+  var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
+
   it('should match package.json paths', function() {
     var loader = new CSSLoader();
     expect(loader.matchPath('x.css')).to.be.true;
     expect(loader.matchPath('a/x.css')).to.be.true;
     expect(loader.matchPath('a/1.js')).to.be.false;
   });
-
-  var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 
   it('should extract component name', function(done) {
     var loader = new CSSLoader();

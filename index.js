@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/Neo');
+module.exports = require('./lib/neo');
