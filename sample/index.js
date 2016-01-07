@@ -31,10 +31,9 @@ neo.on('postProcessed', function(map) {
 
 });
 
-neo.update('.cache', function(map, messages) {
+neo.update('.cache', function(map) {
 
   debugger;
-  console.log(messages.render());
 
   // 根据返回的map对象进行业务框架定制
   fs.writeFileSync('map.json', JSON.stringify(map, null, 4), 'utf8');

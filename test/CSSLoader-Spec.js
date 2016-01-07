@@ -29,75 +29,72 @@ describe('CSSLoader', function() {
   var expect = require('chai').expect;
   var node_path = require('path');
   var CSSLoader = require('../lib/loader/CSSLoader');
-  var MessageList = require('../lib/MessageList');
+  var log = require('et-util-logger');
+  var logger = new log.Logger(log.LoggerLevel.ALL);
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 
   it('should match package.json paths', function() {
-    var loader = new CSSLoader();
+    var loader = new CSSLoader(null, logger);
     expect(loader.matchPath('x.css')).to.be.true;
     expect(loader.matchPath('a/x.css')).to.be.true;
     expect(loader.matchPath('a/1.js')).to.be.false;
   });
 
   it('should extract component name', function(done) {
-    var loader = new CSSLoader();
+    var loader = new CSSLoader(null, logger);
     loader.loadFromPath(
       node_path.join(testData, 'plain.css'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.id).to.equal('plain-css');
         expect(r.options).to.be.undefined;
         expect(r.requiredCSS).to.be.a('array');
         expect(r.requiredCSS).to.have.length(1);
         expect(r.requiredCSS).to.deep.equal(['bar']);
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should parse special attributes', function(done) {
-    var loader = new CSSLoader();
+    var loader = new CSSLoader(null, logger);
     loader.loadFromPath(
       node_path.join(testData, 'special.css'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.id).to.equal('special-css');
         expect(r.isNonblocking).to.be.true;
         expect(r.isNopackage).to.be.true;
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should extract css sprites', function(done) {
-    var loader = new CSSLoader({ extractSprites: true });
+    var loader = new CSSLoader({ extractSprites: true }, logger);
     loader.loadFromPath(
       node_path.join(testData, 'sprite.css'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.sprites).to.be.a('array');
         expect(r.sprites).to.have.length(2);
         expect(r.sprites).to.deep.equal([
           'images/dialog/halo_top_left.png',
           'images/dialog/large_halo_top_left.png'
         ]);
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should extract network size', function(done) {
-    var loader = new CSSLoader({ networkSize: true });
+    var loader = new CSSLoader({ networkSize: true }, logger);
     loader.loadFromPath(
       node_path.join(testData, 'sprite.css'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.networkSize > 0).to.be.true;
-        expect(e).instanceOf(MessageList);
         done();
       });
   });

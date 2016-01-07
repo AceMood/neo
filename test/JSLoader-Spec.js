@@ -31,41 +31,42 @@ describe('JSLoader', function() {
   var JSLoader = require('../lib/loader/JSLoader');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
   var ResourceMap = require('../lib/resource/ResourceMap');
-  var MessageList = require('../lib/MessageList');
+  var log = require('et-util-logger');
+  var logger = new log.Logger(log.LoggerLevel.ALL);
+
   var expect = require('chai').expect;
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 
   it('should match package.json paths', function() {
-    var loader = new JSLoader();
+    var loader = new JSLoader(null, logger);
     expect(loader.matchPath('x.js')).to.be.true;
     expect(loader.matchPath('a/x.js')).to.be.true;
     expect(loader.matchPath('a/1.css')).to.be.false;
   });
 
   it('should parse old school components', function(done) {
-    var loader = new JSLoader();
+    var loader = new JSLoader(null, logger);
     loader.loadFromPath(
       node_path.join(testData, 'oldSchoolComponent.js'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.isModule).to.be.false;
         expect(r.id).to.equal('oldSchoolComponent-tag');
         expect(r.requiredCSS).to.be.a('array');
         expect(r.requiredCSS).to.have.length(1);
         expect(r.requiredCSS).to.deep.equal(['foo-css']);
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should parse modules with requires', function(done) {
-    var loader = new JSLoader();
+    var loader = new JSLoader(null, logger);
     loader.loadFromPath(
       node_path.join(testData, 'module.js'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.isModule).to.be.true;
         expect(r.id).to.equal('module-tag');
         expect(r.requiredModules).to.be.a('array');
@@ -74,45 +75,42 @@ describe('JSLoader', function() {
         expect(r.requiredCSS).to.be.a('array');
         expect(r.requiredCSS).to.have.length(1);
         expect(r.requiredCSS).to.deep.equal(['foo-css']);
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should extract network size', function(done) {
-    var loader = new JSLoader({ networkSize: true });
+    var loader = new JSLoader({ networkSize: true }, logger);
     loader.loadFromPath(
       node_path.join(testData, 'javelin.js'),
       null,
-      function(e, r) {
+      function(r) {
         expect(r.networkSize > 0).to.be.true;
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should resolve paths using configuration', function(done) {
-    var loader = new JSLoader();
+    var loader = new JSLoader(null, logger);
     loader.loadFromPath(
       node_path.join(testData, 'configured', 'a.js'),
       new ProjectConfiguration(
         node_path.join(testData, 'configured', 'package.json'),
         {}),
-      function(e, r) {
+      function(r) {
         expect(r.id).to.equal(node_path.join('configured','a.js'));
         expect(r.requiredCSS).to.be.a('array');
         expect(r.requiredCSS).to.have.length(1);
         expect(r.requiredCSS).to.deep.equal(['foo-css']);
-        expect(e).instanceOf(MessageList);
 
         done();
       });
   });
 
   it('should resolve commonJS "main" modules post process', function(done) {
-    var loader = new JSLoader();
+    var loader = new JSLoader(null, logger);
     var map = new ResourceMap([
       // hasCustomMain dependency project
       JS.fromObject({
@@ -168,8 +166,7 @@ describe('JSLoader', function() {
       )
     ]);
 
-    loader.postProcess(map, map.getAllResourcesByType('JS'), function(messages) {
-      expect(messages).instanceOf(MessageList);
+    loader.postProcess(map, map.getAllResourcesByType('JS'), function() {
       expect(
         map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
           .requiredModules
@@ -196,7 +193,7 @@ describe('JSLoader', function() {
   });
 
   it('should resolve intern rel paths *with* package process', function(done) {
-    var loader = new JSLoader();
+    var loader = new JSLoader(null, logger);
     var map = new ResourceMap([
       JS.fromObject({
         id: 'configured/a.js',
@@ -213,8 +210,7 @@ describe('JSLoader', function() {
       )
     ]);
 
-    loader.postProcess(map, map.getAllResourcesByType('JS'), function(messages) {
-      expect(messages).instanceOf(MessageList);
+    loader.postProcess(map, map.getAllResourcesByType('JS'), function() {
       expect(
         map.getResource('JS', 'configured/a.js').requiredModules)
         .to.deep.equal(['configured/b.js']
@@ -228,7 +224,7 @@ describe('JSLoader', function() {
   });
 
   it('should resolve local paths without package.json', function(done) {
-    var jsLoader = new JSLoader();
+    var jsLoader = new JSLoader(null, logger);
     var map = new ResourceMap([
       JS.fromObject({
         id: 'configured/a.js',
@@ -241,8 +237,7 @@ describe('JSLoader', function() {
         requiredModules: []
       })
     ]);
-    jsLoader.postProcess(map, map.getAllResources(), function(messages) {
-      expect(messages).instanceOf(MessageList);
+    jsLoader.postProcess(map, map.getAllResources(), function() {
       expect(
         map.getResource('JS', 'configured/a.js').requiredModules
       ).to.deep.equal(['configured/b.js']);
