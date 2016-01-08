@@ -248,14 +248,14 @@ describe('JSLoader', function() {
     });
   });
 
-  it('should resolve sync css and js module id in postProcess', function(done) {
+  it('should resolve sync css module id in postProcess', function(done) {
     if (fs.existsSync('.cache')) {
       fs.unlinkSync('.cache');
     }
 
     var neo = new Neo([
       new JSLoader(),
-      new Neo.CSSLoader()
+      new Neo.Loaders.CSSLoader()
     ], [
       '__test_data__/Loader'
     ], {
@@ -263,11 +263,34 @@ describe('JSLoader', function() {
     });
 
     neo.on('postProcessed', function(map) {
-      var id = '__test_data__/Loader/sync-req.js';
+      var id = '__test_data__/Loader/sync-req-css.js';
       var js = map.getResource('JS', id);
       expect(js.requiredCSS).to.be.a('array');
-      expect(js.requiredCSS).to.be.have.length(1);
-      expect(js.requiredCSS).to.deep.equal(['plain']);
+      expect(js.requiredCSS).to.be.have.length(2);
+      expect(js.requiredCSS).to.deep.equal(['plain', 'dialog']);
+
+      done();
+    });
+
+    neo.update('.cache', function(map) {});
+  });
+
+  it('should resolve sync js module id in postProcess', function(done) {
+    if (fs.existsSync('.cache')) {
+      fs.unlinkSync('.cache');
+    }
+
+    var neo = new Neo([
+      new JSLoader()
+    ], [
+      '__test_data__/Loader'
+    ], {
+      forceRescan: true
+    });
+
+    neo.on('postProcessed', function(map) {
+      var id = '__test_data__/Loader/sync-req-js.js';
+      var js = map.getResource('JS', id);
 
       expect(js.requiredModules).to.be.a('array');
       expect(js.requiredModules).to.be.have.length(1);
@@ -285,8 +308,7 @@ describe('JSLoader', function() {
     }
 
     var neo = new Neo([
-      new JSLoader(),
-      new Neo.CSSLoader()
+      new JSLoader()
     ], [
       '__test_data__/Loader'
     ], {
@@ -294,12 +316,8 @@ describe('JSLoader', function() {
     });
 
     neo.on('postProcessed', function(map) {
-      var id = '__test_data__/Loader/async-req.js';
+      var id = '__test_data__/Loader/async-req-js.js';
       var js = map.getResource('JS', id);
-
-      expect(js.requiredCSS).to.be.a('array');
-      expect(js.requiredCSS).to.be.have.length(1);
-      expect(js.requiredCSS).to.deep.equal(['plain']);
 
       expect(js.requiredAsyncModules).to.be.a('array');
       expect(js.requiredAsyncModules).to.be.have.length(1);
@@ -311,50 +329,4 @@ describe('JSLoader', function() {
     neo.update('.cache', function(map) {});
   });
 
-  it('should resolve async css and js module id in postProcess', function(done) {
-    if (fs.existsSync('.cache')) {
-      fs.unlinkSync('.cache');
-    }
-
-    var neo = new Neo([
-      new JSLoader(),
-      new Neo.CSSLoader()
-    ], [
-      '__test_data__/Loader'
-    ], {
-      forceRescan: true
-    });
-
-    neo.on('postProcessed', function(map) {
-      var id = '__test_data__/Loader/onlyreq.js';
-      var js = map.getResource('JS', id);
-      expect(js.requiredCSS).to.be.a('array');
-      expect(js.requiredCSS).to.be.have.length(1);
-      expect(js.requiredCSS).to.deep.equal(['plain']);
-
-      expect(js.requiredModules).to.be.a('array');
-      expect(js.requiredModules).to.be.have.length(1);
-      expect(js.requiredModules).to.deep.equal(['bo.base']);
-
-      //id = '__test_data__/onlyreq.js';
-      //js = map.getResource('JS', id);
-      //expect(js.requiredCSS).to.be.a('array');
-      //expect(js.requiredCSS).to.be.have.length(2);
-      //expect(js.requiredCSS).to.deep.equal(['plain', 'dialog']);
-      //
-      //js = map.getResource('JS', id);
-      //expect(js.requiredCSS).to.be.a('array');
-      //expect(js.requiredCSS).to.be.have.length(2);
-      //expect(js.requiredCSS).to.deep.equal(['plain', 'dialog']);
-      //
-      //js = map.getResource('JS', id);
-      //expect(js.requiredCSS).to.be.a('array');
-      //expect(js.requiredCSS).to.be.have.length(2);
-      //expect(js.requiredCSS).to.deep.equal(['plain', 'dialog']);
-
-      done();
-    });
-
-    neo.update('.cache', function(map) {});
-  });
 });

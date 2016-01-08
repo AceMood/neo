@@ -3,6 +3,7 @@
 2. 对于Image资源添加 `getDateUri` 方法获取行内数据
 3. 去掉message消息传递机制，改用et-util-logger模块
 4. 复写测试用例，采用mocha + chai.js等新测试框架
+5. 修复loader在处理postProcessed的时候解析资源bug
 
 # v0.4.2~
 1. Image和Swf类型资源 `getContent` 默认返回binary编码的string, setContent设置也随之修改成接受string参数
