@@ -8,9 +8,26 @@
 <a href="this.html">&#215;</a>
 <script>
 
-    [1,2,3].forEach((() => {
-        debugger;
-    }), this);
+    "use strict";
+
+    class Person {
+        constructor() {}
+
+        cal() {
+            var me = this;
+            [1,2,3].forEach(() => {
+                debugger;
+            });
+
+            setTimeout(() => {
+                debugger;
+            }, 1000);
+        }
+    }
+
+    var p = new Person();
+    p.cal();
+
 
 </script>
 </body>

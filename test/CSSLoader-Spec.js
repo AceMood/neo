@@ -110,7 +110,7 @@ describe('CSSLoader', function() {
     var neo = new Neo([
       new CSSLoader()
     ], [
-      '__test_data__/Loader'
+      __dirname + '/../__test_data__/Loader'
     ], {
       forceRescan: true
     });
