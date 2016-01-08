@@ -32,12 +32,12 @@ describe('ImageLoader', function() {
   var ImageLoader = require('../lib/loader/ImageLoader');
   var ResourceMap = require('../lib/resource/ResourceMap');
   var log = require('et-util-logger');
-  var logger = new log.Logger(log.LoggerLevel.ALL);
+  global.slogger = new log.Logger();
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'Image');
 
   it('should match package.json paths', function() {
-    var loader = new ImageLoader(null, logger);
+    var loader = new ImageLoader();
     expect(loader.matchPath('x.png')).to.be.true;
     expect(loader.matchPath('x.jpg')).to.be.true;
     expect(loader.matchPath('a/x.gif')).to.be.true;
@@ -45,7 +45,7 @@ describe('ImageLoader', function() {
   });
 
   it('should find the size of the picture', function(done) {
-    var loader = new ImageLoader(null, logger);
+    var loader = new ImageLoader();
     loader.loadFromPath(
       node_path.join(testData, 'a.jpg'),
       null,
@@ -58,7 +58,7 @@ describe('ImageLoader', function() {
   });
 
   it('should calculate network size when asked', function(done) {
-    var loader = new ImageLoader(null, logger);
+    var loader = new ImageLoader();
     loader.loadFromPath(
       node_path.join(testData, 'a.jpg'),
       null,
@@ -70,7 +70,7 @@ describe('ImageLoader', function() {
   });
 
   it('should return form postProcess with 0 resources', function(done) {
-    var loader = new ImageLoader(null, logger);
+    var loader = new ImageLoader();
     var map = new ResourceMap();
 
     loader.postProcess(map, [], function(messages) {

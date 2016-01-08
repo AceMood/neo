@@ -32,21 +32,21 @@ describe('JSLoader', function() {
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
   var ResourceMap = require('../lib/resource/ResourceMap');
   var log = require('et-util-logger');
-  var logger = new log.Logger(log.LoggerLevel.ALL);
+  global.slogger = new log.Logger();
 
   var expect = require('chai').expect;
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 
   it('should match package.json paths', function() {
-    var loader = new JSLoader(null, logger);
+    var loader = new JSLoader();
     expect(loader.matchPath('x.js')).to.be.true;
     expect(loader.matchPath('a/x.js')).to.be.true;
     expect(loader.matchPath('a/1.css')).to.be.false;
   });
 
   it('should parse old school components', function(done) {
-    var loader = new JSLoader(null, logger);
+    var loader = new JSLoader();
     loader.loadFromPath(
       node_path.join(testData, 'oldSchoolComponent.js'),
       null,
@@ -62,7 +62,7 @@ describe('JSLoader', function() {
   });
 
   it('should parse modules with requires', function(done) {
-    var loader = new JSLoader(null, logger);
+    var loader = new JSLoader();
     loader.loadFromPath(
       node_path.join(testData, 'module.js'),
       null,
@@ -81,7 +81,7 @@ describe('JSLoader', function() {
   });
 
   it('should extract network size', function(done) {
-    var loader = new JSLoader({ networkSize: true }, logger);
+    var loader = new JSLoader({ networkSize: true });
     loader.loadFromPath(
       node_path.join(testData, 'javelin.js'),
       null,
@@ -93,7 +93,7 @@ describe('JSLoader', function() {
   });
 
   it('should resolve paths using configuration', function(done) {
-    var loader = new JSLoader(null, logger);
+    var loader = new JSLoader();
     loader.loadFromPath(
       node_path.join(testData, 'configured', 'a.js'),
       new ProjectConfiguration(
@@ -110,7 +110,7 @@ describe('JSLoader', function() {
   });
 
   it('should resolve commonJS "main" modules post process', function(done) {
-    var loader = new JSLoader(null, logger);
+    var loader = new JSLoader();
     var map = new ResourceMap([
       // hasCustomMain dependency project
       JS.fromObject({
@@ -193,7 +193,7 @@ describe('JSLoader', function() {
   });
 
   it('should resolve intern rel paths *with* package process', function(done) {
-    var loader = new JSLoader(null, logger);
+    var loader = new JSLoader();
     var map = new ResourceMap([
       JS.fromObject({
         id: 'configured/a.js',
@@ -224,7 +224,7 @@ describe('JSLoader', function() {
   });
 
   it('should resolve local paths without package.json', function(done) {
-    var jsLoader = new JSLoader(null, logger);
+    var jsLoader = new JSLoader();
     var map = new ResourceMap([
       JS.fromObject({
         id: 'configured/a.js',

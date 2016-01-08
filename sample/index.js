@@ -6,8 +6,11 @@
 
 var fs = require('fs');
 
-var Neo = require('../lib/Neo');
+var Neo = require('../lib/neo');
 var Loaders = Neo.Loaders;
+
+var log = require('et-util-logger');
+global.slogger = new log.Logger(log.Level.ALL);
 
 //var JSLoader = require('../lib/loader/JSLoader');
 //Neo.registerResourceLoader('JSLoader', JSLoader);

@@ -31,4 +31,4 @@ let Level = require('./lib/level');
 
 exports.logo = logo;
 exports.Logger = Logger;
-exports.LoggerLevel = Level;
+exports.Level = Level;

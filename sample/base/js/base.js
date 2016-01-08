@@ -2,6 +2,8 @@
  * @module
  * @css ../css/base.less
  * @requires ./jQuery
+ *
+ * @haha test
  */
 
 var base = {

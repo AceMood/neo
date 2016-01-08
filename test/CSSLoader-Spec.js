@@ -30,19 +30,19 @@ describe('CSSLoader', function() {
   var node_path = require('path');
   var CSSLoader = require('../lib/loader/CSSLoader');
   var log = require('et-util-logger');
-  var logger = new log.Logger(log.LoggerLevel.ALL);
+  global.slogger = new log.Logger();
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 
   it('should match package.json paths', function() {
-    var loader = new CSSLoader(null, logger);
+    var loader = new CSSLoader();
     expect(loader.matchPath('x.css')).to.be.true;
     expect(loader.matchPath('a/x.css')).to.be.true;
     expect(loader.matchPath('a/1.js')).to.be.false;
   });
 
   it('should extract component name', function(done) {
-    var loader = new CSSLoader(null, logger);
+    var loader = new CSSLoader();
     loader.loadFromPath(
       node_path.join(testData, 'plain.css'),
       null,
@@ -58,7 +58,7 @@ describe('CSSLoader', function() {
   });
 
   it('should parse special attributes', function(done) {
-    var loader = new CSSLoader(null, logger);
+    var loader = new CSSLoader();
     loader.loadFromPath(
       node_path.join(testData, 'special.css'),
       null,
@@ -72,7 +72,7 @@ describe('CSSLoader', function() {
   });
 
   it('should extract css sprites', function(done) {
-    var loader = new CSSLoader({ extractSprites: true }, logger);
+    var loader = new CSSLoader({ extractSprites: true });
     loader.loadFromPath(
       node_path.join(testData, 'sprite.css'),
       null,
@@ -89,7 +89,7 @@ describe('CSSLoader', function() {
   });
 
   it('should extract network size', function(done) {
-    var loader = new CSSLoader({ networkSize: true }, logger);
+    var loader = new CSSLoader({ networkSize: true });
     loader.loadFromPath(
       node_path.join(testData, 'sprite.css'),
       null,
