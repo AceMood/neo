@@ -27,8 +27,9 @@
 describe('CSSLoader', function() {
 
   var expect = require('chai').expect;
-
+  var fs = require('fs');
   var node_path = require('path');
+
   var Neo = require('../lib/neo');
   var CSSLoader = require('../lib/loader/CSSLoader');
   var log = require('et-util-logger');
@@ -102,6 +103,10 @@ describe('CSSLoader', function() {
   });
 
   it('should resolve module id in postProcess', function(done) {
+    if (fs.existsSync('.cache')) {
+      fs.unlinkSync('.cache');
+    }
+
     var neo = new Neo([
       new CSSLoader()
     ], [
