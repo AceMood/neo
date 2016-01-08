@@ -1,0 +1,27 @@
+{
+  "version": "0.1",
+  "objects": [
+    {
+      "type": "CSS",
+      "path": "__test_data__/Loader/dialog.css",
+      "id": "dialog",
+      "mtime": 1452238225000
+    },
+    {
+      "type": "CSS",
+      "path": "__test_data__/Loader/entry.css",
+      "id": "entry",
+      "requiredCSS": [
+        "plain",
+        "dialog"
+      ],
+      "mtime": 1452238275000
+    },
+    {
+      "type": "CSS",
+      "path": "__test_data__/Loader/plain.css",
+      "id": "plain",
+      "mtime": 1452236488000
+    }
+  ]
+}

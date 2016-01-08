@@ -27,7 +27,9 @@
 describe('CSSLoader', function() {
 
   var expect = require('chai').expect;
+
   var node_path = require('path');
+  var Neo = require('../lib/neo');
   var CSSLoader = require('../lib/loader/CSSLoader');
   var log = require('et-util-logger');
   global.slogger = new log.Logger();
@@ -97,5 +99,27 @@ describe('CSSLoader', function() {
         expect(r.networkSize > 0).to.be.true;
         done();
       });
+  });
+
+  it('should resolve module id in postProcess', function(done) {
+    var neo = new Neo([
+      new CSSLoader()
+    ], [
+      '__test_data__/Loader'
+    ], {
+      forceRescan: true
+    });
+
+    neo.on('postProcessed', function(map) {
+      var id = 'entry';
+      var css = map.getResource('CSS', id);
+      expect(css.requiredCSS).to.be.a('array');
+      expect(css.requiredCSS).to.be.have.length(2);
+      expect(css.requiredCSS).to.deep.equal(['plain', 'dialog']);
+
+      done();
+    });
+
+    neo.update('.cache', function(map) {});
   });
 });
