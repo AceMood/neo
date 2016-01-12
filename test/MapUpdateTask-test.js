@@ -6,7 +6,7 @@ describe("MapUpdateTask", function() {
   var MapUpdateTask = require('../lib/MapUpdateTask');
   var Resource = require('../lib/resource/Resource');
   var ResourceLoader = require('../lib/loader/ResourceLoader');
-  var ResourceMap = require('../lib/resource/ResourceMap');
+  var ResourceMap = require('../lib/map/ResourceMap');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
   var ProjectConfigurationLoader =
     require('../lib/loader/ProjectConfigurationLoader');

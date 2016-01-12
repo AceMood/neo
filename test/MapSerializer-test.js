@@ -6,7 +6,7 @@
 describe('MapSerializer', function() {
 
   var MapSerializer = require('../lib/MapSerializer');
-  var ResourceMap = require('../lib/resource/ResourceMap');
+  var ResourceMap = require('../lib/map/ResourceMap');
   var JS = require('../lib/resource/JS');
   var CSS = require('../lib/resource/CSS');
   var JSLoader = require('../lib/loader/JSLoader');

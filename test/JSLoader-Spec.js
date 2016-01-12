@@ -32,7 +32,7 @@ describe('JSLoader', function() {
   var JS = require('../lib/resource/JS');
   var JSLoader = require('../lib/loader/JSLoader');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
-  var ResourceMap = require('../lib/resource/ResourceMap');
+  var ResourceMap = require('../lib/map/ResourceMap');
   var log = require('et-util-logger');
   global.slogger = new log.Logger();
 

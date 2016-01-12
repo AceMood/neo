@@ -30,7 +30,7 @@ describe('ImageLoader', function() {
   var expect = require('chai').expect;
   var node_path = require('path');
   var ImageLoader = require('../lib/loader/ImageLoader');
-  var ResourceMap = require('../lib/resource/ResourceMap');
+  var ResourceMap = require('../lib/map/ResourceMap');
   var log = require('et-util-logger');
   global.slogger = new log.Logger();
 
