@@ -38,6 +38,10 @@ var debugResourceVisit = function(orderedResources, resource, map) {
 
 /**
  * Recurses through required modules graph.
+ * @param {ResourceMap} map 资源表
+ * @param {Resource} resource 入口资源模块
+ * @param {object} orderedResources
+ * @param {boolean} debug
  */
 var getOrderedDependencies = function(map, resource, orderedResources, debug) {
   if (!resource || !resource.id || orderedResources[resource.id]) {
@@ -70,6 +74,7 @@ var loadOrderedDependencies = function(options) {
   var rootDependencies = options.rootDependencies;
   var debug = options.debug;
   options.haste.updateMap(options.resourceMap, function(newResourceMap) {
+    // 记录排序资源
     var orderedResources = {};
     if (rootDependencies) {
       for (var i = 0; i < rootDependencies.length; i++) {
