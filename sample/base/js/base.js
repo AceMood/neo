@@ -8,4 +8,3 @@ var base = {
   less: true
 };
 
-var mod = require('./mod');

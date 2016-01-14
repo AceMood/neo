@@ -2,20 +2,19 @@
   "version": "0.1",
   "objects": [
     {
-      "type": "JS",
-      "path": "project/null.js",
-      "id": "project/null.js",
-      "mtime": 1450939420000
-    },
-    {
       "type": "CSS",
       "path": "base/css/base.less",
       "id": "base",
       "requiredCSS": [
-        "lib",
-        "./lib.css"
+        "lib"
       ],
-      "mtime": 1449225172000
+      "mtime": 1452777774000
+    },
+    {
+      "type": "CSS",
+      "path": "base/css/lib.css",
+      "id": "lib",
+      "mtime": 1452777788000
     },
     {
       "type": "JS",
@@ -23,13 +22,12 @@
       "id": "base/js/base.js",
       "isModule": true,
       "requiredModules": [
-        "jQuery",
-        "./mod"
+        "jQuery"
       ],
       "requiredCSS": [
         "base"
       ],
-      "mtime": 1452754412000
+      "mtime": 1452777689000
     },
     {
       "type": "JS",
@@ -87,11 +85,21 @@
     },
     {
       "path": "project/components/header/logo.png",
-      "id": null,
+      "id": "project/components/header/logo.png",
       "type": "Image",
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
+    },
+    {
+      "type": "CSS",
+      "path": "project/static/css/app.css",
+      "id": "project/static/css/app.css",
+      "requiredCSS": [
+        "project/components/header/header.css",
+        "project/components/footer/footer.css"
+      ],
+      "mtime": 1448292684000
     },
     {
       "type": "JS",
@@ -105,17 +113,17 @@
       "requiredCSS": [
         "project/static/css/app.css"
       ],
-      "mtime": 1448623019000
+      "mtime": 1452779753000
     },
     {
-      "type": "CSS",
-      "path": "project/static/css/app.css",
-      "id": "project/static/css/app.css",
-      "requiredCSS": [
-        "project/components/header/header.css",
-        "project/components/footer/footer.css"
+      "type": "JS",
+      "path": "project/static/js/warn.js",
+      "id": "project/static/js/warn.js",
+      "isModule": true,
+      "requiredModules": [
+        "project/static/js/app.js"
       ],
-      "mtime": 1448292684000
+      "mtime": 1452777942000
     }
   ]
 }
