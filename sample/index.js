@@ -12,8 +12,6 @@ var Loaders = Neo.Loaders;
 var log = require('et-util-logger');
 global.slogger = new log.Logger(log.Level.ALL);
 
-//var JSLoader = require('../lib/loader/JSLoader');
-//Neo.registerResourceLoader('JSLoader', JSLoader);
 
 // 第一个数组表示需要针对何种类型的资源
 // 第二个数组表示需要遍历的目录，应该是相对于vrd的路径
@@ -24,7 +22,7 @@ var neo = new Neo([
   new Loaders.ImageLoader(),
   new Loaders.SWFLoader()
 ], [
-  /*'core',*/ 'base', 'project'
+  'base', 'project'
 ]);
 
 neo.on('postProcessed', function(map) {

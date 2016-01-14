@@ -26,11 +26,18 @@
         {
             "path": "base/js/base.js",
             "id": "base/js/base.js",
-            "_requiredCSSMap": {},
-            "_requiredModuleMap": {},
+            "_requiredCSSMap": {
+                "../css/base.less": true
+            },
+            "_requiredModuleMap": {
+                "./jQuery": true,
+                "./mod": true
+            },
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "JS",
+            "_requiredTextToResolvedID": {
+                "./jQuery": "jQuery",
+                "../css/base.less": "base"
+            },
             "isModule": true,
             "requiredModules": [
                 "jQuery",
@@ -39,7 +46,8 @@
             "requiredCSS": [
                 "base"
             ],
-            "mtime": 1452177262000
+            "_fileContent": "/**\n * @module\n * @css ../css/base.less\n * @requires ./jQuery\n */\n\nvar base = {\n  less: true\n};\n\nvar mod = require('./mod');\n",
+            "mtime": 1452754412000
         },
         {
             "path": "base/js/jQuery.js",
@@ -159,7 +167,7 @@
             "mtime": 1448292684000
         }
     ],
-    "inferredProjectPaths": null,
+    "inferredProjectPaths": [],
     "configurationTrie": null,
     "resourceMap": {
         "JS": {
@@ -176,11 +184,18 @@
             "base/js/base.js": {
                 "path": "base/js/base.js",
                 "id": "base/js/base.js",
-                "_requiredCSSMap": {},
-                "_requiredModuleMap": {},
+                "_requiredCSSMap": {
+                    "../css/base.less": true
+                },
+                "_requiredModuleMap": {
+                    "./jQuery": true,
+                    "./mod": true
+                },
                 "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {},
-                "type": "JS",
+                "_requiredTextToResolvedID": {
+                    "./jQuery": "jQuery",
+                    "../css/base.less": "base"
+                },
                 "isModule": true,
                 "requiredModules": [
                     "jQuery",
@@ -189,7 +204,8 @@
                 "requiredCSS": [
                     "base"
                 ],
-                "mtime": 1452177262000
+                "_fileContent": "/**\n * @module\n * @css ../css/base.less\n * @requires ./jQuery\n */\n\nvar base = {\n  less: true\n};\n\nvar mod = require('./mod');\n",
+                "mtime": 1452754412000
             },
             "jQuery": {
                 "path": "base/js/jQuery.js",
@@ -354,11 +370,18 @@
         "base/js/base.js": {
             "path": "base/js/base.js",
             "id": "base/js/base.js",
-            "_requiredCSSMap": {},
-            "_requiredModuleMap": {},
+            "_requiredCSSMap": {
+                "../css/base.less": true
+            },
+            "_requiredModuleMap": {
+                "./jQuery": true,
+                "./mod": true
+            },
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "JS",
+            "_requiredTextToResolvedID": {
+                "./jQuery": "jQuery",
+                "../css/base.less": "base"
+            },
             "isModule": true,
             "requiredModules": [
                 "jQuery",
@@ -367,7 +390,8 @@
             "requiredCSS": [
                 "base"
             ],
-            "mtime": 1452177262000
+            "_fileContent": "/**\n * @module\n * @css ../css/base.less\n * @requires ./jQuery\n */\n\nvar base = {\n  less: true\n};\n\nvar mod = require('./mod');\n",
+            "mtime": 1452754412000
         },
         "base/js/jQuery.js": {
             "path": "base/js/jQuery.js",

@@ -29,7 +29,7 @@
       "requiredCSS": [
         "base"
       ],
-      "mtime": 1452177262000
+      "mtime": 1452754412000
     },
     {
       "type": "JS",
@@ -87,7 +87,7 @@
     },
     {
       "path": "project/components/header/logo.png",
-      "id": "project/components/header/logo.png",
+      "id": null,
       "type": "Image",
       "mtime": 1446450675000,
       "width": 77,
