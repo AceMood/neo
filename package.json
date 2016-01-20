@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.1",
+    "messenger": "0.0.9",
     "mocha": "^2.3.4"
   }
 }

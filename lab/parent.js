@@ -7,9 +7,18 @@ var ipc = require('node-ipc');
  *
  * *************************************/
 
-var cp = require('child_process');
-var child = cp.fork(__dirname + '/cache.js', [], {});
-child.unref();
+//var cp = require('child_process');
+//var child = cp.fork(__dirname + '/cache.js', [], {});
+//child.unref();
+
+var node_path = require('path');
+var spawn = require('child_process').spawn;
+
+var child = spawn('node', [node_path.resolve('./cache')], {
+  detached: true
+});
+
+//child.unref();
 
 ipc.config.id    = 'hello';
 ipc.config.retry = 1000;
