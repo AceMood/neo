@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/AceMood/neo",
   "dependencies": {
-    "et-util-logger": "^1.1.0"
+    "et-util-logger": "^1.1.0",
+    "uglify-js": "^2.6.1"
   },
   "devDependencies": {
     "chai": "^3.4.1",
