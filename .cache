@@ -3,6 +3,7 @@
   "objects": [
     {
       "type": "JS",
+      "domain": null,
       "path": "__test_data__/Loader/async-req-js.js",
       "id": "__test_data__/Loader/async-req-js.js",
       "isModule": true,
@@ -13,12 +14,14 @@
     },
     {
       "type": "JS",
+      "domain": null,
       "path": "__test_data__/Loader/base.js",
       "id": "bo.base",
       "mtime": 1452236723000
     },
     {
       "type": "JS",
+      "domain": null,
       "path": "__test_data__/Loader/sync-req-css.js",
       "id": "__test_data__/Loader/sync-req-css.js",
       "isModule": true,
@@ -30,6 +33,7 @@
     },
     {
       "type": "JS",
+      "domain": null,
       "path": "__test_data__/Loader/sync-req-js.js",
       "id": "__test_data__/Loader/sync-req-js.js",
       "isModule": true,
