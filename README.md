@@ -5,7 +5,9 @@ __neo-core__ 是前端工程化工具 __soi__ 的资源扫描器。对于指定�
 ## Contents
 * [Install](#install)
 * [Usage](#usage)
-   * [Options](#options)
+   * [Parameters](#Parameters)
+   * [Methods](#Methods)
+   * [Properties](#Properties)
 * [ResourceLoader](#resourceloader)
    * [CSSLoader](#cssloader)
    * [JSLoader](#jsloader)
@@ -44,8 +46,14 @@ neo.update('.cache', function(map) {
 });
 
 ```
-### Options
+### Parameters
+* Loaders  {Array}
+* ScanDirs {Array}
+* Options  {?object=}
 
+### Methods
+
+### Properties
 
 ## ResourceLoader
 neo-core目前内置了四种资源加载器，这四种加载器目前不允许覆盖。
