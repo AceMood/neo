@@ -5,6 +5,7 @@ __neo-core__ 是前端工程化工具 __soi__ 的资源扫描器。对于指定�
 ## Contents
 * [Install](#install)
 * [Usage](#usage)
+   * [Options](#options)
 * [ResourceLoader](#resourceloader)
    * [CSSLoader](#cssloader)
    * [JSLoader](#jsloader)
@@ -43,6 +44,9 @@ neo.update('.cache', function(map) {
 });
 
 ```
+### Options
+
+
 ## ResourceLoader
 neo-core目前内置了四种资源加载器，这四种加载器目前不允许覆盖。
 
@@ -166,7 +170,7 @@ neo.update('.cache', function(map) {
 ## Resource
 每一种静态资源对应一个resource类，其各个字段标志了当前资源的属性，供后续工程化处理流程使用。
 #### docblock directive
-称作注释头，用以下代码表示且出现在源码中的最上部
+称作头注释，用以下代码表示且出现在源码中的最上部
 
 ```
 /**
@@ -175,13 +179,40 @@ neo.update('.cache', function(map) {
 ```
 ### CSS
 
+可包含的头注释指令：
 
+#### **@provides**     
+为当前文件提供资源Id。同一类型的资源不允许出现同样的Id，但不同类型的资源可以。比如有两个js文件同时用provides指令声明了id为dialog，则会使资源表产出错误，写如果不做处理会使得线上程序出现问题。但如果一个css文件声明为id: dialog且另一个js文件也做了同样声明则不会产生冲突。例：
+
+```
+/**
+ * @provides dialog
+ */
+```
+
+#### **@css**
+声明当前文件需要的css资源。此指令告诉工具：要运行文件中的js，这些css必须要先准备好。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
+
+```
+/**
+ * @css reset-style, ./base.css ./dialog.less
+ */
+``` 
+
+#### **@permanent**
+声明文件内容长期极其稳定，不需要进行额外的流程化工作。比如reset.min.css，可能在编译时会浪费编译时间，但这个文件已经稳定，内容短期不会变化且已经被压缩，此时可以使用这个指令来告诉工具：不要动这个文件的内容，也没有必要动。例：
+
+```
+/**
+ * @permanent
+ */
+```
 
 ### JS
 
 可包含的头注释指令：
 #### **@module**       
-标示该js文件需要在后处理时被模块化包裹，soi使用 [kerneljs][kerneljs] 作为浏览器端模块加载器，并且会将标志为模块的代码进行CommonJS封装。例：
+标示该js文件需要在后处理时被模块化包裹，soi使用 [kerneljs][kerneljs] 作为浏览器端模块加载器，并且内置的wrapper插件会将标志为模块的代码进行CommonJS包装。例：
 
 ```
 /**
