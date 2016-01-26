@@ -1,6 +1,9 @@
 {
     "resourceCache": [
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/css/base.less",
             "id": "base",
             "_requiredCSSMap": {},
@@ -13,6 +16,9 @@
             "mtime": 1452777774000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/css/lib.css",
             "id": "lib",
             "_requiredCSSMap": {},
@@ -22,6 +28,9 @@
             "mtime": 1452777788000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/js/base.js",
             "id": "base/js/base.js",
             "_requiredCSSMap": {},
@@ -39,6 +48,9 @@
             "mtime": 1452777689000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/js/jQuery.js",
             "id": "jQuery",
             "_requiredCSSMap": {},
@@ -49,6 +61,9 @@
             "mtime": 1447945500000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/back2top/back2top.css",
             "id": "project/components/back2top/back2top.css",
             "_requiredCSSMap": {},
@@ -58,6 +73,9 @@
             "mtime": 1446028155000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/back2top/back2top.js",
             "id": "project/components/back2top/back2top.js",
             "_requiredCSSMap": {},
@@ -72,6 +90,9 @@
             "mtime": 1448620912000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/footer/footer.css",
             "id": "project/components/footer/footer.css",
             "_requiredCSSMap": {},
@@ -81,6 +102,9 @@
             "mtime": 1444983413000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/footer/footer.js",
             "id": "project/components/footer/footer.js",
             "_requiredCSSMap": {},
@@ -95,6 +119,9 @@
             "mtime": 1448292656000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/header/header.css",
             "id": "project/components/header/header.css",
             "_requiredCSSMap": {},
@@ -104,6 +131,9 @@
             "mtime": 1447153443000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/header/header.js",
             "id": "header",
             "_requiredCSSMap": {},
@@ -118,13 +148,19 @@
             "mtime": 1448292673000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/header/logo.png",
-            "id": null,
+            "id": "project/components/header/logo.png",
             "width": 77,
             "height": 77,
             "mtime": 1446450675000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/static/css/app.css",
             "id": "project/static/css/app.css",
             "_requiredCSSMap": {},
@@ -138,6 +174,9 @@
             "mtime": 1448292684000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/static/js/app.js",
             "id": "project/static/js/app.js",
             "_requiredCSSMap": {},
@@ -156,6 +195,9 @@
             "mtime": 1452779753000
         },
         {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/static/js/warn.js",
             "id": "project/static/js/warn.js",
             "_requiredCSSMap": {},
@@ -175,6 +217,9 @@
     "resourceMap": {
         "CSS": {
             "base": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "base/css/base.less",
                 "id": "base",
                 "_requiredCSSMap": {},
@@ -187,6 +232,9 @@
                 "mtime": 1452777774000
             },
             "lib": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "base/css/lib.css",
                 "id": "lib",
                 "_requiredCSSMap": {},
@@ -196,6 +244,9 @@
                 "mtime": 1452777788000
             },
             "project/components/back2top/back2top.css": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/back2top/back2top.css",
                 "id": "project/components/back2top/back2top.css",
                 "_requiredCSSMap": {},
@@ -205,6 +256,9 @@
                 "mtime": 1446028155000
             },
             "project/components/footer/footer.css": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/footer/footer.css",
                 "id": "project/components/footer/footer.css",
                 "_requiredCSSMap": {},
@@ -214,6 +268,9 @@
                 "mtime": 1444983413000
             },
             "project/components/header/header.css": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/header/header.css",
                 "id": "project/components/header/header.css",
                 "_requiredCSSMap": {},
@@ -223,6 +280,9 @@
                 "mtime": 1447153443000
             },
             "project/static/css/app.css": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/static/css/app.css",
                 "id": "project/static/css/app.css",
                 "_requiredCSSMap": {},
@@ -238,6 +298,9 @@
         },
         "JS": {
             "base/js/base.js": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "base/js/base.js",
                 "id": "base/js/base.js",
                 "_requiredCSSMap": {},
@@ -255,6 +318,9 @@
                 "mtime": 1452777689000
             },
             "jQuery": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "base/js/jQuery.js",
                 "id": "jQuery",
                 "_requiredCSSMap": {},
@@ -265,6 +331,9 @@
                 "mtime": 1447945500000
             },
             "project/components/back2top/back2top.js": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/back2top/back2top.js",
                 "id": "project/components/back2top/back2top.js",
                 "_requiredCSSMap": {},
@@ -279,6 +348,9 @@
                 "mtime": 1448620912000
             },
             "project/components/footer/footer.js": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/footer/footer.js",
                 "id": "project/components/footer/footer.js",
                 "_requiredCSSMap": {},
@@ -293,6 +365,9 @@
                 "mtime": 1448292656000
             },
             "header": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/header/header.js",
                 "id": "header",
                 "_requiredCSSMap": {},
@@ -307,6 +382,9 @@
                 "mtime": 1448292673000
             },
             "project/static/js/app.js": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/static/js/app.js",
                 "id": "project/static/js/app.js",
                 "_requiredCSSMap": {},
@@ -325,6 +403,9 @@
                 "mtime": 1452779753000
             },
             "project/static/js/warn.js": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/static/js/warn.js",
                 "id": "project/static/js/warn.js",
                 "_requiredCSSMap": {},
@@ -340,9 +421,12 @@
             }
         },
         "Image": {
-            "null": {
+            "project/components/header/logo.png": {
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "path": "project/components/header/logo.png",
-                "id": null,
+                "id": "project/components/header/logo.png",
                 "width": 77,
                 "height": 77,
                 "mtime": 1446450675000
@@ -351,6 +435,9 @@
     },
     "resourcePathMap": {
         "base/css/base.less": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/css/base.less",
             "id": "base",
             "_requiredCSSMap": {},
@@ -363,6 +450,9 @@
             "mtime": 1452777774000
         },
         "base/css/lib.css": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/css/lib.css",
             "id": "lib",
             "_requiredCSSMap": {},
@@ -372,6 +462,9 @@
             "mtime": 1452777788000
         },
         "base/js/base.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/js/base.js",
             "id": "base/js/base.js",
             "_requiredCSSMap": {},
@@ -389,6 +482,9 @@
             "mtime": 1452777689000
         },
         "base/js/jQuery.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "base/js/jQuery.js",
             "id": "jQuery",
             "_requiredCSSMap": {},
@@ -399,6 +495,9 @@
             "mtime": 1447945500000
         },
         "project/components/back2top/back2top.css": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/back2top/back2top.css",
             "id": "project/components/back2top/back2top.css",
             "_requiredCSSMap": {},
@@ -408,6 +507,9 @@
             "mtime": 1446028155000
         },
         "project/components/back2top/back2top.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/back2top/back2top.js",
             "id": "project/components/back2top/back2top.js",
             "_requiredCSSMap": {},
@@ -422,6 +524,9 @@
             "mtime": 1448620912000
         },
         "project/components/footer/footer.css": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/footer/footer.css",
             "id": "project/components/footer/footer.css",
             "_requiredCSSMap": {},
@@ -431,6 +536,9 @@
             "mtime": 1444983413000
         },
         "project/components/footer/footer.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/footer/footer.js",
             "id": "project/components/footer/footer.js",
             "_requiredCSSMap": {},
@@ -445,6 +553,9 @@
             "mtime": 1448292656000
         },
         "project/components/header/header.css": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/header/header.css",
             "id": "project/components/header/header.css",
             "_requiredCSSMap": {},
@@ -454,6 +565,9 @@
             "mtime": 1447153443000
         },
         "project/components/header/header.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/header/header.js",
             "id": "header",
             "_requiredCSSMap": {},
@@ -468,13 +582,19 @@
             "mtime": 1448292673000
         },
         "project/components/header/logo.png": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/components/header/logo.png",
-            "id": null,
+            "id": "project/components/header/logo.png",
             "width": 77,
             "height": 77,
             "mtime": 1446450675000
         },
         "project/static/css/app.css": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/static/css/app.css",
             "id": "project/static/css/app.css",
             "_requiredCSSMap": {},
@@ -488,6 +608,9 @@
             "mtime": 1448292684000
         },
         "project/static/js/app.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/static/js/app.js",
             "id": "project/static/js/app.js",
             "_requiredCSSMap": {},
@@ -506,6 +629,9 @@
             "mtime": 1452779753000
         },
         "project/static/js/warn.js": {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "path": "project/static/js/warn.js",
             "id": "project/static/js/warn.js",
             "_requiredCSSMap": {},

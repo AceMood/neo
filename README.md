@@ -47,13 +47,45 @@ neo.update('.cache', function(map) {
 
 ```
 ### Parameters
-* Loaders  {Array}
-* ScanDirs {Array}
-* Options  {?object=}
+初始化参数：
+
+* Loaders `{Array.<ResourceLoader>}`
+
+  资源加载器数组，标志扫描器需要扫描的资源。正如 [ResourceLoader](#resourceloader) 介绍的，每种类型的资源对应一种资源加载器。通过在初始化neo的时候传入Loaders数组，可以控制扫描器加载的资源类型，即资源表最后包含的资源类型。
+  
+* ScanDirs `{Array.<string>}`
+  扫描目录数组。相对于当前工作目录（工程目录）做计算。这里可以控制不需要扫描的目录，将其排除在外。
+
+* Options `{?object=}`
+  可包含以下字段：
+   * checkCircular `{boolean=}`     
+     __说明：__ 是否检查循环依赖, 默认为true
+   * finder        `{FileFinder=}`  
+     __说明：__ 自定义文件扫描器, 一般用不到，neo已经内置了一个FileFinder
+   * forceRescan   `{boolean=}`     
+     __说明：__ 是否不读取上次扫描缓存, 默认false
+   * ignorePaths   `{function:boolean=}`  
+     __说明：__ 返回是否忽略路径的函数
+   * logger        `{Logger=}` 
+     __说明：__ 用于日志输出的logger，可以由外部传进来，否则neo会初始化一个默认级别为All的全局slogger作为日志记录
+   * maxOpenFiles  `{number=}`  
+     __说明：__ loaders打开文件的最大数目
+   * maxProcesses  `{number=}`  
+     __说明：__ Maximum number of loader forks MapUpdateTask can use
+   * serializer    `{MapSerializer=}`  
+     __说明：__ 自定义序列化资源表
+   * useNativeFind `{boolean=}`  
+     __说明：__ 使用linux系统的shell命令还是node实现的方法
+   * version       `{string=}`  
+     __说明：__ 缓存的版本. 如果版本和缓存不一致则忽略缓存
 
 ### Methods
+* update (string, function, object=)
+
 
 ### Properties
+* Loaders (static)
+* Resource (static)
 
 ## ResourceLoader
 neo-core目前内置了四种资源加载器，这四种加载器目前不允许覆盖。
@@ -236,7 +268,7 @@ neo.update('.cache', function(map) {
  */
 ```
 
-#### **@require** 
+#### **@requires** 
 声明当前文件依赖的其他js文件。这种方式与源码中通过require进来的模块相比，不同点在于，依赖的文件可以不符合CommonJS规范，比如jQuery或者其他任何第三方类库。放在头注释指令中仅仅是告诉工具：要运行文件中的js，必须提前加载指令中出现的资源。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
 
 ```
