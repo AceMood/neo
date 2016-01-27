@@ -16,7 +16,7 @@
   "keywords": [
     "Static Resource Management",
     "Front End",
-    "Resource Map"
+    "ResourceMap"
   ],
   "author": "Facebook.Inc, AceMood, Songjin",
   "license": "MIT",
@@ -25,12 +25,10 @@
   },
   "homepage": "https://github.com/AceMood/neo",
   "dependencies": {
-    "et-util-logger": "^1.1.0",
-    "uglify-js": "^2.6.1"
+    "et-util-logger": "^1.1.0"
   },
   "devDependencies": {
     "chai": "^3.4.1",
-    "messenger": "0.0.9",
     "mocha": "^2.3.4"
   }
 }
