@@ -18,9 +18,10 @@
 
 /* globals describe */
 /* globals it */
-/* globals expect */
 
 describe('ConfigurationTrie', function() {
+
+  var expect = require('chai').expect;
 
   var ConfigurationTrie = require('../lib/ConfigurationTrie');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');

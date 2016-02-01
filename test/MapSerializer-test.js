@@ -29,6 +29,8 @@
 
 describe('MapSerializer', function() {
 
+  var expect = require('chai').expect;
+
   var MapSerializer = require('../lib/MapSerializer');
   var ResourceMap = require('../lib/map/ResourceMap');
   var JS = require('../lib/resource/JS');
