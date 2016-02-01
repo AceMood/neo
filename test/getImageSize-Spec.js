@@ -22,12 +22,11 @@
  *
  * @file 取得图像大小功能
  * @author AceMood
- * @Stability: 2 - Stable
  *
  * todo 计算后会改变图像buffer
  */
 
-describe("getImageSize", function() {
+describe('getImageSize', function() {
 
   var expect = require('chai').expect;
   var node_path = require('path');

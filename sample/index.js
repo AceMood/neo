@@ -10,7 +10,7 @@ var Neo = require('../lib/neo');
 var Loaders = Neo.Loaders;
 
 var log = require('et-util-logger');
-global.slogger = new log.Logger(log.Level.ALL);
+global.slogger = new log.Logger(log.Level.WARNING);
 
 
 // 第一个数组表示需要针对何种类型的资源
@@ -19,8 +19,7 @@ global.slogger = new log.Logger(log.Level.ALL);
 var neo = new Neo([
   new Loaders.JSLoader(),
   new Loaders.CSSLoader(),
-  new Loaders.ImageLoader(),
-  new Loaders.SWFLoader()
+  new Loaders.ImageLoader()
 ], [
   'base', 'project'
 ]);

@@ -1,5 +1,25 @@
+
 neo-core
 =========
+
+__Build Info__
+
+[![project][project-image]][project-url]
+[![Build status][travis-image]][travis-url]
+[![Codacy Badge][codacy-image]][codacy-url]
+
+__Downloads Info__
+
+[![Downloads][downloads-image]][downloads-url]
+[![Downloads][downloads-all-image]][downloads-url]
+
+__Miscellaneous__
+
+[![NPM version][npm-image]][npm-url]
+[![Dependency Status][david-image]][david-url]
+[![License][license-image]][license-url]
+
+
 __neo-core__ 是前端工程化工具 __soi__ 的资源扫描器。对于指定的工程目录由相应的 __ResourceLoader__ 加载并解析其对应的 __Resource__, 产出一份原始的资源表，资源表以对象变量的形式传递给 __soi__ 的调用函数。
 
 ## Contents
@@ -307,12 +327,32 @@ neo.update('.cache', function(map) {
 
 ### Others
 
-
 [kerneljs]: https://github.com/AceMood/kerneljs/  "kerneljs"
 
+[project-image]: https://img.shields.io/badge/neo--core-success-brightgreen.svg
+[project-url]: https://github.com/AceMood/neo
 
+[travis-image]: https://img.shields.io/travis/AceMood/neo-core.svg
+[travis-url]: https://travis-ci.org/AceMood/neo-core
 
+[npm-image]: https://img.shields.io/npm/v/neo-core.svg
+[npm-url]: https://npmjs.org/package/neo-core
 
+[node-image]: https://img.shields.io/node/v/neo-core.svg
+[node-url]: https://npmjs.org/package/neo-core
+
+[david-image]: http://img.shields.io/david/AceMood/neo-core.svg
+[david-url]: https://david-dm.org/AceMood/neo-core
+
+[downloads-image]: https://img.shields.io/npm/dm/neo-core.svg
+[downloads-url]: https://npmjs.org/package/neo-core
+[downloads-all-image]: https://img.shields.io/npm/dt/neo-core.svg
+
+[license-image]: https://img.shields.io/npm/l/soi.svg
+[license-url]: LICENSE.md
+
+[codacy-image]: https://api.codacy.com/project/badge/grade/43c442e150024a5fb80c876bb426c139
+[codacy-url]: https://www.codacy.com/app/zmike86/neo
 
 
 
