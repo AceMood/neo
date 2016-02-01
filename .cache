@@ -4,8 +4,18 @@
     {
       "type": "JS",
       "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
       "path": "__test_data__/Loader/async-req-js.js",
       "id": "__test_data__/Loader/async-req-js.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {
+        "./base": true
+      },
+      "_requiredTextToResolvedID": {
+        "./base": "bo.base"
+      },
       "isModule": true,
       "requiredAsyncModules": [
         "bo.base"
@@ -15,15 +25,30 @@
     {
       "type": "JS",
       "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
       "path": "__test_data__/Loader/base.js",
       "id": "bo.base",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
       "mtime": 1452236723000
     },
     {
       "type": "JS",
       "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
       "path": "__test_data__/Loader/sync-req-css.js",
       "id": "__test_data__/Loader/sync-req-css.js",
+      "_requiredCSSMap": {
+        "./plain.css": true,
+        "./dialog.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
       "isModule": true,
       "requiredCSS": [
         "./plain.css",
@@ -34,8 +59,18 @@
     {
       "type": "JS",
       "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
       "path": "__test_data__/Loader/sync-req-js.js",
       "id": "__test_data__/Loader/sync-req-js.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {
+        "./base": true
+      },
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {
+        "./base": "bo.base"
+      },
       "isModule": true,
       "requiredModules": [
         "bo.base"

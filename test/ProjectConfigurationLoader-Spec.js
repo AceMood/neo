@@ -18,17 +18,18 @@
 
 /* globals describe */
 /* globals it */
-/* globals expect */
 
 describe('ProjectConfiguration', function() {
+
+  var expect = require('chai').expect;
   var ProjectConfigurationLoader =
     require('../lib/loader/ProjectConfigurationLoader');
 
   it('should match package.json paths', function() {
     var loader = new ProjectConfigurationLoader();
-    expect(loader.matchPath('package.json')).toBe(true);
-    expect(loader.matchPath('a/package.json')).toBe(true);
-    expect(loader.matchPath('a/1.js')).toBe(false);
+    expect(loader.matchPath('package.json')).to.be.true;
+    expect(loader.matchPath('a/package.json')).to.be.true;
+    expect(loader.matchPath('a/1.js')).to.be.false;
   });
 
 });

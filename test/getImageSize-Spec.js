@@ -28,7 +28,6 @@
 
 /* globals describe */
 /* globals it */
-/* globals expect */
 
 describe('getImageSize', function() {
 

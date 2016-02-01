@@ -26,7 +26,6 @@
 
 /* globals describe */
 /* globals it */
-/* globals expect */
 
 describe('ImageLoader', function() {
 
