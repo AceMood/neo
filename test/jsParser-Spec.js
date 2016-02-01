@@ -22,8 +22,11 @@
  *
  * @file jsParser对于代码匹配的功能
  * @author AceMood
- * @Stability: 2 - Stable
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('jsParser', function() {
 

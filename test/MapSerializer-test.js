@@ -3,6 +3,10 @@
  * @Stability: 2 - Stable
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe('MapSerializer', function() {
 
   var MapSerializer = require('../lib/MapSerializer');

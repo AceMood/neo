@@ -1,7 +1,10 @@
 /**
  * @file ProjectConfiguration资源功能测试
- * @Stability: 2 - Stable
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('ProjectConfiguration', function() {
 

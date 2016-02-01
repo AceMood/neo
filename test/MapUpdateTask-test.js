@@ -2,6 +2,10 @@
  * @file
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe("MapUpdateTask", function() {
   var MapUpdateTask = require('../lib/MapUpdateTask');
   var Resource = require('../lib/resource/Resource');

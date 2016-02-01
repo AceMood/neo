@@ -22,8 +22,11 @@
  *
  * @file 图像加载器功能测试用例
  * @author AceMood
- * @email zmike86@gmail.com
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('ImageLoader', function() {
 

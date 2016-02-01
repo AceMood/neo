@@ -22,8 +22,11 @@
  *
  * @file 资源表对象测试用例
  * @author AceMood
- * @email zmike86@gmail.com
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('ResourceMap', function() {
 

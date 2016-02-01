@@ -26,6 +26,10 @@
  * todo 计算后会改变图像buffer
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe('getImageSize', function() {
 
   var expect = require('chai').expect;

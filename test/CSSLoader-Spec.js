@@ -24,6 +24,10 @@
  * @author AceMood
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe('CSSLoader', function() {
 
   var expect = require('chai').expect;

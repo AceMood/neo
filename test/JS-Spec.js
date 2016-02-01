@@ -25,6 +25,10 @@
  * @email zmike86@gmail.com
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe('JS Resource', function() {
 
   var expect = require('chai').expect;

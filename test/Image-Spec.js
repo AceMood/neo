@@ -22,8 +22,11 @@
  *
  * @file Image资源功能测试
  * @author AceMood
- * @email zmike86@gmail.com
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('Image Resource', function() {
 

@@ -22,8 +22,11 @@
  *
  * @file 解析注释头部信息功能
  * @author AceMood
- * @email zmike86@gmail.com
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('docblock', function() {
 

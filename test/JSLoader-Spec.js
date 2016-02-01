@@ -24,6 +24,10 @@
  * @author AceMood
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe('JSLoader', function() {
   var node_path = require('path');
   var fs = require('fs');

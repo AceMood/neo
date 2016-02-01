@@ -16,6 +16,10 @@
  * @emails javascript@lists.facebook.com voloko@fb.com
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe('ConfigurationTrie', function() {
 
   var ConfigurationTrie = require('../lib/ConfigurationTrie');

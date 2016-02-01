@@ -22,8 +22,11 @@
  *
  * @file FileFinder功能测试
  * @author AceMood
- * @Stability: 2 - Stable
  */
+
+/* globals describe */
+/* globals it */
+/* globals expect */
 
 describe('FileFinder', function() {
 

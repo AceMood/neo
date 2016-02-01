@@ -16,6 +16,10 @@
  * @emails javascript@lists.facebook.com voloko@fb.com
  */
 
+/* globals describe */
+/* globals it */
+/* globals expect */
+
 describe("MessageList", function() {
   var MessageList = require('../lib/MessageList');
   var cli = require('engineering-util-colorfulconsole');
