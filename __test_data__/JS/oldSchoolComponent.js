@@ -20,4 +20,4 @@
  * Some text here
  */
 
-var x = something;
+var x = 'something';

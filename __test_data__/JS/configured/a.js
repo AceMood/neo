@@ -22,7 +22,7 @@ var b = require('b');
 var fooIndex = require('foo');
 
 function foo(a) {
-  return x(bar(a));
+  return alert(bar(a));
 }
 
 module.exports = foo;
