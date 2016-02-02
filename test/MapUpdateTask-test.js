@@ -35,7 +35,6 @@ describe('MapUpdateTask', function() {
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
   var ProjectConfigurationLoader =
     require('../lib/loader/ProjectConfigurationLoader');
-  var MessageList = require('../lib/MessageList');
 
   var waitsForCallback = require('../__test_helpers__/waitsForCallback');
   var node_path = require('path');
@@ -185,7 +184,6 @@ describe('MapUpdateTask', function() {
     spyOn(configurationLoader, 'loadFromPath')
       .andCallFake(function(path, configuration, callback) {
         callback(
-          new MessageList(),
           new ProjectConfiguration('p1/package.json', {}));
       });
 
@@ -228,7 +226,6 @@ describe('MapUpdateTask', function() {
       .andCallFake(function(path, configuration, callback) {
         expect(path).toBe(node_path.join('p1','package.json'));
         callback(
-          new MessageList(),
           new ProjectConfiguration('p1/package.json', {}));
       });
 
@@ -270,7 +267,6 @@ describe('MapUpdateTask', function() {
     spyOn(configurationLoader, 'loadFromPath')
       .andCallFake(function(path, configuration, callback) {
         callback(
-          new MessageList(),
           new ProjectConfiguration('p1/package.json', { roots: ['a'] }));
       });
 
@@ -306,7 +302,7 @@ describe('MapUpdateTask', function() {
     spyOn(loader, 'loadFromPath')
       .andCallFake(function(path, configuration, callback) {
         expect(path).toBe(node_path.join('sub','added.js'));
-        callback(new MessageList(), new Resource('sub/added.js'));
+        callback(new Resource('sub/added.js'));
       });
 
     waitsForCallback(
@@ -346,9 +342,7 @@ describe('MapUpdateTask', function() {
     var task = new MapUpdateTask(files, [loader], map);
     spyOn(loader, 'loadFromPath')
       .andCallFake(function(path, configuration, callback) {
-        var messages = new MessageList();
-        messages.addError(path, 'foo', 'bar');
-        callback(messages, new Resource(path));
+        callback(new Resource(path));
       });
 
     waitsForCallback(
@@ -371,9 +365,8 @@ describe('MapUpdateTask', function() {
     var task = new MapUpdateTask(files, [loader], map);
     spyOn(loader, 'loadFromPath')
       .andCallFake(function(path, configuration, callback) {
-        var messages = new MessageList();
         process.nextTick(function() {
-          callback(messages, new Resource(path));
+          callback(new Resource(path));
         });
       });
 
@@ -381,11 +374,8 @@ describe('MapUpdateTask', function() {
       .andCallFake(function(map, resources, callback) {
         expect(resources.length).toBe(2);
         expect(resources[0]).toEqual(jasmine.any(Resource));
-        var messages = new MessageList();
-        resources.forEach(function(resource) {
-          messages.addError(resource.path, 'foo', 'bar');
-        });
-        callback(messages);
+
+        callback();
       });
 
     waitsForCallback(
