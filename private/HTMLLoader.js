@@ -96,7 +96,7 @@ class HTMLLoader extends ResourceLoader {
     html.setContent(sourceCode);
 
     // call generated function
-    if (!!this.options.networkSize) {
+    if (this.options.networkSize) {
       zlib.gzip(sourceCode, (err, buffer) => {
         if (err) {
           slogger.warn(
