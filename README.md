@@ -7,6 +7,7 @@ __Build Info__
 [![project][project-image]][project-url]
 [![Build status][travis-image]][travis-url]
 [![Codacy Badge][codacy-image]][codacy-url]
+[![Codacy Badge][coverage-image]][codacy-url]
 
 __Downloads Info__
 
@@ -351,6 +352,7 @@ neo.update('.cache', function(map) {
 [license-image]: https://img.shields.io/npm/l/soi.svg
 [license-url]: LICENSE.md
 
+[coverage-image]: https://api.codacy.com/project/badge/coverage/43c442e150024a5fb80c876bb426c139
 [codacy-image]: https://api.codacy.com/project/badge/grade/43c442e150024a5fb80c876bb426c139
 [codacy-url]: https://www.codacy.com/app/zmike86/neo
 
