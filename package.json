@@ -28,6 +28,12 @@
     "url": "https://github.com/AceMood/neo/issues"
   },
   "homepage": "https://github.com/AceMood/neo",
+  "maintainers": [
+    {
+      "name": "AceMood",
+      "email": "zmike86@gmail.com"
+    }
+  ],
   "dependencies": {
     "et-util-logger": "^1.1.0"
   },

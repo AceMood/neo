@@ -333,7 +333,7 @@ neo.update('.cache', function(map) {
 [project-image]: https://img.shields.io/badge/neo--core-success-brightgreen.svg
 [project-url]: https://github.com/AceMood/neo
 
-[travis-image]: https://img.shields.io/travis/AceMood/neo-core.svg
+[travis-image]: https://travis-ci.org/AceMood/neo.svg?branch=master
 [travis-url]: https://travis-ci.org/AceMood/neo-core
 
 [npm-image]: https://img.shields.io/npm/v/neo-core.svg
