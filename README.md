@@ -342,7 +342,7 @@ neo.update('.cache', function(map) {
 [node-image]: https://img.shields.io/node/v/neo-core.svg
 [node-url]: https://npmjs.org/package/neo-core
 
-[david-image]: http://img.shields.io/david/AceMood/neo-core.svg
+[david-image]: https://david-dm.org/AceMood/neo.svg
 [david-url]: https://david-dm.org/AceMood/neo-core
 
 [downloads-image]: https://img.shields.io/npm/dm/neo-core.svg
