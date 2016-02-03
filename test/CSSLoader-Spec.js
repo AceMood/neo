@@ -94,7 +94,7 @@ describe('CSSLoader', function() {
       });
   });
 
-  it('should extract network size', function(done) {
+  xit('should extract network size', function(done) {
     var loader = new CSSLoader({ networkSize: true });
     loader.loadFromPath(
       node_path.join(testData, 'sprite.css'),
