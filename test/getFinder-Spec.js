@@ -27,24 +27,23 @@
 /* globals describe */
 /* globals it */
 
-describe('FileFinder', function() {
+describe('getFinder', function() {
 
   var expect = require('chai').expect;
   var node_path = require('path');
-  var Finder = require('../lib/FileFinder');
-
+  var getFinder = require('../lib/getFinder');
   var workingDir = node_path.join(__dirname, '..', '__test_data__', 'FileFinder');
 
-  it('should find files in a directory using FileFinder instance method',
+  it('should find files in a directory using find method',
     function(done) {
-      var find = new Finder({
-        scanDirs: [workingDir],
-        extensions: ['.js'],
-        useNative: true,
-        ignore: null
-      });
+      var finder = getFinder(
+        [workingDir],
+        ['.js'],
+        null,
+        true
+      );
 
-      find.find(function(files) {
+      finder.find(function(files) {
         files = files.map(function(r) {
           return r[0];
         });
@@ -58,7 +57,7 @@ describe('FileFinder', function() {
 
   it('should find files in a directory using FileFinder static method',
     function(done) {
-      Finder.find([workingDir], ['.js'], null, function(files) {
+      getFinder().findInNode([workingDir], ['.js'], null, function(files) {
         files = files.map(function(r) {
           return r[0];
         });
@@ -71,7 +70,7 @@ describe('FileFinder', function() {
     });
 
   it('should find files in a directory using native find', function(done) {
-    Finder.findNative([workingDir], ['.js'], null, function(files) {
+    getFinder().findInNative([workingDir], ['.js'], null, function(files) {
       files = files.map(function(r) {
         return r[0];
       });
