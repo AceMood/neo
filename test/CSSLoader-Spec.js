@@ -40,6 +40,18 @@ describe('CSSLoader', function() {
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 
+  beforeEach(function() {
+    if (fs.existsSync('.cache')) {
+      fs.unlinkSync('.cache');
+    }
+  });
+
+  after(function() {
+    if (fs.existsSync('.cache')) {
+      fs.unlinkSync('.cache');
+    }
+  });
+
   it('should match package.json paths', function() {
     var loader = new CSSLoader();
     expect(loader.matchPath('x.css')).to.be.true;
@@ -95,10 +107,6 @@ describe('CSSLoader', function() {
   });
 
   it('should resolve module id in postProcess', function(done) {
-    if (fs.existsSync('.cache')) {
-      fs.unlinkSync('.cache');
-    }
-
     var neo = new Neo([
       new CSSLoader()
     ], [
@@ -116,7 +124,5 @@ describe('CSSLoader', function() {
 
       done();
     });
-
-    neo.update('.cache', function(map) {});
   });
 });
