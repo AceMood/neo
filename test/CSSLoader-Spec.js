@@ -94,17 +94,6 @@ describe('CSSLoader', function() {
       });
   });
 
-  xit('should extract network size', function(done) {
-    var loader = new CSSLoader({ networkSize: true });
-    loader.loadFromPath(
-      node_path.join(testData, 'sprite.css'),
-      null,
-      function(r) {
-        expect(r.networkSize > 0).to.be.true;
-        done();
-      });
-  });
-
   it('should resolve module id in postProcess', function(done) {
     if (fs.existsSync('.cache')) {
       fs.unlinkSync('.cache');

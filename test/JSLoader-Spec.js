@@ -43,6 +43,18 @@ describe('JSLoader', function() {
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 
+  beforeEach(function() {
+    if (fs.existsSync('.cache')) {
+      fs.unlinkSync('.cache');
+    }
+  });
+
+  after(function() {
+    if (fs.existsSync('.cache')) {
+      fs.unlinkSync('.cache');
+    }
+  });
+
   it('should match package.json paths', function() {
     var loader = new JSLoader();
     expect(loader.matchPath('x.js')).to.be.true;
@@ -80,18 +92,6 @@ describe('JSLoader', function() {
         expect(r.requiredCSS).to.be.a('array');
         expect(r.requiredCSS).to.have.length(1);
         expect(r.requiredCSS).to.deep.equal(['foo-css']);
-
-        done();
-      });
-  });
-
-  xit('should extract network size', function(done) {
-    var loader = new JSLoader({ networkSize: true });
-    loader.loadFromPath(
-      node_path.join(testData, 'javelin.js'),
-      null,
-      function(r) {
-        expect(r.networkSize > 0).to.be.true;
 
         done();
       });
@@ -252,10 +252,6 @@ describe('JSLoader', function() {
   });
 
   it('should resolve sync css module id in postProcess', function(done) {
-    if (fs.existsSync('.cache')) {
-      fs.unlinkSync('.cache');
-    }
-
     var neo = new Neo([
       new JSLoader(),
       new Neo.Loaders.CSSLoader()
@@ -275,14 +271,12 @@ describe('JSLoader', function() {
       done();
     });
 
-    neo.update('.cache', function(map) {});
+    neo.update('.cache', function(map) {
+
+    });
   });
 
   it('should resolve sync js module id in postProcess', function(done) {
-    if (fs.existsSync('.cache')) {
-      fs.unlinkSync('.cache');
-    }
-
     var neo = new Neo([
       new JSLoader()
     ], [
@@ -302,14 +296,12 @@ describe('JSLoader', function() {
       done();
     });
 
-    neo.update('.cache', function(map) {});
+    neo.update('.cache', function(map) {
+
+    });
   });
 
   it('should resolve async js module id in postProcess', function(done) {
-    if (fs.existsSync('.cache')) {
-      fs.unlinkSync('.cache');
-    }
-
     var neo = new Neo([
       new JSLoader()
     ], [
