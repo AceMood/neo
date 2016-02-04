@@ -271,9 +271,7 @@ describe('JSLoader', function() {
       done();
     });
 
-    neo.update('.cache', function(map) {
-
-    });
+    neo.update('.cache', function() {});
   });
 
   it('should resolve sync js module id in postProcess', function(done) {
@@ -321,7 +319,7 @@ describe('JSLoader', function() {
       done();
     });
 
-    neo.update('.cache', function(map) {});
+    neo.update('.cache', function() {});
   });
 
 });
