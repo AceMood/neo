@@ -52,7 +52,7 @@ describe('CSSLoader', function() {
     }
   });
 
-  it('should match package.json paths', function() {
+  it('should match css file paths', function() {
     var loader = new CSSLoader();
     expect(loader.matchPath('x.css')).to.be.true;
     expect(loader.matchPath('a/x.css')).to.be.true;
@@ -90,7 +90,7 @@ describe('CSSLoader', function() {
   });
 
   it('should extract css sprites', function(done) {
-    var loader = new CSSLoader({ extractSprites: true });
+    var loader = new CSSLoader();
     loader.loadFromPath(
       node_path.join(testData, 'sprite.css'),
       null,
@@ -124,5 +124,7 @@ describe('CSSLoader', function() {
 
       done();
     });
+
+    neo.update('.cache', function() {});
   });
 });

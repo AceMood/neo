@@ -34,28 +34,27 @@ describe('getFinder', function() {
   var getFinder = require('../lib/getFinder');
   var workingDir = node_path.join(__dirname, '..', '__test_data__', 'FileFinder');
 
-  it('should find files in a directory using find method',
-    function(done) {
-      var finder = getFinder(
-        [workingDir],
-        ['.js'],
-        null,
-        true
-      );
+  it('should find files in a directory using find method', function(done) {
+    var finder = getFinder(
+      [workingDir],
+      ['.js'],
+      null,
+      true
+    );
 
-      finder.find(function(files) {
-        files = files.map(function(r) {
-          return r[0];
-        });
-        expect(files.join('\n')).to.contain(node_path.join('sub','1.js'));
-        expect(files.join('\n')).to.contain(node_path.join('sub','2.js'));
-        expect(files.join('\n')).to.contain('3.js');
-
-        done();
+    finder.find(function(files) {
+      files = files.map(function(r) {
+        return r[0];
       });
-    });
+      expect(files.join('\n')).to.contain(node_path.join('sub','1.js'));
+      expect(files.join('\n')).to.contain(node_path.join('sub','2.js'));
+      expect(files.join('\n')).to.contain('3.js');
 
-  it('should find files in a directory using FileFinder static method',
+      done();
+    });
+  });
+
+  it('should find files in a directory using getFinder static method',
     function(done) {
       getFinder().findInNode([workingDir], ['.js'], null, function(files) {
         files = files.map(function(r) {
