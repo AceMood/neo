@@ -82,20 +82,18 @@ neo.update('.cache', function(map) {
   可包含以下字段：
    * checkCircular `{boolean=}`     
      __说明：__ 是否检查循环依赖, 默认为true
-   * finder        `{FileFinder=}`  
-     __说明：__ 自定义文件扫描器, 一般用不到，neo已经内置了一个FileFinder
    * forceRescan   `{boolean=}`     
      __说明：__ 是否不读取上次扫描缓存, 默认false
    * ignorePaths   `{function:boolean=}`  
      __说明：__ 返回是否忽略路径的函数
    * logger        `{Logger=}` 
-     __说明：__ 用于日志输出的logger，可以由外部传进来，否则neo会初始化一个默认级别为All的全局slogger作为日志记录
+     __说明：__ 用于日志输出的logger，可以由外部传进来，否则neo会初始化一个默认级别为All的全局slogger作为日志记录。logger的具体用法和信息可见：[logger][et-util-logger]
    * maxOpenFiles  `{number=}`  
-     __说明：__ loaders打开文件的最大数目
+     __说明：__ 加载器在扫描文件并对源码做解析的时候，有可能由于工程目录下静态资源文件很多造成时间较长，可以在这里限制一次处理的文件的最大数目，结合 maxProcesses可以利用pc的多核减轻单线程的解析工作压力
    * maxProcesses  `{number=}`  
-     __说明：__ Maximum number of loader forks MapUpdateTask can use
+     __说明：__ 加载器处理文件时可以打开的最大子进程数目
    * serializer    `{MapSerializer=}`  
-     __说明：__ 自定义序列化资源表
+     __说明：__ 自定义序列化/反序列化资源表的实现。序列化成对象存在缓存中，下次扫描在资源没有改动的情况下直接读取缓存结果，因为neo已经内置了一个默认的序列化实现，所以没有特别需要可以不做指定
    * useNativeFind `{boolean=}`  
      __说明：__ 使用linux系统的shell命令还是node实现的方法
    * version       `{string=}`  
@@ -149,7 +147,7 @@ resource.requiredCSS = ['reset-style'];
 /**
  * @provides dialog
  * @module
- * @require jQuery
+ * @requires jQuery
  * @css ./dilog.less
  */
  
@@ -295,7 +293,7 @@ neo.update('.cache', function(map) {
 
 ```
 /**
- * @require jQuery, backbone, underscore, ./base.js
+ * @requires jQuery, backbone, underscore, ./base.js
  */
 ``` 
      
@@ -330,6 +328,7 @@ neo.update('.cache', function(map) {
 ### Others
 
 [kerneljs]: https://github.com/AceMood/kerneljs/  "kerneljs"
+[et-util-logger]: https://github.com/Saber-Team/Engineering-Util-Logger "logger"
 
 [project-image]: https://img.shields.io/badge/neo--core-good-brightgreen.svg
 [project-url]: https://github.com/AceMood/neo
@@ -353,7 +352,7 @@ neo.update('.cache', function(map) {
 [license-image]: https://img.shields.io/npm/l/soi.svg
 [license-url]: LICENSE
 
-[maintain-image]: https://img.shields.io/badge/maintained-yes-blue.svg
+[maintain-image]: https://img.shields.io/badge/maintained-Yes-blue.svg
 
 [coverage-image]: https://api.codacy.com/project/badge/coverage/43c442e150024a5fb80c876bb426c139
 [codacy-image]: https://api.codacy.com/project/badge/grade/43c442e150024a5fb80c876bb426c139
