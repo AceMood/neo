@@ -2,4 +2,4 @@
  * @module
  */
 
-var app = require('./app');
+var warn = {};
