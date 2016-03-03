@@ -73,6 +73,78 @@
       "mtime": 1453812528000
     },
     {
+      "type": "JS",
+      "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
+      "path": "project/static/js/app.js",
+      "id": "project/static/js/app.js",
+      "_requiredCSSMap": {
+        "../css/app.css": true
+      },
+      "_requiredModuleMap": {
+        "./warn": true,
+        "../../components/footer/footer.js": true
+      },
+      "_requiredAsyncModuleMap": {
+        "../../components/header/header.js": true
+      },
+      "_requiredTextToResolvedID": {
+        "./warn": "project/static/js/warn.js",
+        "../../components/footer/footer.js": "project/components/footer/footer.js",
+        "../css/app.css": "project/static/css/app.css",
+        "../../components/header/header.js": "header"
+      },
+      "isModule": true,
+      "requiredModules": [
+        "project/static/js/warn.js",
+        "project/components/footer/footer.js"
+      ],
+      "requiredAsyncModules": [
+        "header"
+      ],
+      "requiredCSS": [
+        "project/static/css/app.css"
+      ],
+      "mtime": 1455863626000
+    },
+    {
+      "type": "JS",
+      "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
+      "path": "project/static/js/warn.js",
+      "id": "project/static/js/warn.js",
+      "_requiredCSSMap": {},
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1455863594000
+    },
+    {
+      "type": "CSS",
+      "domain": null,
+      "_events": {},
+      "_eventsCount": 0,
+      "path": "project/static/css/app.css",
+      "id": "project/static/css/app.css",
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
+      "_spriteMap": {},
+      "_requiredTextToResolvedID": {
+        "../../components/header/header.css": "project/components/header/header.css",
+        "../../components/footer/footer.css": "project/components/footer/footer.css"
+      },
+      "requiredCSS": [
+        "project/components/header/header.css",
+        "project/components/footer/footer.css"
+      ],
+      "mtime": 1448292684000
+    },
+    {
       "type": "CSS",
       "domain": null,
       "_events": {},
@@ -178,78 +250,6 @@
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
-    },
-    {
-      "type": "CSS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
-      "path": "project/static/css/app.css",
-      "id": "project/static/css/app.css",
-      "_requiredCSSMap": {
-        "../../components/header/header.css": true,
-        "../../components/footer/footer.css": true
-      },
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {
-        "../../components/header/header.css": "project/components/header/header.css",
-        "../../components/footer/footer.css": "project/components/footer/footer.css"
-      },
-      "requiredCSS": [
-        "project/components/header/header.css",
-        "project/components/footer/footer.css"
-      ],
-      "mtime": 1448292684000
-    },
-    {
-      "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
-      "path": "project/static/js/app.js",
-      "id": "project/static/js/app.js",
-      "_requiredCSSMap": {
-        "../css/app.css": true
-      },
-      "_requiredModuleMap": {
-        "./warn": true,
-        "../../components/footer/footer.js": true
-      },
-      "_requiredAsyncModuleMap": {
-        "../../components/header/header.js": true
-      },
-      "_requiredTextToResolvedID": {
-        "./warn": "project/static/js/warn.js",
-        "../../components/footer/footer.js": "project/components/footer/footer.js",
-        "../css/app.css": "project/static/css/app.css",
-        "../../components/header/header.js": "header"
-      },
-      "isModule": true,
-      "requiredModules": [
-        "project/static/js/warn.js",
-        "project/components/footer/footer.js"
-      ],
-      "requiredAsyncModules": [
-        "header"
-      ],
-      "requiredCSS": [
-        "project/static/css/app.css"
-      ],
-      "mtime": 1455863626000
-    },
-    {
-      "type": "JS",
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
-      "path": "project/static/js/warn.js",
-      "id": "project/static/js/warn.js",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "isModule": true,
-      "mtime": 1455863594000
     }
   ]
 }
