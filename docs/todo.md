@@ -5,3 +5,5 @@
 5. html资源类型支持
 6. 代码兼容到v4.0.0 改用es6重写 (done)
 7. Resource不继承自EventEmitter
+8. resource.compile继续重构优化
+9. resource.compile测试用例
