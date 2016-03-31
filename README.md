@@ -314,7 +314,14 @@ neo.update('.cache', function(map) {
  * @permanent
  */
 ```
+#### **@entry**
+声明加载这个文件时该模块作为整个页面或者页面独立的一部分的逻辑入口。有此标签的js模块会在打包时加上`kerneljs.exec`的包裹函数，该模块的回调函数会在依赖模块加载完毕后立即执行。此处不同于**module**指令，前者只会做CommonJS的`define`函数包裹，生命的模块不会立即执行，采用的是惰性执行的方式，只有require时才会导出模块对象。指令示例：
 
+```
+/**
+ * @entry
+ */
+```
 #### **@nonblocking**
 声明加载这个文件时可以完全放由浏览器去做并行加载，比如给script标签加上async属性或者由js动态加载。
 加载框架若在页面中发现当前资源有这个标志，应该为其加上async属性。例：
@@ -325,7 +332,6 @@ neo.update('.cache', function(map) {
  */
 ```
 
-### Others
 
 [kerneljs]: https://github.com/AceMood/kerneljs/  "kerneljs"
 [et-util-logger]: https://github.com/Saber-Team/Engineering-Util-Logger "logger"
