@@ -1,6 +1,6 @@
 {
   "name": "neo-core",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Facade of FrontEnd Static Resource System.",
   "main": "neo.js",
   "engines": {
