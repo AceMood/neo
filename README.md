@@ -322,7 +322,7 @@ neo.update('.cache', function(map) {
  * @entry
  */
 ```
-#### **@nonblocking**
+#### **@nonblocking** (Deprecated!)
 声明加载这个文件时可以完全放由浏览器去做并行加载，比如给script标签加上async属性或者由js动态加载。
 加载框架若在页面中发现当前资源有这个标志，应该为其加上async属性。例：
 
