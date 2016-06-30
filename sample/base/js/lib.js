@@ -1,3 +1,0 @@
-/**
- * @requires ./module.js
- */

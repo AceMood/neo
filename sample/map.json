@@ -32,19 +32,6 @@
             "mtime": 1452777788000
         },
         {
-            "path": "base/js/jQuery.js",
-            "id": "jQuery",
-            "_requiredCSSMap": {},
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "JS",
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
-            "mtime": 1453812528000
-        },
-        {
             "path": "project/static/js/app.js",
             "id": "project/static/js/app.js",
             "_requiredCSSMap": {
@@ -223,8 +210,8 @@
             "mtime": 1446450675000
         },
         {
-            "path": "base/js/module.js",
-            "id": "base/js/module.js",
+            "path": "base/js/base.js",
+            "id": "base/js/base.js",
             "_requiredCSSMap": {
                 "../css/base.less": true
             },
@@ -244,27 +231,21 @@
             "requiredCSS": [
                 "base"
             ],
-            "mtime": 1452777689000
+            "mtime": 1467310711000
         },
         {
-            "path": "base/js/lib.js",
-            "id": "base/js/lib.js",
+            "path": "base/js/jQuery.js",
+            "id": "jQuery",
             "_requiredCSSMap": {},
-            "_requiredModuleMap": {
-                "./module.js": true
-            },
+            "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "./module.js": "base/js/module.js"
-            },
-            "requiredModules": [
-                "base/js/module.js"
-            ],
-            "_fileContent": "/**\n * @requires ./module.js\n */",
-            "mtime": 1465825264000
+            "_requiredTextToResolvedID": {},
+            "type": "JS",
+            "isModule": true,
+            "mtime": 1467310735000
         }
     ],
-    "inferredProjectPaths": [],
+    "inferredProjectPaths": null,
     "configurationTrie": null,
     "resourceMap": {
         "CSS": {
@@ -359,19 +340,6 @@
             }
         },
         "JS": {
-            "jQuery": {
-                "path": "base/js/jQuery.js",
-                "id": "jQuery",
-                "_requiredCSSMap": {},
-                "_requiredModuleMap": {},
-                "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {},
-                "type": "JS",
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
-                "mtime": 1453812528000
-            },
             "project/static/js/app.js": {
                 "path": "project/static/js/app.js",
                 "id": "project/static/js/app.js",
@@ -485,9 +453,9 @@
                 ],
                 "mtime": 1448292673000
             },
-            "base/js/module.js": {
-                "path": "base/js/module.js",
-                "id": "base/js/module.js",
+            "base/js/base.js": {
+                "path": "base/js/base.js",
+                "id": "base/js/base.js",
                 "_requiredCSSMap": {
                     "../css/base.less": true
                 },
@@ -507,24 +475,18 @@
                 "requiredCSS": [
                     "base"
                 ],
-                "mtime": 1452777689000
+                "mtime": 1467310711000
             },
-            "base/js/lib.js": {
-                "path": "base/js/lib.js",
-                "id": "base/js/lib.js",
+            "jQuery": {
+                "path": "base/js/jQuery.js",
+                "id": "jQuery",
                 "_requiredCSSMap": {},
-                "_requiredModuleMap": {
-                    "./module.js": true
-                },
+                "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {
-                    "./module.js": "base/js/module.js"
-                },
-                "requiredModules": [
-                    "base/js/module.js"
-                ],
-                "_fileContent": "/**\n * @requires ./module.js\n */",
-                "mtime": 1465825264000
+                "_requiredTextToResolvedID": {},
+                "type": "JS",
+                "isModule": true,
+                "mtime": 1467310735000
             }
         },
         "Image": {
@@ -568,19 +530,6 @@
             "_events": {},
             "_eventsCount": 0,
             "mtime": 1452777788000
-        },
-        "base/js/jQuery.js": {
-            "path": "base/js/jQuery.js",
-            "id": "jQuery",
-            "_requiredCSSMap": {},
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {},
-            "type": "JS",
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
-            "mtime": 1453812528000
         },
         "project/static/js/app.js": {
             "path": "project/static/js/app.js",
@@ -760,9 +709,9 @@
             "height": 77,
             "mtime": 1446450675000
         },
-        "base/js/module.js": {
-            "path": "base/js/module.js",
-            "id": "base/js/module.js",
+        "base/js/base.js": {
+            "path": "base/js/base.js",
+            "id": "base/js/base.js",
             "_requiredCSSMap": {
                 "../css/base.less": true
             },
@@ -782,24 +731,18 @@
             "requiredCSS": [
                 "base"
             ],
-            "mtime": 1452777689000
+            "mtime": 1467310711000
         },
-        "base/js/lib.js": {
-            "path": "base/js/lib.js",
-            "id": "base/js/lib.js",
+        "base/js/jQuery.js": {
+            "path": "base/js/jQuery.js",
+            "id": "jQuery",
             "_requiredCSSMap": {},
-            "_requiredModuleMap": {
-                "./module.js": true
-            },
+            "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "./module.js": "base/js/module.js"
-            },
-            "requiredModules": [
-                "base/js/module.js"
-            ],
-            "_fileContent": "/**\n * @requires ./module.js\n */",
-            "mtime": 1465825264000
+            "_requiredTextToResolvedID": {},
+            "type": "JS",
+            "isModule": true,
+            "mtime": 1467310735000
         }
     },
     "typeToMap": {}

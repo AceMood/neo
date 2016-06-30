@@ -34,19 +34,6 @@
     },
     {
       "type": "JS",
-      "path": "base/js/jQuery.js",
-      "id": "jQuery",
-      "_requiredCSSMap": {},
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {},
-      "domain": null,
-      "_events": {},
-      "_eventsCount": 0,
-      "mtime": 1453812528000
-    },
-    {
-      "type": "JS",
       "path": "project/static/js/app.js",
       "id": "project/static/js/app.js",
       "_requiredCSSMap": {
@@ -226,8 +213,8 @@
     },
     {
       "type": "JS",
-      "path": "base/js/module.js",
-      "id": "base/js/module.js",
+      "path": "base/js/base.js",
+      "id": "base/js/base.js",
       "_requiredCSSMap": {
         "../css/base.less": true
       },
@@ -246,24 +233,18 @@
       "requiredCSS": [
         "base"
       ],
-      "mtime": 1452777689000
+      "mtime": 1467310711000
     },
     {
       "type": "JS",
-      "path": "base/js/lib.js",
-      "id": "base/js/lib.js",
+      "path": "base/js/jQuery.js",
+      "id": "jQuery",
       "_requiredCSSMap": {},
-      "_requiredModuleMap": {
-        "./module.js": true
-      },
+      "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedID": {
-        "./module.js": "base/js/module.js"
-      },
-      "requiredModules": [
-        "base/js/module.js"
-      ],
-      "mtime": 1465825264000
+      "_requiredTextToResolvedID": {},
+      "isModule": true,
+      "mtime": 1467310735000
     }
   ]
 }

@@ -290,7 +290,7 @@ neo.update('.cache', function(map) {
  */
 ```
 
-### **@requires** 
+### **@requires**  (Deprecated!)
 声明当前文件依赖的其他js文件。这种方式与源码中通过require进来的模块相比，不同点在于，依赖的文件可以不符合CommonJS规范，比如jQuery或者其他任何第三方类库。放在头注释指令中仅仅是告诉工具：要运行文件中的js，必须提前加载指令中出现的资源。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
 
 ```

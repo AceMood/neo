@@ -36,7 +36,7 @@ describe('CSSLoader', function() {
   var Neo = require('../lib/neo');
   var CSSLoader = require('../lib/loader/CSSLoader');
   var log = require('et-util-logger');
-  global.slogger = new log.Logger();
+  global.logger = new log.Logger();
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 
