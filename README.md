@@ -24,30 +24,32 @@ __Miscellaneous__
 
 __neo-core__ 是前端工程化工具 __soi__ 的资源扫描器。对于指定的工程目录由相应的 __ResourceLoader__ 加载并解析其对应的 __Resource__, 产出一份原始的资源表，资源表以对象变量的形式传递给 __soi__ 的调用函数。
 
-## Contents
-* [Install](#install)
-* [Usage](#usage)
-   * [Parameters](#Parameters)
-   * [Methods](#Methods)
-   * [Properties](#Properties)
-* [ResourceLoader](#resourceloader)
+注意: neo不能单独使用, 需要结合其他模块一起使用（例如__soi__）。neo提供的只有api, 并不支持命令行执行。
+
+# 目录
+* [安装](#安装)
+* [使用](#使用)
+   * [neo的参数](#neo的参数)
+   * [neo的方法](#neo的方法)
+   * [neo的属性](#neo的属性)
+* [资源加载器](#资源加载器)
    * [CSSLoader](#cssloader)
    * [JSLoader](#jsloader)
    * [Others](#other-loader)
-* [Resource](#resource)
+* [资源](#资源)
    * [CSS](#css)
    * [JS](#js)
    * [Others](#other-resource)
 
 ----
-## Install
+# 安装
 确保安装了node，并且版本大于1.0.0。原因是自v4.0.0 nodejs同iojs开发版合并，v8版本升级到4.5.x，从此支持部分es6的语法，neo-core采用es6语法编写。
 
 ```
 npm install neo-core -g
 ```
 
-## Usage
+# 使用
 
 ```
 var Neo = require('neo-core');
@@ -68,7 +70,7 @@ neo.update('.cache', function(map) {
 });
 
 ```
-### Parameters
+## neo的参数
 初始化参数：
 
 * Loaders `{Array.<ResourceLoader>}`
@@ -99,15 +101,15 @@ neo.update('.cache', function(map) {
    * version       `{string=}`  
      __说明：__ 缓存的版本. 如果版本和缓存不一致则忽略缓存
 
-### Methods
+## neo的方法
 * update (string, function, object=)
 
 
-### Properties
+## neo的属性
 * Loaders (static)
 * Resource (static)
 
-## ResourceLoader
+# 资源加载器
 neo-core目前内置了四种资源加载器，这四种加载器目前不允许覆盖。
 
 * JSLoader
@@ -116,7 +118,7 @@ neo-core目前内置了四种资源加载器，这四种加载器目前不允许
 * SWFLoader
 
 
-### CSSLoader
+## CSSLoader
 负责扫描css以及less文件，解析模块依赖关系。
 若源码如下：
 
@@ -139,7 +141,7 @@ resource.requiredCSS = ['reset-style'];
 ```
 加载器通过头注释声明一些模块自描述信息，关于更多头注释docblock的说明，可以参考 [资源字段](#css)
 
-### JSLoader
+## JSLoader
 负责扫描javascript文件，解析模块依赖关系。
 若源码如下：
 
@@ -176,7 +178,7 @@ resource.requiredAsyncModules = ['ajax'];
 加载器通过头注释声明一些模块自描述信息，和源码中对require，require.async的调用解析该资源的必要属性，存储到资源表中。关于更多头注释docblock的说明，可以参考 [资源字段](#js)
 
 
-### Other Loader
+## Other Loader
 开发者可以定制自己项目中需要扫描的资源类型，比如tpl。
 需要实现类似其他资源加载器的TPLLoader，并且实现相应的资源类型TPL。具体可以参考源码中的resource/目录和loader/目录下的实现完成。并最终通过初始化扫描器时传入该种资源，如：
 
@@ -227,7 +229,7 @@ neo.update('.cache', function(map) {
 
 ```
 
-## Resource
+# 资源
 每一种静态资源对应一个resource类，其各个字段标志了当前资源的属性，供后续工程化处理流程使用。
 #### docblock directive
 称作头注释，用以下代码表示且出现在源码中的最上部
@@ -237,11 +239,11 @@ neo.update('.cache', function(map) {
  * @directive [value]
  */
 ```
-### CSS
+## CSS
 
 可包含的头注释指令：
 
-#### **@provides**     
+### **@provides**     
 为当前文件提供资源Id。同一类型的资源不允许出现同样的Id，但不同类型的资源可以。比如有两个js文件同时用provides指令声明了id为dialog，则会使资源表产出错误，写如果不做处理会使得线上程序出现问题。但如果一个css文件声明为id: dialog且另一个js文件也做了同样声明则不会产生冲突。例：
 
 ```
@@ -250,7 +252,7 @@ neo.update('.cache', function(map) {
  */
 ```
 
-#### **@css**
+### **@css**
 声明当前文件需要的css资源。此指令告诉工具：要运行文件中的js，这些css必须要先准备好。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
 
 ```
@@ -259,7 +261,7 @@ neo.update('.cache', function(map) {
  */
 ``` 
 
-#### **@permanent**
+### **@permanent**
 声明文件内容长期极其稳定，不需要进行额外的流程化工作。比如reset.min.css，可能在编译时会浪费编译时间，但这个文件已经稳定，内容短期不会变化且已经被压缩，此时可以使用这个指令来告诉工具：不要动这个文件的内容，也没有必要动。例：
 
 ```
@@ -268,7 +270,7 @@ neo.update('.cache', function(map) {
  */
 ```
 
-### JS
+## JS
 
 可包含的头注释指令：
 #### **@module**       
@@ -279,7 +281,7 @@ neo.update('.cache', function(map) {
  * @module
  */
 ```
-#### **@provides**     
+### **@provides**     
 为当前文件提供资源Id。同一类型的资源不允许出现同样的Id，但不同类型的资源可以。比如有两个js文件同时用provides指令声明了id为dialog，则会使资源表产出错误，写如果不做处理会使得线上程序出现问题。但如果一个css文件声明为id: dialog且另一个js文件也做了同样声明则不会产生冲突。例：
 
 ```
@@ -288,7 +290,7 @@ neo.update('.cache', function(map) {
  */
 ```
 
-#### **@requires** 
+### **@requires** 
 声明当前文件依赖的其他js文件。这种方式与源码中通过require进来的模块相比，不同点在于，依赖的文件可以不符合CommonJS规范，比如jQuery或者其他任何第三方类库。放在头注释指令中仅仅是告诉工具：要运行文件中的js，必须提前加载指令中出现的资源。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
 
 ```
@@ -297,7 +299,7 @@ neo.update('.cache', function(map) {
  */
 ``` 
      
-#### **@css**
+### **@css**
 声明当前文件需要的css资源。此指令告诉工具：要运行文件中的js，这些css必须要先准备好。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
 
 ```
@@ -306,7 +308,7 @@ neo.update('.cache', function(map) {
  */
 ``` 
 
-#### **@permanent**
+### **@permanent**
 声明文件内容长期极其稳定，不需要进行额外的流程化工作。比如echart.min.js，可能在编译时会浪费不少编译时间，但这个文件已经稳定，内容短期不会变化且已经被压缩，此时可以使用这个指令来告诉工具：不要动这个文件的内容，也没有必要动。例：
 
 ```
@@ -314,7 +316,7 @@ neo.update('.cache', function(map) {
  * @permanent
  */
 ```
-#### **@entry**
+### **@entry**
 声明加载这个文件时该模块作为整个页面或者页面独立的一部分的逻辑入口。有此标签的js模块会在打包时加上`kerneljs.exec`的包裹函数，该模块的回调函数会在依赖模块加载完毕后立即执行。此处不同于**module**指令，前者只会做CommonJS的`define`函数包裹，生命的模块不会立即执行，采用的是惰性执行的方式，只有require时才会导出模块对象。指令示例：
 
 ```
@@ -322,7 +324,7 @@ neo.update('.cache', function(map) {
  * @entry
  */
 ```
-#### **@nonblocking** (Deprecated!)
+### **@nonblocking** (Deprecated!)
 声明加载这个文件时可以完全放由浏览器去做并行加载，比如给script标签加上async属性或者由js动态加载。
 加载框架若在页面中发现当前资源有这个标志，应该为其加上async属性。例：
 

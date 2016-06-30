@@ -1,9 +1,6 @@
 {
     "resourceCache": [
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "base/css/base.less",
             "id": "base",
             "_requiredCSSMap": {
@@ -13,68 +10,41 @@
             "_requiredTextToResolvedID": {
                 "./lib.css": "lib"
             },
-            "requiredCSS": [
-                "lib"
-            ],
-            "_fileContent": "/**\n * @provides base\n * @css ./lib.css\n */\n\ndiv {\n\n}",
-            "mtime": 1452777774000
-        },
-        {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "requiredCSS": [
+                "lib"
+            ],
+            "mtime": 1452777774000
+        },
+        {
             "path": "base/css/lib.css",
             "id": "lib",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "/**\n * @provides lib\n */",
+            "type": "CSS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "mtime": 1452777788000
         },
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
-            "path": "base/js/base.js",
-            "id": "base/js/base.js",
-            "_requiredCSSMap": {
-                "../css/base.less": true
-            },
-            "_requiredModuleMap": {
-                "./jQuery": true
-            },
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "./jQuery": "jQuery",
-                "../css/base.less": "base"
-            },
-            "isModule": true,
-            "requiredModules": [
-                "jQuery"
-            ],
-            "requiredCSS": [
-                "base"
-            ],
-            "_fileContent": "/**\n * @module\n * @css ../css/base.less\n * @requires ./jQuery\n */\n\nvar base = {\n  less: true\n};\n\n",
-            "mtime": 1452777689000
-        },
-        {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "base/js/jQuery.js",
             "id": "jQuery",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "/**\n * @provides jQuery\n */\n\n\nvar jQuery;",
-            "mtime": 1453812528000
-        },
-        {
+            "type": "JS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1453812528000
+        },
+        {
             "path": "project/static/js/app.js",
             "id": "project/static/js/app.js",
             "_requiredCSSMap": {
@@ -93,6 +63,10 @@
                 "../css/app.css": "project/static/css/app.css",
                 "../../components/header/header.js": "header"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredModules": [
                 "project/static/js/warn.js",
@@ -104,27 +78,23 @@
             "requiredCSS": [
                 "project/static/css/app.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('./warn');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
             "mtime": 1455863626000
         },
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/static/js/warn.js",
             "id": "project/static/js/warn.js",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
-            "isModule": true,
-            "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
-            "mtime": 1455863594000
-        },
-        {
+            "type": "JS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "isModule": true,
+            "mtime": 1455863594000
+        },
+        {
             "path": "project/static/css/app.css",
             "id": "project/static/css/app.css",
             "_requiredCSSMap": {
@@ -136,29 +106,29 @@
                 "../../components/header/header.css": "project/components/header/header.css",
                 "../../components/footer/footer.css": "project/components/footer/footer.css"
             },
+            "type": "CSS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "requiredCSS": [
                 "project/components/header/header.css",
                 "project/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "mtime": 1448292684000
         },
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/back2top/back2top.css",
             "id": "project/components/back2top/back2top.css",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
-            "mtime": 1446028155000
-        },
-        {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1446028155000
+        },
+        {
             "path": "project/components/back2top/back2top.js",
             "id": "project/components/back2top/back2top.js",
             "_requiredCSSMap": {
@@ -169,29 +139,29 @@
             "_requiredTextToResolvedID": {
                 "./back2top.css": "project/components/back2top/back2top.css"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredCSS": [
                 "project/components/back2top/back2top.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "mtime": 1448620912000
         },
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/footer/footer.css",
             "id": "project/components/footer/footer.css",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
-            "mtime": 1444983413000
-        },
-        {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1444983413000
+        },
+        {
             "path": "project/components/footer/footer.js",
             "id": "project/components/footer/footer.js",
             "_requiredCSSMap": {
@@ -202,29 +172,29 @@
             "_requiredTextToResolvedID": {
                 "./footer.css": "project/components/footer/footer.css"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredCSS": [
                 "project/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
             "mtime": 1448292656000
         },
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/header/header.css",
             "id": "project/components/header/header.css",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
-            "mtime": 1447153443000
-        },
-        {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1447153443000
+        },
+        {
             "path": "project/components/header/header.js",
             "id": "header",
             "_requiredCSSMap": {
@@ -235,24 +205,63 @@
             "_requiredTextToResolvedID": {
                 "./header.css": "project/components/header/header.css"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredCSS": [
                 "project/components/header/header.css"
             ],
-            "_fileContent": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
             "mtime": 1448292673000
         },
         {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/header/logo.png",
             "id": "project/components/header/logo.png",
-            "networkSize": 1568,
-            "_fileContent": "PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000Ô×\u0019\u0000\u0000\u0001PLTE¢Îòñøýyyyíõü!ßÁîk±êÒÒÒ)àæòû\u0019Þ\u0011Ü¾íÍåøÆïòòòúüýÊðöúþªªªe­éÖêùv¶ëÏÏÏªÒóþþÿooo®Õó»ì¹Ùõ\u0002yÚøøø¼Üõkkk1áV¦æz¹ì9âÉâ÷¶Øõ­­­ÝíúDäííí.á£££ëôüêêê\u0004zÛÞÞÞmmm±ÖôÂî¶¶¶sµëæææàààÐæøuuuÉÉÉ\u001cÞc¬è[¨ç\b|Û}}}°°°\rÜàïûèóüÂÂÂ4âQ£ælll\u0016Ý_ªè¦Ïò\u0014Ý<ãÇða«è²²²ÅÅÅâââh¯éõõõ¼¼¼ÙÙÙÌñÄïð÷ýÓèùS¤æýþÿ\u000fÜüýÿggg÷÷÷%ß\u000b~ÜÄÄÄÅà÷¾¾¾X§çHäóùýõúþ#ßAã\u001fÞÈð÷ûþo³êN¡åÀÝö¹¹¹\u0000xÚfffÿÿÿ\f­y\u0000\u0000\u0004[IDATXÃíû_\u001aG\u0010ÀáP\u0003'\u0011äåãP\"¢$JÍ¥%ø\bhjÔÔ(&Ä\u0000>ðÄ4µµìýëÙÙÝ»[Dýì~>ýôSç\u001bvn¿73;»³Ø´Rl·´ÿ\u0000M®~LtÇj!1ÛÓ÷}4Wô´ÉÓ=qcÚbùYó¢\u001cõ×nFóï5/Á\u001bÐì;lv,\u001dÊT\u0006+o:/\u001f°Js¥éÌt)Weq½fæ¢óN#JËðîZ~£ff§eÏÚ-yêÝ\u0005\u001aÉÊÒ]?wçóî÷»lqb`,Óü\u0004vèg2K~Çë:\u0019\u0010\\D¶Ø\r¯SÏ¶\\q,?$c_AÏ5\u0004ie3¢>o©µÂ6\u0019]\u0005=*FsÁ\u000e8%i^ ^6Õå\u0004\t¯#õR[Áê^C\u00165Ó2\u0006êó\fÔ#J¶Ù°Ø\u001e\u0011\u0002¥&uv\u000f&ÉúÉ1JvÚ]P}PvË\"´ió»/`c\u001a\u0014XB¦ÿ.\u0001Z\u0015\u0010$=>m3«Dë\u0003Mö\u0011\u0002¥Õ\u0001SRüË¦G\u0010j\u0000-aCÒ¶ÀîÂÀ´1\u0001\u001a\u0014EÆÌ\u0013mc\u0019´~¨\"\u0001\u001a\u0014VÅtå3ELg3F\n¯§»ª¡bõOÎ4\u000bÕ·k¬Õ\u0000M5|Ó¾`õ¸m0íh|¼urkpè;î\u0010~Þ£?²X=\u0014\\Ó<;ÙÈ\u0001rH¦É±»ÎÞú\u000bë'\u00024HSßL*ÙëòÈúH6@}­\\HéU´\u001e¾.l±\u0013IMñµ²&@#/V©^Ë¶öç£ègjHÂ¯E\u0013\tå$u\u0010YiëÍ9ÄÌ¥ðzE¡dÍ\bUUWcn=\u001b~!ÚÄ\u00119öë³¬¹$ßCoo÷³vÓ¥L@\u0015\u0015\u0002b}øTî¢­Õq.l4ÈNÁ.ã0Ó5louûÄ°töÓ5}JV¹`©tSJ¼×¯Ò\u0019«J{×(³ïX¸9|¦÷7öö%b\u0017±báä 8¹Ro\u0019ö½.è\u0015\u000b÷7Ç\bK¶û¡1Ö¹:¾\fwåÝ2×§ý¾¬ú«ý/rÆÚ®Â]sï\u001d/½÷v¤ô¥HZºÛí÷è;`¬¬lÏj¢5òµÁ\u0015JÚú?£JùKG÷^át¬ËÆuC%)§Goÿ\u0003þiOóº¶u\fùà\u0014<Æ78y\"@C¼lj\u001e$=.> ´Q*=ÕÞñÆ°\u0000­\b\"¡0y\u0003-hNÇ´\u0001&?\nÑ~õ`\t£!xàp\u000fÞ\u001e|ÇgP8\u001e{¦Ç\u0019\u0017¢m !J\u0018\u0015µÉRi\u0000\u000fÎ¡p\u0000µD:'DØ×_aÚ\u0016B\u001eM{\u0004\u001fccï)wzh¦\u0014µ;¯ö7úm\u000e\u0005/ú&\u0016©§DÅiØ9L[BÞ'h\u0006:åÙ§\u0019\u0005Y²ì\u001b¡õî£ãIÞak\t/ªêm÷-\u0018F¨Wû\u0005;¥=\u001aB?Åuñ\nÑöÃTt$=À#IK7É\u001b-ÜbÑi¾\u0007hkü-\u0003íMCÄªW2bÐÌæ\u0016ïÄ^9öbh\u001e^¦\u0006>ÍO\u0006?1ü\u001fì\u0015¶Õ^Þ·´ö\r\u0017¼¿#QÐ\u0000\u0000\u0000\u0000IEND®B`",
             "width": 77,
             "height": 77,
             "mtime": 1446450675000
+        },
+        {
+            "path": "base/js/module.js",
+            "id": "base/js/module.js",
+            "_requiredCSSMap": {
+                "../css/base.less": true
+            },
+            "_requiredModuleMap": {
+                "./jQuery": true
+            },
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {
+                "./jQuery": "jQuery",
+                "../css/base.less": "base"
+            },
+            "type": "JS",
+            "isModule": true,
+            "requiredModules": [
+                "jQuery"
+            ],
+            "requiredCSS": [
+                "base"
+            ],
+            "mtime": 1452777689000
+        },
+        {
+            "path": "base/js/lib.js",
+            "id": "base/js/lib.js",
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {
+                "./module.js": true
+            },
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {
+                "./module.js": "base/js/module.js"
+            },
+            "requiredModules": [
+                "base/js/module.js"
+            ],
+            "_fileContent": "/**\n * @requires ./module.js\n */",
+            "mtime": 1465825264000
         }
     ],
     "inferredProjectPaths": [],
@@ -260,9 +269,6 @@
     "resourceMap": {
         "CSS": {
             "base": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "base/css/base.less",
                 "id": "base",
                 "_requiredCSSMap": {
@@ -272,28 +278,28 @@
                 "_requiredTextToResolvedID": {
                     "./lib.css": "lib"
                 },
-                "requiredCSS": [
-                    "lib"
-                ],
-                "_fileContent": "/**\n * @provides base\n * @css ./lib.css\n */\n\ndiv {\n\n}",
-                "mtime": 1452777774000
-            },
-            "lib": {
+                "type": "CSS",
                 "domain": null,
                 "_events": {},
                 "_eventsCount": 0,
+                "requiredCSS": [
+                    "lib"
+                ],
+                "mtime": 1452777774000
+            },
+            "lib": {
                 "path": "base/css/lib.css",
                 "id": "lib",
                 "_requiredCSSMap": {},
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
-                "_fileContent": "/**\n * @provides lib\n */",
-                "mtime": 1452777788000
-            },
-            "project/static/css/app.css": {
+                "type": "CSS",
                 "domain": null,
                 "_events": {},
                 "_eventsCount": 0,
+                "mtime": 1452777788000
+            },
+            "project/static/css/app.css": {
                 "path": "project/static/css/app.css",
                 "id": "project/static/css/app.css",
                 "_requiredCSSMap": {
@@ -305,95 +311,68 @@
                     "../../components/header/header.css": "project/components/header/header.css",
                     "../../components/footer/footer.css": "project/components/footer/footer.css"
                 },
+                "type": "CSS",
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "requiredCSS": [
                     "project/components/header/header.css",
                     "project/components/footer/footer.css"
                 ],
-                "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
                 "mtime": 1448292684000
             },
             "project/components/back2top/back2top.css": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "project/components/back2top/back2top.css",
                 "id": "project/components/back2top/back2top.css",
                 "_requiredCSSMap": {},
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
-                "_fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
-                "mtime": 1446028155000
-            },
-            "project/components/footer/footer.css": {
+                "type": "CSS",
                 "domain": null,
                 "_events": {},
                 "_eventsCount": 0,
+                "mtime": 1446028155000
+            },
+            "project/components/footer/footer.css": {
                 "path": "project/components/footer/footer.css",
                 "id": "project/components/footer/footer.css",
                 "_requiredCSSMap": {},
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
-                "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
-                "mtime": 1444983413000
-            },
-            "project/components/header/header.css": {
+                "type": "CSS",
                 "domain": null,
                 "_events": {},
                 "_eventsCount": 0,
+                "mtime": 1444983413000
+            },
+            "project/components/header/header.css": {
                 "path": "project/components/header/header.css",
                 "id": "project/components/header/header.css",
                 "_requiredCSSMap": {},
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
-                "_fileContent": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
+                "type": "CSS",
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "mtime": 1447153443000
             }
         },
         "JS": {
-            "base/js/base.js": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
-                "path": "base/js/base.js",
-                "id": "base/js/base.js",
-                "_requiredCSSMap": {
-                    "../css/base.less": true
-                },
-                "_requiredModuleMap": {
-                    "./jQuery": true
-                },
-                "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedID": {
-                    "./jQuery": "jQuery",
-                    "../css/base.less": "base"
-                },
-                "isModule": true,
-                "requiredModules": [
-                    "jQuery"
-                ],
-                "requiredCSS": [
-                    "base"
-                ],
-                "_fileContent": "/**\n * @module\n * @css ../css/base.less\n * @requires ./jQuery\n */\n\nvar base = {\n  less: true\n};\n\n",
-                "mtime": 1452777689000
-            },
             "jQuery": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "base/js/jQuery.js",
                 "id": "jQuery",
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
                 "_requiredTextToResolvedID": {},
-                "_fileContent": "/**\n * @provides jQuery\n */\n\n\nvar jQuery;",
-                "mtime": 1453812528000
-            },
-            "project/static/js/app.js": {
+                "type": "JS",
                 "domain": null,
                 "_events": {},
                 "_eventsCount": 0,
+                "mtime": 1453812528000
+            },
+            "project/static/js/app.js": {
                 "path": "project/static/js/app.js",
                 "id": "project/static/js/app.js",
                 "_requiredCSSMap": {
@@ -412,6 +391,10 @@
                     "../css/app.css": "project/static/css/app.css",
                     "../../components/header/header.js": "header"
                 },
+                "type": "JS",
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "isModule": true,
                 "requiredModules": [
                     "project/static/js/warn.js",
@@ -423,27 +406,23 @@
                 "requiredCSS": [
                     "project/static/css/app.css"
                 ],
-                "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('./warn');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
                 "mtime": 1455863626000
             },
             "project/static/js/warn.js": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "project/static/js/warn.js",
                 "id": "project/static/js/warn.js",
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
                 "_requiredTextToResolvedID": {},
-                "isModule": true,
-                "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
-                "mtime": 1455863594000
-            },
-            "project/components/back2top/back2top.js": {
+                "type": "JS",
                 "domain": null,
                 "_events": {},
                 "_eventsCount": 0,
+                "isModule": true,
+                "mtime": 1455863594000
+            },
+            "project/components/back2top/back2top.js": {
                 "path": "project/components/back2top/back2top.js",
                 "id": "project/components/back2top/back2top.js",
                 "_requiredCSSMap": {
@@ -454,17 +433,17 @@
                 "_requiredTextToResolvedID": {
                     "./back2top.css": "project/components/back2top/back2top.css"
                 },
+                "type": "JS",
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "isModule": true,
                 "requiredCSS": [
                     "project/components/back2top/back2top.css"
                 ],
-                "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
                 "mtime": 1448620912000
             },
             "project/components/footer/footer.js": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "project/components/footer/footer.js",
                 "id": "project/components/footer/footer.js",
                 "_requiredCSSMap": {
@@ -475,17 +454,17 @@
                 "_requiredTextToResolvedID": {
                     "./footer.css": "project/components/footer/footer.css"
                 },
+                "type": "JS",
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "isModule": true,
                 "requiredCSS": [
                     "project/components/footer/footer.css"
                 ],
-                "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
                 "mtime": 1448292656000
             },
             "header": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "project/components/header/header.js",
                 "id": "header",
                 "_requiredCSSMap": {
@@ -496,23 +475,62 @@
                 "_requiredTextToResolvedID": {
                     "./header.css": "project/components/header/header.css"
                 },
+                "type": "JS",
+                "domain": null,
+                "_events": {},
+                "_eventsCount": 0,
                 "isModule": true,
                 "requiredCSS": [
                     "project/components/header/header.css"
                 ],
-                "_fileContent": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
                 "mtime": 1448292673000
+            },
+            "base/js/module.js": {
+                "path": "base/js/module.js",
+                "id": "base/js/module.js",
+                "_requiredCSSMap": {
+                    "../css/base.less": true
+                },
+                "_requiredModuleMap": {
+                    "./jQuery": true
+                },
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {
+                    "./jQuery": "jQuery",
+                    "../css/base.less": "base"
+                },
+                "type": "JS",
+                "isModule": true,
+                "requiredModules": [
+                    "jQuery"
+                ],
+                "requiredCSS": [
+                    "base"
+                ],
+                "mtime": 1452777689000
+            },
+            "base/js/lib.js": {
+                "path": "base/js/lib.js",
+                "id": "base/js/lib.js",
+                "_requiredCSSMap": {},
+                "_requiredModuleMap": {
+                    "./module.js": true
+                },
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedID": {
+                    "./module.js": "base/js/module.js"
+                },
+                "requiredModules": [
+                    "base/js/module.js"
+                ],
+                "_fileContent": "/**\n * @requires ./module.js\n */",
+                "mtime": 1465825264000
             }
         },
         "Image": {
             "project/components/header/logo.png": {
-                "domain": null,
-                "_events": {},
-                "_eventsCount": 0,
                 "path": "project/components/header/logo.png",
                 "id": "project/components/header/logo.png",
-                "networkSize": 1568,
-                "_fileContent": "PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000Ô×\u0019\u0000\u0000\u0001PLTE¢Îòñøýyyyíõü!ßÁîk±êÒÒÒ)àæòû\u0019Þ\u0011Ü¾íÍåøÆïòòòúüýÊðöúþªªªe­éÖêùv¶ëÏÏÏªÒóþþÿooo®Õó»ì¹Ùõ\u0002yÚøøø¼Üõkkk1áV¦æz¹ì9âÉâ÷¶Øõ­­­ÝíúDäííí.á£££ëôüêêê\u0004zÛÞÞÞmmm±ÖôÂî¶¶¶sµëæææàààÐæøuuuÉÉÉ\u001cÞc¬è[¨ç\b|Û}}}°°°\rÜàïûèóüÂÂÂ4âQ£ælll\u0016Ý_ªè¦Ïò\u0014Ý<ãÇða«è²²²ÅÅÅâââh¯éõõõ¼¼¼ÙÙÙÌñÄïð÷ýÓèùS¤æýþÿ\u000fÜüýÿggg÷÷÷%ß\u000b~ÜÄÄÄÅà÷¾¾¾X§çHäóùýõúþ#ßAã\u001fÞÈð÷ûþo³êN¡åÀÝö¹¹¹\u0000xÚfffÿÿÿ\f­y\u0000\u0000\u0004[IDATXÃíû_\u001aG\u0010ÀáP\u0003'\u0011äåãP\"¢$JÍ¥%ø\bhjÔÔ(&Ä\u0000>ðÄ4µµìýëÙÙÝ»[Dýì~>ýôSç\u001bvn¿73;»³Ø´Rl·´ÿ\u0000M®~LtÇj!1ÛÓ÷}4Wô´ÉÓ=qcÚbùYó¢\u001cõ×nFóï5/Á\u001bÐì;lv,\u001dÊT\u0006+o:/\u001f°Js¥éÌt)Weq½fæ¢óN#JËðîZ~£ff§eÏÚ-yêÝ\u0005\u001aÉÊÒ]?wçóî÷»lqb`,Óü\u0004vèg2K~Çë:\u0019\u0010\\D¶Ø\r¯SÏ¶\\q,?$c_AÏ5\u0004ie3¢>o©µÂ6\u0019]\u0005=*FsÁ\u000e8%i^ ^6Õå\u0004\t¯#õR[Áê^C\u00165Ó2\u0006êó\fÔ#J¶Ù°Ø\u001e\u0011\u0002¥&uv\u000f&ÉúÉ1JvÚ]P}PvË\"´ió»/`c\u001a\u0014XB¦ÿ.\u0001Z\u0015\u0010$=>m3«Dë\u0003Mö\u0011\u0002¥Õ\u0001SRüË¦G\u0010j\u0000-aCÒ¶ÀîÂÀ´1\u0001\u001a\u0014EÆÌ\u0013mc\u0019´~¨\"\u0001\u001a\u0014VÅtå3ELg3F\n¯§»ª¡bõOÎ4\u000bÕ·k¬Õ\u0000M5|Ó¾`õ¸m0íh|¼urkpè;î\u0010~Þ£?²X=\u0014\\Ó<;ÙÈ\u0001rH¦É±»ÎÞú\u000bë'\u00024HSßL*ÙëòÈúH6@}­\\HéU´\u001e¾.l±\u0013IMñµ²&@#/V©^Ë¶öç£ègjHÂ¯E\u0013\tå$u\u0010YiëÍ9ÄÌ¥ðzE¡dÍ\bUUWcn=\u001b~!ÚÄ\u00119öë³¬¹$ßCoo÷³vÓ¥L@\u0015\u0015\u0002b}øTî¢­Õq.l4ÈNÁ.ã0Ó5louûÄ°töÓ5}JV¹`©tSJ¼×¯Ò\u0019«J{×(³ïX¸9|¦÷7öö%b\u0017±báä 8¹Ro\u0019ö½.è\u0015\u000b÷7Ç\bK¶û¡1Ö¹:¾\fwåÝ2×§ý¾¬ú«ý/rÆÚ®Â]sï\u001d/½÷v¤ô¥HZºÛí÷è;`¬¬lÏj¢5òµÁ\u0015JÚú?£JùKG÷^át¬ËÆuC%)§Goÿ\u0003þiOóº¶u\fùà\u0014<Æ78y\"@C¼lj\u001e$=.> ´Q*=ÕÞñÆ°\u0000­\b\"¡0y\u0003-hNÇ´\u0001&?\nÑ~õ`\t£!xàp\u000fÞ\u001e|ÇgP8\u001e{¦Ç\u0019\u0017¢m !J\u0018\u0015µÉRi\u0000\u000fÎ¡p\u0000µD:'DØ×_aÚ\u0016B\u001eM{\u0004\u001fccï)wzh¦\u0014µ;¯ö7úm\u000e\u0005/ú&\u0016©§DÅiØ9L[BÞ'h\u0006:åÙ§\u0019\u0005Y²ì\u001b¡õî£ãIÞak\t/ªêm÷-\u0018F¨Wû\u0005;¥=\u001aB?Åuñ\nÑöÃTt$=À#IK7É\u001b-ÜbÑi¾\u0007hkü-\u0003íMCÄªW2bÐÌæ\u0016ïÄ^9öbh\u001e^¦\u0006>ÍO\u0006?1ü\u001fì\u0015¶Õ^Þ·´ö\r\u0017¼¿#QÐ\u0000\u0000\u0000\u0000IEND®B`",
                 "width": 77,
                 "height": 77,
                 "mtime": 1446450675000
@@ -521,9 +539,6 @@
     },
     "resourcePathMap": {
         "base/css/base.less": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "base/css/base.less",
             "id": "base",
             "_requiredCSSMap": {
@@ -533,68 +548,41 @@
             "_requiredTextToResolvedID": {
                 "./lib.css": "lib"
             },
-            "requiredCSS": [
-                "lib"
-            ],
-            "_fileContent": "/**\n * @provides base\n * @css ./lib.css\n */\n\ndiv {\n\n}",
-            "mtime": 1452777774000
-        },
-        "base/css/lib.css": {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "requiredCSS": [
+                "lib"
+            ],
+            "mtime": 1452777774000
+        },
+        "base/css/lib.css": {
             "path": "base/css/lib.css",
             "id": "lib",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "/**\n * @provides lib\n */",
+            "type": "CSS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "mtime": 1452777788000
         },
-        "base/js/base.js": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
-            "path": "base/js/base.js",
-            "id": "base/js/base.js",
-            "_requiredCSSMap": {
-                "../css/base.less": true
-            },
-            "_requiredModuleMap": {
-                "./jQuery": true
-            },
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedID": {
-                "./jQuery": "jQuery",
-                "../css/base.less": "base"
-            },
-            "isModule": true,
-            "requiredModules": [
-                "jQuery"
-            ],
-            "requiredCSS": [
-                "base"
-            ],
-            "_fileContent": "/**\n * @module\n * @css ../css/base.less\n * @requires ./jQuery\n */\n\nvar base = {\n  less: true\n};\n\n",
-            "mtime": 1452777689000
-        },
         "base/js/jQuery.js": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "base/js/jQuery.js",
             "id": "jQuery",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "/**\n * @provides jQuery\n */\n\n\nvar jQuery;",
-            "mtime": 1453812528000
-        },
-        "project/static/js/app.js": {
+            "type": "JS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1453812528000
+        },
+        "project/static/js/app.js": {
             "path": "project/static/js/app.js",
             "id": "project/static/js/app.js",
             "_requiredCSSMap": {
@@ -613,6 +601,10 @@
                 "../css/app.css": "project/static/css/app.css",
                 "../../components/header/header.js": "header"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredModules": [
                 "project/static/js/warn.js",
@@ -624,27 +616,23 @@
             "requiredCSS": [
                 "project/static/css/app.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('./warn');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
             "mtime": 1455863626000
         },
         "project/static/js/warn.js": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/static/js/warn.js",
             "id": "project/static/js/warn.js",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
-            "isModule": true,
-            "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
-            "mtime": 1455863594000
-        },
-        "project/static/css/app.css": {
+            "type": "JS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "isModule": true,
+            "mtime": 1455863594000
+        },
+        "project/static/css/app.css": {
             "path": "project/static/css/app.css",
             "id": "project/static/css/app.css",
             "_requiredCSSMap": {
@@ -656,29 +644,29 @@
                 "../../components/header/header.css": "project/components/header/header.css",
                 "../../components/footer/footer.css": "project/components/footer/footer.css"
             },
+            "type": "CSS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "requiredCSS": [
                 "project/components/header/header.css",
                 "project/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "mtime": 1448292684000
         },
         "project/components/back2top/back2top.css": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/back2top/back2top.css",
             "id": "project/components/back2top/back2top.css",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
-            "mtime": 1446028155000
-        },
-        "project/components/back2top/back2top.js": {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1446028155000
+        },
+        "project/components/back2top/back2top.js": {
             "path": "project/components/back2top/back2top.js",
             "id": "project/components/back2top/back2top.js",
             "_requiredCSSMap": {
@@ -689,29 +677,29 @@
             "_requiredTextToResolvedID": {
                 "./back2top.css": "project/components/back2top/back2top.css"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredCSS": [
                 "project/components/back2top/back2top.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "mtime": 1448620912000
         },
         "project/components/footer/footer.css": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/footer/footer.css",
             "id": "project/components/footer/footer.css",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
-            "mtime": 1444983413000
-        },
-        "project/components/footer/footer.js": {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1444983413000
+        },
+        "project/components/footer/footer.js": {
             "path": "project/components/footer/footer.js",
             "id": "project/components/footer/footer.js",
             "_requiredCSSMap": {
@@ -722,29 +710,29 @@
             "_requiredTextToResolvedID": {
                 "./footer.css": "project/components/footer/footer.css"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredCSS": [
                 "project/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
             "mtime": 1448292656000
         },
         "project/components/header/header.css": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/header/header.css",
             "id": "project/components/header/header.css",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
-            "_fileContent": "\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
-            "mtime": 1447153443000
-        },
-        "project/components/header/header.js": {
+            "type": "CSS",
             "domain": null,
             "_events": {},
             "_eventsCount": 0,
+            "mtime": 1447153443000
+        },
+        "project/components/header/header.js": {
             "path": "project/components/header/header.js",
             "id": "header",
             "_requiredCSSMap": {
@@ -755,24 +743,63 @@
             "_requiredTextToResolvedID": {
                 "./header.css": "project/components/header/header.css"
             },
+            "type": "JS",
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 0,
             "isModule": true,
             "requiredCSS": [
                 "project/components/header/header.css"
             ],
-            "_fileContent": "/**\n * @provides header\n * @module\n * @css ./header.css\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
             "mtime": 1448292673000
         },
         "project/components/header/logo.png": {
-            "domain": null,
-            "_events": {},
-            "_eventsCount": 0,
             "path": "project/components/header/logo.png",
             "id": "project/components/header/logo.png",
-            "networkSize": 1568,
-            "_fileContent": "PNG\r\n\u001a\n\u0000\u0000\u0000\rIHDR\u0000\u0000\u0000M\u0000\u0000\u0000M\b\u0003\u0000\u0000\u0000Ô×\u0019\u0000\u0000\u0001PLTE¢Îòñøýyyyíõü!ßÁîk±êÒÒÒ)àæòû\u0019Þ\u0011Ü¾íÍåøÆïòòòúüýÊðöúþªªªe­éÖêùv¶ëÏÏÏªÒóþþÿooo®Õó»ì¹Ùõ\u0002yÚøøø¼Üõkkk1áV¦æz¹ì9âÉâ÷¶Øõ­­­ÝíúDäííí.á£££ëôüêêê\u0004zÛÞÞÞmmm±ÖôÂî¶¶¶sµëæææàààÐæøuuuÉÉÉ\u001cÞc¬è[¨ç\b|Û}}}°°°\rÜàïûèóüÂÂÂ4âQ£ælll\u0016Ý_ªè¦Ïò\u0014Ý<ãÇða«è²²²ÅÅÅâââh¯éõõõ¼¼¼ÙÙÙÌñÄïð÷ýÓèùS¤æýþÿ\u000fÜüýÿggg÷÷÷%ß\u000b~ÜÄÄÄÅà÷¾¾¾X§çHäóùýõúþ#ßAã\u001fÞÈð÷ûþo³êN¡åÀÝö¹¹¹\u0000xÚfffÿÿÿ\f­y\u0000\u0000\u0004[IDATXÃíû_\u001aG\u0010ÀáP\u0003'\u0011äåãP\"¢$JÍ¥%ø\bhjÔÔ(&Ä\u0000>ðÄ4µµìýëÙÙÝ»[Dýì~>ýôSç\u001bvn¿73;»³Ø´Rl·´ÿ\u0000M®~LtÇj!1ÛÓ÷}4Wô´ÉÓ=qcÚbùYó¢\u001cõ×nFóï5/Á\u001bÐì;lv,\u001dÊT\u0006+o:/\u001f°Js¥éÌt)Weq½fæ¢óN#JËðîZ~£ff§eÏÚ-yêÝ\u0005\u001aÉÊÒ]?wçóî÷»lqb`,Óü\u0004vèg2K~Çë:\u0019\u0010\\D¶Ø\r¯SÏ¶\\q,?$c_AÏ5\u0004ie3¢>o©µÂ6\u0019]\u0005=*FsÁ\u000e8%i^ ^6Õå\u0004\t¯#õR[Áê^C\u00165Ó2\u0006êó\fÔ#J¶Ù°Ø\u001e\u0011\u0002¥&uv\u000f&ÉúÉ1JvÚ]P}PvË\"´ió»/`c\u001a\u0014XB¦ÿ.\u0001Z\u0015\u0010$=>m3«Dë\u0003Mö\u0011\u0002¥Õ\u0001SRüË¦G\u0010j\u0000-aCÒ¶ÀîÂÀ´1\u0001\u001a\u0014EÆÌ\u0013mc\u0019´~¨\"\u0001\u001a\u0014VÅtå3ELg3F\n¯§»ª¡bõOÎ4\u000bÕ·k¬Õ\u0000M5|Ó¾`õ¸m0íh|¼urkpè;î\u0010~Þ£?²X=\u0014\\Ó<;ÙÈ\u0001rH¦É±»ÎÞú\u000bë'\u00024HSßL*ÙëòÈúH6@}­\\HéU´\u001e¾.l±\u0013IMñµ²&@#/V©^Ë¶öç£ègjHÂ¯E\u0013\tå$u\u0010YiëÍ9ÄÌ¥ðzE¡dÍ\bUUWcn=\u001b~!ÚÄ\u00119öë³¬¹$ßCoo÷³vÓ¥L@\u0015\u0015\u0002b}øTî¢­Õq.l4ÈNÁ.ã0Ó5louûÄ°töÓ5}JV¹`©tSJ¼×¯Ò\u0019«J{×(³ïX¸9|¦÷7öö%b\u0017±báä 8¹Ro\u0019ö½.è\u0015\u000b÷7Ç\bK¶û¡1Ö¹:¾\fwåÝ2×§ý¾¬ú«ý/rÆÚ®Â]sï\u001d/½÷v¤ô¥HZºÛí÷è;`¬¬lÏj¢5òµÁ\u0015JÚú?£JùKG÷^át¬ËÆuC%)§Goÿ\u0003þiOóº¶u\fùà\u0014<Æ78y\"@C¼lj\u001e$=.> ´Q*=ÕÞñÆ°\u0000­\b\"¡0y\u0003-hNÇ´\u0001&?\nÑ~õ`\t£!xàp\u000fÞ\u001e|ÇgP8\u001e{¦Ç\u0019\u0017¢m !J\u0018\u0015µÉRi\u0000\u000fÎ¡p\u0000µD:'DØ×_aÚ\u0016B\u001eM{\u0004\u001fccï)wzh¦\u0014µ;¯ö7úm\u000e\u0005/ú&\u0016©§DÅiØ9L[BÞ'h\u0006:åÙ§\u0019\u0005Y²ì\u001b¡õî£ãIÞak\t/ªêm÷-\u0018F¨Wû\u0005;¥=\u001aB?Åuñ\nÑöÃTt$=À#IK7É\u001b-ÜbÑi¾\u0007hkü-\u0003íMCÄªW2bÐÌæ\u0016ïÄ^9öbh\u001e^¦\u0006>ÍO\u0006?1ü\u001fì\u0015¶Õ^Þ·´ö\r\u0017¼¿#QÐ\u0000\u0000\u0000\u0000IEND®B`",
             "width": 77,
             "height": 77,
             "mtime": 1446450675000
+        },
+        "base/js/module.js": {
+            "path": "base/js/module.js",
+            "id": "base/js/module.js",
+            "_requiredCSSMap": {
+                "../css/base.less": true
+            },
+            "_requiredModuleMap": {
+                "./jQuery": true
+            },
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {
+                "./jQuery": "jQuery",
+                "../css/base.less": "base"
+            },
+            "type": "JS",
+            "isModule": true,
+            "requiredModules": [
+                "jQuery"
+            ],
+            "requiredCSS": [
+                "base"
+            ],
+            "mtime": 1452777689000
+        },
+        "base/js/lib.js": {
+            "path": "base/js/lib.js",
+            "id": "base/js/lib.js",
+            "_requiredCSSMap": {},
+            "_requiredModuleMap": {
+                "./module.js": true
+            },
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedID": {
+                "./module.js": "base/js/module.js"
+            },
+            "requiredModules": [
+                "base/js/module.js"
+            ],
+            "_fileContent": "/**\n * @requires ./module.js\n */",
+            "mtime": 1465825264000
         }
     },
     "typeToMap": {}
