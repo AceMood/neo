@@ -9,8 +9,6 @@ var fs = require('fs');
 var Neo = require('../lib/neo');
 var Loaders = Neo.Loaders;
 
-var log = require('et-util-logger');
-
 
 // 第一个数组表示需要针对何种类型的资源
 // 第二个数组表示需要遍历的目录，应该是相对于vrd的路径
