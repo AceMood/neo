@@ -243,6 +243,13 @@
             "type": "JS",
             "isModule": true,
             "mtime": 1467310735000
+        },
+        {
+            "path": "project/static/img/a.png",
+            "id": "project/static/img/a.png",
+            "width": 0,
+            "height": 0,
+            "mtime": 1469436224000
         }
     ],
     "inferredProjectPaths": null,
@@ -496,6 +503,13 @@
                 "width": 77,
                 "height": 77,
                 "mtime": 1446450675000
+            },
+            "project/static/img/a.png": {
+                "path": "project/static/img/a.png",
+                "id": "project/static/img/a.png",
+                "width": 0,
+                "height": 0,
+                "mtime": 1469436224000
             }
         }
     },
@@ -743,6 +757,13 @@
             "type": "JS",
             "isModule": true,
             "mtime": 1467310735000
+        },
+        "project/static/img/a.png": {
+            "path": "project/static/img/a.png",
+            "id": "project/static/img/a.png",
+            "width": 0,
+            "height": 0,
+            "mtime": 1469436224000
         }
     },
     "typeToMap": {}

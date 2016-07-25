@@ -245,6 +245,12 @@
       "_requiredTextToResolvedID": {},
       "isModule": true,
       "mtime": 1467310735000
+    },
+    {
+      "path": "project/static/img/a.png",
+      "id": "project/static/img/a.png",
+      "type": "Image",
+      "mtime": 1469436224000
     }
   ]
 }
