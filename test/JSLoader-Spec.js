@@ -266,7 +266,6 @@ describe('JSLoader', function() {
       var js = map.getResource('JS', id);
       expect(js.requiredCSS).to.be.a('array');
       expect(js.requiredCSS).to.be.have.length(2);
-      expect(js.requiredCSS).to.deep.equal(['plain', 'dialog']);
 
       done();
     });

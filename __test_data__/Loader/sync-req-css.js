@@ -1,5 +1,4 @@
 /**
  * @module
- * @css ./plain.css
- * @css ./dialog.css
+ * @css ./plain.css ./dialog.css
  */
