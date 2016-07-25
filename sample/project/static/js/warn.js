@@ -1,4 +1,5 @@
 /**
+ * @provides warn
  * @module
  */
 
