@@ -30,7 +30,7 @@
 describe('ResourceMap', function() {
 
   var expect = require('chai').expect;
-  var ResourceMap = require('../lib/map/ResourceMap');
+  var ResourceMap = require('../lib/core/ResourceMap');
   var Resource = require('../lib/resource/Resource');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
 
