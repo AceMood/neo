@@ -2,28 +2,12 @@
     "resourceCache": [
         {
             "path": "base/css/base.less",
-            "id": "base",
-            "_requiredCSSMap": {
-                "./lib.css": true
-            },
-            "_spriteMap": {},
-            "_requiredTextToResolvedID": {
-                "./lib.css": "lib"
-            },
-            "type": "CSS",
-            "requiredCSS": [
-                "lib"
-            ],
-            "mtime": 1452777774000
-        },
-        {
-            "path": "base/css/lib.css",
-            "id": "lib",
+            "id": "base/css/base.less",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
             "type": "CSS",
-            "mtime": 1452777788000
+            "mtime": 1469453055000
         },
         {
             "path": "base/js/base.js",
@@ -36,29 +20,29 @@
             },
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {
-                "./jQuery": "jQuery",
-                "../css/base.less": "base"
+                "./jQuery": "base/js/jQuery.js",
+                "../css/base.less": "base/css/base.less"
             },
             "type": "JS",
             "isModule": true,
             "requiredModules": [
-                "jQuery"
+                "base/js/jQuery.js"
             ],
             "requiredCSS": [
-                "base"
+                "base/css/base.less"
             ],
             "mtime": 1467310711000
         },
         {
             "path": "base/js/jQuery.js",
-            "id": "jQuery",
+            "id": "base/js/jQuery.js",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
             "type": "JS",
             "isModule": true,
-            "mtime": 1467310735000
+            "mtime": 1469452935000
         },
         {
             "path": "project/components/back2top/back2top.css",
@@ -125,7 +109,7 @@
         },
         {
             "path": "project/components/header/header.js",
-            "id": "header",
+            "id": "project/components/header/header.js",
             "_requiredCSSMap": {
                 "./header.css": true
             },
@@ -139,7 +123,7 @@
             "requiredCSS": [
                 "project/components/header/header.css"
             ],
-            "mtime": 1448292673000
+            "mtime": 1469452965000
         },
         {
             "path": "project/components/header/logo.png",
@@ -172,7 +156,7 @@
             "id": "project/static/img/a.png",
             "width": 0,
             "height": 0,
-            "mtime": 1469436224000
+            "mtime": 1469451333000
         },
         {
             "path": "project/static/js/app.js",
@@ -188,19 +172,19 @@
                 "../../components/header/header.js": true
             },
             "_requiredTextToResolvedID": {
-                "./warn": "warn",
+                "./warn": "project/static/js/warn.js",
                 "../../components/footer/footer.js": "project/components/footer/footer.js",
                 "../css/app.css": "project/static/css/app.css",
-                "../../components/header/header.js": "header"
+                "../../components/header/header.js": "project/components/header/header.js"
             },
             "type": "JS",
             "isModule": true,
             "requiredModules": [
-                "warn",
+                "project/static/js/warn.js",
                 "project/components/footer/footer.js"
             ],
             "requiredAsyncModules": [
-                "header"
+                "project/components/header/header.js"
             ],
             "requiredCSS": [
                 "project/static/css/app.css"
@@ -209,44 +193,28 @@
         },
         {
             "path": "project/static/js/warn.js",
-            "id": "warn",
+            "id": "project/static/js/warn.js",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
+            "type": "JS",
             "isModule": true,
-            "_fileContent": "/**\n * @provides warn\n * @module\n */\n\nvar warn = {};",
-            "mtime": 1469443818000
+            "mtime": 1469453028000
         }
     ],
     "inferredProjectPaths": null,
     "configurationTrie": null,
     "resourceMap": {
         "CSS": {
-            "base": {
+            "base/css/base.less": {
                 "path": "base/css/base.less",
-                "id": "base",
-                "_requiredCSSMap": {
-                    "./lib.css": true
-                },
-                "_spriteMap": {},
-                "_requiredTextToResolvedID": {
-                    "./lib.css": "lib"
-                },
-                "type": "CSS",
-                "requiredCSS": [
-                    "lib"
-                ],
-                "mtime": 1452777774000
-            },
-            "lib": {
-                "path": "base/css/lib.css",
-                "id": "lib",
+                "id": "base/css/base.less",
                 "_requiredCSSMap": {},
                 "_spriteMap": {},
                 "_requiredTextToResolvedID": {},
                 "type": "CSS",
-                "mtime": 1452777788000
+                "mtime": 1469453055000
             },
             "project/components/back2top/back2top.css": {
                 "path": "project/components/back2top/back2top.css",
@@ -307,29 +275,29 @@
                 },
                 "_requiredAsyncModuleMap": {},
                 "_requiredTextToResolvedID": {
-                    "./jQuery": "jQuery",
-                    "../css/base.less": "base"
+                    "./jQuery": "base/js/jQuery.js",
+                    "../css/base.less": "base/css/base.less"
                 },
                 "type": "JS",
                 "isModule": true,
                 "requiredModules": [
-                    "jQuery"
+                    "base/js/jQuery.js"
                 ],
                 "requiredCSS": [
-                    "base"
+                    "base/css/base.less"
                 ],
                 "mtime": 1467310711000
             },
-            "jQuery": {
+            "base/js/jQuery.js": {
                 "path": "base/js/jQuery.js",
-                "id": "jQuery",
+                "id": "base/js/jQuery.js",
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
                 "_requiredTextToResolvedID": {},
                 "type": "JS",
                 "isModule": true,
-                "mtime": 1467310735000
+                "mtime": 1469452935000
             },
             "project/components/back2top/back2top.js": {
                 "path": "project/components/back2top/back2top.js",
@@ -367,9 +335,9 @@
                 ],
                 "mtime": 1448292656000
             },
-            "header": {
+            "project/components/header/header.js": {
                 "path": "project/components/header/header.js",
-                "id": "header",
+                "id": "project/components/header/header.js",
                 "_requiredCSSMap": {
                     "./header.css": true
                 },
@@ -383,7 +351,7 @@
                 "requiredCSS": [
                     "project/components/header/header.css"
                 ],
-                "mtime": 1448292673000
+                "mtime": 1469452965000
             },
             "project/static/js/app.js": {
                 "path": "project/static/js/app.js",
@@ -399,35 +367,35 @@
                     "../../components/header/header.js": true
                 },
                 "_requiredTextToResolvedID": {
-                    "./warn": "warn",
+                    "./warn": "project/static/js/warn.js",
                     "../../components/footer/footer.js": "project/components/footer/footer.js",
                     "../css/app.css": "project/static/css/app.css",
-                    "../../components/header/header.js": "header"
+                    "../../components/header/header.js": "project/components/header/header.js"
                 },
                 "type": "JS",
                 "isModule": true,
                 "requiredModules": [
-                    "warn",
+                    "project/static/js/warn.js",
                     "project/components/footer/footer.js"
                 ],
                 "requiredAsyncModules": [
-                    "header"
+                    "project/components/header/header.js"
                 ],
                 "requiredCSS": [
                     "project/static/css/app.css"
                 ],
                 "mtime": 1469443833000
             },
-            "warn": {
+            "project/static/js/warn.js": {
                 "path": "project/static/js/warn.js",
-                "id": "warn",
+                "id": "project/static/js/warn.js",
                 "_requiredCSSMap": {},
                 "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
                 "_requiredTextToResolvedID": {},
+                "type": "JS",
                 "isModule": true,
-                "_fileContent": "/**\n * @provides warn\n * @module\n */\n\nvar warn = {};",
-                "mtime": 1469443818000
+                "mtime": 1469453028000
             }
         },
         "Image": {
@@ -443,35 +411,19 @@
                 "id": "project/static/img/a.png",
                 "width": 0,
                 "height": 0,
-                "mtime": 1469436224000
+                "mtime": 1469451333000
             }
         }
     },
     "resourcePathMap": {
         "base/css/base.less": {
             "path": "base/css/base.less",
-            "id": "base",
-            "_requiredCSSMap": {
-                "./lib.css": true
-            },
-            "_spriteMap": {},
-            "_requiredTextToResolvedID": {
-                "./lib.css": "lib"
-            },
-            "type": "CSS",
-            "requiredCSS": [
-                "lib"
-            ],
-            "mtime": 1452777774000
-        },
-        "base/css/lib.css": {
-            "path": "base/css/lib.css",
-            "id": "lib",
+            "id": "base/css/base.less",
             "_requiredCSSMap": {},
             "_spriteMap": {},
             "_requiredTextToResolvedID": {},
             "type": "CSS",
-            "mtime": 1452777788000
+            "mtime": 1469453055000
         },
         "base/js/base.js": {
             "path": "base/js/base.js",
@@ -484,29 +436,29 @@
             },
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {
-                "./jQuery": "jQuery",
-                "../css/base.less": "base"
+                "./jQuery": "base/js/jQuery.js",
+                "../css/base.less": "base/css/base.less"
             },
             "type": "JS",
             "isModule": true,
             "requiredModules": [
-                "jQuery"
+                "base/js/jQuery.js"
             ],
             "requiredCSS": [
-                "base"
+                "base/css/base.less"
             ],
             "mtime": 1467310711000
         },
         "base/js/jQuery.js": {
             "path": "base/js/jQuery.js",
-            "id": "jQuery",
+            "id": "base/js/jQuery.js",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
             "type": "JS",
             "isModule": true,
-            "mtime": 1467310735000
+            "mtime": 1469452935000
         },
         "project/components/back2top/back2top.css": {
             "path": "project/components/back2top/back2top.css",
@@ -573,7 +525,7 @@
         },
         "project/components/header/header.js": {
             "path": "project/components/header/header.js",
-            "id": "header",
+            "id": "project/components/header/header.js",
             "_requiredCSSMap": {
                 "./header.css": true
             },
@@ -587,7 +539,7 @@
             "requiredCSS": [
                 "project/components/header/header.css"
             ],
-            "mtime": 1448292673000
+            "mtime": 1469452965000
         },
         "project/components/header/logo.png": {
             "path": "project/components/header/logo.png",
@@ -620,7 +572,7 @@
             "id": "project/static/img/a.png",
             "width": 0,
             "height": 0,
-            "mtime": 1469436224000
+            "mtime": 1469451333000
         },
         "project/static/js/app.js": {
             "path": "project/static/js/app.js",
@@ -636,19 +588,19 @@
                 "../../components/header/header.js": true
             },
             "_requiredTextToResolvedID": {
-                "./warn": "warn",
+                "./warn": "project/static/js/warn.js",
                 "../../components/footer/footer.js": "project/components/footer/footer.js",
                 "../css/app.css": "project/static/css/app.css",
-                "../../components/header/header.js": "header"
+                "../../components/header/header.js": "project/components/header/header.js"
             },
             "type": "JS",
             "isModule": true,
             "requiredModules": [
-                "warn",
+                "project/static/js/warn.js",
                 "project/components/footer/footer.js"
             ],
             "requiredAsyncModules": [
-                "header"
+                "project/components/header/header.js"
             ],
             "requiredCSS": [
                 "project/static/css/app.css"
@@ -657,14 +609,14 @@
         },
         "project/static/js/warn.js": {
             "path": "project/static/js/warn.js",
-            "id": "warn",
+            "id": "project/static/js/warn.js",
             "_requiredCSSMap": {},
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedID": {},
+            "type": "JS",
             "isModule": true,
-            "_fileContent": "/**\n * @provides warn\n * @module\n */\n\nvar warn = {};",
-            "mtime": 1469443818000
+            "mtime": 1469453028000
         }
     },
     "typeToMap": {}

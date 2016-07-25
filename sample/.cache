@@ -4,27 +4,11 @@
     {
       "type": "CSS",
       "path": "base/css/base.less",
-      "id": "base",
-      "_requiredCSSMap": {
-        "./lib.css": true
-      },
-      "_spriteMap": {},
-      "_requiredTextToResolvedID": {
-        "./lib.css": "lib"
-      },
-      "requiredCSS": [
-        "lib"
-      ],
-      "mtime": 1452777774000
-    },
-    {
-      "type": "CSS",
-      "path": "base/css/lib.css",
-      "id": "lib",
+      "id": "base/css/base.less",
       "_requiredCSSMap": {},
       "_spriteMap": {},
       "_requiredTextToResolvedID": {},
-      "mtime": 1452777788000
+      "mtime": 1469453055000
     },
     {
       "type": "JS",
@@ -38,28 +22,28 @@
       },
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {
-        "./jQuery": "jQuery",
-        "../css/base.less": "base"
+        "./jQuery": "base/js/jQuery.js",
+        "../css/base.less": "base/css/base.less"
       },
       "isModule": true,
       "requiredModules": [
-        "jQuery"
+        "base/js/jQuery.js"
       ],
       "requiredCSS": [
-        "base"
+        "base/css/base.less"
       ],
       "mtime": 1467310711000
     },
     {
       "type": "JS",
       "path": "base/js/jQuery.js",
-      "id": "jQuery",
+      "id": "base/js/jQuery.js",
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {},
       "isModule": true,
-      "mtime": 1467310735000
+      "mtime": 1469452935000
     },
     {
       "type": "CSS",
@@ -127,7 +111,7 @@
     {
       "type": "JS",
       "path": "project/components/header/header.js",
-      "id": "header",
+      "id": "project/components/header/header.js",
       "_requiredCSSMap": {
         "./header.css": true
       },
@@ -140,7 +124,7 @@
       "requiredCSS": [
         "project/components/header/header.css"
       ],
-      "mtime": 1448292673000
+      "mtime": 1469452965000
     },
     {
       "path": "project/components/header/logo.png",
@@ -173,7 +157,7 @@
       "path": "project/static/img/a.png",
       "id": "project/static/img/a.png",
       "type": "Image",
-      "mtime": 1469436224000
+      "mtime": 1469451333000
     },
     {
       "type": "JS",
@@ -190,18 +174,18 @@
         "../../components/header/header.js": true
       },
       "_requiredTextToResolvedID": {
-        "./warn": "warn",
+        "./warn": "project/static/js/warn.js",
         "../../components/footer/footer.js": "project/components/footer/footer.js",
         "../css/app.css": "project/static/css/app.css",
-        "../../components/header/header.js": "header"
+        "../../components/header/header.js": "project/components/header/header.js"
       },
       "isModule": true,
       "requiredModules": [
-        "warn",
+        "project/static/js/warn.js",
         "project/components/footer/footer.js"
       ],
       "requiredAsyncModules": [
-        "header"
+        "project/components/header/header.js"
       ],
       "requiredCSS": [
         "project/static/css/app.css"
@@ -211,13 +195,13 @@
     {
       "type": "JS",
       "path": "project/static/js/warn.js",
-      "id": "warn",
+      "id": "project/static/js/warn.js",
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedID": {},
       "isModule": true,
-      "mtime": 1469443818000
+      "mtime": 1469453028000
     }
   ]
 }

@@ -1,5 +1,4 @@
 /**
- * @provides header
  * @module
  * @css ./header.css
  */

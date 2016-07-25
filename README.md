@@ -289,15 +289,6 @@ neo.update('.cache', function(map) {
  * @provides dialog
  */
 ```
-
-### **@requires**  (Deprecated!)
-声明当前文件依赖的其他js文件。这种方式与源码中通过require进来的模块相比，不同点在于，依赖的文件可以不符合CommonJS规范，比如jQuery或者其他任何第三方类库。放在头注释指令中仅仅是告诉工具：要运行文件中的js，必须提前加载指令中出现的资源。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
-
-```
-/**
- * @requires jQuery, backbone, underscore, ./base.js
- */
-``` 
      
 ### **@css**
 声明当前文件需要的css资源。此指令告诉工具：要运行文件中的js，这些css必须要先准备好。指令的值可以是相对路径，也可以是依赖文件通过provides指令声明的资源Id。例：
@@ -322,15 +313,6 @@ neo.update('.cache', function(map) {
 ```
 /**
  * @entry
- */
-```
-### **@nonblocking** (Deprecated!)
-声明加载这个文件时可以完全放由浏览器去做并行加载，比如给script标签加上async属性或者由js动态加载。
-加载框架若在页面中发现当前资源有这个标志，应该为其加上async属性。例：
-
-```
-/**
- * @nonblocking
  */
 ```
 
