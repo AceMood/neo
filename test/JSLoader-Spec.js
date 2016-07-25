@@ -293,9 +293,7 @@ describe('JSLoader', function() {
       done();
     });
 
-    neo.update('.cache', function(map) {
-
-    });
+    neo.update('.cache', function() {});
   });
 
   it('should resolve async js module id in postProcess', function(done) {
