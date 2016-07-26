@@ -62,48 +62,48 @@ describe('CSSLoader', function() {
   it('should extract component name', function(done) {
     var loader = new CSSLoader();
     loader.loadFromPath(
-      node_path.join(testData, 'plain.css'),
-      null,
-      function(r) {
-        expect(r.id).to.equal(r.path);
-        expect(r.options).to.be.undefined;
-        expect(r.requiredCSS).to.be.a('array');
-        expect(r.requiredCSS).to.have.length(1);
-        expect(r.requiredCSS).to.deep.equal(['bar']);
+        node_path.join(testData, 'plain.css'),
+        null,
+        function(r) {
+          expect(r.id).to.equal(r.path);
+          expect(r.options).to.be.undefined;
+          expect(r.requiredCSS).to.be.a('array');
+          expect(r.requiredCSS).to.have.length(1);
+          expect(r.requiredCSS).to.deep.equal(['bar']);
 
-        done();
-      });
+          done();
+        });
   });
 
   it('should parse special attributes', function(done) {
     var loader = new CSSLoader();
     loader.loadFromPath(
-      node_path.join(testData, 'special.css'),
-      null,
-      function(r) {
-        expect(r.id).to.equal(r.path);
-        expect(r.isNonblocking).to.be.true;
-        expect(r.isNopackage).to.be.true;
+        node_path.join(testData, 'special.css'),
+        null,
+        function(r) {
+          expect(r.id).to.equal(r.path);
+          expect(r.isNonblocking).to.be.true;
+          expect(r.isNopackage).to.be.true;
 
-        done();
-      });
+          done();
+        });
   });
 
   it('should extract css sprites', function(done) {
     var loader = new CSSLoader();
     loader.loadFromPath(
-      node_path.join(testData, 'sprite.css'),
-      null,
-      function(r) {
-        expect(r.sprites).to.be.a('array');
-        expect(r.sprites).to.have.length(2);
-        expect(r.sprites).to.deep.equal([
-          'images/dialog/halo_top_left.png',
-          'images/dialog/large_halo_top_left.png'
-        ]);
+        node_path.join(testData, 'sprite.css'),
+        null,
+        function(r) {
+          expect(r.sprites).to.be.a('array');
+          expect(r.sprites).to.have.length(2);
+          expect(r.sprites).to.deep.equal([
+            'images/dialog/halo_top_left.png',
+            'images/dialog/large_halo_top_left.png'
+          ]);
 
-        done();
-      });
+          done();
+        });
   });
 
   xit('should resolve module id in postProcess', function(done) {
