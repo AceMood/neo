@@ -49,7 +49,7 @@ describe('ResourceMap', function() {
 
   it('should return elements from empty map', function() {
     var map = new ResourceMap([]);
-    expect(map.getResource('JS', 'a')).to.be.undefined;
+    expect(map.getResource('js', 'a')).to.be.undefined;
   });
 
   it('should add elements', function() {

@@ -75,9 +75,9 @@ describe('Image Resource', function() {
     'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' +
     'AAAAAAAAAAAAAAAAAAAAAAAAH/2Q==';
 
-  it('should have a Image type', function() {
+  it('should have a image type', function() {
     var img = new Image('a.png');
-    expect(img.type).to.equal('Image');
+    expect(img.type).to.equal('image');
   });
 
   it('should have a relative path', function() {

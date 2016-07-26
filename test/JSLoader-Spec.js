@@ -171,27 +171,32 @@ describe('JSLoader', function() {
       )
     ]);
 
-    loader.postProcess(map, map.getAllResourcesByType('JS'), function() {
+    loader.postProcess(map, map.getAllResourcesByType('js'), function() {
       expect(
-        map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
+        map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')
           .requiredModules
       ).to.deep.equal(['hasCustomMain/folderWithMain/customMainModule.js']);
 
       expect(
-        map.getResource('JS', 'commonJSProject/dependsOnCustomMain.js')
-          ._requiredTextToResolvedID
+        map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')
+          ._requiredTextToResolvedPath
       ).to.deep.equal({
-          'hasCustomMain': 'hasCustomMain/folderWithMain/customMainModule.js'
+          'hasCustomMain': node_path.join(
+              testData,
+              'hasCustomMain',
+              'folderWithMain',
+              'customMainModule.js'
+          )
         });
 
       expect(
-        map.getResource('JS', 'commonJSProject/dependsOnStandardIndex.js')
+        map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js')
           .requiredModules
       ).to.deep.equal(['hasStandardIndex/index.js']);
       expect(
-        map.getResource('JS', 'commonJSProject/dependsOnStandardIndex.js')
-          ._requiredTextToResolvedID
-      ).to.deep.equal({'hasStandardIndex': 'hasStandardIndex/index.js'});
+        map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js')
+          ._requiredTextToResolvedPath
+      ).to.deep.equal({'hasStandardIndex': node_path.join(testData, 'hasStandardIndex', 'index.js')});
 
       done();
     });
@@ -215,14 +220,14 @@ describe('JSLoader', function() {
       )
     ]);
 
-    loader.postProcess(map, map.getAllResourcesByType('JS'), function() {
+    loader.postProcess(map, map.getAllResourcesByType('js'), function() {
       expect(
-        map.getResource('JS', 'configured/a.js').requiredModules)
+        map.getResource('js', 'configured/a.js').requiredModules)
         .to.deep.equal(['configured/b.js']
       );
       expect(
-        map.getResource('JS', 'configured/a.js')._requiredTextToResolvedID
-      ).to.deep.equal({'./b': 'configured/b.js'});
+        map.getResource('js', 'configured/a.js')._requiredTextToResolvedPath
+      ).to.deep.equal({'./b': node_path.join(testData, 'configured', 'b.js')});
 
       done();
     });
@@ -244,7 +249,7 @@ describe('JSLoader', function() {
     ]);
     jsLoader.postProcess(map, map.getAllResources(), function() {
       expect(
-        map.getResource('JS', 'configured/a.js').requiredModules
+        map.getResource('js', 'configured/a.js').requiredModules
       ).to.deep.equal(['configured/b.js']);
 
       done();
@@ -263,7 +268,7 @@ describe('JSLoader', function() {
 
     neo.on('postProcessed', function(map) {
       var id = '__test_data__/Loader/sync-req-css.js';
-      var js = map.getResource('JS', id);
+      var js = map.getResource('js', id);
       expect(js.requiredCSS).to.be.a('array');
       expect(js.requiredCSS).to.be.have.length(2);
 
@@ -284,7 +289,7 @@ describe('JSLoader', function() {
 
     neo.on('postProcessed', function(map) {
       var id = '__test_data__/Loader/sync-req-js.js';
-      var js = map.getResource('JS', id);
+      var js = map.getResource('js', id);
 
       expect(js.requiredModules).to.be.a('array');
       expect(js.requiredModules).to.be.have.length(1);
@@ -307,7 +312,7 @@ describe('JSLoader', function() {
 
     neo.on('postProcessed', function(map) {
       var id = '__test_data__/Loader/async-req-js.js';
-      var js = map.getResource('JS', id);
+      var js = map.getResource('js', id);
 
       expect(js.requiredAsyncModules).to.be.a('array');
       expect(js.requiredAsyncModules).to.be.have.length(1);

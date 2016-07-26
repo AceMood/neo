@@ -117,8 +117,9 @@ describe('CSSLoader', function() {
 
     neo.on('postProcessed', function(map) {
       var id = '__test_data__/Loader/entry.css';
-      var css = map.getResource('CSS', id);
+      var css = map.getResource('css', id);
 
+      expect(css.id).to.equal('__test_data__/Loader/entry.css');
       expect(css.requiredCSS).to.be.a('array');
       expect(css.requiredCSS).to.be.have.length(2);
       expect(css.requiredCSS).to.deep.equal([

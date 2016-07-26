@@ -36,9 +36,9 @@ describe('JS Resource', function() {
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 
-  it('should have a JS type', function() {
+  it('should have a js type', function() {
     var js = new JS('a');
-    expect(js.type).to.equal('JS');
+    expect(js.type).to.equal('js');
   });
 
   it('should have a relative path', function() {

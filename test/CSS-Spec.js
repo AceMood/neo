@@ -36,9 +36,9 @@ describe('CSS Resource', function() {
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 
-  it('should have a CSS type', function() {
+  it('should have a css type', function() {
     var css = new CSS('a');
-    expect(css.type).to.equal('CSS');
+    expect(css.type).to.equal('css');
   });
 
   it('should have a relative path', function() {

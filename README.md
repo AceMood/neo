@@ -168,7 +168,7 @@ resource.requiredCSS = ['reset-style'];
 
 ```
 resource.id = 'dialog';
-resource.type = 'JS';
+resource.type = 'js';
 resource.isModule = true;
 resource.requiredModules = ['jQuery', './conf/title', 'string'];
 resource.requiredCSS = ['./dialog.less'];
