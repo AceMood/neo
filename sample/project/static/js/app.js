@@ -5,7 +5,7 @@
 
 'use strict';
 
-var warn = require('./warn');
+var warn = require('zhida/static/js/warn.js');
 var footer = require('../../components/footer/footer.js');
 
 header.init();

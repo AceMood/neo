@@ -48,7 +48,7 @@
     {
       "type": "css",
       "path": "project/components/back2top/back2top.css",
-      "id": "project/components/back2top/back2top.css",
+      "id": "zhida/components/back2top/back2top.css",
       "_requiredCSSMap": {},
       "_spriteMap": {},
       "_requiredTextToResolvedPath": {},
@@ -57,7 +57,7 @@
     {
       "type": "js",
       "path": "project/components/back2top/back2top.js",
-      "id": "project/components/back2top/back2top.js",
+      "id": "zhida/components/back2top/back2top.js",
       "_requiredCSSMap": {
         "./back2top.css": true
       },
@@ -68,63 +68,34 @@
       },
       "isModule": true,
       "requiredCSS": [
-        "project/components/back2top/back2top.css"
+        "zhida/components/back2top/back2top.css"
       ],
       "mtime": 1448620912000
     },
     {
       "type": "css",
-      "path": "project/components/footer/footer.css",
-      "id": "project/components/footer/footer.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1444983413000
-    },
-    {
-      "type": "js",
-      "path": "project/components/footer/footer.js",
-      "id": "project/components/footer/footer.js",
-      "_requiredCSSMap": {
-        "./footer.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./footer.css": "project/components/footer/footer.css"
-      },
-      "isModule": true,
-      "requiredCSS": [
-        "project/components/footer/footer.css"
-      ],
-      "mtime": 1448292656000
-    },
-    {
-      "type": "css",
       "path": "project/components/header/header.css",
-      "id": "project/components/header/header.css",
+      "id": "header-style",
       "_requiredCSSMap": {},
       "_spriteMap": {},
       "_requiredTextToResolvedPath": {},
-      "mtime": 1447153443000
+      "mtime": 1469624666000
     },
     {
       "type": "js",
       "path": "project/components/header/header.js",
-      "id": "project/components/header/header.js",
+      "id": "zhida/components/header/header.js",
       "_requiredCSSMap": {
-        "./header.css": true
+        "header-style": true
       },
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./header.css": "project/components/header/header.css"
-      },
+      "_requiredTextToResolvedPath": {},
       "isModule": true,
       "requiredCSS": [
-        "project/components/header/header.css"
+        "header-style"
       ],
-      "mtime": 1469452965000
+      "mtime": 1469624674000
     },
     {
       "path": "project/components/header/logo.png",
@@ -137,7 +108,7 @@
     {
       "type": "css",
       "path": "project/static/css/app.css",
-      "id": "project/static/css/app.css",
+      "id": "zhida/static/css/app.css",
       "_requiredCSSMap": {
         "../../components/header/header.css": true,
         "../../components/footer/footer.css": true
@@ -148,10 +119,37 @@
         "../../components/footer/footer.css": "project/components/footer/footer.css"
       },
       "requiredCSS": [
-        "project/components/header/header.css",
-        "project/components/footer/footer.css"
+        "header-style",
+        "zhida/components/footer/footer.css"
       ],
       "mtime": 1448292684000
+    },
+    {
+      "type": "css",
+      "path": "project/components/footer/footer.css",
+      "id": "zhida/components/footer/footer.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1444983413000
+    },
+    {
+      "type": "js",
+      "path": "project/components/footer/footer.js",
+      "id": "zhida/components/footer/footer.js",
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {
+        "./footer.css": "project/components/footer/footer.css"
+      },
+      "isModule": true,
+      "requiredCSS": [
+        "zhida/components/footer/footer.css"
+      ],
+      "mtime": 1448292656000
     },
     {
       "path": "project/static/img/a.png",
@@ -162,46 +160,45 @@
     {
       "type": "js",
       "path": "project/static/js/app.js",
-      "id": "project/static/js/app.js",
+      "id": "zhida/static/js/app.js",
       "_requiredCSSMap": {
         "../css/app.css": true
       },
       "_requiredModuleMap": {
-        "./warn": true,
+        "zhida/static/js/warn.js": true,
         "../../components/footer/footer.js": true
       },
       "_requiredAsyncModuleMap": {
         "../../components/header/header.js": true
       },
       "_requiredTextToResolvedPath": {
-        "./warn": "project/static/js/warn.js",
         "../../components/footer/footer.js": "project/components/footer/footer.js",
         "../css/app.css": "project/static/css/app.css",
         "../../components/header/header.js": "project/components/header/header.js"
       },
       "isModule": true,
       "requiredModules": [
-        "project/static/js/warn.js",
-        "project/components/footer/footer.js"
+        "zhida/static/js/warn.js",
+        "zhida/components/footer/footer.js"
       ],
       "requiredAsyncModules": [
-        "project/components/header/header.js"
+        "zhida/components/header/header.js"
       ],
       "requiredCSS": [
-        "project/static/css/app.css"
+        "zhida/static/css/app.css"
       ],
-      "mtime": 1469443833000
+      "mtime": 1469604481000
     },
     {
       "type": "js",
       "path": "project/static/js/warn.js",
-      "id": "project/static/js/warn.js",
+      "id": "zhida/static/js/warn.js",
       "_requiredCSSMap": {},
       "_requiredModuleMap": {},
       "_requiredAsyncModuleMap": {},
       "_requiredTextToResolvedPath": {},
       "isModule": true,
-      "mtime": 1469453028000
+      "mtime": 1469595556000
     }
   ]
 }

@@ -1,6 +1,6 @@
 /**
  * @module
- * @css ./header.css
+ * @css header-style
  */
 
 
