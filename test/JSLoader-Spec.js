@@ -55,7 +55,7 @@ describe('JSLoader', function() {
     }
   });
 
-  it('should match package.json paths', function() {
+  it('should match .js suffix file paths', function() {
     var loader = new JSLoader();
     expect(loader.matchPath('x.js')).to.be.true;
     expect(loader.matchPath('a/x.js')).to.be.true;
@@ -114,64 +114,42 @@ describe('JSLoader', function() {
       });
   });
 
-  it('should resolve commonJS "main" modules post process', function(done) {
+  it('should resolve CommonJS modules in postProcess', function(done) {
     var loader = new JSLoader();
     var map = new ResourceMap([
       // hasCustomMain dependency project
       JS.fromObject({
         id: 'hasCustomMain/folderWithMain/customMainModule.js',
-        path: node_path.join(
-          testData,
-          'hasCustomMain',
-          'folderWithMain',
-          'customMainModule.js'
-        ),
+        path: 'hasCustomMain/folderWithMain/customMainModule.js',
         requiredModules: []
       }),
-      new ProjectConfiguration(
-        node_path.join(testData, 'hasCustomMain', 'package.json'), {
-          name: 'hasCustomMain',
-          main: 'folderWithMain/customMainModule.js'
-        }
-      ),
+      new ProjectConfiguration('hasCustomMain/package.json'),
 
       // hasStandardIndex dependency project
       JS.fromObject({
         id: 'hasStandardIndex/index.js',
-        path: node_path.join(testData, 'hasStandardIndex', 'index.js'),
+        path: 'hasStandardIndex/index.js',
         requiredModules: []
       }),
-      new ProjectConfiguration(
-        node_path.join(testData, 'hasStandardIndex', 'package.json'),
-        {name: 'hasStandardIndex'}  // Defaults main to index.js
-      ),
-
+      new ProjectConfiguration('hasStandardIndex/package.json'),
 
       JS.fromObject({
         id: 'commonJSProject/dependsOnCustomMain.js',
-        path: node_path.join(
-          testData,
-          'commonJSProject',
-          'dependsOnCustomMain.js'
-        ),
+        path: 'commonJSProject/dependsOnCustomMain.js',
         requiredModules: ['hasCustomMain']
       }),
       JS.fromObject({
         id: 'commonJSProject/dependsOnStandardIndex.js',
-        path: node_path.join(
-          testData,
-          'commonJSProject',
-          'dependsOnStandardIndex.js'
-        ),
+        path: 'commonJSProject/dependsOnStandardIndex.js',
         requiredModules: ['hasStandardIndex']
       }),
-      new ProjectConfiguration(
-        node_path.join(testData, 'commonJSProject', 'package.json'),
-        {name: 'commonJSProject'}  // Must mirror what node will *actually* find
-      )
+      new ProjectConfiguration('commonJSProject/package.json')
     ]);
 
     loader.postProcess(map, map.getAllResourcesByType('js'), function() {
+
+      console.log(map);
+
       expect(
         map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')
           .requiredModules
@@ -181,12 +159,7 @@ describe('JSLoader', function() {
         map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')
           ._requiredTextToResolvedPath
       ).to.deep.equal({
-          'hasCustomMain': node_path.join(
-              testData,
-              'hasCustomMain',
-              'folderWithMain',
-              'customMainModule.js'
-          )
+          'hasCustomMain': 'hasCustomMain/folderWithMain/customMainModule.js'
         });
 
       expect(
@@ -196,7 +169,7 @@ describe('JSLoader', function() {
       expect(
         map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js')
           ._requiredTextToResolvedPath
-      ).to.deep.equal({'hasStandardIndex': node_path.join(testData, 'hasStandardIndex', 'index.js')});
+      ).to.deep.equal({'hasStandardIndex': 'hasStandardIndex/index.js'});
 
       done();
     });
