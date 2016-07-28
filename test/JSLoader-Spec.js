@@ -36,11 +36,8 @@ describe('JSLoader', function() {
   var JSLoader = require('../lib/loader/JSLoader');
   var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
   var ResourceMap = require('../lib/core/ResourceMap');
-  var log = require('et-util-logger');
-  global.slogger = new log.Logger();
 
   var expect = require('chai').expect;
-
   var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 
   beforeEach(function() {
@@ -119,7 +116,7 @@ describe('JSLoader', function() {
     var map = new ResourceMap([
       // hasCustomMain dependency project
       JS.fromObject({
-        id: 'hasCustomMain/folderWithMain/customMainModule.js',
+        id: 'hasCustomMain',
         path: 'hasCustomMain/folderWithMain/customMainModule.js',
         requiredModules: []
       }),
@@ -127,7 +124,7 @@ describe('JSLoader', function() {
 
       // hasStandardIndex dependency project
       JS.fromObject({
-        id: 'hasStandardIndex/index.js',
+        id: 'hasStandardIndex',
         path: 'hasStandardIndex/index.js',
         requiredModules: []
       }),
@@ -147,28 +144,21 @@ describe('JSLoader', function() {
     ]);
 
     loader.postProcess(map, map.getAllResourcesByType('js'), function() {
-
-      console.log(map);
+      expect(
+        map.getResource('js', 'commonJSProject/dependsOnCustomMain.js').requiredModules
+      ).to.deep.equal(['hasCustomMain']);
 
       expect(
-        map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')
-          .requiredModules
-      ).to.deep.equal(['hasCustomMain/folderWithMain/customMainModule.js']);
-
-      expect(
-        map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')
-          ._requiredTextToResolvedPath
+        map.getResource('js', 'commonJSProject/dependsOnCustomMain.js')._requiredTextToResolvedPath
       ).to.deep.equal({
           'hasCustomMain': 'hasCustomMain/folderWithMain/customMainModule.js'
         });
 
       expect(
-        map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js')
-          .requiredModules
-      ).to.deep.equal(['hasStandardIndex/index.js']);
+        map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js').requiredModules
+      ).to.deep.equal(['hasStandardIndex']);
       expect(
-        map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js')
-          ._requiredTextToResolvedPath
+        map.getResource('js', 'commonJSProject/dependsOnStandardIndex.js')._requiredTextToResolvedPath
       ).to.deep.equal({'hasStandardIndex': 'hasStandardIndex/index.js'});
 
       done();
@@ -180,27 +170,29 @@ describe('JSLoader', function() {
     var map = new ResourceMap([
       JS.fromObject({
         id: 'configured/a.js',
-        path: node_path.join(testData, 'configured', 'a.js'),
-        requiredModules: ['./b']   // TODO: add more interesting things here
+        path: 'configured/a.js',
+        requiredModules: ['./b']
       }),
       JS.fromObject({
         id: 'configured/b.js',
-        path: node_path.join(testData, 'configured', 'b.js')
+        path: 'configured/b.js'
       }),
       new ProjectConfiguration(
-        node_path.join(testData, 'configured', 'package.json'),
-        {name: 'configured'}  // Must mirror what node will *actually* find
+        node_path.join(testData, 'configured', 'package.json')
       )
     ]);
 
     loader.postProcess(map, map.getAllResourcesByType('js'), function() {
+
+      console.log(JSON.stringify(map.getResource('js', 'configured/a.js')));
+
       expect(
         map.getResource('js', 'configured/a.js').requiredModules)
         .to.deep.equal(['configured/b.js']
       );
       expect(
         map.getResource('js', 'configured/a.js')._requiredTextToResolvedPath
-      ).to.deep.equal({'./b': node_path.join(testData, 'configured', 'b.js')});
+      ).to.deep.equal({'./b': 'configured/b.js'});
 
       done();
     });
@@ -211,12 +203,12 @@ describe('JSLoader', function() {
     var map = new ResourceMap([
       JS.fromObject({
         id: 'configured/a.js',
-        path: node_path.join(testData, 'configured', 'a.js'),
+        path: 'configured/a.js',
         requiredModules: ['./b']
       }),
       JS.fromObject({
         id: 'configured/b.js',
-        path: node_path.join(testData, 'configured', 'b.js'),
+        path: 'configured/b.js',
         requiredModules: []
       })
     ]);

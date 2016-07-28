@@ -119,8 +119,7 @@ describe('CSSLoader', function() {
       var id = 'entry';
       var css = map.getResource('css', id);
 
-      console.log(css);
-
+      // todo _requiredTextToResolvedPath没有测试
       expect(css.id).to.equal('entry');
       expect(css.requiredCSS).to.be.a('array');
       expect(css.requiredCSS).to.be.have.length(2);
