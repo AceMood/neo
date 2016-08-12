@@ -1,10 +1,10 @@
 {
   "name": "neo-core",
-  "version": "0.7.3",
+  "version": "0.8.0",
   "description": "Facade of FrontEnd Static Resource System.",
   "main": "neo.js",
   "engines": {
-    "node": ">= 1.0.0"
+    "node": ">= 4.0.0"
   },
   "scripts": {
     "test": "mocha --timeout 60000 ./test/**/*-Spec.js",
