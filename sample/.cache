@@ -119,6 +119,12 @@
       "mtime": 1448292684000
     },
     {
+      "path": "project/static/img/a.png",
+      "id": "project/static/img/a.png",
+      "type": "image",
+      "mtime": 1469451333000
+    },
+    {
       "type": "css",
       "path": "project/components/header/header.css",
       "id": "header-style",
@@ -152,12 +158,6 @@
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
-    },
-    {
-      "path": "project/static/img/a.png",
-      "id": "project/static/img/a.png",
-      "type": "image",
-      "mtime": 1469451333000
     },
     {
       "type": "js",
