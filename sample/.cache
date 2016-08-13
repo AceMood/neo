@@ -47,33 +47,6 @@
     },
     {
       "type": "css",
-      "path": "project/components/footer/footer.css",
-      "id": "zhida/components/footer/footer.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1444983413000
-    },
-    {
-      "type": "js",
-      "path": "project/components/footer/footer.js",
-      "id": "zhida/components/footer/footer.js",
-      "_requiredCSSMap": {
-        "./footer.css": true
-      },
-      "_requiredModuleMap": {},
-      "_requiredAsyncModuleMap": {},
-      "_requiredTextToResolvedPath": {
-        "./footer.css": "project/components/footer/footer.css"
-      },
-      "isModule": true,
-      "requiredCSS": [
-        "zhida/components/footer/footer.css"
-      ],
-      "mtime": 1448292656000
-    },
-    {
-      "type": "css",
       "path": "project/components/back2top/back2top.css",
       "id": "zhida/components/back2top/back2top.css",
       "_requiredCSSMap": {},
@@ -101,28 +74,30 @@
     },
     {
       "type": "css",
-      "path": "project/static/css/app.css",
-      "id": "zhida/static/css/app.css",
-      "_requiredCSSMap": {
-        "../../components/header/header.css": true,
-        "../../components/footer/footer.css": true
-      },
+      "path": "project/components/footer/footer.css",
+      "id": "zhida/components/footer/footer.css",
+      "_requiredCSSMap": {},
       "_spriteMap": {},
-      "_requiredTextToResolvedPath": {
-        "../../components/header/header.css": "project/components/header/header.css",
-        "../../components/footer/footer.css": "project/components/footer/footer.css"
-      },
-      "requiredCSS": [
-        "header-style",
-        "zhida/components/footer/footer.css"
-      ],
-      "mtime": 1448292684000
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1444983413000
     },
     {
-      "path": "project/static/img/a.png",
-      "id": "project/static/img/a.png",
-      "type": "image",
-      "mtime": 1469451333000
+      "type": "js",
+      "path": "project/components/footer/footer.js",
+      "id": "zhida/components/footer/footer.js",
+      "_requiredCSSMap": {
+        "./footer.css": true
+      },
+      "_requiredModuleMap": {},
+      "_requiredAsyncModuleMap": {},
+      "_requiredTextToResolvedPath": {
+        "./footer.css": "project/components/footer/footer.css"
+      },
+      "isModule": true,
+      "requiredCSS": [
+        "zhida/components/footer/footer.css"
+      ],
+      "mtime": 1448292656000
     },
     {
       "type": "css",
@@ -158,6 +133,25 @@
       "mtime": 1446450675000,
       "width": 77,
       "height": 77
+    },
+    {
+      "type": "css",
+      "path": "project/static/css/app.css",
+      "id": "zhida/static/css/app.css",
+      "_requiredCSSMap": {
+        "../../components/header/header.css": true,
+        "../../components/footer/footer.css": true
+      },
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {
+        "../../components/header/header.css": "project/components/header/header.css",
+        "../../components/footer/footer.css": "project/components/footer/footer.css"
+      },
+      "requiredCSS": [
+        "header-style",
+        "zhida/components/footer/footer.css"
+      ],
+      "mtime": 1448292684000
     },
     {
       "type": "js",
@@ -202,6 +196,12 @@
       "_requiredTextToResolvedPath": {},
       "isModule": true,
       "mtime": 1469595556000
+    },
+    {
+      "path": "project/static/img/a.png",
+      "id": "project/static/img/a.png",
+      "type": "image",
+      "mtime": 1469451333000
     }
   ]
 }

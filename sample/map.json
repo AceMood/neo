@@ -45,33 +45,6 @@
             "mtime": 1469452935000
         },
         {
-            "path": "project/components/footer/footer.css",
-            "id": "zhida/components/footer/footer.css",
-            "_requiredCSSMap": {},
-            "_spriteMap": {},
-            "_requiredTextToResolvedPath": {},
-            "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
-            "mtime": 1444983413000
-        },
-        {
-            "path": "project/components/footer/footer.js",
-            "id": "zhida/components/footer/footer.js",
-            "_requiredCSSMap": {
-                "./footer.css": true
-            },
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedPath": {
-                "./footer.css": "project/components/footer/footer.css"
-            },
-            "isModule": true,
-            "requiredCSS": [
-                "zhida/components/footer/footer.css"
-            ],
-            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
-            "mtime": 1448292656000
-        },
-        {
             "path": "project/components/back2top/back2top.css",
             "id": "zhida/components/back2top/back2top.css",
             "_requiredCSSMap": {},
@@ -99,30 +72,31 @@
             "mtime": 1448620912000
         },
         {
-            "path": "project/static/css/app.css",
-            "id": "zhida/static/css/app.css",
-            "_requiredCSSMap": {
-                "../../components/header/header.css": true,
-                "../../components/footer/footer.css": true
-            },
+            "path": "project/components/footer/footer.css",
+            "id": "zhida/components/footer/footer.css",
+            "_requiredCSSMap": {},
             "_spriteMap": {},
-            "_requiredTextToResolvedPath": {
-                "../../components/header/header.css": "project/components/header/header.css",
-                "../../components/footer/footer.css": "project/components/footer/footer.css"
-            },
-            "requiredCSS": [
-                "header-style",
-                "zhida/components/footer/footer.css"
-            ],
-            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
-            "mtime": 1448292684000
+            "_requiredTextToResolvedPath": {},
+            "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
+            "mtime": 1444983413000
         },
         {
-            "path": "project/static/img/a.png",
-            "id": "project/static/img/a.png",
-            "networkSize": 0,
-            "_fileContent": "",
-            "mtime": 1469451333000
+            "path": "project/components/footer/footer.js",
+            "id": "zhida/components/footer/footer.js",
+            "_requiredCSSMap": {
+                "./footer.css": true
+            },
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedPath": {
+                "./footer.css": "project/components/footer/footer.css"
+            },
+            "isModule": true,
+            "requiredCSS": [
+                "zhida/components/footer/footer.css"
+            ],
+            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
+            "mtime": 1448292656000
         },
         {
             "path": "project/components/header/header.css",
@@ -159,6 +133,25 @@
             "width": 77,
             "height": 77,
             "mtime": 1446450675000
+        },
+        {
+            "path": "project/static/css/app.css",
+            "id": "zhida/static/css/app.css",
+            "_requiredCSSMap": {
+                "../../components/header/header.css": true,
+                "../../components/footer/footer.css": true
+            },
+            "_spriteMap": {},
+            "_requiredTextToResolvedPath": {
+                "../../components/header/header.css": "project/components/header/header.css",
+                "../../components/footer/footer.css": "project/components/footer/footer.css"
+            },
+            "requiredCSS": [
+                "header-style",
+                "zhida/components/footer/footer.css"
+            ],
+            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
+            "mtime": 1448292684000
         },
         {
             "path": "project/static/js/app.js",
@@ -205,6 +198,13 @@
             "mtime": 1469595556000
         },
         {
+            "path": "project/static/img/a.png",
+            "id": "project/static/img/a.png",
+            "networkSize": 0,
+            "_fileContent": "",
+            "mtime": 1469451333000
+        },
+        {
             "path": "project/package.json",
             "id": "project/package.json",
             "data": {
@@ -227,6 +227,15 @@
                 "type": "css",
                 "mtime": 1469453055000
             },
+            "zhida/components/back2top/back2top.css": {
+                "path": "project/components/back2top/back2top.css",
+                "id": "zhida/components/back2top/back2top.css",
+                "_requiredCSSMap": {},
+                "_spriteMap": {},
+                "_requiredTextToResolvedPath": {},
+                "_fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
+                "mtime": 1446028155000
+            },
             "zhida/components/footer/footer.css": {
                 "path": "project/components/footer/footer.css",
                 "id": "zhida/components/footer/footer.css",
@@ -236,14 +245,14 @@
                 "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
                 "mtime": 1444983413000
             },
-            "zhida/components/back2top/back2top.css": {
-                "path": "project/components/back2top/back2top.css",
-                "id": "zhida/components/back2top/back2top.css",
+            "header-style": {
+                "path": "project/components/header/header.css",
+                "id": "header-style",
                 "_requiredCSSMap": {},
                 "_spriteMap": {},
                 "_requiredTextToResolvedPath": {},
-                "_fileContent": "\n.ns_back2top {\n    position: fixed;\n    right: 10px;\n    bottom: 20px;\n    display: none;\n    cursor: pointer;\n}",
-                "mtime": 1446028155000
+                "_fileContent": "/**\n * @provides header-style\n */\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
+                "mtime": 1469624666000
             },
             "zhida/static/css/app.css": {
                 "path": "project/static/css/app.css",
@@ -263,15 +272,6 @@
                 ],
                 "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
                 "mtime": 1448292684000
-            },
-            "header-style": {
-                "path": "project/components/header/header.css",
-                "id": "header-style",
-                "_requiredCSSMap": {},
-                "_spriteMap": {},
-                "_requiredTextToResolvedPath": {},
-                "_fileContent": "/**\n * @provides header-style\n */\n\nheader {\n    width: 100%;\n    height: 120px;\n    background: url(\"logo.png\");\n}",
-                "mtime": 1469624666000
             }
         },
         "js": {
@@ -310,24 +310,6 @@
                 "isModule": true,
                 "mtime": 1469452935000
             },
-            "zhida/components/footer/footer.js": {
-                "path": "project/components/footer/footer.js",
-                "id": "zhida/components/footer/footer.js",
-                "_requiredCSSMap": {
-                    "./footer.css": true
-                },
-                "_requiredModuleMap": {},
-                "_requiredAsyncModuleMap": {},
-                "_requiredTextToResolvedPath": {
-                    "./footer.css": "project/components/footer/footer.css"
-                },
-                "isModule": true,
-                "requiredCSS": [
-                    "zhida/components/footer/footer.css"
-                ],
-                "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
-                "mtime": 1448292656000
-            },
             "zhida/components/back2top/back2top.js": {
                 "path": "project/components/back2top/back2top.js",
                 "id": "zhida/components/back2top/back2top.js",
@@ -345,6 +327,24 @@
                 ],
                 "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
                 "mtime": 1448620912000
+            },
+            "zhida/components/footer/footer.js": {
+                "path": "project/components/footer/footer.js",
+                "id": "zhida/components/footer/footer.js",
+                "_requiredCSSMap": {
+                    "./footer.css": true
+                },
+                "_requiredModuleMap": {},
+                "_requiredAsyncModuleMap": {},
+                "_requiredTextToResolvedPath": {
+                    "./footer.css": "project/components/footer/footer.css"
+                },
+                "isModule": true,
+                "requiredCSS": [
+                    "zhida/components/footer/footer.css"
+                ],
+                "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
+                "mtime": 1448292656000
             },
             "zhida/components/header/header.js": {
                 "path": "project/components/header/header.js",
@@ -410,13 +410,6 @@
             }
         },
         "image": {
-            "project/static/img/a.png": {
-                "path": "project/static/img/a.png",
-                "id": "project/static/img/a.png",
-                "networkSize": 0,
-                "_fileContent": "",
-                "mtime": 1469451333000
-            },
             "project/components/header/logo.png": {
                 "path": "project/components/header/logo.png",
                 "id": "project/components/header/logo.png",
@@ -425,6 +418,13 @@
                 "width": 77,
                 "height": 77,
                 "mtime": 1446450675000
+            },
+            "project/static/img/a.png": {
+                "path": "project/static/img/a.png",
+                "id": "project/static/img/a.png",
+                "networkSize": 0,
+                "_fileContent": "",
+                "mtime": 1469451333000
             }
         },
         "ProjectConfiguration": {
@@ -485,33 +485,6 @@
             "isModule": true,
             "mtime": 1469452935000
         },
-        "project/components/footer/footer.css": {
-            "path": "project/components/footer/footer.css",
-            "id": "zhida/components/footer/footer.css",
-            "_requiredCSSMap": {},
-            "_spriteMap": {},
-            "_requiredTextToResolvedPath": {},
-            "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
-            "mtime": 1444983413000
-        },
-        "project/components/footer/footer.js": {
-            "path": "project/components/footer/footer.js",
-            "id": "zhida/components/footer/footer.js",
-            "_requiredCSSMap": {
-                "./footer.css": true
-            },
-            "_requiredModuleMap": {},
-            "_requiredAsyncModuleMap": {},
-            "_requiredTextToResolvedPath": {
-                "./footer.css": "project/components/footer/footer.css"
-            },
-            "isModule": true,
-            "requiredCSS": [
-                "zhida/components/footer/footer.css"
-            ],
-            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
-            "mtime": 1448292656000
-        },
         "project/components/back2top/back2top.css": {
             "path": "project/components/back2top/back2top.css",
             "id": "zhida/components/back2top/back2top.css",
@@ -539,31 +512,32 @@
             "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "mtime": 1448620912000
         },
-        "project/static/css/app.css": {
-            "path": "project/static/css/app.css",
-            "id": "zhida/static/css/app.css",
-            "_requiredCSSMap": {
-                "../../components/header/header.css": true,
-                "../../components/footer/footer.css": true
-            },
+        "project/components/footer/footer.css": {
+            "path": "project/components/footer/footer.css",
+            "id": "zhida/components/footer/footer.css",
+            "_requiredCSSMap": {},
             "_spriteMap": {},
-            "_requiredTextToResolvedPath": {
-                "../../components/header/header.css": "project/components/header/header.css",
-                "../../components/footer/footer.css": "project/components/footer/footer.css"
+            "_requiredTextToResolvedPath": {},
+            "_fileContent": ".footer {\n    position: relative;\n    width: calc(100% - 200px);\n    height: 30px;\n    margin: 20px 0 20px 200px;\n    clear: both;\n    color: #8B8B8B;\n    font-size: 14px;\n    text-align: center;\n    line-height: 30px;\n}\n.footer a {\n    color: #8B8B8B;\n    font-size: 14px;\n    line-height: 30px;\n    text-decoration: none;\n}",
+            "mtime": 1444983413000
+        },
+        "project/components/footer/footer.js": {
+            "path": "project/components/footer/footer.js",
+            "id": "zhida/components/footer/footer.js",
+            "_requiredCSSMap": {
+                "./footer.css": true
             },
+            "_requiredModuleMap": {},
+            "_requiredAsyncModuleMap": {},
+            "_requiredTextToResolvedPath": {
+                "./footer.css": "project/components/footer/footer.css"
+            },
+            "isModule": true,
             "requiredCSS": [
-                "header-style",
                 "zhida/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
-            "mtime": 1448292684000
-        },
-        "project/static/img/a.png": {
-            "path": "project/static/img/a.png",
-            "id": "project/static/img/a.png",
-            "networkSize": 0,
-            "_fileContent": "",
-            "mtime": 1469451333000
+            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
+            "mtime": 1448292656000
         },
         "project/components/header/header.css": {
             "path": "project/components/header/header.css",
@@ -600,6 +574,25 @@
             "width": 77,
             "height": 77,
             "mtime": 1446450675000
+        },
+        "project/static/css/app.css": {
+            "path": "project/static/css/app.css",
+            "id": "zhida/static/css/app.css",
+            "_requiredCSSMap": {
+                "../../components/header/header.css": true,
+                "../../components/footer/footer.css": true
+            },
+            "_spriteMap": {},
+            "_requiredTextToResolvedPath": {
+                "../../components/header/header.css": "project/components/header/header.css",
+                "../../components/footer/footer.css": "project/components/footer/footer.css"
+            },
+            "requiredCSS": [
+                "header-style",
+                "zhida/components/footer/footer.css"
+            ],
+            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
+            "mtime": 1448292684000
         },
         "project/static/js/app.js": {
             "path": "project/static/js/app.js",
@@ -644,6 +637,13 @@
             "isModule": true,
             "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
             "mtime": 1469595556000
+        },
+        "project/static/img/a.png": {
+            "path": "project/static/img/a.png",
+            "id": "project/static/img/a.png",
+            "networkSize": 0,
+            "_fileContent": "",
+            "mtime": 1469451333000
         },
         "project/package.json": {
             "path": "project/package.json",
