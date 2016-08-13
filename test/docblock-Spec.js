@@ -2,24 +2,6 @@
  * The MIT License (MIT)
  * Copyright (c) 2015 AceMood
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- *
  * @file 解析注释头部信息功能
  * @author AceMood
  */
@@ -34,22 +16,22 @@ describe('docblock', function() {
   var docblock = require('../lib/parser/docblock');
 
   it('should extract valid docblock', function() {
-    var code = '/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/'
+    var code = '/**' + os.EOL + ' * @provides foo' + os.EOL + '*/'
       + os.EOL + 'var x = foo;';
     expect(docblock.extract(code)).to.be.a('string');
-    expect(docblock.extract(code)).to.equal('/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/');
+    expect(docblock.extract(code)).to.equal('/**' + os.EOL + ' * @provides foo' + os.EOL + '*/');
   });
 
   it('should extract valid docblock with more comments', function() {
-    var code = '/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/'
+    var code = '/**' + os.EOL + ' * @provides foo' + os.EOL + '*/'
       + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
     expect(docblock.extract(code)).to.be.a('string');
-    expect(docblock.extract(code)).to.equal('/**' + os.EOL + ' * @providesModule foo' + os.EOL + '*/');
+    expect(docblock.extract(code)).to.equal('/**' + os.EOL + ' * @provides foo' + os.EOL + '*/');
   });
 
   it('should return nothing for no docblock', function() {
-    var code = '/*' + os.EOL + ' * @providesModule foo' + os.EOL + '*/'
-      + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
+    var code = '/*' + os.EOL + ' * @provides foo' + os.EOL + '*/'
+      + os.EOL + 'var x = foo;' + os.EOL;
     expect(docblock.extract(code)).to.be.a('string');
     expect(docblock.extract(code)).to.equal('');
   });
