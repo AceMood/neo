@@ -64,11 +64,11 @@
             "_requiredTextToResolvedPath": {
                 "./back2top.css": "project/components/back2top/back2top.css"
             },
+            "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "isModule": true,
             "requiredCSS": [
                 "zhida/components/back2top/back2top.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "mtime": 1448620912000
         },
         {
@@ -91,11 +91,11 @@
             "_requiredTextToResolvedPath": {
                 "./footer.css": "project/components/footer/footer.css"
             },
+            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
             "isModule": true,
             "requiredCSS": [
                 "zhida/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
             "mtime": 1448292656000
         },
         {
@@ -118,11 +118,11 @@
             "_requiredTextToResolvedPath": {
                 "header-style": "project/components/header/header.css"
             },
+            "_fileContent": "/**\n * @module\n * @css header-style\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
             "isModule": true,
             "requiredCSS": [
                 "header-style"
             ],
-            "_fileContent": "/**\n * @module\n * @css header-style\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
             "mtime": 1469624674000
         },
         {
@@ -146,11 +146,11 @@
                 "../../components/header/header.css": "project/components/header/header.css",
                 "../../components/footer/footer.css": "project/components/footer/footer.css"
             },
+            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "requiredCSS": [
                 "header-style",
                 "zhida/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "mtime": 1448292684000
         },
         {
@@ -172,6 +172,7 @@
                 "../css/app.css": "project/static/css/app.css",
                 "../../components/header/header.js": "project/components/header/header.js"
             },
+            "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('zhida/static/js/warn.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
             "isModule": true,
             "requiredModules": [
                 "zhida/static/js/warn.js",
@@ -183,7 +184,6 @@
             "requiredCSS": [
                 "zhida/static/css/app.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('zhida/static/js/warn.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
             "mtime": 1469604481000
         },
         {
@@ -193,8 +193,8 @@
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedPath": {},
-            "isModule": true,
             "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
+            "isModule": true,
             "mtime": 1469595556000
         },
         {
@@ -266,11 +266,11 @@
                     "../../components/header/header.css": "project/components/header/header.css",
                     "../../components/footer/footer.css": "project/components/footer/footer.css"
                 },
+                "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
                 "requiredCSS": [
                     "header-style",
                     "zhida/components/footer/footer.css"
                 ],
-                "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
                 "mtime": 1448292684000
             }
         },
@@ -321,11 +321,11 @@
                 "_requiredTextToResolvedPath": {
                     "./back2top.css": "project/components/back2top/back2top.css"
                 },
+                "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
                 "isModule": true,
                 "requiredCSS": [
                     "zhida/components/back2top/back2top.css"
                 ],
-                "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
                 "mtime": 1448620912000
             },
             "zhida/components/footer/footer.js": {
@@ -339,11 +339,11 @@
                 "_requiredTextToResolvedPath": {
                     "./footer.css": "project/components/footer/footer.css"
                 },
+                "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
                 "isModule": true,
                 "requiredCSS": [
                     "zhida/components/footer/footer.css"
                 ],
-                "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
                 "mtime": 1448292656000
             },
             "zhida/components/header/header.js": {
@@ -357,11 +357,11 @@
                 "_requiredTextToResolvedPath": {
                     "header-style": "project/components/header/header.css"
                 },
+                "_fileContent": "/**\n * @module\n * @css header-style\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
                 "isModule": true,
                 "requiredCSS": [
                     "header-style"
                 ],
-                "_fileContent": "/**\n * @module\n * @css header-style\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
                 "mtime": 1469624674000
             },
             "zhida/static/js/app.js": {
@@ -383,6 +383,7 @@
                     "../css/app.css": "project/static/css/app.css",
                     "../../components/header/header.js": "project/components/header/header.js"
                 },
+                "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('zhida/static/js/warn.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
                 "isModule": true,
                 "requiredModules": [
                     "zhida/static/js/warn.js",
@@ -394,7 +395,6 @@
                 "requiredCSS": [
                     "zhida/static/css/app.css"
                 ],
-                "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('zhida/static/js/warn.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
                 "mtime": 1469604481000
             },
             "zhida/static/js/warn.js": {
@@ -404,8 +404,8 @@
                 "_requiredModuleMap": {},
                 "_requiredAsyncModuleMap": {},
                 "_requiredTextToResolvedPath": {},
-                "isModule": true,
                 "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
+                "isModule": true,
                 "mtime": 1469595556000
             }
         },
@@ -505,11 +505,11 @@
             "_requiredTextToResolvedPath": {
                 "./back2top.css": "project/components/back2top/back2top.css"
             },
+            "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "isModule": true,
             "requiredCSS": [
                 "zhida/components/back2top/back2top.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./back2top.css\n */\n\n'use strict';\n\nexports.init = function () {\n};\nexports.destroy = function () {\n};",
             "mtime": 1448620912000
         },
         "project/components/footer/footer.css": {
@@ -532,11 +532,11 @@
             "_requiredTextToResolvedPath": {
                 "./footer.css": "project/components/footer/footer.css"
             },
+            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
             "isModule": true,
             "requiredCSS": [
                 "zhida/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ./footer.css\n */\n\nexports.init = function () {\n  console.log('footer initialize done!');\n};",
             "mtime": 1448292656000
         },
         "project/components/header/header.css": {
@@ -559,11 +559,11 @@
             "_requiredTextToResolvedPath": {
                 "header-style": "project/components/header/header.css"
             },
+            "_fileContent": "/**\n * @module\n * @css header-style\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
             "isModule": true,
             "requiredCSS": [
                 "header-style"
             ],
-            "_fileContent": "/**\n * @module\n * @css header-style\n */\n\n\nexports.print = function() {\n  console.log('header initialize done!');\n};",
             "mtime": 1469624674000
         },
         "project/components/header/logo.png": {
@@ -587,11 +587,11 @@
                 "../../components/header/header.css": "project/components/header/header.css",
                 "../../components/footer/footer.css": "project/components/footer/footer.css"
             },
+            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "requiredCSS": [
                 "header-style",
                 "zhida/components/footer/footer.css"
             ],
-            "_fileContent": "/**\n * @css ../../components/header/header.css\n * @css ../../components/footer/footer.css\n */\n\nbody .app {\n    width: 1200px;\n}",
             "mtime": 1448292684000
         },
         "project/static/js/app.js": {
@@ -613,6 +613,7 @@
                 "../css/app.css": "project/static/css/app.css",
                 "../../components/header/header.js": "project/components/header/header.js"
             },
+            "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('zhida/static/js/warn.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
             "isModule": true,
             "requiredModules": [
                 "zhida/static/js/warn.js",
@@ -624,7 +625,6 @@
             "requiredCSS": [
                 "zhida/static/css/app.css"
             ],
-            "_fileContent": "/**\n * @module\n * @css ../css/app.css\n */\n\n'use strict';\n\nvar warn = require('zhida/static/js/warn.js');\nvar footer = require('../../components/footer/footer.js');\n\nheader.init();\nfooter.init();\n\nrequire.async(['../../components/header/header.js'], function(header) {\n\n});",
             "mtime": 1469604481000
         },
         "project/static/js/warn.js": {
@@ -634,8 +634,8 @@
             "_requiredModuleMap": {},
             "_requiredAsyncModuleMap": {},
             "_requiredTextToResolvedPath": {},
-            "isModule": true,
             "_fileContent": "/**\n * @module\n */\n\nvar warn = {};",
+            "isModule": true,
             "mtime": 1469595556000
         },
         "project/static/img/a.png": {
