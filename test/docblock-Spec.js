@@ -31,7 +31,7 @@ describe('docblock', function() {
 
   it('should return nothing for no docblock', function() {
     var code = '/*' + os.EOL + ' * @provides foo' + os.EOL + '*/'
-      + os.EOL + 'var x = foo;' + os.EOL;
+      + os.EOL + 'var x = foo;' + os.EOL + '/**foo*/';
     expect(docblock.extract(code)).to.be.a('string');
     expect(docblock.extract(code)).to.equal('');
   });
