@@ -46,15 +46,6 @@
       "mtime": 1469452935000
     },
     {
-      "type": "css",
-      "path": "project/components/back2top/back2top.css",
-      "id": "zhida/components/back2top/back2top.css",
-      "_requiredCSSMap": {},
-      "_spriteMap": {},
-      "_requiredTextToResolvedPath": {},
-      "mtime": 1446028155000
-    },
-    {
       "type": "js",
       "path": "project/components/back2top/back2top.js",
       "id": "zhida/components/back2top/back2top.js",
@@ -71,6 +62,15 @@
         "zhida/components/back2top/back2top.css"
       ],
       "mtime": 1448620912000
+    },
+    {
+      "type": "css",
+      "path": "project/components/back2top/back2top.css",
+      "id": "zhida/components/back2top/back2top.css",
+      "_requiredCSSMap": {},
+      "_spriteMap": {},
+      "_requiredTextToResolvedPath": {},
+      "mtime": 1446028155000
     },
     {
       "type": "css",
@@ -135,6 +135,12 @@
       "height": 77
     },
     {
+      "path": "project/static/img/a.png",
+      "id": "project/static/img/a.png",
+      "type": "image",
+      "mtime": 1469451333000
+    },
+    {
       "type": "css",
       "path": "project/static/css/app.css",
       "id": "zhida/static/css/app.css",
@@ -196,12 +202,6 @@
       "_requiredTextToResolvedPath": {},
       "isModule": true,
       "mtime": 1469595556000
-    },
-    {
-      "path": "project/static/img/a.png",
-      "id": "project/static/img/a.png",
-      "type": "image",
-      "mtime": 1469451333000
     }
   ]
 }
