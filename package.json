@@ -1,6 +1,6 @@
 {
   "name": "neo-core",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "Dependency Graph Generator of FrontEnd System.",
   "main": "neo.js",
   "engines": {
