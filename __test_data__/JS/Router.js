@@ -1,18 +1,15 @@
 /**
  * @provides Router
  * @module
- * @file 应用的整体Route / 暴露window.router给整个应用
- * @author zhangshen04
  */
 
 'use strict';
-
 
 return Backbone.Router.extend({
     routes : {
         ''              : 'renderDeskTopView',
         'explore'       : 'renderModuleListView',
-        'develop/*path' : 'renderIDEView',
+        'develop/path' : 'renderIDEView',
         'develop'       : 'renderIDEView',
         'codereview'    : 'renderCodeReviewView',
         'online'        : 'renderOnlineView',
