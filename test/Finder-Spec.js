@@ -13,7 +13,7 @@ describe('Finder', function() {
 
   var expect = require('chai').expect;
   var node_path = require('path');
-  var getFinder = require('../lib/core/Finder');
+  var getFinder = require('./core/Finder');
   var workingDir = node_path.join(__dirname, '..', '__test_data__', 'FileFinder');
 
   it('should find files in a directory using find method', function(done) {

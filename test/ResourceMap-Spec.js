@@ -30,9 +30,9 @@
 describe('ResourceMap', function() {
 
   var expect = require('chai').expect;
-  var ResourceMap = require('../lib/core/ResourceMap');
-  var Resource = require('../lib/resource/Resource');
-  var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
+  var ResourceMap = require('./core/ResourceMap');
+  var Resource = require('./resource/Resource');
+  var ProjectConfiguration = require('./resource/ProjectConfiguration');
 
   it('should intialize from a list', function() {
     var a, b;

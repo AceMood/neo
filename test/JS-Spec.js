@@ -32,7 +32,7 @@ describe('JS Resource', function() {
   var expect = require('chai').expect;
   var node_path = require('path');
   var fs = require('fs');
-  var JS = require('../lib/resource/JS');
+  var JS = require('./resource/JS');
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');
 

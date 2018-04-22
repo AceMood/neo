@@ -30,7 +30,7 @@
 describe('jsParser', function() {
 
   var expect = require('chai').expect;
-  var extract = require('../lib/parser/jsparser');
+  var extract = require('./parser/jsparser');
 
   describe('require', function() {
     it('should extract normal requires', function() {

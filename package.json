@@ -1,12 +1,16 @@
 {
   "name": "neo-core",
-  "version": "0.8.9",
+  "version": "1.0.0",
   "description": "Dependency Graph Generator of FrontEnd System.",
-  "main": "neo.js",
+  "main": "index.js",
   "engines": {
-    "node": ">= 4.0.0"
+    "node": ">= 6.0.0"
   },
   "scripts": {
+    "clean": "rm -rf ./lib",
+    "flow": "flow",
+    "build": "npm run clean && babel src/ -d lib/",
+    "prepublish": "npm run build",
     "test": "mocha --timeout 60000 ./test/**/*-Spec.js",
     "cover": "istanbul cover -i ./lib/**/*.js ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage"
   },
@@ -22,7 +26,7 @@
     "Front End",
     "ResourceMap"
   ],
-  "author": "Facebook.Inc, AceMood, Songjin",
+  "author": "AceMood",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AceMood/neo/issues"
@@ -35,11 +39,15 @@
     }
   ],
   "dependencies": {
-    "et-util-logger": "^1.1.0"
+
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "chai": "^3.4.1",
     "codacy-coverage": "^1.1.3",
+    "flow-bin": "^0.70.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "mocha-lcov-reporter": "^1.0.0"

@@ -31,11 +31,11 @@ describe('JSLoader', function() {
     var node_path = require('path');
     var fs = require('fs');
 
-    var Neo = require('../lib/neo');
-    var JS = require('../lib/resource/JS');
-    var JSLoader = require('../lib/loader/JSLoader');
-    var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
-    var ResourceMap = require('../lib/core/ResourceMap');
+    var Neo = require('./neo');
+    var JS = require('./resource/JS');
+    var JSLoader = require('./loader/JSLoader');
+    var ProjectConfiguration = require('./resource/ProjectConfiguration');
+    var ResourceMap = require('./core/ResourceMap');
 
     var expect = require('chai').expect;
     var testData = node_path.join(__dirname, '..', '__test_data__', 'JS');

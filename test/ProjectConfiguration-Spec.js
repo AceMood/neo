@@ -30,7 +30,7 @@ describe('ProjectConfiguration', function() {
 
   var expect = require('chai').expect;
   var node_path = require('path');
-  var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
+  var ProjectConfiguration = require('./resource/ProjectConfiguration');
 
   it('should return non-haste affected roots', function() {
     var resource = new ProjectConfiguration('a/b/package.json', {});

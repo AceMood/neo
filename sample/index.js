@@ -6,7 +6,7 @@
 
 var fs = require('fs');
 
-var Neo = require('../lib/neo');
+var Neo = require('./neo');
 var Loaders = Neo.Loaders;
 
 

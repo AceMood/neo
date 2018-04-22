@@ -14,7 +14,7 @@ describe('CSS Resource', function() {
   var expect = require('chai').expect;
   var node_path = require('path');
   var fs = require('fs');
-  var CSS = require('../lib/resource/CSS');
+  var CSS = require('./resource/CSS');
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'CSS');
 

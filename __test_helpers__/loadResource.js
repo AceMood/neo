@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-var MessageList = require('../lib/MessageList');
+var MessageList = require('./MessageList');
 
 function loadResource(loader, filePath, conf, expectation) {
   var resource;

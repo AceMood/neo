@@ -23,7 +23,7 @@ describe('ProjectConfiguration', function() {
 
   var expect = require('chai').expect;
   var ProjectConfigurationLoader =
-    require('../lib/loader/ProjectConfigurationLoader');
+    require('./loader/ProjectConfigurationLoader');
 
   it('should match package.json paths', function() {
     var loader = new ProjectConfigurationLoader();

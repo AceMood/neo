@@ -8,6 +8,8 @@ Session.vim
 
 private/
 node_modules
+lib
+bak_lib
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio

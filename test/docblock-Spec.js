@@ -13,7 +13,7 @@ describe('docblock', function() {
 
   var expect = require('chai').expect;
   var os = require('os');
-  var docblock = require('../lib/parser/docblock');
+  var docblock = require('./parser/docblock');
 
   it('should extract valid docblock', function() {
     var code = '/**' + os.EOL + ' * @provides foo' + os.EOL + '*/'

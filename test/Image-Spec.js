@@ -32,7 +32,7 @@ describe('Image Resource', function() {
   var expect = require('chai').expect;
   var node_path = require('path');
   var fs = require('fs');
-  var Image = require('../lib/resource/Image');
+  var Image = require('./resource/Image');
 
   var testData = node_path.join(__dirname, '..', '__test_data__', 'Image');
   var constData =

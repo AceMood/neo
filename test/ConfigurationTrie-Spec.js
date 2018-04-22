@@ -22,8 +22,8 @@
 describe('ConfigurationTrie', function() {
 
   var expect = require('chai').expect;
-  var ConfigurationTrie = require('../lib/ConfigurationTrie');
-  var ProjectConfiguration = require('../lib/resource/ProjectConfiguration');
+  var ConfigurationTrie = require('./ConfigurationTrie');
+  var ProjectConfiguration = require('./resource/ProjectConfiguration');
   var node_path = require('path');
 
   it('should match subpath', function() {
