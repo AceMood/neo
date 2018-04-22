@@ -1,6 +1,5 @@
 /**
- * @file 全局neo对象
- * @author AceMood
+ * @file entry
  */
 
-module.exports = global.neo = require('./bak_lib/neo');
+module.exports = require('./src/neo');

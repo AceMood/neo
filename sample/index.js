@@ -2,8 +2,47 @@
  * @sample Code Demo
  */
 
-'use strict';
+const neo = require('neo');
 
+neo.config.set('exclude', [
+  'node_modules',
+  'test',
+  'dist'
+]);
+
+neo.match(/\.html?/)
+  .parse('babel', {
+
+  })
+  .plugin('uglify', {
+
+  })
+  .plugin('hash', {
+    algorithm: 'hex',
+    length: 7
+  });
+
+neo.match('*.js')
+  .parse('babel', {
+
+  }),
+  .preprocess()
+  .plugin('uglify', {
+
+  })
+  .postProcess();
+
+neo.match('*.less')
+  .parse('less');
+
+neo.match('*.vue')
+  .parse('vue-parser');
+
+
+
+neo.run().pipe('dist');
+
+/*
 var fs = require('fs');
 
 var Neo = require('./neo');
@@ -35,4 +74,4 @@ neo.update('.cache', function(map) {
 
   // 根据返回的map对象进行业务框架定制
   fs.writeFileSync('map.json', JSON.stringify(map, null, 4), 'utf8');
-});
+});*/

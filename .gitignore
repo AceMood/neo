@@ -6,9 +6,12 @@ Session.vim
 .netrwhist
 *~
 
+
+## project relative folders
 private/
 node_modules
 lib
+sample
 bak_lib
 
 ### JetBrains template
